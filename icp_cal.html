@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICP Calendar</title>
+    <style>
+        table,
+        th,
+        td {
+            border-collapse: collapse;
+            border: solid 5px #000;
+            padding: 50px;
+            /* background-color: white; */
+        }
+
+        .timeline {
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-bottom-color: transparent;
+            padding: 1px;
+        }
+
+        td.timeline {
+            /* vertical-align: top; */
+            text-align: right;
+        }
+        .today{
+            background-color: aliceblue;
+        }
+        .today .timeline{
+            background-color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <center>
+        <label for="classes">Classs:</label>
+        <select name="classes" id="classes" onchange="classChanged()">
+            <option value="Year 1 BIC">Year 1 BIC</option>
+            <option value="Year 1 BIC-Spring">Year 1 BIC (Spring)</option>
+            <option value="Year 2 BIC">Year 2 BIC</option>
+            <option value="Year 3 BIC">Year 3 BIC</option>
+            <option value="Year 1 BBA">Year 1 BBA</option>
+            <option value="Year 1 BBA ( Spring)">Year 1 BBA (Spring)</option>
+            <option value="Year 2 BBA">Year 2 BBA</option>
+            <option value="Year 3 BBA">Year 3 BBA</option>
+        </select> 
+
+        <label for="sections">Section:</label>
+        <select name="sections" id="sections" onchange="sectionChanged()">
+
+        </select> 
+<h3 id="cur_class"></h3>
+<p><canvas id="canvas" style="display:none;border:2px solid black;" width="500" height="500"></canvas>
+<i><a href="javascript:void(0)" onclick="save_img()" id="save_img">Download this table as image</a> | <a target="_blank" href="" id="cal_url_view">View in Google Calendar</a> | <a target="_blank" href="" id="cal_url_add">Add to Google Calendar</a></i>
+<br> <br> 
+<table id="table">
+            <colgroup>
+                <col style="width: 5%;">
+                <col style="width: 11%;">
+                <col style="width: 11%;">
+            </colgroup>
+            <tr>
+                <td class="timeline">SUN</td>
+                <td id="00">
+                    <p class="module"></p>
+                    <p class="room"></p>
+                    <p class="time"></p>
+                </td>
+                <td id="01">
+                    <p class="module"></p>
+                    <p class="room"></p>
+                    <p class="time"></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="timeline">MON</td>
+                <td id="10">
+                    <p class="module"></p>
+                    <p class="room"></p>
+                    <p class="time"></p>
+                </td>
+                <td id="11">
+                    <p class="module"></p>
+                    <p class="room"></p>
+                    <p class="time"></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="timeline">TUE</td>
+                <td id="20">
+                    <p class="module"></p>
+                    <p class="room"></p>
+                    <p class="time"></p>
+                </td>
+                <td id="21">
+                    <p class="module"></p>
+                    <p class="room"></p>
+                    <p class="time"></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="timeline">WED</td>
+                <td id="30">
+                    <p class="module"></p>
+                    <p class="room"></p>
+                    <p class="time"></p>
+                </td>
+                <td id="31">
+                    <p class="module"></p>
+                    <p class="room"></p>
+                    <p class="time"></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="timeline">THU</td>
+                <td id="40">
+                    <p class="module"></p>
+                    <p class="room"></p>
+                    <p class="time"></p>
+                </td>
+                <td id="41">
+                    <p class="module"></p>
+                    <p class="room"></p>
+                    <p class="time"></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="timeline">FRI</td>
+                <td id="50">
+                    <p class="module"></p>
+                    <p class="room"></p>
+                    <p class="time"></p>
+                </td>
+                <td id="51">
+                    <p class="module"></p>
+                    <p class="room"></p>
+                    <p class="time"></p>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+<script>
+let sections={'Year 1 BBA ( Spring)': ['B2'], 'Year 1 BBA': ['B1'], 'Year 2 BBA': ['B1'], 'Year 3 BBA': ['B1'], 'Year 1 BIC-Spring': ['C10', 'C11', 'C12', 'C13'], 'Year 1 BIC': ['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9'], 'Year 2 BIC': ['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8'], 'Year 3 BIC': ['C1', 'C2', 'C3', 'C4', 'C5']}
+
+let cal_ids={'Year 1 BBA ( Spring) - B2': 'c_42569300d355ae040df0b875a0a5feeb71930806790c3811c6163f1b8dbbe266@group.calendar.google.com', 'Year 1 BBA - B1': 'c_775dad3fbd57915379f36b8758a62e3402ab13b0ae2a28d210f5424f6e8980c8@group.calendar.google.com', 'Year 2 BBA - B1': 'c_511cac972d056e03d9865d30e7a1c421bcf92a332e4d22748e4cbe64123f16c2@group.calendar.google.com', 'Year 3 BBA - B1': 'c_f6a08fbdde9d4c0b071077c44b704fd057907b008b44f064b77ce98350a27430@group.calendar.google.com', 'Year 1 BIC-Spring - C10': 'c_7acfaf5f5ebcff6ae56e38736b01356eac647e5126cfd82d200ff98012cd0b2e@group.calendar.google.com', 'Year 1 BIC-Spring - C11': 'c_a89ec9887b75cd6c0a80859ca07f7e94c15eba30b5ea02108fa3e6cdc30234ea@group.calendar.google.com', 'Year 1 BIC-Spring - C12': 'c_33beae58fb34f332806e955a20e39b27093076014f4a99163c0d4add3cd49add@group.calendar.google.com', 'Year 1 BIC-Spring - C13': 'c_b8264362df67a4fbc9808727633a68b3ec68708a1b1bef17a29e36029a942524@group.calendar.google.com', 'Year 1 BIC - C1': 'c_4c9ecc01664de19d311ffafe0b8883df39024da919204795cae091dea04defc0@group.calendar.google.com', 'Year 1 BIC - C2': 'c_bedcfec87d7398fce1e28e79015545d22c9610674f0cbd3c81452d2c8d1a0d83@group.calendar.google.com', 'Year 1 BIC - C3': 'c_a97bb6f202ad7bd4a2930a47c5f1a69bc631282bee4b30e9133fdf9644c99ccd@group.calendar.google.com', 'Year 1 BIC - C4': 'c_0052a9b763d71321998dd4ca6d4ea92e5d597297116a4bfce12ec9dc42e6a523@group.calendar.google.com', 'Year 1 BIC - C5': 'c_6287bb357820e6e9466915a225598fa041e45eb66f532e768156fac9bc463317@group.calendar.google.com', 'Year 1 BIC - C6': 'c_dafa41c4707fa767e9ab590fb3dd81286e51d15cffb27de64d6bb4346878d7f1@group.calendar.google.com', 'Year 1 BIC - C7': 'c_9d269031c2188f02f4fa7d9c9993c00ed3cab9da4b752fd0a206cc62f851d661@group.calendar.google.com', 'Year 1 BIC - C8': 'c_d0244ce1ef7a7f841bedc8191745f19d2bb28c8c428035040fdb62a87e7fa6d4@group.calendar.google.com', 'Year 1 BIC - C9': 'c_754abc56d2005d8a31139c5fa1ff55ff34c2c1eb87db51f20c4aa2d15b5e8ba1@group.calendar.google.com', 'Year 2 BIC - C1': 'c_3bc55bf37dced7beb03aa0cc1189dfda905e8353ff7cb93881de0728f775d357@group.calendar.google.com', 'Year 2 BIC - C2': 'c_bac1b1ff6b2c42ed826230a12f44e5823f2f709ec7d00b7a2430016aaa60d434@group.calendar.google.com', 'Year 2 BIC - C3': 'c_86eed785e60c94d7fc917794cc95b1c122296873885f444c78d487ee6b961140@group.calendar.google.com', 'Year 2 BIC - C4': 'c_25cd918915beea26e4c7eaf44bafef3b7d025b5d9fbbd15ffcd9279b8cf2dacb@group.calendar.google.com', 'Year 2 BIC - C5': 'c_9cecb36e9550169b9e1943a971060880959ed4c22b949e18e2d0d24ab7e8689d@group.calendar.google.com', 'Year 2 BIC - C6': 'c_cc763119842b358fbc86192ea9308c3b069e9f4d424cc8b2e7a117271b096fec@group.calendar.google.com', 'Year 2 BIC - C7': 'c_59fabfa5043a9a6ecb9535ad6bbddaa399aaf6730f1e900ddba5fd2233c4a8bf@group.calendar.google.com', 'Year 2 BIC - C8': 'c_f58d0cd6eac3d38416e7fc35180cb178be2098febfb7974e90bdb2edc041e535@group.calendar.google.com', 'Year 3 BIC - C1': 'c_e312ad9d44f4bd7112654e52eb03d3dfb81519ffa54edcebb223856728536f96@group.calendar.google.com','Year 3 BIC - C2': 'c_fdfcf4f3b2fa0a1c23ca403cea4a909cb100ed9a9855a62e29e94bae42efe590@group.calendar.google.com', 'Year 3 BIC - C3': 'c_f8673e57f73b84de2a96e11eb0f03e0252aedbcd0e79de5d5450b195cfdfec0f@group.calendar.google.com', 'Year 3 BIC - C4': 'c_beb0a797976187f029bc897b15aad30fa0f31496daf091a861f3cdf03cdca0b8@group.calendar.google.com', 'Year 3 BIC - C5': 'c_8fcb3b49afff9261e5b5b8dc776fffb0c8fd9d49a6c7af657f5da2fc4067752c@group.calendar.google.com'}
+
+const static_cal={'Year 1 BBA ( Spring) - B2': [[['Business Law and Ethics', ' Thames', '07:00 AM'], ['Principles of Management', ' Thames', '09:30 AM']], [['Principles of Marketing', 'Open Access Lab', '09:30 AM'], ['Understanding and Managing Data', 'Fewa', '12:00 PM']], [['Business Law and Ethics', ' Gokyo', '07:00 AM'], ['Principles of Management', 'Meeting Room', '09:30 AM']], [['Principles of Marketing', ' Open Access Lab', '08:30 AM'], ['Understanding and Managing Data', ' Nilgiri', '11:00 AM']], [['Business Law and Ethics', ' Bigben', '07:00 AM'], ['Principles of Management', ' Stonehenge', '09:30 AM']], [['Principles of Marketing', ' Nilgiri', '08:30 AM'], ['Understanding and Managing Data', ' Bigben', '11:00 AM']]], 'Year 1 BBA - B1': [[['Understanding the Business and Economic Environment', ' Bigben', '08:30 AM'], ['Financial Accounting', ' Thames', '11:00 AM']], [['Managing People in Organisations', ' Bigben', '07:00 AM'], ['Learning Through Organisations', ' Bigben', '08:30 AM']], [['Understanding the Business and Economic Environment', ' Nilgiri', '09:30 AM'], ['Financial Accounting', 'Annapurna', '12:00 PM']], [['Managing People in Organisations', ' Thames', '07:00 AM'], ['Learning Through Organisations', ' Thames', '08:30 AM']], [['Understanding the Business and Economic Environment', ' Nilgiri', '08:30 AM'], ['Financial Accounting', ' Begnas', '11:00 AM']], [['Managing People in Organisations', ' Begnas', '07:00 AM'], ['Learning Through Organisations', ' Begnas', '08:30 AM']]], 'Year 2 BBA - B1': [[['Leading, Managing, and Developing People', ' Begnas', '07:00 AM'], ['Problem Solving: Methods and Analysis', ' Begnas', '08:30 AM']], [['Leading Innovation and Entrepreneurship', 'Fewa', '07:00 AM'], ['Organisation Design and Management', 'Fewa', '08:30 AM']], [['Leading, Managing, and Developing People', 'Fewa', '07:00 AM'], ['Problem Solving: Methods and Analysis', 'Fewa', '08:30 AM']], [['Leading Innovation and Entrepreneurship', ' Begnas', '07:00 AM'], ['Organisation Design and Management', ' Begnas', '08:30 AM']], [['Leading, Managing, and Developing People', 'Fewa', '07:00 AM'], ['Problem Solving: Methods and Analysis', 'Fewa', '08:30 AM']], [['Leading Innovation and Entrepreneurship', ' Rara', '07:00 AM'], ['Organisation Design and Management', ' Rara', '08:30 AM']]], 'Year 3 BBA - B1': [[['Applied Information Technology for Professional Practice', ' Stonehenge', '07:00 AM'], ['Achieve Your Potential', ' Stonehenge', '08:30 AM']], [['Digital Marketing Trends and Practice', ' Thames', '07:00 AM'], ['Use of Artificial Intelligence and Big Data in Business', ' Thames', '08:30 AM']], [['Applied Information Technology for Professional Practice', ' Thames', '07:00 AM'], ['Achieve Your Potential', ' Thames', '08:30 AM']], [['Digital Marketing Trends and Practice', ' Stonehenge', '07:00 AM'], ['Use of Artificial Intelligence and Big Data in Business', ' Stonehenge', '08:30 AM']], [['Applied Information Technology for Professional Practice', ' Thames', '07:00 AM'], ['Achieve Your Potential', ' Thames', '08:30 AM']], [['Digital Marketing Trends and Practice', ' Thames', '07:00 AM'], ['Use of Artificial Intelligence and Big Data in Business', ' Thames', '08:30 AM']]], 'Year 1 BIC-Spring - C10': [[['Programming', ' Annapurna', '08:30 AM'], ['Logic & Problem Solving', 'Machhapuchhre', '11:00 AM']], [['Computer Hardware and Software Architecures', 'Machhapuchhre', '11:30 AM'], ['Introduction to Information Systems', 'Machhapuchhre', '01:30 PM']], [['Introduction to Information Systems', 'Annapurna', '09:00 AM'], ['Computer Hardware and Software Architecures', ' Open Access Lab', '12:00 PM']], [['Programming', 'Annapurna', '11:30 AM'], ['Logic & Problem Solving', ' Gokyo', '01:30 PM']], [['Introduction to Information Systems', ' Stonehenge', '11:30 AM'], ['Computer Hardware and Software Architecures', ' Open Access Lab', '01:30 PM']], [['Logic & Problem Solving', ' Tilicho', '10:00 AM'], ['Programming', ' Nilgiri', '01:30 PM']]], 'Year 1 BIC-Spring - C11': [[['Programming', ' Annapurna', '08:30 AM'], ['Logic & Problem Solving', 'Machhapuchhre', '11:00 AM']], [['Computer Hardware and Software Architecures', 'Machhapuchhre', '11:30 AM'], ['Introduction to Information Systems', 'Machhapuchhre', '01:30 PM']], [['Logic & Problem Solving', ' Stonehenge', '11:30 AM'], ['Programming', ' Bigben', '01:30 PM']], [['Computer Hardware and Software Architecures', ' Open Access Lab', '07:00 AM'], ['Introduction to Information Systems', 'Machhapuchhre', '09:30 AM']], [['Logic & Problem Solving', ' Begnas', '07:30 AM'], ['Programming', ' Nilgiri', '10:00 AM']], [['Introduction to Information Systems', ' Stonehenge', '11:30 AM'], ['Computer Hardware and Software Architecures', ' Open Access Lab', '01:30 PM']]], 'Year 1 BIC-Spring - C12': [[['Programming', ' Annapurna', '08:30 AM'], ['Logic & Problem Solving', 'Machhapuchhre', '11:00 AM']], [['Computer Hardware and Software Architecures', 'Machhapuchhre', '11:30 AM'], ['Introduction to Information Systems', 'Machhapuchhre', '01:30 PM']], [['Logic & Problem Solving', ' Stonehenge', '01:00 PM'], ['Introduction to Information Systems', ' Tilicho', '03:00 PM']], [['Computer Hardware and Software Architecures', ' Open Access Lab', '11:30 AM'], ['Programming', 'Fewa', '01:30 PM']], [['Logic & Problem Solving', ' Bigben', '01:30 PM'], ['Introduction to Information Systems', ' Tilicho', '03:30 PM']], [['Computer Hardware and Software Architecures', ' Open Access Lab', '07:00 AM'], ['Programming', ' Thames', '10:00 AM']]], 'Year 1 BIC-Spring - C13': [[['Programming', ' Bigben', '10:30 AM'], ['Logic & Problem Solving', 'Annapurna', '01:00 PM']], [['Introduction to Information Systems', ' Rara', '11:30 AM'], ['Computer Hardware and Software Architecures', 'Annapurna', '01:30 PM']], [['Programming', 'Fewa', '11:30 AM'], ['Computer Hardware and Software Architecures', ' Open Access Lab', '01:30 PM']], [['Logic & Problem Solving', 'Machhapuchhre', '11:00 AM'], ['Introduction to Information Systems', ' Bigben', '01:00 PM']], [['Computer Hardware and Software Architecures', ' Open Access Lab', '11:30 AM'], ['Programming', ' Thames', '01:30 PM']], [['Logic & Problem Solving', ' Bigben', '12:30 PM'], ['Introduction to Information Systems', ' Gokyo', '03:00 PM']]], 'Year 1 BIC - C4': [[['Programming', 'Annapurna', '07:00 AM'], ['Fundamentals of Computing', 'Machhapuchhre', '09:30 AM']], [['Logic & Problem Solving', 'Annapurna', '07:30 AM'], ['Computer Hardware and Software Architecures', 'Machhapuchhre', '10:00 AM']], [['Computer Hardware and Software Architecures', ' Bigben', '07:00 AM'], ['Programming', ' Tilicho', '09:00 AM']], [['Logic & Problem Solving', ' Nilgiri', '07:30 AM'], ['Fundamentals of Computing', ' Stonehenge', '10:30 AM']], [['Programming', ' Gokyo', '11:30 AM'], ['Computer Hardware and Software Architecures', ' Nilgiri', '01:30 PM']], [['Fundamentals of Computing', 'Fewa', '07:30 AM'], ['Logic & Problem Solving', ' Rara', '10:00 AM']]], 'Year 1 BIC - C5': [[['Programming', 'Annapurna', '07:00 AM'], ['Fundamentals of Computing', 'Machhapuchhre', '09:30 AM']], [['Logic & Problem Solving', 'Annapurna', '07:30 AM'], ['Computer Hardware and Software Architecures', 'Machhapuchhre', '10:00 AM']], [['Logic & Problem Solving', 'Fewa', '10:00 AM'], ['Computer Hardware and Software Architecures', ' Gokyo', '12:00 PM']], [['Fundamentals of Computing', ' Thames', '01:00 PM'], ['Programming', ' Tilicho', '03:30 PM']], [['Computer Hardware and Software Architecures', ' Open Access Lab', '08:30 AM'], ['Logic & Problem Solving', ' Bigben', '10:30 AM']], [['Fundamentals of Computing', ' Gokyo', '12:00 PM'], ['Programming', ' Thames', '02:00 PM']]], 'Year 1 BIC - C6': [[['Programming', 'Annapurna', '07:00 AM'], ['Fundamentals of Computing', 'Machhapuchhre', '09:30 AM']], [['Logic & Problem Solving', 'Annapurna', '07:30 AM'], ['Computer Hardware and Software Architecures', 'Machhapuchhre', '10:00 AM']], [['Programming', 'Annapurna', '10:30 AM'], ['Computer Hardware and Software Architecures', ' Gokyo', '01:30 PM']], [['Fundamentals of Computing', ' Bigben', '11:00 AM'], ['Logic & Problem Solving', ' Begnas', '01:30 PM']], [['Computer Hardware and Software Architecures', ' Open Access Lab', '07:00 AM'], ['Programming', ' Rara', '09:00 AM']], [['Logic & Problem Solving', ' Nilgiri', '07:00 AM'], ['Fundamentals of Computing', ' Stonehenge', '09:30 AM']]], 'Year 1 BIC - C1': [[['Logic & Problem Solving', ' Machhapuchhre', '07:30 AM'], ['Computer Hardware and Software Architecures', 'Annapurna', '10:00 AM']], [['Programming', 'Machhapuchhre', '07:00 AM'], ['Fundamentals of Computing', 'Annapurna', '09:30 AM']], [['Logic & Problem Solving', ' Stonehenge', '07:00 AM'], ['Fundamentals of Computing', ' Stonehenge', '09:30 AM']], [['Computer Hardware and Software Architecures', ' Tilicho', '08:30 AM'], ['Programming', ' Gokyo', '10:30 AM']], [['Logic & Problem Solving', ' Rara', '07:00 AM'], ['Fundamentals of Computing', ' Begnas', '09:30 AM']], [['Computer Hardware and Software Architecures', ' Bigben', '07:00 AM'], ['Programming', 'Fewa', '09:00 AM']]], 'Year 1 BIC - C2': [[['Logic & Problem Solving', ' Machhapuchhre', '07:30 AM'], ['Computer Hardware and Software Architecures', 'Annapurna', '10:00 AM']], [['Programming', 'Machhapuchhre', '07:00 AM'], ['Fundamentals of Computing', 'Annapurna', '09:30 AM']], [['Logic & Problem Solving', ' Gokyo', '09:00 AM'], ['Fundamentals of Computing', ' Nilgiri', '11:30 AM']], [['Computer Hardware and Software Architecures', ' Thames', '10:00 AM'], ['Programming', ' Tilicho', '12:30 PM']], [['Fundamentals of Computing', ' Stonehenge', '07:30 AM'], ['Logic & Problem Solving', 'Fewa', '10:00 AM']], [['Computer Hardware and Software Architecures', ' Open Access Lab', '08:30 AM'], ['Programming', 'Fewa', '10:30 AM']]], 'Year 1 BIC - C3': [[['Logic & Problem Solving', ' Machhapuchhre', '07:30 AM'], ['Computer Hardware and Software Architecures', 'Annapurna', '10:00 AM']], [['Programming', 'Machhapuchhre', '07:00 AM'], ['Fundamentals of Computing', 'Annapurna', '09:30 AM']], [['Computer Hardware and Software Architecures', ' Gokyo', '10:30 AM'], ['Logic & Problem Solving', ' Rara', '01:00 PM']], [['Fundamentals of Computing', ' Gokyo', '07:00 AM'], ['Programming', ' Nilgiri', '09:00 AM']], [['Computer Hardware and Software Architecures', ' Tilicho', '11:30 AM'], ['Logic & Problem Solving', ' Tilicho', '01:30 PM']], [['Fundamentals of Computing', ' Nilgiri', '10:00 AM'], ['Programming', ' Thames', '12:30 PM']]], 'Year 1 BIC - C7': [[['Computer Hardware and Software Architecures', 'Annapurna', '11:30 AM'], ['Fundamentals of Computing', 'Machhapuchhre', '01:30 PM']], [['Programming', 'Machhapuchhre', '08:30 AM'], ['Logic & Problem Solving', 'Annapurna', '11:00 AM']], [['Fundamentals of Computing', ' Open Access Lab', '10:30 AM'], ['Programming', ' Nilgiri', '01:00 PM']], [['Computer Hardware and Software Architecures', ' Open Access Lab', '10:00 AM'], ['Logic & Problem Solving', ' Begnas', '12:00 PM']], [['Fundamentals of Computing', ' Thames', '10:00 AM'], ['Programming', ' Gokyo', '01:00 PM']], [['Computer Hardware and Software Architecures', ' Bigben', '09:00 AM'], ['Logic & Problem Solving', ' Rara', '11:30 AM']]], 'Year 1 BIC - C8': [[['Computer Hardware and Software Architecures', 'Annapurna', '11:30 AM'], ['Fundamentals of Computing', 'Machhapuchhre', '01:30 PM']], [['Programming', 'Machhapuchhre', '08:30 AM'], ['Logic & Problem Solving', 'Annapurna', '11:00 AM']], [['Fundamentals of Computing', ' Bigben', '12:00 PM'], ['Programming', ' Nilgiri', '02:30 PM']], [['Logic & Problem Solving', ' Rara', '10:30 AM'], ['Computer Hardware and Software Architecures', ' Open Access Lab', '01:30 PM']], [['Fundamentals of Computing', ' Stonehenge', '01:00 PM'], ['Programming', ' Gokyo', '03:00 PM']], [['Computer Hardware and Software Architecures', ' Open Access Lab', '11:30 AM'], ['Logic & Problem Solving', ' Rara', '01:30 PM']]], 'Year 1 BIC - C9': [[['Computer Hardware and Software Architecures', 'Annapurna', '11:30 AM'], ['Fundamentals of Computing', 'Machhapuchhre', '01:30 PM']], [['Programming', 'Machhapuchhre', '08:30 AM'], ['Logic & Problem Solving', 'Annapurna', '11:00 AM']], [['Logic & Problem Solving', ' Nilgiri', '07:00 AM'], ['Computer Hardware and Software Architecures', ' Open Access Lab', '09:00 AM']], [['Programming', ' Stonehenge', '12:00 PM'], ['Fundamentals of Computing', ' Stonehenge', '02:30 PM']], [['Computer Hardware and Software Architecures', ' Open Access Lab', '10:00 AM'], ['Logic & Problem Solving', ' Bigben', '12:00 PM']], [['Programming', ' Begnas', '11:00 AM'], ['Fundamentals of Computing', ' Gokyo', '01:30 PM']]], 'Year 2 BIC - C2': [[['Professional Issues, Ethics and Computer Law', 'Fewa', '07:00 AM'], ['Software Engineering', ' Rara', '09:00 AM']], [['Smart Data Discovery', ' Thames', '10:00 AM'], ['Advanced Programming and Technologies', ' Nilgiri', '12:30 PM']], [['Professional Issues, Ethics and Computer Law', ' Tilicho', '07:00 AM'], ['Software Engineering', ' Begnas', '09:30 AM']], [['Smart Data Discovery', ' Tilicho', '10:30 AM'], ['Advanced Programming and Technologies', ' Rara', '01:00 PM']], [['Professional Issues, Ethics and Computer Law', 'Machhapuchhre', '07:00 AM'], ['Software Engineering', 'Machhapuchhre', '09:00 AM']], [['Advanced Programming and Technologies', 'Annapurna', '09:30 AM'], ['Smart Data Discovery', 'Annapurna', '12:00 PM']]], 'Year 2 BIC - C5': [[['Software Engineering', ' Rara', '07:30 AM'], ['Professional Issues, Ethics and Computer Law', ' Begnas', '10:00 AM']], [['Smart Data Discovery', ' Begnas', '08:00 AM'], ['Advanced Programming and Technologies', ' Nilgiri', '10:30 AM']], [['Professional Issues, Ethics and Computer Law', ' Rara', '11:30 AM'], ['Software Engineering', 'Fewa', '01:30 PM']], [['Smart Data Discovery', 'Annapurna', '10:00 AM'], ['Advanced Programming and Technologies', ' Nilgiri', '12:30 PM']], [['Smart Data Discovery', 'Annapurna', '07:00 AM'], ['Advanced Programming and Technologies', 'Annapurna', '09:30 AM']], [['Professional Issues, Ethics and Computer Law', 'Annapurna', '07:00 AM'], ['Software Engineering', 'Machhapuchhre', '09:00 AM']]], 'Year 2 BIC - C7': [[['Smart Data Discovery', ' Nilgiri', '09:00 AM'], ['Advanced Programming and Technologies', ' Gokyo', '11:30 AM']], [['Professional Issues, Ethics and Computer Law', ' Rara', '10:00 AM'], ['Software Engineering', ' Tilicho', '12:30 PM']], [['Smart Data Discovery', ' Open Access Lab', '07:30 AM'], ['Advanced Programming and Technologies', 'Machhapuchhre', '10:00 AM']], [['Professional Issues, Ethics and Computer Law', ' Bigben', '07:00 AM'], ['Software Engineering', ' Bigben', '09:30 AM']], [['Software Engineering', 'Machhapuchhre', '10:30 AM'], ['Smart Data Discovery', 'Machhapuchhre', '01:00 PM']], [['Advanced Programming and Technologies', 'Machhapuchhre', '11:00 AM'], ['Professional Issues, Ethics and Computer Law', 'Annapurna', '01:30 PM']]], 'Year 2 BIC - C4': [[['Advanced Programming and Technologies', ' Tilicho', '10:30 AM'], ['Smart Data Discovery', ' Tilicho', '12:30 PM']], [['Professional Issues, Ethics and Computer Law', ' Gokyo', '08:30 AM'], ['Software Engineering', ' Begnas', '11:00 AM']], [['Advanced Programming and Technologies', ' Tilicho', '10:30 AM'], ['Smart Data Discovery', ' Tilicho', '12:30 PM']], [['Professional Issues, Ethics and Computer Law', ' Rara', '07:00 AM'], ['Software Engineering', ' Rara', '09:00 AM']], [['Smart Data Discovery', 'Annapurna', '07:00 AM'], ['Advanced Programming and Technologies', 'Annapurna', '09:30 AM']], [['Professional Issues, Ethics and Computer Law', 'Annapurna', '07:00 AM'], ['Software Engineering', 'Machhapuchhre', '09:00 AM']]], 'Year 2 BIC - C8': [[['Smart Data Discovery', ' Stonehenge', '11:00 AM'], ['Advanced Programming and Technologies', ' Rara', '01:30 PM']], [['Professional Issues, Ethics and Computer Law', ' Tilicho', '07:00 AM'], ['Software Engineering', ' Begnas', '09:30 AM']], [['Smart Data Discovery', ' Thames', '11:00 AM'], ['Advanced Programming and Technologies', ' Thames', '01:30 PM']], [['Professional Issues, Ethics and Computer Law', ' Begnas', '10:00 AM'], ['Software Engineering', ' Gokyo', '12:00 PM']], [['Software Engineering', 'Machhapuchhre', '10:30 AM'], ['Smart Data Discovery', 'Machhapuchhre', '01:00 PM']], [['Advanced Programming and Technologies', 'Machhapuchhre', '11:00 AM'], ['Professional Issues, Ethics and Computer Law', 'Annapurna', '01:30 PM']]], 'Year 2 BIC - C3': [[['Software Engineering', ' Begnas', '11:30 AM'], ['Advanced Programming and Technologies', ' Begnas', '01:30 PM']], [['Professional Issues, Ethics and Computer Law', ' Gokyo', '07:00 AM'], ['Smart Data Discovery', ' Stonehenge', '09:30 AM']], [['Software Engineering', ' Begnas', '11:30 AM'], ['Advanced Programming and Technologies', ' Begnas', '01:30 PM']], [['Smart Data Discovery', 'Fewa', '07:00 AM'], ['Professional Issues, Ethics and Computer Law', 'Fewa', '09:00 AM']], [['Professional Issues, Ethics and Computer Law', 'Machhapuchhre', '07:00 AM'], ['Software Engineering', 'Machhapuchhre', '09:00 AM']], [['Advanced Programming and Technologies', 'Annapurna', '09:30 AM'], ['Smart Data Discovery', 'Annapurna', '12:00 PM']]], 'Year 2 BIC - C6': [[['Professional Issues, Ethics and Computer Law', ' Rara', '11:30 AM'], ['Software Engineering', 'Fewa', '01:30 PM']], [['Smart Data Discovery', ' Stonehenge', '11:30 AM'], ['Advanced Programming and Technologies', ' Begnas', '01:30 PM']], [['Software Engineering', ' Begnas', '07:00 AM'], ['Professional Issues, Ethics and Computer Law', ' Bigben', '09:30 AM']], [['Smart Data Discovery', 'Annapurna', '08:30 AM'], ['Advanced Programming and Technologies', 'Fewa', '10:30 AM']], [['Smart Data Discovery', 'Annapurna', '07:00 AM'], ['Advanced Programming and Technologies', 'Annapurna', '09:30 AM']], [['Professional Issues, Ethics and Computer Law', 'Annapurna', '07:00 AM'], ['Software Engineering', 'Machhapuchhre', '09:00 AM']]], 'Year 2 BIC - C1': [[['Professional Issues, Ethics and Computer Law', ' Nilgiri', '11:30 AM'], ['Smart Data Discovery', ' Nilgiri', '01:30 PM']], [['Advanced Programming and Technologies', 'Fewa', '10:30 AM'], ['Software Engineering', ' Rara', '01:00 PM']], [['Smart Data Discovery', ' Rara', '07:00 AM'], ['Professional Issues, Ethics and Computer Law', ' Rara', '09:00 AM']], [['Software Engineering', ' Tilicho', '07:00 AM'], ['Advanced Programming and Technologies', ' Gokyo', '09:00 AM']], [['Professional Issues, Ethics and Computer Law', 'Machhapuchhre', '07:00 AM'], ['Software Engineering', 'Machhapuchhre', '09:00 AM']], [['Advanced Programming and Technologies', 'Annapurna', '09:30 AM'], ['Smart Data Discovery', 'Annapurna', '12:00 PM']]], 'Year 3 BIC - C3': [[['Application Development', ' Tilicho', '07:00 AM']], [['Advance Database Systems', ' Tilicho', '08:30 AM']], [['Application Development', 'Machhapuchhre', '07:00 AM']], [['Advance Database Systems', 'Annapurna', '07:00 AM']], [['Application Development', ' Tilicho', '08:30 AM']], [['Advance Database Systems', ' Gokyo', '08:30 AM']]], 'Year 3 BIC - C1': [[['Advance Database Systems', ' Gokyo', '07:00 AM'], ['Application Development', ' Tilicho', '08:30 AM']], [], [['Application Development', 'Machhapuchhre', '07:00 AM']], [['Advance Database Systems', 'Annapurna', '07:00 AM']], [['Advance Database Systems', ' Gokyo', '07:00 AM']], [['Application Development', ' Tilicho', '07:00 AM']]], 'Year 3 BIC - C4': [[['Advance Database Systems', ' Gokyo', '08:30 AM']], [['Application Development', ' Rara', '08:30 AM']], [['Advance Database Systems', 'Annapurna', '07:00 AM']], [['Application Development', 'Machhapuchhre', '07:00 AM']], [], [['Application Development', ' Tilicho', '08:30 AM'], ['Advance Database Systems', ' Gokyo', '10:00 AM']]], 'Year 3 BIC - C5': [[['Advance Database Systems', 'Fewa', '10:00 AM']], [['Application Development', ' Rara', '07:00 AM']], [['Advance Database Systems', 'Annapurna', '07:00 AM']], [['Application Development', 'Machhapuchhre', '07:00 AM']], [['Advance Database Systems', ' Gokyo', '08:30 AM'], ['Application Development', ' Gokyo', '10:00 AM']], []], 'Year 3 BIC - C2': [[['Application Development', ' Gokyo', '10:00 AM']], [['Advance Database Systems', ' Tilicho', '10:00 AM']], [['Application Development', 'Machhapuchhre', '07:00 AM']], [['Advance Database Systems', 'Annapurna', '07:00 AM']], [['Application Development', ' Tilicho', '07:00 AM']], [['Advance Database Systems', ' Gokyo', '07:00 AM']]]}
+
+const cal_url_view=document.getElementById("cal_url_view")
+const cur_class=document.getElementById("cur_class")
+const cal_url_add=document.getElementById("cal_url_add")
+const save_img_link=document.getElementById("save_img");
+
+function changeSchedule(class_name="Year 1 BIC - C1"){
+    // console.log(class_name);
+    save_img_link.setAttribute('download', null);
+                    save_img_link.href="javascript:void(0)";
+                    save_img_link.innerText="Download this table as image"
+    class_data=static_cal[class_name];
+    for(var i = 0; i < 6; i++) {
+        var indv_class = class_data[i];
+        for(var j = 0; j < 2; j++) {
+            let parent_td=document.getElementById(i.toString()+j.toString());
+            try{
+                
+            parent_td.getElementsByClassName("module")[0].innerText=indv_class[j][0];
+        }catch{parent_td.getElementsByClassName("module")[0].innerText="";}
+        try{
+            
+            parent_td.getElementsByClassName("room")[0].innerText=indv_class[j][1];
+        }catch{parent_td.getElementsByClassName("room")[0].innerText="";}
+        try{
+            
+            parent_td.getElementsByClassName("time")[0].innerText=indv_class[j][2];
+            }catch{parent_td.getElementsByClassName("time")[0].innerText="";}
+        }
+    }
+
+    cal_url_view.href='https://calendar.google.com/calendar/embed?src='+cal_ids[class_name]+'&ctz=Asia/Kathmandu&csspa=1'
+    cal_url_add.href='https://calendar.google.com/calendar/r?cid='+cal_ids[class_name]
+}
+
+const sectionDrop=document.getElementById("sections");
+const classDrop=document.getElementById("classes");
+
+function loadSection(class_name="Year 1 BIC"){
+
+    var i, L = sectionDrop.options.length - 1;
+   for(i = L; i >= 0; i--) {
+    sectionDrop.remove(i);
+   }    
+
+    for (var key in sections[class_name]) {
+        var option = document.createElement("option");
+        option.text = sections[class_name][key];
+        option.value = sections[class_name][key];
+        sectionDrop.add(option); 
+}
+
+}
+function classChanged(x=null){
+    loadSection(classDrop.value);
+    if(!x){sectionChanged()}
+}
+
+function sectionChanged(){
+    changeSchedule(classDrop.value+" - "+sectionDrop.value);
+    cur_class.innerText=classDrop.value+" - "+sectionDrop.value
+    document.cookie = "class="+escape(classDrop.value);
+    document.cookie = "section="+escape(sectionDrop.value);
+}
+function getCookie(name){
+    cookies=document.cookie.split(";");
+    for (var cookie of cookies){
+        cooksplit=cookie.trim().split("=")
+        if (cooksplit[0].trim()==name){
+            return unescape(cooksplit[1].trim())
+        }
+    }
+}
+function loadUserSelection(){
+    class_cookie=getCookie("class");
+    section_cookie=getCookie("section");
+
+    if(class_cookie){
+        classDrop.value=class_cookie;
+        classChanged("x");
+        sectionDrop.value=section_cookie;
+        sectionChanged();
+    }else{
+    classChanged();
+    }
+}
+
+window.onload=loadUserSelection;
+
+const d = new Date();
+    let day = d.getDay();
+   const cur_tr= document.getElementsByTagName("tr")[day];
+   cur_tr.classList.add("today");
+        </script>
+              <!-- <script type="text/javascript" src="https://github.com/niklasvh/html2canvas/releases/download/0.5.0-alpha1/html2canvas.js"></script> -->
+              <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+
+<script>
+        function save_img(){
+            if (save_img_link.innerText.includes("Click")){
+                return;
+            } 
+            cur_tr.classList.remove("today");
+            html2canvas(document.getElementById("table")).then(function(canvas) {
+                    var img = canvas.toDataURL("image/png");
+                    var newData = img.replace(/^data:image\/png/, "data:application/octet-stream");
+                    save_img_link.setAttribute('download', cur_class.innerText+'.png');
+                    save_img_link.href=newData;
+                    save_img_link.innerText="Click to Download";
+                    }
+            );
+            cur_tr.classList.add("today");
+        }
+    
+    </script>
+</html>

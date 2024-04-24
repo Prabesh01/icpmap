@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICP MAP</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <style>
+    /* html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden; 
+        } */
+
+    #weekdays table {
+      position: relative;
+      /* margin: -32px auto 0; */
+      top: 8%;
+    }
+
+    #weekdays td>div {
+      height: 64px;
+    }
+
+    #weekdays td>div input[type="radio"] {
+      height: 0;
+      width: 0;
+      visibility: hidden;
+      position: absolute;
+    }
+
+    #weekdays td>div label {
+      cursor: pointer;
+      width: 61.6px;
+      height: 61.6px;
+      background: #fff;
+      display: block;
+      border-radius: 50%;
+      position: relative;
+      border-radius: 50%;
+      border: 2.4px solid #673ab7;
+      font-weight: bold;
+      font-family: "Roboto", sans-serif;
+      color: #404040;
+      text-transform: uppercase;
+    }
+
+    #weekdays td>div label>span {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      display: block;
+      text-align: center;
+    }
+
+    #weekdays td>div input:checked+label {
+      background-color: #673ab7;
+      color: #fff;
+    }
+
+    #weekdays {
+      height: 100%;
+    }
+
+    @media (max-width: 600px) {
+      /* table { */
+      /* width: 100%;  */
+      /* } */
+
+      #weekdays td>div label {
+        width: 35px;
+        /* Adjust width */
+        height: 35px;
+        /* Adjust height */
+      }
+
+      #weekdays td>div label>span {
+        font-size: 10px;
+        /* Adjust font size */
+      }
+    }
+
+    #time_slide_div {
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center;
+      padding-top: 110px;
+      /* padding: 40px; */
+      min-height: 20vh;
+      /* background-color: #f2f2f3; */
+      font-family: 'Inter', sans-serif;
+      font-size: 2em;
+    }
+
+    .slider-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 12.5em;
+      max-width: 100%;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .slider-input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .slider-thumb {
+      --color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      z-index: 1;
+      left: calc(var(--slider-value) / 100 * (100% - var(--slider-height)) + var(--slider-height) / 2);
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      width: 1.25em;
+      height: 1.25em;
+      background-image: linear-gradient(to bottom, #f0f0f2, #d9dade);
+      box-shadow: 0 0.0625em 0.0625em rgba(0, 0, 0, 0.3);
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      touch-action: none;
+      cursor: pointer;
+    }
+
+    .slider-thumb::before {
+      content: '';
+      position: absolute;
+      border-radius: inherit;
+      width: 68%;
+      height: 68%;
+      background-color: var(--color);
+      box-shadow: inset 0 -8px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .slider-value-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 0.5em;
+      position: absolute;
+      bottom: 1em;
+      transform: translateY(-100%);
+      border: 1px solid #dbdbe3;
+      border-radius: 50px;
+      padding: 0.25em 0.75em;
+      background-color: #f2f2f3;
+      box-shadow: 0 0.0625em 0.25em rgba(0, 0, 0, 0.1);
+      font-size: 0.5em;
+      font-feature-settings: 'tnum';
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+      pointer-events: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .slider-value {
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .slider-svg {
+      width: 100%;
+      height: 100%;
+      filter: drop-shadow(0 1px 0 #fff);
+      overflow: visible;
+    }
+
+    .slider-svg-path {
+      touch-action: none;
+      cursor: pointer;
+    }
+
+    .dropdown {
+      padding-top: 40px;
+      position: relative;
+      display: inline-block;
+      font-family: Arial, sans-serif;
+    }
+
+    .dropdown-search {
+      display: block;
+      width: 250px;
+      padding: 8px 16px;
+      border: 2px solid #e9e9e9;
+      border-radius: 7px;
+      outline: none;
+      text-align: left;
+      font-size: 16px;
+    }
+
+    .dropdown-search:focus {
+      border-bottom: 2px solid #3e57ff;
+      background-color: #f6f6f6;
+    }
+
+    .dropdown .dropdown-list {
+      position: absolute;
+      overflow: auto;
+      z-index: 9;
+      top: 25px;
+      left: 0;
+      width: 250px;
+      max-height: 250px;
+      padding: 8px;
+      display: none;
+      border-radius: 7px;
+      background: #fff;
+      border: 1px solid #e9e9e9;
+      box-shadow: 0 1px 2px rgb(204, 204, 204);
+    }
+
+    .dropdown .dropdown-list::-webkit-scrollbar {
+      width: 7px;
+    }
+
+    .dropdown .dropdown-list::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 25px;
+    }
+
+    .dropdown .dropdown-list::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 25px;
+    }
+
+    .dropdown .dropdown-list::-webkit-scrollbar-thumb:hover {
+      background: #b3b3b3;
+    }
+
+    .dropdown-list li {
+      display: none;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+    }
+
+    .dropdown-list li:hover {
+      background-color: #f2f2f2;
+    }
+
+    .not-found {
+      cursor: default;
+    }
+
+
+    @import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+
+    #the_maps {
+      font-family: 'Gloria Hallelujah', cursive;
+      font-size: 14px;
+      line-height: 20px;
+      color: #333333;
+      display: flex;
+      gap:40px;
+      justify-content: center;
+    }
+    @media (max-width: 800px) {
+  #the_maps {
+    flex-direction: column;
+  }
+} 
+
+    .roomName {
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #1658f4;
+    }
+
+    #msg {
+      left: 40px;
+      top: 0;
+      font-size: 1.5em;
+      text-align: center;
+      padding: 20px;
+    }
+
+    #icp_map td {
+      position: relative;
+      cursor: pointer;
+    }
+
+    #icp_map td:before {
+      content: "";
+      position: absolute;
+      width: 24px;
+      transform: translateX(-50%);
+      border: 2px solid red;
+    }
+
+    #icp_map table,
+    #icp_map th,
+    #icp_map td {
+      border-collapse: collapse;
+      border: solid 5px #000;
+      padding: 20px;
+    }
+
+    .pat_ {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
+    }
+
+    .roomName {
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #1658f4;
+    }
+
+    .start {
+      position: relative;
+      margin-top: 20px;
+      left: -20px;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #ad1A06;
+    }
+
+    /******************************************/
+    /*  ROOMS                                 */
+    /******************************************/
+    #LT01:before {
+      width: 0px !important;
+      height: 24px;
+      top: 80%;
+      left: -3%;
+    }
+
+    #Lab02:before,
+    #SR02:before,
+    #Lab01:before,
+    #SR03:before {
+      top: -5%;
+      left: 70%;
+    }
+
+    #LT02:before {
+      width: 0px !important;
+      height: 24px;
+      top: 80%;
+      left: 103%;
+    }
+
+    #SR01:before,
+    #SR04:before {
+      top: 100%;
+      left: 70%;
+    }
+
+    #meet_rm:before {
+      width: 0px !important;
+      height: 24px;
+
+      top: 5%;
+      left: 102%;
+    }
+
+    #TR03:before,
+    #TR02:before {
+      width: 0px !important;
+      height: 24px;
+
+      top: 60%;
+      left: -2%;
+    }
+
+    #TR01:before {
+      width: 0px !important;
+      height: 24px;
+
+      top: 10%;
+      left: -2%;
+    }
+
+    #Lab03:before {
+      width: 0px !important;
+      height: 24px;
+
+      top: 60%;
+      left: 102%;
+    }
+
+    .pat_:before,
+    .inv_:before {
+      border-color: transparent !important;
+    }
+    .empty>p{
+      color: green !important;
+    }
+    .taken>p{
+      color: red !important;
+    }
+
+  </style>
+</head>
+
+<body>
+  <center>
+    <div id="icp_map">
+      <i id="sel_day_time">ICP MAP</i><b id="teach_result"></b>
+      <div id="the_maps">
+        <div id="nepal_block">
+          <div id="msg">Nepal Block!</div>
+          <table id="np_top">
+            <tr>
+              <td id="LT01" rowspan="2" colspan="2">
+                <p class="roomName">Machha.</p>
+                <div class="sub_texts">
+                  <div class="et_time"></div><div class="yc_name"></div>
+                </div>
+              </td>
+              <td id="Lab02" colspan="2">
+                <p class="roomName">Nilgiri </p>
+                <div class="sub_texts">
+                  <div class="et_time"></div><div class="yc_name"></div>
+                 
+                </div>
+              </td>
+              <td id="LT02" rowspan="2" colspan="2">
+                <p class="roomName">Anna. </p>
+                <div class="sub_texts">
+                  <div class="et_time"></div><div class="yc_name"></div>
+                </div>
+              </td>
+            </tr>
+            <td colspan="2" class="pat_">&nbsp;                <div class="sub_texts">
+              <div class="et_time"></div><div class="yc_name"></div>
+            </div>
+</td>
+            
+            </tr>
+          </table>
+          <br>
+          <table id="nepal_base">
+            <tr>
+              <td id="SR02" colspan="2">
+                <p class="roomName">Begnas</p>
+                <div class="sub_texts">
+                  <div class="et_time"></div><div class="yc_name"></div>
+                </div>
+              </td>
+              <td id="Lab01" colspan="2">
+                <p class="roomName">Gokyo </p>
+                <div class="sub_texts">
+                  <div class="et_time"></div><div class="yc_name"></div>
+                 
+                </div>
+              </td>
+
+              <td id="SR03" colspan="2">
+                <p class="roomName">Rara </p>
+                <div class="sub_texts">
+                  <div class="et_time"></div><div class="yc_name"></div>
+                 
+                </div>
+              </td>
+            </tr>
+            <td id="SR01" colspan="2">
+              <p class="roomName">Fewa </p>
+              <div class="sub_texts">
+                <div class="et_time"></div><div class="yc_name"></div>
+               
+              </div>
+            </td>
+            <td colspan="2" class="pat_">&nbsp;                <div class="sub_texts">
+              <div class="et_time"></div><div class="yc_name"></div>
+            </div>
+</td>
+
+            <td id="SR04" colspan="2">
+              <p class="roomName">Tilicho </p>
+              <div class="sub_texts">
+                <div class="et_time"></div><div class="yc_name"></div>
+               
+              </div>
+            </td>
+
+            </tr>
+          </table>
+          <div class="start"></div>
+        </div>
+        <div id="uk_block">
+          <div id="msg">UK Block!</div>
+
+          <table id="uk_base>">
+            <tr>
+              <td id="meet_rm" colspan="4">
+                <p class="roomName">Meeting room </p>
+                <div class="sub_texts">
+                  <div class="et_time"></div><div class="yc_name"></div>
+                 
+                </div>
+              </td>
+              <td class="inv_" style="border-bottom-color: transparent;">&nbsp;                <div class="sub_texts">
+                <div class="et_time"></div><div class="yc_name"></div>
+              </div>
+</td>
+              <td id="TR03" colspan="2">
+                <p class="roomName">Thames </p>
+                <div class="sub_texts">
+                  <div class="et_time"></div><div class="yc_name"></div>
+                 
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="inv_ pat_" colspan="4" class="pat_">&nbsp;                <div class="sub_texts">
+                <div class="et_time"></div><div class="yc_name"></div>
+              </div>
+</td>
+              <td class="inv_" style="border-bottom-color: transparent;">&nbsp;                <div class="sub_texts">
+                <div class="et_time"></div><div class="yc_name"></div>
+              </div>
+</td>
+              <td id="TR02" colspan="2">
+                <p class="roomName">Stonehenge </p>
+                <div class="sub_texts">
+                  <div class="et_time"></div><div class="yc_name"></div>
+                 
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td id="Lab03" colspan="2">
+                <p class="roomName">LAB </p>
+                <div class="sub_texts">
+                  <div class="et_time"></div><div class="yc_name"></div>
+                 
+                </div>
+              </td>
+              <td class="inv_" colspan="2" style="border-right-color: transparent;">&nbsp;                <div class="sub_texts">
+                <div class="et_time"></div><div class="yc_name"></div>
+              </div>
+</td>
+              <td class="inv_" style="border-left-color: transparent;">&nbsp;                <div class="sub_texts">
+                <div class="et_time"></div><div class="yc_name"></div>
+              </div>
+</td>
+              <td id="TR01" colspan="2">
+                <p class="roomName">Bigben </p>
+                <div class="sub_texts">
+                  <div class="et_time"></div><div class="yc_name"></div>
+                 
+                </div>
+              </td>
+            </tr>
+          </table>
+          <div class="start"></div>
+
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr><br>
+    <u>
+      <h3>Find Empty Rooms / Check Teacher's Availability</h3>
+    </u>
+    <div id="time_slide_div">
+      <div class="slider-wrapper" ondblclick="cur_time()">
+        <input class="slider-input" type="range" value="720" max="1440" step="1">
+        <div class="slider-thumb">
+          <div class="slider-value-container">
+            <p class="slider-value">12:00 PM</p>
+          </div>
+        </div>
+        <svg class="slider-svg" viewBox="0 0 238 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="slider-svg-path" d="M2 34L7.21879 31.0968C78.5901 -8.60616 165.659 -7.50128 236 34V34"
+            stroke="url(#paint0_linear_339_100980)" stroke-width=".25em" stroke-linecap="round"
+            vector-effect="non-scaling-stroke" filter="url(#filter0_i_339_100980)" />
+          <defs>
+            <filter id="filter0_i_339_100980" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha" />
+              <feOffset dy="1" />
+              <feGaussianBlur stdDeviation="0.5" />
+              <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+              <feBlend mode="normal" in2="shape" result="effect1_innerShadow_339_100980" />
+            </filter>
+            <linearGradient id="paint0_linear_339_100980" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#F3D970" />
+              <stop offset="0.2" stop-color="#FCBB5D" />
+              <stop offset="0.4" stop-color="#F6876D" />
+              <stop offset="0.6" stop-color="#934284" />
+              <stop offset="0.8" stop-color="#402862" />
+              <stop offset="1" stop-color="#011549" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <div id="weekdays">
+      <table>
+        <tbody>
+          <tr id="append_here">
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="dropdown" id="search_vendor">
+      <input name="tsearch" type="text" class="dropdown-search" placeholder="Teacher Search...">
+      <ul class="dropdown-list">
+        <li class="not-found" style="display: none;">Results Not Found!</li>
+      </ul>
+    </div>
+    <br><br>
+    <a id="search_btn_a" href="#icp_map"> <button id="search_btn" onclick="search_()" type="submit">Find Empty
+        Rooms</button></a>
+        
+    <!-- add 7 week days -->
+    <script>
+      const append_here = document.getElementById("append_here")
+      const weeks = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+
+      for (const week of weeks) {
+        const tdElement = document.createElement('td');
+
+        const divElement = document.createElement('div');
+        const inputElement = document.createElement('input');
+        inputElement.setAttribute('type', 'radio');
+        inputElement.setAttribute('name', 'samesame');
+        inputElement.setAttribute('id', week);
+        inputElement.setAttribute('value', week);
+
+        const labelElement = document.createElement('label');
+        labelElement.setAttribute('for', week);
+
+        const spanElement = document.createElement('span');
+        spanElement.innerHTML = week;
+
+        labelElement.appendChild(spanElement);
+        divElement.appendChild(inputElement);
+        divElement.appendChild(labelElement);
+
+        tdElement.appendChild(divElement);
+        append_here.appendChild(tdElement);
+      }
+      document.getElementById(weeks[new Date().getDay()]).setAttribute('checked', true);
+
+    </script>
+    <!-- time arc slider -->
+    <script>
+      const sliderWrapper = document.querySelector('.slider-wrapper');
+      const sliderSvg = document.querySelector('.slider-svg');
+      const sliderPath = document.querySelector('.slider-svg-path');
+      const sliderPathLength = sliderPath.getTotalLength();
+      const sliderThumb = document.querySelector('.slider-thumb');
+      const sliderInput = document.querySelector('.slider-input');
+      const sliderMinValue = +sliderInput.min || 0;
+      const sliderMaxValue = +sliderInput.max || 100;
+
+      const time = document.querySelector('.slider-value');
+
+      const updateTime = (timeInMinutes) => {
+        let hours = Math.floor(timeInMinutes / 60);
+        const minutes = timeInMinutes % 60;
+        const isMorning = hours < 12;
+        const formattedHours = String(isMorning ? hours || 12 : (hours - 12 || 12)).padStart(2, '0');
+        const formattedMinutes = String(minutes).padStart(2, '0');
+        time.textContent = `${formattedHours}:${formattedMinutes} ${isMorning || (hours === 24) ? 'AM' : 'PM'}`;
+      }
+
+      const setColor = (progress) => {
+        const colorStops = [
+          { r: 243, g: 217, b: 112 },  // #F3D970
+          { r: 252, g: 187, b: 93 },   // #FCBB5D
+          { r: 246, g: 135, b: 109 },  // #F6876D
+          { r: 147, g: 66, b: 132 },   // #934284
+          { r: 64, g: 40, b: 98 },     // #402862
+          { r: 1, g: 21, b: 73 }        // #011549
+        ];
+        const numStops = colorStops.length;
+
+        const index = (numStops - 1) * progress;
+        const startIndex = Math.floor(index);
+        const endIndex = Math.ceil(index);
+
+        const startColor = colorStops[startIndex];
+        const endColor = colorStops[endIndex];
+
+        const percentage = index - startIndex;
+
+        const [r, g, b] = [Math.round(startColor.r + (endColor.r - startColor.r) * percentage), Math.round(startColor.g + (endColor.g - startColor.g) * percentage), Math.round(startColor.b + (endColor.b - startColor.b) * percentage)];
+
+        sliderThumb.style.setProperty('--color', `rgb(${r} ${g} ${b})`);
+      }
+
+      // updating position could be done with CSS Motion Path instead of absolute positioning but Safari <15.4 doesn’t seem to support it
+      const updatePosition = (progress) => {
+        const point = sliderPath.getPointAtLength(progress * sliderPathLength);
+        const svgRect = sliderSvg.getBoundingClientRect();
+        const scaleX = svgRect.width / sliderSvg.viewBox.baseVal.width;
+        const scaleY = svgRect.height / sliderSvg.viewBox.baseVal.height;
+        sliderThumb.style.left = `${point.x * scaleX * 100 / svgRect.width}%`;
+        sliderThumb.style.top = `${point.y * scaleY * 100 / svgRect.height}%`;
+        const value = Math.round(progress * (sliderMaxValue - sliderMinValue));
+        sliderInput.value = value;
+        updateTime(value);
+        setColor(progress);
+      };
+
+      sliderInput.addEventListener('input', () => {
+        const progress = sliderInput.valueAsNumber / (sliderMaxValue - sliderMinValue);
+        updatePosition(progress);
+      });
+
+      const handlePointerMove = (event) => {
+        const sliderWidth = sliderPath.getBoundingClientRect().width;
+        const pointerX = event.clientX - sliderPath.getBoundingClientRect().left;
+        const progress = Math.min(Math.max(pointerX / sliderWidth, 0), 1);
+        updatePosition(progress);
+      };
+
+      const handlePointerDown = (event) => {
+        const sliderWidth = sliderPath.getBoundingClientRect().width;
+        const pointerX = event.clientX - sliderPath.getBoundingClientRect().left;
+        const progress = Math.min(Math.max(pointerX / sliderWidth, 0), 1);
+        const isThumb = event.target.classList.contains('slider-thumb');
+        if (!isThumb) updatePosition(progress);
+        window.addEventListener('pointermove', handlePointerMove);
+        window.addEventListener('pointerup', () => {
+          window.removeEventListener('pointermove', handlePointerMove);
+        });
+      };
+
+      sliderThumb.addEventListener('pointerdown', handlePointerDown);
+      sliderPath.addEventListener('pointerdown', handlePointerDown);
+
+      updatePosition(sliderInput.valueAsNumber / (sliderMaxValue - sliderMinValue));
+
+      sliderWrapper.addEventListener('selectstart', (event) => {
+        event.preventDefault();
+      })
+    </script>
+    <!-- cur time update -->
+    <script>
+      function cur_time() {
+        now = new Date();
+        updatePosition((((now.getHours() * 60) + now.getMinutes()) / 1440))
+      }
+      cur_time();
+    </script>
+    <!-- add teachers to options -->
+    <script>
+      const teachers = ['Mr. Kiran Kunwar', 'Ms. Sajena Dwa', 'Mr. Ashish Subedi', 'Mr. Arjun Sapkota', 'Mr. Jeevan Pahari', 'Mr. Jeevan Pahari ', 'Mr. Anil Rai', 'Mr. Vikram Rana', 'Mr. Sushil Paudel', 'Mr. Mission Babu Sapkota', 'Mr. Amar Khanal', 'Mr. Sandip Dhakal', 'Mr. Krishna Wagle', 'Mr. Achyut Parajuli', 'Mr. Ashish Lamichhane', 'Mr. Idu Nepali', 'Mr. Subash Sapkota Hamal', 'Mr. Abhinav Dahal', 'Ms. Pratibha Gurung', 'Mr. Sandeep Gurung', 'Mr. Midhir Rana', 'Mr. Sandip Adhikari', 'Mr. Sunil Thapa', 'Mr. Prasant Adhikari', 'Mr. Mahesh Dhungana ', 'Mr. Nabaraj Adhikari']
+
+      var dropdownList = document.getElementsByClassName("dropdown-list")[0];
+      for (var teacher of teachers) {
+
+        const liElement = document.createElement('li');
+        liElement.setAttribute('data-id', teacher);
+        liElement.innerText = teacher;
+        dropdownList.appendChild(liElement);
+        // <li data-id="1">orange</li>
+      }
+    </script>
+
+    <!-- teacher search -->
+    <script>
+      const search_btn = document.getElementById("search_btn");
+      // const search_btn_a = document.getElementById("search_btn_a");
+      function toogleSB(a = null) {
+        if (a) {
+          search_btn.innerText = "Check Teacher's Availability";
+          // search_btn_a.href="#teach_result";
+        } else {
+          search_btn.innerText = "Find Empty Rooms";
+          // search_btn_a.href = "#icp_map";
+        }
+      }
+      $(document).ready(function () {
+
+        function initializeDropdown(dropdown) {
+          var searchInput = dropdown.find(".dropdown-search");
+          var dropdownList = dropdown.find(".dropdown-list");
+          var listItems = dropdownList.find("li:not(.not-found)");
+
+          searchInput.on("input", function () {
+            var filter = $(this).val().toLowerCase();
+            if (filter.length == 0) { toogleSB(); }
+            var matchCount = filterResults(listItems, filter);
+            toggleDropdownList($(this), filter, matchCount);
+          });
+
+          searchInput.on("focus", function () {
+            var filter = $(this).val().toLowerCase();
+            var matchCount = countMatches(listItems, filter);
+            toggleDropdownList($(this), filter, matchCount);
+          });
+
+          searchInput.on("blur", function () {
+            var inputText = $(this).val().toLowerCase();
+            var itemExists = false;
+
+            listItems.each(function () {
+              if ($(this).text().toLowerCase() === inputText) {
+                itemExists = true;
+                return false;
+              }
+            });
+
+            if (!itemExists) {
+              $(this).val("");
+              filterResults(listItems, "");
+              toggleDropdownList($(this), "", 0);
+              toogleSB();
+            }
+          });
+
+          dropdownList.on("mousedown", "li:not(.not-found)", function () {
+            var selectedItem = $(this).text();
+            var selectedItemId = $(this).data("id");
+            searchInput.val(selectedItem);
+            dropdownList.hide();
+            handleItemSelected(selectedItem, selectedItemId);
+          });
+
+          searchInput.on("keydown", function (event) {
+            if (event.key === "Enter") {
+              event.preventDefault();
+              var firstVisibleItem = dropdownList.find("li:not(.not-found):visible").first();
+              if (firstVisibleItem.length) {
+                var selectedItem = firstVisibleItem.text();
+                var selectedItemId = firstVisibleItem.data("id");
+                searchInput.val(selectedItem);
+                dropdownList.hide();
+                handleItemSelected(selectedItem, selectedItemId);
+                //        search_btn.innerText="Check Teacher's Availability";
+              }
+            }
+          });
+
+          searchInput.on("keyup", function (event) {
+            if (event.key === "Escape") {
+              toogleSB();
+              searchInput.val("");
+              filterResults(listItems, "");
+              toggleDropdownList(searchInput, "", 0);
+            }
+          });
+
+          function filterResults(listItems, filter) {
+            var limit = 10;
+
+            var matchCount = 0;
+            listItems.each(function () {
+              var match = $(this).text().toLowerCase().indexOf(filter) > -1;
+              $(this).toggle(match);
+              if (match) {
+                matchCount++;
+                if (matchCount > limit) {
+                  $(this).hide();
+                  matchCount--;
+                }
+              }
+            });
+            return matchCount;
+          }
+
+
+          function countMatches(listItems, filter) {
+            var matchCount = 0;
+            listItems.each(function () {
+              if ($(this).text().toLowerCase().indexOf(filter) > -1) matchCount++;
+            });
+            return matchCount;
+          }
+
+          function toggleDropdownList(inputElement, filter, matchCount) {
+            var notFoundItem = dropdownList.find(".not-found");
+
+            if (filter.length > 0 && matchCount > 0) {
+              dropdownList.show();
+              notFoundItem.hide();
+            } else if (filter.length > 0 && matchCount === 0) {
+              toogleSB();
+              dropdownList.show();
+              notFoundItem.show();
+            } else {
+              dropdownList.hide();
+              //search_btn.innerText="Check Teacher's Availability";
+            }
+          }
+        }
+
+        function handleItemSelected(item, itemId) {
+          toogleSB(1);
+
+          console.log("Item selected:", item, "with ID:", itemId);
+          // Do something with the selected item and its ID
+        }
+        initializeDropdown($("#search_vendor"));
+      });
+    </script>
+
+    <!-- search_() -->
+    <script>
+      const slider_value_container = document.getElementsByClassName("slider-value-container")[0]
+      const dropdown_search = document.getElementsByClassName("dropdown-search")[0]
+      const teach_result = document.getElementById("teach_result")
+      const sel_day_time = document.getElementById("sel_day_time");
+      const td_rooms=document.getElementById("the_maps").getElementsByTagName("td")
+function decor_room(room,time,yc_name=null,addClass='empty'){
+  console.log(room)
+            if(room!="Meeting Room"){
+              room=room.split('-')[0].replace(' ','');
+            }else{
+              room="meet_rm"
+            }
+            var tdElem=document.getElementById(room);
+            tdElem.classList.add(addClass);
+            if (time){
+              if(yc_name){
+                tdElem.getElementsByClassName("yc_name")[0].innerHTML+=yc_name + " @ " + time+"<br>";
+              }else{
+                tdElem.getElementsByClassName("et_time")[0].innerText=time+" min";                
+              }
+            }else{
+              tdElem.getElementsByClassName("et_time")[0].innerText="_";
+            }
+            
+}
+function process_teach(json) {
+        console.log(json);
+        if (json.room == null) {
+          teach_result.innerHTML = dropdown_search.value + " is free atm. You can visit them in teacher's room."
+        } else {
+          teach_result.innerHTML = dropdown_search.value + " is taking class in " + json.room + " till " + json.time;
+        }
+        teach_result.innerHTML += " <h3>Their schedule for the day:</h3>"
+        for(var clas of json.schedule){
+            console.log(clas);
+            decor_room(clas[0],clas[2],yc_name=clas[1])
+        }
+        // decor_room(room,time,"yc_name")
+      }
+
+      function process_room(json) {
+        console.log(json);
+        teach_result.innerHTML = "Taken/Empty Rooms:"
+        var empty_rooms=json.empty_rooms
+        var taken_rooms=json.taken_rooms
+        for (var empty_room in empty_rooms){
+          decor_room(empty_room,empty_rooms[empty_room])
+        }
+        for (var taken_room in taken_rooms){
+          decor_room(taken_room,taken_rooms[taken_room],yc_name=null,addClass="taken")
+        }
+      }
+
+      function xhr_process(data, mode = "teach") {
+        var xhr = new XMLHttpRequest();
+        var url = "http://127.0.0.1:10009/";
+        xhr.open("POST", url, true);
+        // xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            console.log(xhr.responseText)
+
+            var json = JSON.parse(xhr.responseText);
+            if (mode == "teach") {
+              process_teach(json);
+            } else {
+              process_room(json)
+            }
+          }
+        };
+        xhr.send(data);
+      }
+
+      function clear_map(){
+        sel_day_time.innerText="ICP MAP"
+        teach_result.innerText = "";
+        for(var room of td_rooms){
+          console.log(room);
+          room.classList.remove("taken");
+          room.classList.remove("empty");
+          room.getElementsByClassName("et_time")[0].innerText="";
+          room.getElementsByClassName("yc_name")[0].innerText="";
+        }
+      }
+      function search_() {
+        // clear past results on new search.
+        // clear map
+        clear_map()
+        var dayz = document.querySelectorAll('input[name="samesame"]:checked')[0].value
+        sel_day_time.innerText = dayz + ", " + slider_value_container.innerText + " : ";
+        if (search_btn.innerText.toLowerCase().includes("room")) {
+          //var data=JSON.stringify({"day":dayz, "time": slider_value_container.innerText});
+          var data = "day=" + dayz + "&time=" + slider_value_container.innerText;
+          xhr_process(data, "room")
+        } else {
+          if (dayz == "SAT") {
+            // clear map.
+            teach_result.innerText = dropdown_search.value + " is most prolly chilling at thier home since it is Saturday!"
+            return
+          }
+          //var data=JSON.stringify({"day": dayz, "time": slider_value_container.innerText,"teach":dropdown_search.value});
+          var data = "day=" + dayz + "&time=" + slider_value_container.innerText + "&teach=" + dropdown_search.value;
+          xhr_process(data)
+        }
+      }
+    </script>
+</body>
+
+</html>
