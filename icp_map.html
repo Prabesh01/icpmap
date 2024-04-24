@@ -978,7 +978,7 @@ function process_teach(json) {
 
       function xhr_process(data, mode = "teach") {
         var xhr = new XMLHttpRequest();
-        var url = "http://127.0.0.1:10009/";
+        var url = "/";
         xhr.open("POST", url, true);
         // xhr.setRequestHeader("Content-Type", "application/json");
         xhr.onreadystatechange = function () {

@@ -80,6 +80,15 @@ class Redirect(SimpleHTTPRequestHandler):
         self.send_header('Access-Control-Allow-Methods', 'POST, OPTIONS')
         self.end_headers()
         return
+    
+    def do_GET(self):
+        if self.path=="/":
+            self.send_response(200)
+            self.send_header('Content-type', 'text/html')
+            self.end_headers()
+            with open('index.html', 'rb') as file:
+                self.wfile.write(file.read())   
+            return
 
     def do_POST(self):
         if self.path=="/":
