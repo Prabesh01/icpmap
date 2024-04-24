@@ -89,6 +89,16 @@ class Redirect(SimpleHTTPRequestHandler):
             with open('index.html', 'rb') as file:
                 self.wfile.write(file.read())   
             return
+        
+        elif '/imgs/' in self.path:
+            self.send_response(200)
+            self.send_header('Content-type', 'image/'+self.path.split('.')[-1])
+            self.end_headers()
+            try:
+                with open('imgs/'+self.path.split('/')[-1], 'rb') as file:
+                    self.wfile.write(file.read())
+            except: return
+            return
 
     def do_POST(self):
         if self.path=="/":
