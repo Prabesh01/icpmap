@@ -103,7 +103,7 @@ class Redirect(SimpleHTTPRequestHandler):
         return
     
     def login_redir(self):
-        self.send_response(301)
+        self.send_response(302)
         self.send_header('Location', "/login")
         self.end_headers()
         return
@@ -119,7 +119,7 @@ class Redirect(SimpleHTTPRequestHandler):
             if self.path!="/login": self.login_redir()
             return
         if self.path=="/login":
-            self.send_response(301)
+            self.send_response(302)
             self.send_header('Location', "/")
             self.end_headers()
             return
@@ -141,6 +141,14 @@ class Redirect(SimpleHTTPRequestHandler):
                     self.wfile.write(file.read())
             except: return
             return
+        
+        if self.path=="/logout":
+            self.send_response(302)
+            self.send_header('Set-Cookie', "sid=_")
+            self.send_header('Location', "/login")
+            self.end_headers()
+            return
+
         self.cookie_check()
 
         routes = {
@@ -202,8 +210,9 @@ class Redirect(SimpleHTTPRequestHandler):
                 return
             # self.populate_db(r.json()["result"]["accessToken"])
             self.cookie = "sid={}".format(encode_jwt(r.json()["result"]["userId"],username))
-            self.send_response(301)
+            self.send_response(302)
             self.send_header('Set-Cookie', self.cookie)
+            self.send_header('Set-Cookie', "user={}".format(username))
             self.send_header('Location', "/")
             self.end_headers()
             return

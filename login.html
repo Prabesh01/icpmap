@@ -36,9 +36,11 @@ Borrowed design from: https://access.heropowered.com/school/login
       <div class="columns large-9 appStore">
         <br />
         <!-- <img src="https://fserver.icp.edu.np/images/logo1.png" width="150" height="60" alt="Schools" style="margin-right: 15px; float: left; margin-top: 7px;" /> -->
-        <h2>icpdev.live Access</h2>
+        <h2><script>document.write(window.location.host);</script> Access</h2>
         <p>How does this work?</p>
-        <p>I'm glad you asked. When you login here, our backend tries to login to mst with the credentials you provided. Once logged in, we make call to mst api using your account's auth token to fetch certain data. We save your <a href="https://api.mysecondteacher.com.np/api/students/profile" target="_blank">profile info</a> into our student lookup database. Additionally, we make requests to mst chat api and fetch other members in your batch (userId, username, role) to populate student lookup database.</p>
+        <p>I'm glad you asked. When you login here, our backend tries to login to mst with the credentials you provided. 
+          <!-- Once logged in, we make call to mst api using your account's auth token to fetch certain data. We save your <a href="https://api.mysecondteacher.com.np/api/students/profile" target="_blank">profile info</a> into our student lookup database. Additionally, we make requests to mst chat api and fetch other members in your batch (userId, username, photoUrl) to populate student lookup database. -->
+          </p>
         <p id="legacy-links">By signing in, you agree to the above mentioned use of your data.</p>
       </div>
     </div>
