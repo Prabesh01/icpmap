@@ -9,14 +9,11 @@
 import datetime
 from datetime import timedelta
 import os.path
-import time
-import sys
 
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
-from googleapiclient.errors import HttpError
 
 SCOPES = ["https://www.googleapis.com/auth/calendar"]
 
@@ -82,8 +79,7 @@ c4_auto="c_adcca5e09d8d08e8d7013a6ec34dcc963200ecfa85edfb489e23cfcaa186e28a@grou
 
 def read_xlsx():
 
-    dataframe = openpyxl.load_workbook("Schedule.xlsx") # /home/prabesh/Downloads/Class 
-    #sheet="Year 1 BIC"
+    dataframe = openpyxl.load_workbook("Schedule.xlsx")
     
     for sheet in dataframe.sheetnames:
 
@@ -99,8 +95,6 @@ def read_xlsx():
               if val=="SUN":cont=True
               if not cont: continue
               if val==None: break
-              # if i == 1: 
-              #    if val==None: continue
               if i==0: individual_class["day"]=val.strip()
               elif i==1: individual_class["stime"],individual_class["etime"]=val.strip().split(' - ')
               elif i==6: individual_class["code"]=val.strip()
@@ -142,7 +136,6 @@ static_cal={'Year 1 BBA ( Spring) - B2': [[['Business Law and Ethics', ' Thames'
 def add_classes():
     for sheet in classes:
       print(sheet)
-      if sheet!="Year 1 BIC":continue
       clase=classes[sheet]
       for clas in clase:
         day_offset=weeks[clas["day"]]-1
@@ -156,7 +149,6 @@ def add_classes():
           sedate=(datetime.strptime(y2_3_week1, "%Y/%m/%d")+ timedelta(days=day_offset)).strftime("%Y-%m-%d")
           until=y2_3_until
         for section in clas["sections"]:
-          if sheet=="Year 1 BIC" and section=="C4": continue
           cal_name=sheet+" - "+section
           cal_name=cal_name.strip()
           if not cal_name in static_cal: static_cal[cal_name]=[[],[],[],[],[],[]]
@@ -167,12 +159,10 @@ def add_classes():
           'description': clas["code"]+'\nBy '+clas["teacher"],
           'start': {
               'dateTime': sedate+"T"+datetime.strptime(clas["stime"], "%I:%M %p").time().strftime("%H:%M")+":00+05:45",
-              #'date': '2024-04-15',
               'timeZone': 'Asia/Kathmandu',
           },
           'end': {
               'dateTime': sedate+"T"+datetime.strptime(clas["etime"], "%I:%M %p").time().strftime("%H:%M")+":00+05:45",
-              #'date': '2024-04-15',
               'timeZone': 'Asia/Kathmandu',
           },
           'recurrence': [
@@ -180,10 +170,9 @@ def add_classes():
           ],
           }
           static_cal[cal_name][day_offset].append([clas["module"],event["location"],clas["stime"]])
-          # print(event)
+          print(event)
           #continue
           event = service.events().insert(calendarId=cal_ids[cal_name], body=event).execute()
-          print(event)
 
 #add_classes()
 # print(static_cal)
@@ -212,20 +201,17 @@ def del_classes_when_events():
   # 2011-06-03T10:00:00-07:00
   holiday_end=datetime.strptime(holiday_range.split(' - ')[1], "%Y/%m/%d")
   for sheet in sections:
-    if sheet!="Year 1 BIC":continue
     print(sheet)
     def del_event_all_sections(sdate,edate=None):
       #sdate='T'.join(str(sdate).split())+"+05:45"
       if not edate: edate=sdate
       edate=edate+timedelta(days=1)
       for section in sections[sheet]:
-        if sheet=="Year 1 BIC"  and section=="C4": continue
         cal_name=sheet+" - "+section
         cal_name=cal_name.strip()
         cal_id=cal_ids[cal_name]
         page_token = None
         while True:
-          #events = service.events().list(calendarId=cal_id, pageToken=page_token).execute()
           events = service.events().list(calendarId=cal_id, timeMin='T'.join(str(sdate).split())+"+05:45",timeMax='T'.join(str(edate).split())+"+05:45", timeZone="UTC+05:45").execute()
           recurrence_exceptions = []
           current_date=sdate
@@ -259,9 +245,7 @@ def del_classes_when_events():
             print(event)
             #return
             updated_event = service.events().update(calendarId=cal_id,eventId=event["id"],body=event).execute()
-            # print(updated_event)
             # delete only current instance not al occurances
-          #  service.events().delete(calendarId=cal_id, eventId=event["id"]).execute()
           page_token = events.get('nextPageToken')
           if not page_token:
             break
@@ -317,14 +301,12 @@ def add_events():
         }
 
         for section in sections[sheet]:
-          if sheet=="Year 1 BIC" and section=="C4": continue
           cal_name=sheet+" - "+section
           cal_name=cal_name.strip()
           print(event)
           #return
           event = service.events().insert(calendarId=cal_ids[cal_name], body=event).execute()
 
-      if sheet!="Year 1 BIC":continue
       week_cnt_sec=0
       has_sem_break_range=False
       week_cnt_pri=1
@@ -417,16 +399,11 @@ def add_events():
 #read_xlsx()
 # print("------------------------\nADD CLASSES\n-----------------------------")
 # add_classes()
-
 # delete_events_when_testing()
 # print("------------------------\nDEL CLASSES\n-----------------------------")
 # del_classes_when_events()
 # print("------------------------\nADD EVENTS\n-----------------------------")
 # add_events()
-
-# start from week 1
-# exam week whole week
-
 
 def add_test_event():
     event = {
