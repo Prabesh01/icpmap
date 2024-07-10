@@ -26,7 +26,7 @@ flow = google_auth_oauthlib.flow.Flow.from_client_config(
     client_config,
     scopes=['openid','https://www.googleapis.com/auth/userinfo.email','https://www.googleapis.com/auth/userinfo.profile'])
 
-flow.redirect_uri = 'http://127.0.0.1:5000/login'
+flow.redirect_uri = 'https://icp.cote.ws/login'
 
 app = flask.Flask(__name__)
 app.secret_key = str(uuid.uuid4())
