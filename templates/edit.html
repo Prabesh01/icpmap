@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Edit Schedule</title>
+      <style>
+         .table-inputs { 
+         border-spacing:0; 
+         border-collapse:collapse; }
+         .table-inputs th { 
+         padding: 0 0.75rem;
+         line-height: 1.75rem; 
+         font-weight:normal; 
+         font-size:12px; 
+         border:1px solid #d2d2d2; }
+         .table-inputs td { 
+         background-color:#fff;
+         border:1px solid #d2d2d2;
+         padding:0; }
+         .table-inputs input { 
+         border:0; 
+         background-color:transparent; } 
+         /* dropdown */
+         .ui-timepicker-container {
+         position: absolute;
+         overflow: hidden;
+         box-sizing: border-box
+         }
+         .ui-timepicker,
+         .ui-timepicker-viewport {
+         box-sizing: content-box;
+         height: 205px;
+         display: block;
+         margin: 0
+         }
+         .ui-timepicker {
+         list-style: none;
+         padding: 0 1px;
+         text-align: center
+         }
+         .ui-timepicker-viewport {
+         padding: 0;
+         overflow: auto;
+         overflow-x: hidden
+         }
+         .ui-timepicker-standard {
+         font-size: 12px; font-family:sans-serif;
+         list-style: none;
+         background-color: #fff;
+         background-clip: padding-box;
+         border-radius: 0 0 3px 3px;
+         box-shadow: 0 0 0 .75px #bbb, 2px 1.5px 3px rgba(0,0,0,.16);
+         margin: 0; padding:0;
+         }
+         .ui-timepicker-standard a {
+         display:block;  
+         background:transparent; filter:none; border:none; 
+         width:100%;
+         text-align: left; 
+         border-radius:0;
+         font-size: 11.5px;
+         padding: 5px 10px; 
+         line-height:18px;
+         white-space:nowrap;
+         text-decoration: none; 
+         color:inherit;
+         }
+         /*Note: do not delete - breaks arrow keys (wut wut) */
+         .ui-timepicker-standard .ui-state-hover {
+         box-shadow:none; 
+         border:none; 
+         text-decoration: none;
+         background-color: #555; 
+         color:#fff; 
+         }
+         .ui-timepicker-standard .ui-menu-item {
+         margin: 0;
+         padding: 0
+         }
+         .ui-timepicker-hidden {
+         display: none
+         }
+         .ui-timepicker-no-scrollbar .ui-timepicker {
+         border: none
+         }
+         #title {
+            display: block;
+            margin: 0 auto;
+            font-size: 2em;
+            padding: 0.5em;
+            text-align: center;
+        }         
+        #add {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: lightgreen;
+            border: none;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        .event {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .remove-btn {
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-left: 10px;
+            border-radius: 50%;
+        }      
+        .back-icon {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  position:absolute;
+  top: 15px;
+  left: 15px;
+}
+.back-icon__row {
+  height: 10px;
+  width: 30px;
+  display: flex;
+}
+.back-icon__elem {
+  height: 8px;
+  width: 8px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  background: red;
+  border-radius: 38%;
+}  
+      </style>
+   </head>
+   <body>
+    <a class="back-icon" href="/">
+        <div class="back-icon__row">
+          <div class="back-icon__elem"></div>
+          <div class="back-icon__elem"></div>
+          <div class="back-icon__elem"></div>
+        </div>
+         <div class="back-icon__row">
+          <div class="back-icon__elem"></div>
+          <div class="back-icon__elem"></div>
+          <div class="back-icon__elem"></div>
+        </div>
+        <div class="back-icon__row">
+          <div class="back-icon__elem"></div>
+          <div class="back-icon__elem"></div>
+          <div class="back-icon__elem"></div>
+        </div>
+      </a>
+
+      <form method="post" style="text-align:center;">
+         <input type="text" name="title" id="title" placeholder="Title" value="{{ data.title }}" required>
+         <br>
+         <div id="events">
+                        {% for event in data.events %}
+               <div class="event">
+                  <select name="day">
+                    {% for day in days %}
+                    <option value="{{ loop.index }}" {% if loop.index == event.day %}selected{% endif %}>{{ day }}</option>
+                {% endfor %}
+                    </select>
+                  <table class="table-inputs">
+                     <tbody>
+                        <tr>
+                           <td style="width: 33.33%;">
+                              <input type="text" class="hasTimepicker start" name="stime" placeholder="hh:mm" value="{{ event.stime }}">
+                           </td>
+                           <td style="width: 33.33%;">
+                              <input type="text" class="hasTimepicker end" name="etime" placeholder="hh:mm" value="{{ event.etime }}">
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <input type="text" name="name" placeholder="*note" value="{{ event.name }}">
+                  <button type="button" class="remove-btn">X</button>
+               </div>
+            {% endfor %}
+         </div>
+         <button id="add">+</button><br><br>
+         <button type="submit">Save</button>
+         <button name="delete" type="submit">Delete</button>
+      
+      </form>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+      <script>
+         const events_div=document.getElementById('events');
+         const days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Satuday"]
+         document.getElementById('add').addEventListener('click', function(event) {
+            event.preventDefault();
+            add_event();
+        });
+         function add_event(){
+             let event = document.createElement("div");
+             event.setAttribute("class", "event");
+             event.appendChild(days_dropdown());
+             event.appendChild(time_picker());
+         
+             let name = document.createElement("input");
+             name.setAttribute("name", "name");
+             name.setAttribute("placeholder", "*note");
+             event.appendChild(name);
+         
+
+             let remove_btn = document.createElement("button");
+            remove_btn.setAttribute("class", "remove-btn");
+            remove_btn.innerText = "X";
+            remove_btn.addEventListener('click', function() {
+                event.remove();
+            });
+            event.appendChild(remove_btn);
+
+             events_div.appendChild(event);
+         }
+         
+         function days_dropdown(){
+             let dropdown = document.createElement("select");
+             dropdown.setAttribute("name","day")
+             days.forEach(function(val, index) {
+                 let option = document.createElement("option");
+                 option.value=index + 1; 
+                 option.innerHTML = val;
+                 dropdown.appendChild(option);
+             })        
+             return dropdown;
+         }
+         function time_picker() {
+                 let table = document.createElement("table");
+                 table.setAttribute("class", "table-inputs");
+         
+                 let tbody = document.createElement("tbody");
+                 let tr = document.createElement("tr");
+         
+                 let td1 = document.createElement("td");
+                 td1.style.width = "33.33%";
+                 let input1 = document.createElement("input");
+                 input1.type = "text";
+                 input1.setAttribute("class", "hasTimepicker start");
+                 input1.setAttribute("name", "stime");
+                 input1.placeholder = "hh:mm";
+                 td1.appendChild(input1);
+         
+                 let td2 = document.createElement("td");
+                 td2.style.width = "33.33%";
+                 let input2 = document.createElement("input");
+                 input2.type = "text";
+                 input2.setAttribute("class", "hasTimepicker end");
+                 input2.setAttribute("name", "etime");
+                 input2.placeholder = "hh:mm";
+                 td2.appendChild(input2);
+         
+         
+                 tr.appendChild(td1);
+                 tr.appendChild(td2);
+                 tbody.appendChild(tr);
+                 table.appendChild(tbody);
+         
+                 setTimeout(function() {
+                     $('.hasTimepicker.start').timepicker({
+                         interval: 15,
+                         dropdown: true,
+                     });
+         
+                     $('.hasTimepicker.end').timepicker({
+                         interval: 15,
+                         dropdown: true,
+                     });
+                 }, 0);
+         
+                 return table;
+             }
+         
+             function sumHours(row) {
+                 let $begin = row.find('.hasTimepicker.start');
+                 let $end = row.find('.hasTimepicker.end');
+                 let $input = row.find('.timeSum');
+         
+                 var time1 = $begin.timepicker('getTime');
+                 var time2 = $end.timepicker('getTime');
+         
+                 if (time1 && time2) {
+                     let v;
+                     if (time1 > time2) {
+                         v = new Date(time2);
+                         v.setDate(v.getDate() + 1);
+                     } else {
+                         v = time2;
+                     }
+         
+                     var diff = (Math.abs(v - time1) / 36e5).toFixed(2);
+                     $input.val(diff);
+                 } else {
+                     $input.val('');
+                 }
+             }    
+      </script>
+   </body>
+</html>

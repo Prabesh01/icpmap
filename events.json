@@ -1,0 +1,72 @@
+[
+    {
+        "title": "[C4-C9] July 8-12 | Java Collection Framework",
+        "updated": "2024-07-11T00:09:01.969687+05:45",
+        "creator": "prabesh.sapkota.a23",
+        "events": [
+            {
+                "day": 2,
+                "stime": "11:00 AM",
+                "etime": "12:00 PM",
+                "name": "Lecture @ Annapurna"
+            },
+            {
+                "day": 3,
+                "stime": "12:00 PM",
+                "etime": "01:00 PM",
+                "name": "Practical @ Machhapuchhre"
+            },
+            {
+                "day": 5,
+                "stime": "11:00 AM",
+                "etime": "12:00 PM",
+                "name": "Lecture @ Annapurna"
+            },
+            {
+                "day": 6,
+                "stime": "12:30 PM",
+                "etime": "01:30 PM",
+                "name": "Practical @ Tilicho"
+            }
+        ],
+        "id": "09640f41-f78d-4924-91f8-a1a34c79bc86"
+    },
+    {
+        "title": "Game Development Class",
+        "updated": "2024-07-11T00:11:44.066309+05:45",
+        "creator": "prabesh.sapkota.a23",
+        "events": [
+            {
+                "day": 2,
+                "stime": "08:30 AM",
+                "etime": "09:30 AM",
+                "name": "Nilgiri"
+            },
+            {
+                "day": 3,
+                "stime": "08:30 AM",
+                "etime": "09:30 AM",
+                "name": "Machhapuchhre"
+            },
+            {
+                "day": 4,
+                "stime": "08:30 AM",
+                "etime": "09:30 AM",
+                "name": "Machhapuchhre"
+            },
+            {
+                "day": 5,
+                "stime": "08:30 AM",
+                "etime": "09:30 AM",
+                "name": "Machhapuchhre"
+            },
+            {
+                "day": 6,
+                "stime": "08:30 AM",
+                "etime": "09:30 AM",
+                "name": "Nilgiri"
+            }
+        ],
+        "id": "d101e6bf-b5b1-4684-b826-d6e52cf5b0ed"
+    }
+]
