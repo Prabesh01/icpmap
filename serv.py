@@ -42,7 +42,7 @@ def login():
     if 'user' in flask.session:
         return flask.redirect(flask.url_for('get_home'))
 
-    message=''
+    authorization_url, state = flow.authorization_url(access_type='online')
     if flask.request.args.get('code'):
         flow.fetch_token(code=flask.request.args.get('code'))
         json_creds = flow.credentials.to_json()
@@ -58,7 +58,6 @@ def login():
         flask.session['user'] = email_name
         return flask.redirect(flask.url_for('get_home'))
     else:
-        authorization_url, state = flow.authorization_url(access_type='online')
         return flask.render_template_string(login_html,url=authorization_url)
 
 @app.route('/logout')
