@@ -225,6 +225,11 @@ def get_home(user):
 
     return flask.render_template('home.html', data=events, user=user, admins=admins)
 
+@app.get('/events.json')
+def get_json():
+    events = get_data()
+    return events
+
 TIME_RANGE_START = 7 * 60  # 7 AM in minutes
 TIME_RANGE_END = 19 * 60   # 7 PM in minutes
 MIN_DURATION = 60          # Minimum duration in minutes
