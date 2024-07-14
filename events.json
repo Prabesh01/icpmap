@@ -1,169 +1,206 @@
 [
-    {
-        "creator": "prabesh.sapkota.a23",
-        "events": [
-          {
-            "day": 2,
-            "etime": "12:00 PM",
-            "name": "Lecture @ Annapurna",
-            "stime": "11:00 AM"
-          },
-          {
-            "day": 3,
-            "etime": "11:30 AM",
-            "name": "Practical @ Begnas",
-            "stime": "10:30 AM"
-          },
-          {
-            "day": 5,
-            "etime": "12:00 PM",
-            "name": "Lecture @ Annapurna",
-            "stime": "11:00 AM"
-          },
-          {
-            "day": 6,
-            "etime": "12:00 PM",
-            "name": "Practical @ Rara",
-            "stime": "11:00 AM"
-          }
-        ],
-        "id": "12676a23-e167-4b7e-b71c-7747ac3c7018",
-        "title": "[C1-C3] July 8-12 | Java Collection Framework",
-        "updated": "2024-07-11T17:12:25.381361+05:45"
-    },    
-    {
-      "creator": "prabesh.sapkota.a23",
-      "events": [
-        {
-          "day": 2,
-          "etime": "12:00 PM",
-          "name": "Lecture @ Annapurna",
-          "stime": "11:00 AM"
-        },
-        {
-          "day": 3,
-          "etime": "01:00 PM",
-          "name": "Practical @ Machhapuchhre",
-          "stime": "12:00 PM"
-        },
-        {
-          "day": 5,
-          "etime": "12:00 PM",
-          "name": "Lecture @ Annapurna",
-          "stime": "11:00 AM"
-        },
-        {
-          "day": 6,
-          "etime": "01:30 PM",
-          "name": "Practical @ Tilicho",
-          "stime": "12:30 PM"
-        }
-      ],
-      "id": "09640f41-f78d-4924-91f8-a1a34c79bc86",
-      "title": "[C4-C9] July 8-12 | Java Collection Framework",
-      "updated": "2024-07-11T00:09:01.969687+05:45"
-    },
-    {
-        "creator": "prabesh.sapkota.a23",
-        "events": [
-          {
-            "day": 2,
-            "etime": "08:30 AM",
-            "name": "Annapurna",
-            "stime": "07:30 AM"
-          },
-          {
-            "day": 3,
-            "etime": "08:30 AM",
-            "name": "Annapurna",
-            "stime": "07:30 AM"
-          },
-          {
-            "day": 4,
-            "etime": "08:30 AM",
-            "name": "Machhapuchhre",
-            "stime": "07:30 AM"
-          },
-          {
-            "day": 5,
-            "etime": "08:30 AM",
-            "name": "Machhapuchhre",
-            "stime": "07:30 AM"
-          },
-          {
-            "day": 6,
-            "etime": "08:30 AM",
-            "name": "Machhapuchhre",
-            "stime": "07:30 AM"
-          }
-        ],
-        "id": "d101e6bf-b5b1-4684-b826-d6e52cf5b0ed",
-        "title": "July 9-20 | Game Development Class",
-        "updated": "2024-07-11T16:53:49.422507+05:45"
-    },
-    {
-        "creator": "prabesh.sapkota.a23",
-        "events": [
-          {
-            "day": 2,
-            "etime": "12:00 PM",
-            "name": "Lecture @ Annapurna",
-            "stime": "11:00 AM"
-          },
-          {
-            "day": 3,
-            "etime": "11:30 AM",
-            "name": "Lab @ Begnas",
-            "stime": "10:30 AM"
-          },
-          {
-            "day": 5,
-            "etime": "12:00 PM",
-            "name": "Lecture @ Annapurna",
-            "stime": "11:00 AM"
-          },
-          {
-            "day": 6,
-            "etime": "12:00 PM",
-            "name": "Lab @ Rara",
-            "stime": "11:00 AM"
-          }
-        ],
-        "id": "68b855d4-05f5-4197-b47f-ca424d728636",
-        "title": "[C1-C3] July 15-31 | Java Spring Boot",
-        "updated": "2024-07-12T12:14:05.265705+05:45"
-    },        
-    {
-      "creator": "prabesh.sapkota.a23",
-      "events": [
-        {
-          "day": 2,
-          "etime": "12:00 PM",
-          "name": "Lecture @ Annapurna",
-          "stime": "11:00 AM"
-        },
-        {
-          "day": 3,
-          "etime": "01:30 PM",
-          "name": "Lab @ Machhapuchhre",
-          "stime": "12:30 PM"
-        },
-        {
-          "day": 5,
-          "etime": "12:00 PM",
-          "name": "Lecture @ Annapurna",
-          "stime": "11:00 AM"
-        },
-        {
-          "day": 6,
-          "etime": "01:30 PM",
-          "name": "Lab @ Tilicho",
-          "stime": "12:30 PM"
-        }
-      ],
-      "id": "4caee568-d6fb-41c4-9769-11353fbca3be",
-      "title": "[C4-C9] July 15-31 | Java Spring Boot",
-      "updated": "2024-07-12T12:04:37.920652+05:45"
-    }
-  ]
-  
+  {
+    "creator": "prabesh.sapkota.a23",
+    "events": [
+      {
+        "day": 2,
+        "etime": "12:00 PM",
+        "name": "Lecture @ Annapurna",
+        "stime": "11:00 AM"
+      },
+      {
+        "day": 3,
+        "etime": "11:30 AM",
+        "name": "Practical @ Begnas",
+        "stime": "10:30 AM"
+      },
+      {
+        "day": 5,
+        "etime": "12:00 PM",
+        "name": "Lecture @ Annapurna",
+        "stime": "11:00 AM"
+      },
+      {
+        "day": 6,
+        "etime": "12:00 PM",
+        "name": "Practical @ Rara",
+        "stime": "11:00 AM"
+      }
+    ],
+    "id": "12676a23-e167-4b7e-b71c-7747ac3c7018",
+    "title": "[C1-C3] July 8-12 | Java Collection Framework",
+    "updated": "2024-07-11T17:12:25.381361+05:45"
+  },
+  {
+    "creator": "prabesh.sapkota.a23",
+    "events": [
+      {
+        "day": 2,
+        "etime": "12:00 PM",
+        "name": "Lecture @ Annapurna",
+        "stime": "11:00 AM"
+      },
+      {
+        "day": 3,
+        "etime": "01:00 PM",
+        "name": "Practical @ Machhapuchhre",
+        "stime": "12:00 PM"
+      },
+      {
+        "day": 5,
+        "etime": "12:00 PM",
+        "name": "Lecture @ Annapurna",
+        "stime": "11:00 AM"
+      },
+      {
+        "day": 6,
+        "etime": "01:30 PM",
+        "name": "Practical @ Tilicho",
+        "stime": "12:30 PM"
+      }
+    ],
+    "id": "09640f41-f78d-4924-91f8-a1a34c79bc86",
+    "title": "[C4-C9] July 8-12 | Java Collection Framework",
+    "updated": "2024-07-11T00:09:01.969687+05:45"
+  },
+  {
+    "creator": "prabesh.sapkota.a23",
+    "events": [
+      {
+        "day": 2,
+        "etime": "08:30 AM",
+        "name": "Annapurna",
+        "stime": "07:30 AM"
+      },
+      {
+        "day": 3,
+        "etime": "08:30 AM",
+        "name": "Annapurna",
+        "stime": "07:30 AM"
+      },
+      {
+        "day": 4,
+        "etime": "08:30 AM",
+        "name": "Machhapuchhre",
+        "stime": "07:30 AM"
+      },
+      {
+        "day": 5,
+        "etime": "08:30 AM",
+        "name": "Machhapuchhre",
+        "stime": "07:30 AM"
+      },
+      {
+        "day": 6,
+        "etime": "08:30 AM",
+        "name": "Machhapuchhre",
+        "stime": "07:30 AM"
+      }
+    ],
+    "id": "d101e6bf-b5b1-4684-b826-d6e52cf5b0ed",
+    "title": "July 9-20 | Game Development Class",
+    "updated": "2024-07-11T16:53:49.422507+05:45"
+  },
+  {
+    "creator": "prabesh.sapkota.a23",
+    "events": [
+      {
+        "day": 2,
+        "etime": "12:00 PM",
+        "name": "Lecture @ Annapurna",
+        "stime": "11:00 AM"
+      },
+      {
+        "day": 3,
+        "etime": "11:30 AM",
+        "name": "Lab @ Begnas",
+        "stime": "10:30 AM"
+      },
+      {
+        "day": 5,
+        "etime": "12:00 PM",
+        "name": "Lecture @ Annapurna",
+        "stime": "11:00 AM"
+      },
+      {
+        "day": 6,
+        "etime": "12:00 PM",
+        "name": "Lab @ Rara",
+        "stime": "11:00 AM"
+      }
+    ],
+    "id": "68b855d4-05f5-4197-b47f-ca424d728636",
+    "title": "[C1-C3] July 15-31 | Java Spring Boot",
+    "updated": "2024-07-12T12:14:05.265705+05:45"
+  },
+  {
+    "creator": "prabesh.sapkota.a23",
+    "events": [
+      {
+        "day": 2,
+        "etime": "12:00 PM",
+        "name": "Lecture @ Annapurna",
+        "stime": "11:00 AM"
+      },
+      {
+        "day": 3,
+        "etime": "01:30 PM",
+        "name": "Lab @ Machhapuchhre",
+        "stime": "12:30 PM"
+      },
+      {
+        "day": 5,
+        "etime": "12:00 PM",
+        "name": "Lecture @ Annapurna",
+        "stime": "11:00 AM"
+      },
+      {
+        "day": 6,
+        "etime": "01:30 PM",
+        "name": "Lab @ Tilicho",
+        "stime": "12:30 PM"
+      }
+    ],
+    "id": "4caee568-d6fb-41c4-9769-11353fbca3be",
+    "title": "[C4-C9] July 15-31 | Java Spring Boot",
+    "updated": "2024-07-12T12:04:37.920652+05:45"
+  },
+  {
+    "creator": "subash.hamal",
+    "events": [
+      {
+        "day": 2,
+        "etime": "11:00 AM",
+        "name": "",
+        "stime": "10:00 AM"
+      },
+      {
+        "day": 3,
+        "etime": "11:00 AM",
+        "name": "",
+        "stime": "10:00 AM"
+      },
+      {
+        "day": 5,
+        "etime": "11:00 AM",
+        "name": "",
+        "stime": "10:00 AM"
+      },
+      {
+        "day": 4,
+        "etime": "12:00 PM",
+        "name": "",
+        "stime": "11:00 AM"
+      },
+      {
+        "day": 6,
+        "etime": "11:00 AM",
+        "name": "",
+        "stime": "11:00 AM"
+      }
+    ],
+    "id": "8e30a153-289a-4f99-8444-38701344548c",
+    "title": "Node",
+    "updated": "2024-07-14T10:58:00.802514+05:45"
+  }
+]
