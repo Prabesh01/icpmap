@@ -202,7 +202,7 @@ def post_edit(user, event_id):
             json.dump(events, f, indent=4)
         return flask.redirect(flask.url_for('get_home'))
 
-    data = parse_data(flask.request, user)
+    data = parse_data(flask.request, event['creator'])
     if not data: return "N/a", 400
     save_data(data,event_id)
     return flask.redirect(flask.url_for('get_view', event_id=event_id))
