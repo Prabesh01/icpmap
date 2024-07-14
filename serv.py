@@ -120,6 +120,7 @@ def save_data(data,id):
     data['id']=id
     events = get_data()
     events = [event for event in events if event['id'] != id]
+    data['events'].sort(key=lambda x: x['day'])
     events.append(data)
     with open(DATA_FILE, 'w') as f:
         json.dump(events, f, indent=4)
