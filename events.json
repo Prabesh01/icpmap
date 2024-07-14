@@ -181,16 +181,16 @@
         "stime": "10:00 AM"
       },
       {
-        "day": 5,
-        "etime": "11:00 AM",
-        "name": "",
-        "stime": "10:00 AM"
-      },
-      {
         "day": 4,
         "etime": "12:00 PM",
         "name": "",
         "stime": "11:00 AM"
+      },
+      {
+        "day": 5,
+        "etime": "11:00 AM",
+        "name": "",
+        "stime": "10:00 AM"
       },
       {
         "day": 6,
