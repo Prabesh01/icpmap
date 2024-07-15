@@ -296,8 +296,12 @@ def calculate_free_time(events_data):
 def post_home(user):
     events = get_data()
     ids = flask.request.form.getlist('id')
-    if not ids:
+    order = flask.request.form.getlist('order')
+    reorder =  'reorder' in flask.request.form
+
+    if not ids and not reorder:
         return flask.redirect(flask.url_for('get_home'))
+
     if 'calculate' in flask.request.form:
         selected_events = []
         for event in events:
@@ -314,7 +318,16 @@ def post_home(user):
         events = [event for event in events if event['id'] not in ids]
         with open(DATA_FILE, 'w') as f:
             json.dump(events, f, indent=4)
+
+    elif reorder:
+        if not user in admins:
+            return "Forbidden!", 403
+        ordered_events = sorted(events, key=lambda x: order.index(str(x['id'])))
+        with open(DATA_FILE, 'w') as f:
+            json.dump(ordered_events, f, indent=4)
+
     return flask.redirect(flask.url_for('get_home'))
+
 
 port = int(os.environ.get("PORT", 5000))
 if __name__ == '__main__':

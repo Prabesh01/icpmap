@@ -97,7 +97,6 @@
            align-items: center;
            margin-bottom: 10px;
        }        
-   
      </style>
 
 </head>
@@ -113,6 +112,9 @@
                 <th>Title</th>
                 <th>Creator</th>
                 <th>Updated</th>
+                {% if user in admins %}
+                <th>Move</th>
+                {% endif %}                
             </tr>
         </thead>
         <tbody>    
@@ -128,6 +130,13 @@
         {{ event.title }}</a></td>
                 <td>{{ event.creator }} </td>
                     <td>{{ event.updated }}</td>
+                    {% if user in admins %}
+                    <td class="move-buttons">
+                        <button type="button" class="move-button" onclick="moveUp(this)">↑</button>
+                        <button type="button" class="move-button" onclick="moveDown(this)">↓</button>
+                        <input type="hidden" name="order" value="{{ event.id }}">
+                    </td>
+                    {% endif %}                    
     </tr>
     {% endfor %}
 </tbody>
@@ -135,6 +144,7 @@
     <button name="calculate" type="submit">Calculate</button>
     {% if user in admins %}
     <button name="delete" type="submit">Delete</button>
+    <button name="reorder" type="submit">Reorder</button>    
     {% endif %}
 
     <pre>
@@ -143,36 +153,6 @@ Calculation constraints:
 - Start Time = 7 AM
 - End Time = 7 PM
 - Minimum duration = 60 minutes</pre>
-    <!-- {% if free_time_slots %}
-    <h1>Free Time Slots</h1>
-
-    <table>
-            <thead>
-                <tr>
-                    <th>Day</th>
-                    <th>Free Time Slots</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for day, slots in free_time_slots.items() %}
-                    <tr>
-                        <td>{{ day }}</td>
-                        <td>
-                            {% if slots %}
-                                <ul>
-                                    {% for slot in slots %}
-                                        <li>{{ slot[0] }} - {{ slot[1] }}</li>
-                                    {% endfor %}
-                                </ul>
-                            {% else %}
-                                No free time slots available.
-                            {% endif %}
-                        </td>
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    {% endif %} -->
 
     {% if free_time_slots %}
     <br>
@@ -236,6 +216,21 @@ Calculation constraints:
             });
         });
     });
+    function moveUp(button) {
+            const row = button.closest('tr');
+            const prevRow = row.previousElementSibling;
+            if (prevRow) {
+                row.parentNode.insertBefore(row, prevRow);
+            }
+        }
+
+        function moveDown(button) {
+            const row = button.closest('tr');
+            const nextRow = row.nextElementSibling;
+            if (nextRow) {
+                row.parentNode.insertBefore(nextRow, row);
+            }
+        }    
     </script>
     
 </html>
