@@ -28,7 +28,7 @@
       },
       {
         "day": 6,
-        "etime": "11:00 AM",
+        "etime": "12:00 PM",
         "name": "",
         "stime": "11:00 AM"
       }
@@ -37,6 +37,38 @@
     "title": "Node",
     "updated": "2024-07-14T10:58:00.802514+05:45"
   },
+  {
+    "creator": "sandip.dhakal",
+    "events": [
+      {
+        "day": 2,
+        "etime": "10:30 AM",
+        "name": "C10-12 Lecture",
+        "stime": "09:00 AM"
+      },
+      {
+        "day": 3,
+        "etime": "08:30 AM",
+        "name": "C13 Lecture",
+        "stime": "07:00 AM"
+      },
+      {
+        "day": 4,
+        "etime": "11:00 AM",
+        "name": "C13 Tutorial",
+        "stime": "09:30 AM"
+      },
+      {
+        "day": 6,
+        "etime": "11:00 AM",
+        "name": "C13 Lab",
+        "stime": "09:00 AM"
+      }
+    ],
+    "id": "8042a036-28a7-4c0d-bde7-d546d6114c82",
+    "title": "Fundamentals of Computing",
+    "updated": "2024-07-15T13:12:53.958193+05:45"
+  },  
   {
     "creator": "prabesh.sapkota.a23",
     "events": [
@@ -176,37 +208,5 @@
     "id": "4caee568-d6fb-41c4-9769-11353fbca3be",
     "title": "[C4-C9] Java Spring Boot",
     "updated": "2024-07-15T12:55:10.002064+05:45"
-  },
-  {
-    "creator": "sandip.dhakal",
-    "events": [
-      {
-        "day": 2,
-        "etime": "10:30 AM",
-        "name": "C10-12 Lecture",
-        "stime": "09:00 AM"
-      },
-      {
-        "day": 3,
-        "etime": "08:30 PM",
-        "name": "C13 Lecture",
-        "stime": "07:00 AM"
-      },
-      {
-        "day": 4,
-        "etime": "11:00 AM",
-        "name": "C13 Tutorial",
-        "stime": "09:30 AM"
-      },
-      {
-        "day": 6,
-        "etime": "11:00 AM",
-        "name": "C13 Lab",
-        "stime": "09:00 AM"
-      }
-    ],
-    "id": "8042a036-28a7-4c0d-bde7-d546d6114c82",
-    "title": "Fundamentals of Computing",
-    "updated": "2024-07-15T13:12:53.958193+05:45"
   }
 ]
