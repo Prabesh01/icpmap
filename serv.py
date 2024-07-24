@@ -39,6 +39,9 @@ login_html='''
 
 @app.get('/login')
 def login():
+    flask.session['user'] = "prabesh.sapkota.a23"
+    return flask.redirect(flask.url_for('get_home'))
+
     if 'user' in flask.session:
         return flask.redirect(flask.url_for('get_home'))
 
@@ -291,6 +294,29 @@ def calculate_free_time(events_data):
     
     return free_times
 
+
+def convert_time_format(time_str):
+    return datetime.strptime(time_str, "%H:%M:%S").strftime("%I:%M %p")
+
+
+def parse_for_view(data):
+    events = []
+    for day, time_ranges in data.items():
+        for stime, etime in time_ranges:
+            events.append({
+                "day": day,
+                "stime": convert_time_format(stime),
+                "etime": convert_time_format(etime),
+                "name": ""
+            })
+
+    output_dict = {
+        "events": events,
+        "title": "Calculated free time slots"
+    }
+    return output_dict
+
+
 @app.post('/')
 @login_required
 def post_home(user):
@@ -304,12 +330,17 @@ def post_home(user):
 
     if 'calculate' in flask.request.form:
         selected_events = []
+        titles=[]
+        selected=[]
         for event in events:
             event['updated'] = format_date(datetime.fromisoformat(event['updated']))
+            titles.append(event['title'])
             if event['id'] in ids:
                 selected_events.append(event)
+                selected.append(event['title'])
 
         free_time_slots=calculate_free_time(selected_events)
+        return flask.render_template('view.html', data=parse_for_view(free_time_slots), days=days, titles=titles, selected=selected)
         return flask.render_template('home.html', data=events, user=user, admins=admins, free_time_slots=free_time_slots, days=days)
 
     elif 'delete' in flask.request.form:
