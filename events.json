@@ -68,7 +68,7 @@
     "id": "8042a036-28a7-4c0d-bde7-d546d6114c82",
     "title": "Fundamentals of Computing",
     "updated": "2024-07-15T13:12:53.958193+05:45"
-  },  
+  },
   {
     "creator": "prabesh.sapkota.a23",
     "events": [
@@ -150,9 +150,9 @@
     "events": [
       {
         "day": 2,
-        "etime": "12:00 PM",
-        "name": "Lecture @ Annapurna",
-        "stime": "11:00 AM"
+        "etime": "11:30 AM",
+        "name": "Tutorial @ Nilgiri",
+        "stime": "10:30 AM"
       },
       {
         "day": 3,
@@ -163,7 +163,7 @@
       {
         "day": 5,
         "etime": "12:00 PM",
-        "name": "Lecture @ Annapurna",
+        "name": "Tutorial @ Nilgiri",
         "stime": "11:00 AM"
       },
       {
@@ -175,28 +175,28 @@
     ],
     "id": "68b855d4-05f5-4197-b47f-ca424d728636",
     "title": "[C1-C3] Java Spring Boot",
-    "updated": "2024-07-15T12:54:55.091154+05:45"
+    "updated": "2024-07-26T18:09:35.760889+05:45"
   },
   {
     "creator": "prabesh.sapkota.a23",
     "events": [
       {
         "day": 2,
-        "etime": "12:00 PM",
-        "name": "Lecture @ Annapurna",
-        "stime": "11:00 AM"
+        "etime": "01:00 PM",
+        "name": "Tutorial @ Nilgiri",
+        "stime": "12:00 PM"
       },
       {
         "day": 3,
         "etime": "01:30 PM",
-        "name": "Lab @ Machhapuchhre",
+        "name": "Lab @ Nilgiri",
         "stime": "12:30 PM"
       },
       {
         "day": 5,
-        "etime": "12:00 PM",
-        "name": "Lecture @ Annapurna",
-        "stime": "11:00 AM"
+        "etime": "01:30 PM",
+        "name": "Tutorial @ Tilicho",
+        "stime": "12:30 PM"
       },
       {
         "day": 6,
@@ -207,6 +207,6 @@
     ],
     "id": "4caee568-d6fb-41c4-9769-11353fbca3be",
     "title": "[C4-C9] Java Spring Boot",
-    "updated": "2024-07-15T12:55:10.002064+05:45"
+    "updated": "2024-07-26T18:15:06.381882+05:45"
   }
 ]
