@@ -104,6 +104,12 @@ def format_date(dt):
         return date.strftime('%Y %b')
 
 
+def backup_json():
+    try:
+        requests.post(os.getenv("DISCORD_WEBHOOK"),files={"media":open(DATA_FILE,'rb')})
+    except: pass
+
+
 def get_data():
     if not os.path.exists(DATA_FILE):
         with open(DATA_FILE, 'w') as f:
@@ -124,6 +130,7 @@ def save_data(data,id):
     events.append(data)
     with open(DATA_FILE, 'w') as f:
         json.dump(events, f, indent=4)
+    backup_json()
 
 def parse_data(req,user):
     data = {
@@ -346,6 +353,7 @@ def post_home(user):
         events = [event for event in events if event['id'] not in ids]
         with open(DATA_FILE, 'w') as f:
             json.dump(events, f, indent=4)
+        backup_json()
 
     elif reorder:
         if not user in admins:
@@ -353,6 +361,7 @@ def post_home(user):
         ordered_events = sorted(events, key=lambda x: order.index(str(x['id'])))
         with open(DATA_FILE, 'w') as f:
             json.dump(ordered_events, f, indent=4)
+        backup_json()
 
     return flask.redirect(flask.url_for('get_home'))
 
