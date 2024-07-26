@@ -39,9 +39,6 @@ login_html='''
 
 @app.get('/login')
 def login():
-    flask.session['user'] = "prabesh.sapkota.a23"
-    return flask.redirect(flask.url_for('get_home'))
-
     if 'user' in flask.session:
         return flask.redirect(flask.url_for('get_home'))
 
