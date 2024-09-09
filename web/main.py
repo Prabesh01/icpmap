@@ -16,7 +16,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 app = flask.Flask(__name__)
 app.secret_key = jwt_secret = str(uuid.uuid4())
-
+@app.after_request
+def gnu_terry_pratchett(resp):
+    resp.headers.add("X-Clacks-Overhead", "GNU Binit Ghimire")
+    return resp 
 ##############################################################
                         # MAP/CAL
 ##############################################################
