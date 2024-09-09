@@ -1,0 +1,6 @@
+openpyxl
+flask
+PyJWT
+python-dotenv
+google-auth-oauthlib
+pytz

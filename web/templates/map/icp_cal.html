@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICP Calendar</title>
+    <style>
+        table,
+        th,
+        td {
+            border-collapse: collapse;
+            border: solid 5px #000;
+            padding: 50px;
+            /* background-color: white; */
+        }
+
+        .timeline {
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-bottom-color: transparent;
+            padding: 1px;
+        }
+
+        td.timeline {
+            /* vertical-align: top; */
+            text-align: right;
+        }
+        .today{
+            background-color: aliceblue;
+        }
+        .today .timeline{
+            background-color: white;
+        }
+        .back-icon {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  position:absolute;
+  top: 15px;
+  left: 15px;
+}
+.back-icon__row {
+  height: 10px;
+  width: 30px;
+  display: flex;
+}
+.back-icon__elem {
+  height: 8px;
+  width: 8px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  background: red;
+  border-radius: 38%;
+}
+    </style>
+</head>
+
+<body>
+    <a class="back-icon" href="/">
+        <div class="back-icon__row">
+          <div class="back-icon__elem"></div>
+          <div class="back-icon__elem"></div>
+          <div class="back-icon__elem"></div>
+        </div>
+         <div class="back-icon__row">
+          <div class="back-icon__elem"></div>
+          <div class="back-icon__elem"></div>
+          <div class="back-icon__elem"></div>
+        </div>
+        <div class="back-icon__row">
+          <div class="back-icon__elem"></div>
+          <div class="back-icon__elem"></div>
+          <div class="back-icon__elem"></div>
+        </div>
+      </a>
+    <center>
+        <label for="classes">Classs:</label>
+        <select name="classes" id="classes" onchange="classChanged()">
+            <option value="Year 1 BIC">Year 1 BIC</option>
+            <option value="Year 1 BIC-Spring">Year 1 BIC (Spring)</option>
+            <option value="Year 2 BIC">Year 2 BIC</option>
+            <option value="Year 3 BIC">Year 3 BIC</option>
+            <option value="Year 1 BBA">Year 1 BBA</option>
+            <option value="Year 1 BBA ( Spring)">Year 1 BBA (Spring)</option>
+            <option value="Year 2 BBA">Year 2 BBA</option>
+            <option value="Year 3 BBA">Year 3 BBA</option>
+        </select> 
+
+        <label for="sections">Section:</label>
+        <select name="sections" id="sections" onchange="sectionChanged()">
+
+        </select> 
+<h3 id="cur_class"></h3>
+<p><canvas id="canvas" style="display:none;border:2px solid black;" width="500" height="500"></canvas>
+<i><a href="javascript:void(0)" onclick="save_img()" id="save_img">Download this table as image</a> | <a target="_blank" href="" id="cal_url_view">View in Google Calendar</a> | <a target="_blank" href="" id="cal_url_add">Add to Google Calendar</a></i>
+<br> <br> 
+<table id="table">
+            <colgroup>
+                <col style="width: 5%;">
+                <col style="width: 11%;">
+                <col style="width: 11%;">
+            </colgroup>
+            <tr>
+                <td class="timeline">SUN</td>
+                <td id="00">
+                    <p class="module"></p>
+                    <p class="room"></p>
+                    <p class="time"></p>
+                </td>
+                <td id="01">
+                    <p class="module"></p>
+                    <p class="room"></p>
+                    <p class="time"></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="timeline">MON</td>
+                <td id="10">
+                    <p class="module"></p>
+                    <p class="room"></p>
+                    <p class="time"></p>
+                </td>
+                <td id="11">
+                    <p class="module"></p>
+                    <p class="room"></p>
+                    <p class="time"></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="timeline">TUE</td>
+                <td id="20">
+                    <p class="module"></p>
+                    <p class="room"></p>
+                    <p class="time"></p>
+                </td>
+                <td id="21">
+                    <p class="module"></p>
+                    <p class="room"></p>
+                    <p class="time"></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="timeline">WED</td>
+                <td id="30">
+                    <p class="module"></p>
+                    <p class="room"></p>
+                    <p class="time"></p>
+                </td>
+                <td id="31">
+                    <p class="module"></p>
+                    <p class="room"></p>
+                    <p class="time"></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="timeline">THU</td>
+                <td id="40">
+                    <p class="module"></p>
+                    <p class="room"></p>
+                    <p class="time"></p>
+                </td>
+                <td id="41">
+                    <p class="module"></p>
+                    <p class="room"></p>
+                    <p class="time"></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="timeline">FRI</td>
+                <td id="50">
+                    <p class="module"></p>
+                    <p class="room"></p>
+                    <p class="time"></p>
+                </td>
+                <td id="51">
+                    <p class="module"></p>
+                    <p class="room"></p>
+                    <p class="time"></p>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+<script>
+let sections={{ sections|safe }}
+let cal_ids={{ cal_ids|safe }}
+
+const static_cal={{ static_cal|safe }}
+
+const cal_url_view=document.getElementById("cal_url_view")
+const cur_class=document.getElementById("cur_class")
+const cal_url_add=document.getElementById("cal_url_add")
+const save_img_link=document.getElementById("save_img");
+
+function changeSchedule(class_name="Year 1 BIC - C1"){
+    // console.log(class_name);
+    save_img_link.setAttribute('download', null);
+                    save_img_link.href="javascript:void(0)";
+                    save_img_link.innerText="Download this table as image"
+    class_data=static_cal[class_name];
+    for(var i = 0; i < 6; i++) {
+        var indv_class = class_data[i];
+        for(var j = 0; j < 2; j++) {
+            let parent_td=document.getElementById(i.toString()+j.toString());
+            try{
+                
+            parent_td.getElementsByClassName("module")[0].innerText=indv_class[j][0];
+        }catch{parent_td.getElementsByClassName("module")[0].innerText="";}
+        try{
+            
+            parent_td.getElementsByClassName("room")[0].innerText=indv_class[j][1];
+        }catch{parent_td.getElementsByClassName("room")[0].innerText="";}
+        try{
+            
+            parent_td.getElementsByClassName("time")[0].innerText=indv_class[j][2];
+            }catch{parent_td.getElementsByClassName("time")[0].innerText="";}
+        }
+    }
+
+    cal_url_view.href='https://calendar.google.com/calendar/embed?src='+cal_ids[class_name]+'&ctz=Asia/Kathmandu&csspa=1'
+    cal_url_add.href='https://calendar.google.com/calendar/r?cid='+cal_ids[class_name]
+}
+
+const sectionDrop=document.getElementById("sections");
+const classDrop=document.getElementById("classes");
+
+function loadSection(class_name="Year 1 BIC"){
+
+    var i, L = sectionDrop.options.length - 1;
+   for(i = L; i >= 0; i--) {
+    sectionDrop.remove(i);
+   }    
+
+    for (var key in sections[class_name]) {
+        var option = document.createElement("option");
+        option.text = sections[class_name][key];
+        option.value = sections[class_name][key];
+        sectionDrop.add(option); 
+}
+
+}
+function classChanged(x=null){
+    loadSection(classDrop.value);
+    if(!x){sectionChanged()}
+}
+
+function sectionChanged(){
+    changeSchedule(classDrop.value+" - "+sectionDrop.value);
+    cur_class.innerText=classDrop.value+" - "+sectionDrop.value
+    document.cookie = "class="+escape(classDrop.value);
+    document.cookie = "section="+escape(sectionDrop.value);
+}
+function getCookie(name){
+    cookies=document.cookie.split(";");
+    for (var cookie of cookies){
+        cooksplit=cookie.trim().split("=")
+        if (cooksplit[0].trim()==name){
+            return unescape(cooksplit[1].trim())
+        }
+    }
+}
+function loadUserSelection(){
+    class_cookie=getCookie("class");
+    section_cookie=getCookie("section");
+
+    if(class_cookie){
+        classDrop.value=class_cookie;
+        classChanged("x");
+        sectionDrop.value=section_cookie;
+        sectionChanged();
+    }else{
+    classChanged();
+    }
+}
+
+window.onload=loadUserSelection;
+
+const d = new Date();
+    let day = d.getDay();
+   const cur_tr= document.getElementsByTagName("tr")[day];
+   cur_tr.classList.add("today");
+        </script>
+              <!-- <script type="text/javascript" src="https://github.com/niklasvh/html2canvas/releases/download/0.5.0-alpha1/html2canvas.js"></script> -->
+              <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+
+<script>
+        function save_img(){
+            if (save_img_link.innerText.includes("Click")){
+                return;
+            } 
+            cur_tr.classList.remove("today");
+            html2canvas(document.getElementById("table")).then(function(canvas) {
+                    var img = canvas.toDataURL("image/png");
+                    var newData = img.replace(/^data:image\/png/, "data:application/octet-stream");
+                    save_img_link.setAttribute('download', cur_class.innerText+'.png');
+                    save_img_link.href=newData;
+                    save_img_link.innerText="Click to Download";
+                    }
+            );
+            cur_tr.classList.add("today");
+        }
+    
+    </script>
+</html>

@@ -1,0 +1,63 @@
+<!-- 
+Borrowed design from: https://access.heropowered.com/school/login 
+-->
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login | ICP DEV</title>
+
+  <link rel="stylesheet" href="https://di37jvg7iglxw.cloudfront.net/assets/css/screen.css?hero=5.0.87" />
+  <link rel="stylesheet" href="https://di37jvg7iglxw.cloudfront.net/assets/css/login.css?hero=5.0.87" />
+</head>
+
+<body id="login">
+  <div class="perspective">
+    <div class="wrapper">
+      <div class="loginContent">
+    <div class="row">
+      <div class="columns large-6">
+        <div class="logo">
+          <img src="imgs/98640e2d9995df24.png" width="120" height="100" alt="Hero"/>
+        </div>
+        <p style="color: red;">{{ message }} </p>
+        <form method="post" class="clearfix">
+          <div class="input">
+            <input type="text" name="username" id="username" placeholder="ENTER USERNAME" />
+          </div>
+          <div class="input">
+            <input type="password" name="password" id="password" placeholder="ENTER PASSWORD" />
+          </div>
+          <input type="submit" id="login-button" class="button blue large" value="Login" /><br><br><br>
+          <a href="{{ url }}"><input type="button" id="login-button" class="button yello large" value="Login with icp.edu.np gmail" /></a>
+<br><br><br>
+          <a href="/"><input type="button" id="login-button" class="button green large" value="Guest Login" /></a>
+
+
+          <div class="forgot">
+            <a href="https://app.mysecondteacher.com.np/forgot-password">Forgot your password?</a>
+          </div>
+        </form>
+      </div>
+      <div class="columns large-9 appStore">
+        <br />
+        <!-- <img src="https://fserver.icp.edu.np/images/logo1.png" width="150" height="60" alt="Schools" style="margin-right: 15px; float: left; margin-top: 7px;" /> -->
+        <h2><script>document.write(window.location.host);</script> Access</h2>
+        <p>How does MST login work?</p>
+        <p>I'm glad you asked. When you login here, our backend tries to login to mst with the credentials you provided. 
+          <!-- Once logged in, we make call to mst api using your account's auth token to fetch certain data. We save your <a href="https://api.mysecondteacher.com.np/api/students/profile" target="_blank">profile info</a> into our student lookup database. Additionally, we make requests to mst chat api and fetch other members in your batch (userId, username, photoUrl) to populate student lookup database. -->
+          </p>
+        <p id="legacy-links">By signing in, you agree to the above mentioned use of your data.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columns large-16 support">
+        <p>Borrowed page layout from <a target="_blank" href="https://access.heropowered.com/school/login">here</a>.</p>
+        <p>Made By <a target="_blank" href="https://sapkotaprabesh.github.io/">Prabesh Sapkota</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is all open source BTW! <a target="_blank" href="https://github.com/Prabesh01/icpmap/">View on github &raquo;</a></p>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</body>
+</html>
