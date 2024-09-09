@@ -4,3 +4,4 @@ PyJWT
 python-dotenv
 google-auth-oauthlib
 pytz
+google-api-python-client
