@@ -15,22 +15,8 @@
             /* background-color: white; */
         }
 
-        .timeline {
-            border-top-color: transparent;
-            border-left-color: transparent;
-            border-bottom-color: transparent;
-            padding: 1px;
-        }
-
-        td.timeline {
-            /* vertical-align: top; */
-            text-align: right;
-        }
         .today{
-            background-color: aliceblue;
-        }
-        .today .timeline{
-            background-color: white;
+            background-color: #ffeb3b;
         }
         .back-icon {
   width: 30px;
@@ -77,14 +63,7 @@
     <center>
         <label for="classes">Classs:</label>
         <select name="classes" id="classes" onchange="classChanged()">
-            <option value="Year 1 BIC">Year 1 BIC</option>
-            <option value="Year 1 BIC-Spring">Year 1 BIC (Spring)</option>
-            <option value="Year 2 BIC">Year 2 BIC</option>
-            <option value="Year 3 BIC">Year 3 BIC</option>
-            <option value="Year 1 BBA">Year 1 BBA</option>
-            <option value="Year 1 BBA ( Spring)">Year 1 BBA (Spring)</option>
-            <option value="Year 2 BBA">Year 2 BBA</option>
-            <option value="Year 3 BBA">Year 3 BBA</option>
+
         </select> 
 
         <label for="sections">Section:</label>
@@ -95,91 +74,20 @@
 <p><canvas id="canvas" style="display:none;border:2px solid black;" width="500" height="500"></canvas>
 <i><a href="javascript:void(0)" onclick="save_img()" id="save_img">Download this table as image</a> | <a target="_blank" href="" id="cal_url_view">View in Google Calendar</a> | <a target="_blank" href="" id="cal_url_add">Add to Google Calendar</a></i>
 <br> <br> 
+
 <table id="table">
-            <colgroup>
-                <col style="width: 5%;">
-                <col style="width: 11%;">
-                <col style="width: 11%;">
-            </colgroup>
-            <tr>
-                <td class="timeline">SUN</td>
-                <td id="00">
-                    <p class="module"></p>
-                    <p class="room"></p>
-                    <p class="time"></p>
-                </td>
-                <td id="01">
-                    <p class="module"></p>
-                    <p class="room"></p>
-                    <p class="time"></p>
-                </td>
-            </tr>
-            <tr>
-                <td class="timeline">MON</td>
-                <td id="10">
-                    <p class="module"></p>
-                    <p class="room"></p>
-                    <p class="time"></p>
-                </td>
-                <td id="11">
-                    <p class="module"></p>
-                    <p class="room"></p>
-                    <p class="time"></p>
-                </td>
-            </tr>
-            <tr>
-                <td class="timeline">TUE</td>
-                <td id="20">
-                    <p class="module"></p>
-                    <p class="room"></p>
-                    <p class="time"></p>
-                </td>
-                <td id="21">
-                    <p class="module"></p>
-                    <p class="room"></p>
-                    <p class="time"></p>
-                </td>
-            </tr>
-            <tr>
-                <td class="timeline">WED</td>
-                <td id="30">
-                    <p class="module"></p>
-                    <p class="room"></p>
-                    <p class="time"></p>
-                </td>
-                <td id="31">
-                    <p class="module"></p>
-                    <p class="room"></p>
-                    <p class="time"></p>
-                </td>
-            </tr>
-            <tr>
-                <td class="timeline">THU</td>
-                <td id="40">
-                    <p class="module"></p>
-                    <p class="room"></p>
-                    <p class="time"></p>
-                </td>
-                <td id="41">
-                    <p class="module"></p>
-                    <p class="room"></p>
-                    <p class="time"></p>
-                </td>
-            </tr>
-            <tr>
-                <td class="timeline">FRI</td>
-                <td id="50">
-                    <p class="module"></p>
-                    <p class="room"></p>
-                    <p class="time"></p>
-                </td>
-                <td id="51">
-                    <p class="module"></p>
-                    <p class="room"></p>
-                    <p class="time"></p>
-                </td>
-            </tr>
-        </table>
+    <thead>
+        <tr>
+            <th>Day</th>
+            <th>Module</th>
+            <th>Room</th>
+            <th>Time</th>
+        </tr>
+    </thead>
+    <tbody id="schedule-body">
+    </tbody>
+</table>
+
     </center>
 </body>
 <script>
@@ -188,35 +96,86 @@ let cal_ids={{ cal_ids|safe }}
 
 const static_cal={{ static_cal|safe }}
 
+function populateClassOptions() {
+        const select = document.getElementById('classes');
+        select.innerHTML = '';
+
+        for (let className in sections) {
+            let option = document.createElement('option');
+            option.value = className;
+            option.text = className;
+            select.appendChild(option);
+        }
+    }
+
+populateClassOptions();
+
 const cal_url_view=document.getElementById("cal_url_view")
 const cur_class=document.getElementById("cur_class")
 const cal_url_add=document.getElementById("cal_url_add")
 const save_img_link=document.getElementById("save_img");
 
+function clearTable() {
+        let tableBody = document.getElementById('schedule-body');
+        while (tableBody.firstChild) {
+            tableBody.removeChild(tableBody.firstChild); // Removes each child (row)
+        }
+    }
+
+let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+let tableBody = document.getElementById('schedule-body');
 function changeSchedule(class_name="Year 1 BIC - C1"){
     // console.log(class_name);
     save_img_link.setAttribute('download', null);
                     save_img_link.href="javascript:void(0)";
                     save_img_link.innerText="Download this table as image"
     class_data=static_cal[class_name];
-    for(var i = 0; i < 6; i++) {
-        var indv_class = class_data[i];
-        for(var j = 0; j < 2; j++) {
-            let parent_td=document.getElementById(i.toString()+j.toString());
-            try{
-                
-            parent_td.getElementsByClassName("module")[0].innerText=indv_class[j][0];
-        }catch{parent_td.getElementsByClassName("module")[0].innerText="";}
-        try{
-            
-            parent_td.getElementsByClassName("room")[0].innerText=indv_class[j][1];
-        }catch{parent_td.getElementsByClassName("room")[0].innerText="";}
-        try{
-            
-            parent_td.getElementsByClassName("time")[0].innerText=indv_class[j][2];
-            }catch{parent_td.getElementsByClassName("time")[0].innerText="";}
-        }
-    }
+    clearTable();
+
+    class_data.forEach((dayClasses, index) => {
+            if (dayClasses.length > 0) {
+                dayClasses.forEach((classItem, classIndex) => {
+                    let row = document.createElement('tr');
+                    
+                    // If it's the first class for the day, add a rowspan cell for the day
+                    if (classIndex === 0) {
+                        let dayCell = document.createElement('td');
+                        dayCell.textContent = days[index];
+                        dayCell.rowSpan = dayClasses.length;
+                        row.appendChild(dayCell);
+                    }
+
+                    // Add subject, room, and time cells
+                    let subjectCell = document.createElement('td');
+                    subjectCell.textContent = classItem[0];
+                    row.appendChild(subjectCell);
+
+                    let roomCell = document.createElement('td');
+                    roomCell.textContent = classItem[1];
+                    row.appendChild(roomCell);
+
+                    let timeCell = document.createElement('td');
+                    timeCell.textContent = classItem[2];
+                    row.appendChild(timeCell);
+
+                    // Append the row to the table body
+                    tableBody.appendChild(row);
+                });
+            }
+            // } else {
+            //     // Add an empty row for the day if there are no classes
+            //     let row = document.createElement('tr');
+            //     let dayCell = document.createElement('td');
+            //     dayCell.textContent = days[index];
+            //     let emptyCell = document.createElement('td');
+            //     emptyCell.textContent = "---";
+            //     emptyCell.colSpan = 3;
+            //     row.appendChild(dayCell);
+            //     row.appendChild(emptyCell);
+            //     tableBody.appendChild(row);
+            // }
+        });    
+        highlight_today();
 
     cal_url_view.href='https://calendar.google.com/calendar/embed?src='+cal_ids[class_name]+'&ctz=Asia/Kathmandu&csspa=1'
     cal_url_add.href='https://calendar.google.com/calendar/r?cid='+cal_ids[class_name]
@@ -260,6 +219,21 @@ function getCookie(name){
         }
     }
 }
+function highlight_today(){
+    let today = new Date().getDay();
+   const rows = document.querySelectorAll('#schedule-body tr'); // Get all rows in tbody
+   let highlight = false;
+        rows.forEach(row => {
+            if (row.firstChild && row.firstChild.textContent === days[today]) {
+                highlight = true;
+                row.classList.add("today");
+            }else if (highlight && row.firstChild && (!row.firstChild.textContent.endsWith("day"))) {
+                row.classList.add('today'); 
+            }else{
+                highlight=false;
+            }
+        });   
+}
 function loadUserSelection(){
     class_cookie=getCookie("class");
     section_cookie=getCookie("section");
@@ -276,20 +250,18 @@ function loadUserSelection(){
 
 window.onload=loadUserSelection;
 
-const d = new Date();
-    let day = d.getDay();
-   const cur_tr= document.getElementsByTagName("tr")[day];
-   cur_tr.classList.add("today");
         </script>
               <!-- <script type="text/javascript" src="https://github.com/niklasvh/html2canvas/releases/download/0.5.0-alpha1/html2canvas.js"></script> -->
               <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 
 <script>
         function save_img(){
+            const todayRows = document.querySelectorAll('.today');
+
             if (save_img_link.innerText.includes("Click")){
                 return;
             } 
-            cur_tr.classList.remove("today");
+            todayRows.forEach(row => row.classList.remove('today'));
             html2canvas(document.getElementById("table")).then(function(canvas) {
                     var img = canvas.toDataURL("image/png");
                     var newData = img.replace(/^data:image\/png/, "data:application/octet-stream");
@@ -298,7 +270,7 @@ const d = new Date();
                     save_img_link.innerText="Click to Download";
                     }
             );
-            cur_tr.classList.add("today");
+            todayRows.forEach(row => row.classList.add('today'));
         }
     
     </script>
