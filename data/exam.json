@@ -1,0 +1,136 @@
+{
+    "AY 2023-24 IT - Level 4": [
+        {
+            "module": "Programming",
+            "code": "CS4001NP",
+            "credits": "30",
+            "exams": [
+                {
+                    "title": "Coursework 1 (Online Submission 1200 words + Software)",
+                    "percentage": 30,
+                    "start_date": "2025-01-26",
+                    "end_date": "2025-01-26"
+                },
+                {
+                    "title": "Coursework 2 (Online Submission 1200 words + Software)",
+                    "percentage": 30,
+                    "start_date": "2025-05-10",
+                    "end_date": "2025-05-10"
+                },
+                {
+                    "title": "Practical Exam (1.5 Hours MCQ Test)",
+                    "percentage": 40,
+                    "start_date": "2025-05-12",
+                    "end_date": "2025-05-24"
+                }
+            ]
+        },
+        {
+            "module": "Computer Hardware & Software Architectures",
+            "code": "CT4005NP",
+            "credits": "30",
+            "exams": [
+                {
+                    "title": "Written Exam (In-Class Test)",
+                    "percentage": 20,
+                    "start_date": "2025-01-14",
+                    "end_date": "2025-01-19"
+                },
+                {
+                    "title": "Unseen Written Examination",
+                    "percentage": 50,
+                    "start_date": "2025-05-12",
+                    "end_date": "2025-05-17"
+                },
+                {
+                    "title": "Practical Examination",
+                    "percentage": 30,
+                    "start_date": "2025-05-19",
+                    "end_date": "2025-05-24"
+                }
+            ]
+        },
+        {
+            "module": "Logic and Problem Solving",
+            "code": "MA4001NP",
+            "credits": "30",
+            "exams": [
+                {
+                    "title": "In-Class Test 1 (Problem Set 1 - 1.15 Hours)",
+                    "percentage": 25,
+                    "start_date": "2023-12-24",
+                    "end_date": "2023-12-29"
+                },
+                {
+                    "title": "In-Class Test 2 (Problem Set 2 - 1.15 Hours)",
+                    "percentage": 25,
+                    "start_date": "2025-03-31",
+                    "end_date": "2025-04-05"
+                },
+                {
+                    "title": "Group Coursework (2500 words)",
+                    "percentage": 50,
+                    "start_date": "2025-05-16",
+                    "end_date": "2025-05-16"
+                }
+            ]
+        },
+        {
+            "module": "Introduction to Information Systems",
+            "code": "CC4057NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Test (In-Class Test with Learning Reflection)",
+                    "percentage": 40,
+                    "start_date": "2023-12-15",
+                    "end_date": "2023-12-20"
+                },
+                {
+                    "title": "Group Coursework (Information System Design and Protype with Detailed Presentation)",
+                    "percentage": 60,
+                    "start_date": "2025-01-31",
+                    "end_date": "2025-01-31"
+                },
+                {
+                    "title": "Test (In-Class Test with Learning Reflection)",
+                    "percentage": 40,
+                    "start_date": "2023-12-10",
+                    "end_date": "2023-12-15"
+                },
+                {
+                    "title": "Group Coursework (Information System Design and Protype with Detailed Presentation)",
+                    "percentage": 60,
+                    "start_date": "2025-01-31",
+                    "end_date": "2025-01-31"
+                }
+            ]
+        },
+        {
+            "module": "Fundamentals of Computing",
+            "code": "CS4051NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Coursework (Numerical Data Program with Report)",
+                    "percentage": 60,
+                    "start_date": "2025-05-07",
+                    "end_date": "2025-05-07"
+                },
+                {
+                    "title": "Practical Exam (MCQ Test)",
+                    "percentage": 40,
+                    "start_date": "2025-05-12",
+                    "end_date": "2025-05-17"
+                },
+                {
+                    "title": "Coursework (Numerical Data Program with Report)",
+                    "percentage": 60,
+                    "start_date": "2025-05-07",
+                    "end_date": "2025-05-07"
+                }
+            ]
+        }
+    ],
+    "dummy class":[]
+}

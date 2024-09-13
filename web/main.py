@@ -20,6 +20,11 @@ app.secret_key = jwt_secret = str(uuid.uuid4())
 def gnu_terry_pratchett(resp):
     resp.headers.add("X-Clacks-Overhead", "GNU Binit Ghimire")
     return resp 
+
+@app.get('/static/<path:filepath>')
+def vendors(filepath):
+    return flask.send_from_directory('static/', filepath)
+
 ##############################################################
                         # MAP/CAL
 ##############################################################
@@ -540,6 +545,50 @@ def get_event_home():
         event['updated'] = format_date(datetime.fromisoformat(event['updated']))
 
     return flask.render_template('events/home.html', data=events, user=user, admins=admins)
+
+##############################################################
+                        # exam
+##############################################################
+exam_file=BASE_DIR / "data/exam.json"
+
+# parse_data_file
+with open(exam_file) as f:
+    exam_data = json.load(f)
+
+
+@app.get('/exam')
+def get_exam_home():
+    last_selected_class=flask.session.get('last_selected_class','')
+    classes=list(exam_data.keys())
+    if last_selected_class: key=last_selected_class
+    else: key=classes[0]
+    return flask.render_template('exam/index.djhtml', current=key, data=exam_data[key], classes=exam_data.keys())
+
+
+@app.post('/exam')
+def post_exam_home():
+    classe=flask.request.form.get('class')
+    flask.session['last_selected_class'] = classe
+    if not classe in exam_data:
+        return "N/a", 400
+    return flask.render_template('exam/index.djhtml',current=classe, data=exam_data[classe], classes=exam_data.keys())
+
+
+@app.template_filter('smart_linebreak')
+def smart_linebreak(text):
+    n = 16  # Fixed length after which to start looking for spaces
+    if len(text) > n:
+        # Split the text after n characters and then at spaces
+        part1 = text[:n]
+        remainder = text[n:]
+        # return part1 + '<br>'.join(remainder.split())
+        for r in remainder.split():
+            if len(r)<5:
+                part1+=r+' '
+            else:
+                part1+='<br>'+r
+        return part1
+    return text
 
 
 port = int(os.environ.get("PORT", 5000))

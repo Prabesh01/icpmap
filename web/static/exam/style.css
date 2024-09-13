@@ -1,0 +1,688 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  html, body{
+    height: 100%;
+    width: 100%;
+  }
+  
+  
+  
+  #main-con{
+    height: 90%;
+    width: 100%;
+    /* background-color: #0e1215; */
+  }
+  :root {
+    --padding: 4rem;
+    --border: hsl(0, 0%, 20%);
+  }
+  
+  html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+  }
+  
+  body {
+    font-size: 1.6rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  h1 {
+    font-size: 4rem;
+  }
+  
+  h3 {
+    font-size: 2.8rem;
+  }
+  
+  body {
+    background: #000000;
+    color: #ffffff;
+    font-family: system-ui, sans-serif;
+  }
+  
+  .heading {
+    line-height: 2;
+    font-weight: 900;
+  }
+  
+  .section-container {
+    padding: var(--padding);
+  }
+  
+  .section-container a {
+    color: #ffffff;
+  }
+  
+  .schedule-container {
+    overflow: auto;
+  }
+  
+  .schedule-stage__wrapper {
+    display: inline-block;
+  }
+  
+  .schedule-stage {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: -webkit-max-content;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    grid-gap: 2rem;
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+    min-width: 100vw;
+  }
+  
+  .schedule-stage::after {
+    content: "";
+    width: var(--padding);
+  }
+  
+  .divider {
+    position: sticky;
+    left: 0;
+    border: none;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .schedule-stage:nth-child(1) > .schedule-stage__title > h3 {
+    background: -webkit-gradient(linear, left top, right top, from(#FF512F), to(#DD2476));
+    background: -o-linear-gradient(left, #FF512F, #DD2476);
+    background: linear-gradient(to right, #FF512F, #DD2476);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .schedule-stage:nth-child(3) > .schedule-stage__title > h3 {
+    background: -webkit-gradient(linear, left top, right top, from(#a8ff78), to(#78ffd6));
+    background: -o-linear-gradient(left, #a8ff78, #78ffd6);
+    background: linear-gradient(to right, #a8ff78, #78ffd6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .schedule-stage:nth-child(5) > .schedule-stage__title > h3 {
+    background: -webkit-gradient(linear, left top, right top, from(#007991), to(#78ffd6));
+    background: -o-linear-gradient(left, #007991, #78ffd6);
+    background: linear-gradient(to right, #007991, #78ffd6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .schedule-stage:nth-child(7) > .schedule-stage__title > h3 {
+    background: -webkit-gradient(linear, left top, right top, from(#4b79a1), to(#283e51));
+    background: -o-linear-gradient(left, #4b79a1, #283e51);
+    background: linear-gradient(to right, #4b79a1, #283e51);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .schedule-stage:nth-child(9) > .schedule-stage__title > h3 {
+    background: -webkit-gradient(linear, left top, right top, from(#f12711), to(#f5af19));
+    background: -o-linear-gradient(left, #f12711, #f5af19);
+    background: linear-gradient(to right, #f12711, #f5af19);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .schedule-stage:nth-child(11) > .schedule-stage__title > h3 {
+    background: -webkit-gradient(linear, left top, right top, from(#8E2DE2), to(#4A00E0));
+    background: -o-linear-gradient(left, #8E2DE2, #4A00E0);
+    background: linear-gradient(to right, #8E2DE2, #4A00E0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .schedule-stage:nth-child(13) > .schedule-stage__title > h3 {
+    background: -webkit-gradient(linear, left top, right top, from(#FF4E50), to(#F9D423));
+    background: -o-linear-gradient(left, #FF4E50, #F9D423);
+    background: linear-gradient(to right, #FF4E50, #F9D423);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .schedule-stage:nth-child(15) > .schedule-stage__title > h3 {
+    background: -webkit-gradient(linear, left top, right top, from(#56CCF2), to(#2F80ED));
+    background: -o-linear-gradient(left, #56CCF2, #2F80ED);
+    background: linear-gradient(to right, #56CCF2, #2F80ED);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .schedule-stage:nth-child(17) > .schedule-stage__title > h3 {
+    background: -webkit-gradient(linear, left top, right top, from(#F857A6), to(#FF5858));
+    background: -o-linear-gradient(left, #F857A6, #FF5858);
+    background: linear-gradient(to right, #F857A6, #FF5858);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .schedule-stage:nth-child(19) > .schedule-stage__title > h3 {
+    background: -webkit-gradient(linear, left top, right top, from(#00B4DB), to(#0083B0));
+    background: -o-linear-gradient(left, #00B4DB, #0083B0);
+    background: linear-gradient(to right, #00B4DB, #0083B0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .schedule-stage__title {
+    position: sticky;
+    left: 0;
+    padding-right: 5rem;
+    height: 100%;
+    padding-left: var(--padding);
+    background: -webkit-gradient(linear, left top, right top, color-stop(30%, #000000), to(hsla(0, 0%, 0%, 0)));
+    background: -o-linear-gradient(left, #000000 30%, hsla(0, 0%, 0%, 0));
+    background: linear-gradient(to right, #000000 30%, hsla(0, 0%, 0%, 0));
+  }
+  
+  .schedule-stage__title > h3 {
+    font-weight: 900;
+  }
+  
+  .schedule-stage_guide-container {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 280px;
+    grid-gap: 2rem;
+  }
+  
+  .guide-slot {
+    color: hsl(0, 0%, 50%);
+  }
+  
+  .guide-slot > p {
+    margin-bottom: 1rem;
+  }
+  
+  .guide-slot_card {
+    background: hsl(0, 0%, 4%);
+    border: 1px solid var(--border);
+    border-radius: 0.8rem;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    padding: 1.6rem;
+    cursor: pointer;
+  }
+  
+  .guide-slot_card:hover {
+    border-color: hsl(0, 0%, 70%);
+  }
+  
+  .guide-slot_card > h4 {
+    margin-right: 5rem;
+    font-size: 1.4rem;
+    color: #ffffff;
+  }
+  
+  .author-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .author-wrapper > svg {
+    display: inline-block;
+    inline-size: 2.6rem;
+    block-size: 2.6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1rem;
+    border: 1px solid var(--border);
+  }
+  
+  .author-wrapper > svg > img {
+    inline-size: 100%;
+    block-size: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  @-webkit-keyframes rotate {
+    to {
+    }
+  }
+  
+  @keyframes rotate {
+    to {
+    }
+  }
+  
+  .pie {
+    width: 100%;
+    background: #f06;
+    border-radius: 50%;
+  }
+  
+  .pie circle {
+    fill: none;
+    stroke: gold;
+    stroke-width: 32;
+    -webkit-animation: rotate 1.5s ease-in;
+            animation: rotate 1.5s ease-in;
+  }
+  
+  @keyframes hourglass {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .hourglass {
+    -webkit-animation: hourglass 4s linear infinite;
+    -moz-animation: hourglass 4s linear infinite;
+    -ms-animation: hourglass 4s linear infinite;
+    -o-animation: hourglass 4s linear infinite;
+    animation: hourglass 4s linear infinite;
+  }
+  
+  
+  @keyframes rotate {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+  .pie {
+    width: 100%;
+    background: #f06;
+    border-radius: 50%;
+    -webkit-animation: rotate 4s linear infinite;
+            animation: rotate 4s linear infinite; /* Adjust the duration and timing function as needed */
+  }
+  
+  
+  /* @-webkit-keyframes rotate1 { */
+  /* from { */
+    /* -webkit-transform: rotate(0deg); */
+            /* transform: rotate(0deg); */
+  /* } */
+  /* to { */
+    /* -webkit-transform: rotate(360deg); */
+            /* transform: rotate(360deg); */
+  /* } */
+  /* } */
+  
+  
+  /* @keyframes rotate1 { */
+  /* from { */
+    /* -webkit-transform: rotate(0deg); */
+            /* transform: rotate(0deg); */
+  /* } */
+  /* to { */
+    /* -webkit-transform: rotate(360deg); */
+            /* transform: rotate(360deg); */
+  /* } */
+  /* } */
+  
+  /* @-webkit-keyframes rotate2 { */
+  /* from { */
+    /* -webkit-transform: rotate(0deg); */
+            /* transform: rotate(0deg); */
+  /* } */
+  /* to { */
+    /* -webkit-transform: rotate(-360deg); */
+            /* transform: rotate(-360deg); */
+  /* } */
+  /* } */
+  
+  /* @keyframes rotate2 { */
+  /* from { */
+    /* -webkit-transform: rotate(0deg); */
+            /* transform: rotate(0deg); */
+  /* } */
+  /* to { */
+    /* -webkit-transform: rotate(-360deg); */
+            /* transform: rotate(-360deg); */
+  /* } */
+  /* } */
+  
+  /* @-webkit-keyframes rotate3 { */
+  /* from { */
+    /* -webkit-transform: rotate(0deg); */
+            /* transform: rotate(0deg); */
+  /* } */
+  /* to { */
+    /* -webkit-transform: rotate(180deg); */
+            /* transform: rotate(180deg); */
+  /* } */
+  /* } */
+  
+  /* @keyframes rotate3 { */
+  /* from { */
+    /* -webkit-transform: rotate(0deg); */
+            /* transform: rotate(0deg); */
+  /* } */
+  /* to { */
+    /* -webkit-transform: rotate(180deg); */
+            /* transform: rotate(180deg); */
+  /* } */
+  /* } */
+  
+  /* @-webkit-keyframes rotate4 { */
+  /* from { */
+    /* -webkit-transform: rotate(0deg); */
+            /* transform: rotate(0deg); */
+  /* } */
+  /* to { */
+    /* -webkit-transform: rotate(-180deg); */
+            /* transform: rotate(-180deg); */
+  /* } */
+  /* } */
+  
+  /* @keyframes rotate4 { */
+  /* from { */
+    /* -webkit-transform: rotate(0deg); */
+            /* transform: rotate(0deg); */
+  /* } */
+  /* to { */
+    /* -webkit-transform: rotate(-180deg); */
+            /* transform: rotate(-180deg); */
+  /* } */
+  /* } */
+  
+  /* @-webkit-keyframes rotate5 { */
+  /* from { */
+    /* -webkit-transform: rotate(0deg); */
+            /* transform: rotate(0deg); */
+  /* } */
+  /* to { */
+    /* -webkit-transform: rotate(90deg); */
+            /* transform: rotate(90deg); */
+  /* } */
+  /* } */
+  
+  /* @keyframes rotate5 { */
+  /* from { */
+    /* -webkit-transform: rotate(0deg); */
+            /* transform: rotate(0deg); */
+  /* } */
+  /* to { */
+    /* -webkit-transform: rotate(90deg); */
+            /* transform: rotate(90deg); */
+  /* } */
+  /* } */
+  
+  /* /* Add more keyframes for the remaining sections */ */
+  
+  /* .schedule-stage:nth-child(1) .pie { */
+  /* -webkit-animation: rotate1 4s linear infinite; */
+          /* animation: rotate1 4s linear infinite; */
+  /* } */
+  
+  /* .schedule-stage:nth-child(2) .pie { */
+  /* -webkit-animation: rotate2 4s linear infinite; */
+          /* animation: rotate2 4s linear infinite; */
+  /* } */
+  
+  /* .schedule-stage:nth-child(3) .pie { */
+  /* -webkit-animation: rotate3 4s linear infinite; */
+          /* animation: rotate3 4s linear infinite; */
+  /* } */
+  
+  /* .schedule-stage:nth-child(4) .pie { */
+  /* -webkit-animation: rotate4 4s linear infinite; */
+          /* animation: rotate4 4s linear infinite; */
+  /* } */
+  
+  /* .schedule-stage:nth-child(5) .pie { */
+  /* -webkit-animation: rotate5 4s linear infinite; */
+          /* animation: rotate5 4s linear infinite; */
+  /* } */
+  
+  /* Add more styling for the remaining sections */
+  
+  
+  /* Keyframes for the first element */
+  @-webkit-keyframes slideIn {
+    from {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  
+  /* Keyframes for the second element */
+  @-webkit-keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* Apply animations to elements with specific IDs or classes */
+  #element1 {
+    -webkit-animation: slideIn 2s ease-in-out;
+            animation: slideIn 2s ease-in-out;
+  }
+  
+  .element2 {
+    -webkit-animation: fadeInOut 3s ease-in-out infinite;
+            animation: fadeInOut 3s ease-in-out infinite;
+  }
+  
+  /* Keyframes for the guide-slot_card */
+  @-webkit-keyframes scaleIn {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  }
+  @keyframes scaleIn {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  }
+  
+  /* Apply the scaleIn animation to the guide-slot_card */
+  .guide-slot {
+  -webkit-animation: scaleIn 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          animation: scaleIn 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  /* Add hover effect */
+  .guide-slot_card:hover {
+  /* -webkit-animation: none; */
+        /*   animation: none; Stop the initial animation on hover */
+  -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+          transform: scale(0.97); /* Scale up on hover */ 
+  }
+  
+  /* Add this to your existing CSS */
+  
+  .event-status-container {
+    position: relative;
+    top: 60px;
+    right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .event-status {
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .guide-slot_card.upcoming .event-status {
+    background-color: #ffc107; /* Style for upcoming events */
+  }
+  
+  .guide-slot_card.expired .event-status {
+    background-color: black; /* Style for expired events */
+  }
+  
+  .guide-slot_card.soon .event-status {
+    background-color: red; /* Style for expired events */
+  }
+  
+  .remaining-days{
+    color: #47ab11;
+  }
+  
+  @media only screen and (max-width: 760px) {
+  h3{
+      font-size: 10px;
+  }
+  }
+  
+  @-webkit-keyframes scaleOut {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+    to {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 0;
+    }
+  }
+  @keyframes scaleOut {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+    to {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 0;
+    }
+  }
+  
+  .invisible {
+    display: none;
+    /* opacity: 0; */
+  }
+  
+  .hide {
+    -webkit-animation: scaleOut 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            animation: scaleOut 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  .selected {
+    border: 2px solid silver;
+  }
+  /*
+  #allCount.selected{
+      border: 2px solid green;
+  }
+  */
+  .top-stat{
+      margin: 5px;
+      cursor: pointer;
+  }
+.sem-button{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #514f4fad; 
+  border-color: #212529;
+  color: #212529;
+  
+}
+
+.playcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
