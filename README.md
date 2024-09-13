@@ -12,8 +12,12 @@
 
  4. In scripts/setp_3.py, manually add holidays, exam weeks and other required dates from line 30 to line 55.
 
+ 5. Install required packages:
+  - `python -m venv .venv`
+  - `.venv/bin/pip install -r requirements.txt`
+
  ### Run
 
  - Just once for the first time, run step-1,2,3,4.py files in order.
- - python3 web/main.py.
+ - `.venv/bin/python web/main.py`
  - Visit http://127.0.0.1:5000

@@ -77,7 +77,6 @@ def empty(day=None,check_time=None,teach=None):
     teach_return=None, None
     teach_return_dict=[]
     for classe in daywise_classes[day]:
-        if not classe["room"] in rooms: print(classe["room"])
         start_time = datetime.strptime(classe["stime"], "%I:%M %p").time()
         end_time = datetime.strptime(classe["etime"], "%I:%M %p").time()
         if classe["teacher"]==teach: teach_return_dict.append([classe["room"],classe["class"],classe["stime"]])
@@ -126,7 +125,6 @@ def get_home():
 
 @app.get('/icp-map')
 def get_icp_map():
-    print(teachers)
     return flask.render_template('map/icp_map.html', teachers=teachers)
 
 @app.post('/icp-map')
