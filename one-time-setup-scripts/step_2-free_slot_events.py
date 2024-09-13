@@ -10,7 +10,7 @@ datetime_NP = str(datetime.datetime.now(tz_NP))
 from config import get_basedir
 
 BASE_DIR=get_basedir()
-data_file=BASE_DIR / "one-time-setup-scripts/data.json"
+data_file=BASE_DIR / "data/data.json"
 
 with open(data_file) as f:
     data = json.load(f)
@@ -75,5 +75,5 @@ events = [
 events.sort(key=custom_sort_key)
 # events.sort(key=lambda x: x["title"][:7], reverse=False)
 
-with open(BASE_DIR / "web/events.json","w") as f:
+with open(BASE_DIR / "data/events.json","w") as f:
     json.dump(events,f,indent=4)

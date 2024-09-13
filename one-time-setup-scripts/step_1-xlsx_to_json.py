@@ -53,7 +53,7 @@ def read_xlsx(source):
         sections[sheet].sort()
 
     data={"classes":classes, "sections": sections, "rooms":rooms, "teachers":teachers}
-    with open(BASE_DIR / "one-time-setup-scripts/data.json", "w") as f:
+    with open(BASE_DIR / "data/data.json", "w") as f:
         json.dump(data, f)
 
 

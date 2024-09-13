@@ -12,9 +12,9 @@ from googleapiclient.discovery import build
 from config import get_basedir
 
 BASE_DIR=get_basedir()
-data_file=BASE_DIR / "one-time-setup-scripts/data.json"
-credential_file=BASE_DIR / "one-time-setup-scripts/credentials.json"
-token_file=BASE_DIR / "one-time-setup-scripts/token.json"
+data_file=BASE_DIR / "data/data.json"
+credential_file=BASE_DIR / "credentials/credentials.json"
+token_file=BASE_DIR / "credentials/token.json"
 
 with open(data_file) as f:
     data = json.load(f)

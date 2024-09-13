@@ -23,7 +23,7 @@ def gnu_terry_pratchett(resp):
 ##############################################################
                         # MAP/CAL
 ##############################################################
-data_file=BASE_DIR / "one-time-setup-scripts/data.json"
+data_file=BASE_DIR / "data/data.json"
 
 weekdays=["SUN","MON","TUE","WED","THU","FRI","SAT"]
 
@@ -161,9 +161,9 @@ def get_icp_cal():
                         # Auth
 ##############################################################
 
-env_file=BASE_DIR / "web/.env"
+env_file=BASE_DIR / "credentials/.env"
 load_dotenv(env_file)
-events_file = BASE_DIR / 'web/events.json'
+events_file = BASE_DIR / 'data/events.json'
 IMAGES_PATH = BASE_DIR / 'web/imgs'
 
 client_config = {
