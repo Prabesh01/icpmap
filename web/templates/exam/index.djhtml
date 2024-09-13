@@ -43,6 +43,24 @@ function formatExamDate(startDateStr, endDateStr) {
 
 </script>
 <body>
+    <a class="back-icon" href="/">
+        <div class="back-icon__row">
+          <div class="back-icon__elem"></div>
+          <div class="back-icon__elem"></div>
+          <div class="back-icon__elem"></div>
+        </div>
+         <div class="back-icon__row">
+          <div class="back-icon__elem"></div>
+          <div class="back-icon__elem"></div>
+          <div class="back-icon__elem"></div>
+        </div>
+        <div class="back-icon__row">
+          <div class="back-icon__elem"></div>
+          <div class="back-icon__elem"></div>
+          <div class="back-icon__elem"></div>
+        </div>
+      </a>
+
     <select class="btn-group sem-button" id="class_drop">
         {% for c in classes %}
         <option value="{{ c }}">{{ c }}</option>
