@@ -1,7 +1,7 @@
 import json
 import os
 import time
-import datetime
+from datetime import datetime
 from datetime import timedelta
 
 from google.auth.transport.requests import Request
@@ -24,7 +24,9 @@ classes={}
 for c in data["classes"]:
   name=c.pop("class")
   if not name in classes:
-    classes[name]=c
+    classes[name]=[c]
+  else:
+    classes[name].append(c)
 del data
 
 # new-year, saraswati-puja, shivaratri, holi
@@ -34,7 +36,7 @@ holiday_range="2024/10/03 - 2024/11/09"
 
 y1_spring_week1="2024/02/18" # first day must be sunday
 y1_autumn_week1="2023/10/01" # first day must be sunday
-y2_3_week1="2024/09/17" # first day must be sunday
+y2_3_week1="2024/09/15" # first day must be sunday
 
 y1_spring_until="2024/08/24"
 y1_autumn_until="2024/05/11"
@@ -102,7 +104,7 @@ def create_cal():
     with open(data_file,"w") as f:
         json.dump(data,f,indent=4)
 
-create_cal()
+# create_cal()
 
 
 weekdays=["SUN","MON","TUE","WED","THU","FRI","SAT"]
@@ -228,7 +230,7 @@ def add_events():
       print(sheet)
       def add_event_all_sections(summary,evstart,evend):
         transparency="transparent"
-        if 'exam' in summary.lower(): transparency="opaque"
+        if 'exam' in summary.lower() or 'semester break' in summary.lower(): transparency="opaque"
         event = {
         'summary': summary,
         'start': {
@@ -274,6 +276,7 @@ def add_events():
       sem_break=datetime.strptime(sem_break, "%Y/%m/%d")  
       next_sat=(datetime.strptime(sedate, "%Y/%m/%d")- timedelta(days=1))
       until=datetime.strptime(until, "%Y/%m/%d")
+      sem_break_added=False
       while True:
         next_sat=next_sat + timedelta(days=7)
 
@@ -281,9 +284,12 @@ def add_events():
            break
         if next_sat>=holiday_start and next_sat<=holiday_end:
            continue
+        
         if has_sem_break_range:
-           if next_sat>=sem_break_start and sem_break_end<=holiday_end:
-              add_event_all_sections("Semester Break",sem_break_start,sem_break_end)
+           if next_sat>=sem_break_start and next_sat<=sem_break_end:
+              if not sem_break_added:
+                add_event_all_sections("Semester Break",sem_break_start,sem_break_end + timedelta(days=1))
+                sem_break_added=True
               continue
            
         if next_sat==sem_break: week_cnt_sec=1
