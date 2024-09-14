@@ -10,9 +10,8 @@
         th,
         td {
             border-collapse: collapse;
-            border: solid 5px #000;
-            padding: 50px;
-            /* background-color: white; */
+            border: solid 2px grey;
+            padding: 10px;
         }
 
         .today{
@@ -79,9 +78,9 @@
     <thead>
         <tr>
             <th>Day</th>
+            <th>Time</th>
             <th>Module</th>
             <th>Room</th>
-            <th>Time</th>
         </tr>
     </thead>
     <tbody id="schedule-body">
@@ -144,6 +143,9 @@ function changeSchedule(class_name="Year 1 BIC - C1"){
                         dayCell.rowSpan = dayClasses.length;
                         row.appendChild(dayCell);
                     }
+                    let timeCell = document.createElement('td');
+                    timeCell.textContent = classItem[2].slice(0,-3);
+                    row.appendChild(timeCell);
 
                     // Add subject, room, and time cells
                     let subjectCell = document.createElement('td');
@@ -154,9 +156,6 @@ function changeSchedule(class_name="Year 1 BIC - C1"){
                     roomCell.textContent = classItem[1];
                     row.appendChild(roomCell);
 
-                    let timeCell = document.createElement('td');
-                    timeCell.textContent = classItem[2];
-                    row.appendChild(timeCell);
 
                     // Append the row to the table body
                     tableBody.appendChild(row);
