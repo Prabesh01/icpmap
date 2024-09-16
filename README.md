@@ -8,7 +8,7 @@
  - Type: Web application
  - Authorized redirect URI: flask_web_url with trailing slash and http://localhost/
 
- 3. Add xlsx files for all classes's schedule and exam schedule in data-sources and mention the path in scripts/step_1.py and step_4.py.
+ 3. Add 2 xlsx files for all classes's schedule (Class_Schedule.xlsx) and exam schedule (Assessment_Report.xlsx) in data-sources and mention the path in scripts/step_1.py and step_4.py.
 
  4. In scripts/setp_3.py, manually add holidays, exam weeks and other required dates from line 30 to line 55.
 
