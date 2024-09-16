@@ -1,35 +1,27 @@
 [
     {
-        "id": "1a657a3a-b39c-4ae8-a836-1c2fcddeab51",
-        "title": "Abhinav Dahal",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 4,
-                "stime": "12:00 PM",
-                "etime": "01:30 PM",
-                "name": "Year 1 BIC [C9]"
-            },
-            {
-                "day": 6,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Year 1 BIC [C9]"
-            }
-        ]
-    },
-    {
-        "id": "f413ed97-8221-4232-88a7-315be0556601",
+        "id": "4444aa7b-5b36-4489-84e7-6278dc82d99c",
         "title": "Achyut Parajuli",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
                 "stime": "11:30 AM",
                 "etime": "01:00 PM",
                 "name": "Year 2 BIC [C4]"
+            },
+            {
+                "day": 1,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 3 BIC [C4]"
+            },
+            {
+                "day": 1,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3 BIC [C7]"
             },
             {
                 "day": 2,
@@ -44,58 +36,40 @@
                 "name": "Year 2 BIC [C9]"
             },
             {
-                "day": 3,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Year 1 BIC-Spring [C13]"
+                "day": 2,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3 BIC [C3]"
             },
             {
                 "day": 3,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 1 BIC-Spring [C11]"
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 3 BIC [C4]"
+            },
+            {
+                "day": 3,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3 BIC [C3]"
             },
             {
                 "day": 4,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Year 1 BIC-Spring [C10]"
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 3 BIC [C7]"
             },
             {
                 "day": 4,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 1 BIC-Spring [C12]"
-            },
-            {
-                "day": 5,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Year 1 BIC-Spring [C11]"
-            },
-            {
-                "day": 5,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 1 BIC-Spring [C13]"
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3 BIC [C1]"
             },
             {
                 "day": 5,
                 "stime": "01:30 PM",
                 "etime": "03:00 PM",
                 "name": "Year 2 BIC [C4]"
-            },
-            {
-                "day": 6,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Year 1 BIC-Spring [C12]"
-            },
-            {
-                "day": 6,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 1 BIC-Spring [C10]"
             },
             {
                 "day": 6,
@@ -112,120 +86,10 @@
         ]
     },
     {
-        "id": "1f4a861d-fdf7-4b4e-a25c-69f9312d4e4c",
-        "title": "Amar Khanal",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 1,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Year 1 BIC [C1-C3]"
-            },
-            {
-                "day": 1,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Year 1 BIC [C7-C9]"
-            },
-            {
-                "day": 2,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Year 1 BIC-Spring [C10-C12]"
-            },
-            {
-                "day": 2,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 1 BIC-Spring [C13]"
-            },
-            {
-                "day": 2,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Year 1 BIC [C4-C6]"
-            },
-            {
-                "day": 3,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 1 BIC [C4]"
-            },
-            {
-                "day": 3,
-                "stime": "10:30 AM",
-                "etime": "12:00 PM",
-                "name": "Year 1 BIC [C3]"
-            },
-            {
-                "day": 3,
-                "stime": "12:00 PM",
-                "etime": "01:30 PM",
-                "name": "Year 1 BIC [C5]"
-            },
-            {
-                "day": 3,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 1 BIC [C6]"
-            },
-            {
-                "day": 4,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Year 1 BIC [C1]"
-            },
-            {
-                "day": 4,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Year 1 BIC [C2]"
-            },
-            {
-                "day": 5,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 1 BIC [C6]"
-            },
-            {
-                "day": 5,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Year 1 BIC [C5]"
-            },
-            {
-                "day": 5,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Year 1 BIC [C3]"
-            },
-            {
-                "day": 5,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 1 BIC [C4]"
-            },
-            {
-                "day": 6,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 1 BIC [C1]"
-            },
-            {
-                "day": 6,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Year 1 BIC [C2]"
-            }
-        ]
-    },
-    {
-        "id": "84af62c3-8efd-4a26-ac7e-a2b687cef450",
+        "id": "901a164b-b269-460c-b7c9-8d39cb031a03",
         "title": "Anil Rai",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
@@ -248,188 +112,84 @@
         ]
     },
     {
-        "id": "ce7910c3-975b-4d66-a102-0318de677500",
+        "id": "b9ef3e87-62a5-46bf-a151-a97570dd8d0b",
         "title": "Arjun Sapkota",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
-            {
-                "day": 1,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Year 1 BBA [B1]"
-            },
             {
                 "day": 1,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Year 2 BBA [B1]"
+                "name": "Year 3.5 BBA [B1]"
             },
             {
                 "day": 2,
-                "stime": "12:00 PM",
-                "etime": "01:30 PM",
-                "name": "Year 1 BBA ( Spring) [B2]"
+                "stime": "10:30 AM",
+                "etime": "12:00 PM",
+                "name": "Year 1 BBA [B1]"
             },
             {
-                "day": 3,
-                "stime": "12:00 PM",
-                "etime": "01:30 PM",
-                "name": "Year 1 BBA [B1]"
+                "day": 2,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3 BBA [B1]"
             },
             {
                 "day": 3,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Year 2 BBA [B1]"
+                "name": "Year 3.5 BBA [B1]"
             },
             {
                 "day": 4,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Year 1 BBA ( Spring) [B2]"
+                "stime": "10:30 AM",
+                "etime": "12:00 PM",
+                "name": "Year 1 BBA [B1]"
             },
             {
-                "day": 5,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Year 1 BBA [B1]"
+                "day": 4,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3 BBA [B1]"
             },
             {
                 "day": 5,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Year 2 BBA [B1]"
-            },
-            {
-                "day": 6,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Year 1 BBA ( Spring) [B2]"
-            }
-        ]
-    },
-    {
-        "id": "91ece50b-9b3b-43fd-a8f6-25a6ec9d1698",
-        "title": "Ashish Lamichhane",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 3,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Year 1 BIC-Spring [C11]"
-            },
-            {
-                "day": 3,
-                "stime": "01:00 PM",
-                "etime": "02:30 PM",
-                "name": "Year 1 BIC-Spring [C12]"
-            },
-            {
-                "day": 3,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 1 BIC [C9]"
-            },
-            {
-                "day": 3,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Year 1 BIC [C5]"
-            },
-            {
-                "day": 4,
-                "stime": "07:30 AM",
-                "etime": "09:00 AM",
-                "name": "Year 1 BIC [C4]"
-            },
-            {
-                "day": 4,
-                "stime": "10:30 AM",
-                "etime": "12:00 PM",
-                "name": "Year 1 BIC [C8]"
-            },
-            {
-                "day": 4,
-                "stime": "12:00 PM",
-                "etime": "01:30 PM",
-                "name": "Year 1 BIC [C7]"
-            },
-            {
-                "day": 4,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 1 BIC [C6]"
-            },
-            {
-                "day": 5,
-                "stime": "07:30 AM",
-                "etime": "09:00 AM",
-                "name": "Year 1 BIC-Spring [C11]"
-            },
-            {
-                "day": 5,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 1 BIC-Spring [C12]"
-            },
-            {
-                "day": 5,
-                "stime": "10:30 AM",
-                "etime": "12:00 PM",
-                "name": "Year 1 BIC [C5]"
-            },
-            {
-                "day": 5,
-                "stime": "12:00 PM",
-                "etime": "01:30 PM",
-                "name": "Year 1 BIC [C9]"
-            },
-            {
-                "day": 6,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 1 BIC [C6]"
+                "name": "Year 3.5 BBA [B1]"
             },
             {
                 "day": 6,
                 "stime": "10:00 AM",
                 "etime": "11:30 AM",
-                "name": "Year 1 BIC [C4]"
+                "name": "Year 1 BBA [B1]"
             },
             {
                 "day": 6,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Year 1 BIC [C7]"
-            },
-            {
-                "day": 6,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 1 BIC [C8]"
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3 BBA [B1]"
             }
         ]
     },
     {
-        "id": "4d522a18-efeb-4084-b98b-b50e90a02587",
+        "id": "2633f129-2681-47e7-a594-c347cfc92538",
         "title": "Ashish Subedi",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Year 1 BBA [B1]"
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 2 BBA [B1]"
             },
             {
                 "day": 2,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Year 1 BBA ( Spring) [B2]"
+                "stime": "09:00 AM",
+                "etime": "10:30 AM",
+                "name": "Year 1 BBA [B1]"
             },
             {
                 "day": 2,
@@ -439,15 +199,15 @@
             },
             {
                 "day": 3,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Year 1 BBA [B1]"
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 2 BBA [B1]"
             },
             {
                 "day": 4,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Year 1 BBA ( Spring) [B2]"
+                "stime": "09:00 AM",
+                "etime": "10:30 AM",
+                "name": "Year 1 BBA [B1]"
             },
             {
                 "day": 4,
@@ -457,15 +217,15 @@
             },
             {
                 "day": 5,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Year 1 BBA [B1]"
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 2 BBA [B1]"
             },
             {
                 "day": 6,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Year 1 BBA ( Spring) [B2]"
+                "name": "Year 1 BBA [B1]"
             },
             {
                 "day": 6,
@@ -476,10 +236,36 @@
         ]
     },
     {
-        "id": "58f110bb-f2de-46ca-900a-75d00a76eb56",
+        "id": "be60e9a2-98a7-43ca-99f8-44716ba31e0d",
+        "title": "Ganga Ghale",
+        "creator": "_system",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
+        "events": [
+            {
+                "day": 2,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 3.5 BBA [B1]"
+            },
+            {
+                "day": 4,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 3.5 BBA [B2]"
+            },
+            {
+                "day": 6,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 3.5 BBA [B1]"
+            }
+        ]
+    },
+    {
+        "id": "6585660e-3c15-45c6-b949-e8d3c20d6ed0",
         "title": "Idu Nepali",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
@@ -494,94 +280,10 @@
                 "name": "Year 2 BIC [C8]"
             },
             {
-                "day": 3,
-                "stime": "12:00 PM",
-                "etime": "01:30 PM",
-                "name": "Year 1 BIC-Spring [C10]"
-            },
-            {
-                "day": 3,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 1 BIC-Spring [C13]"
-            },
-            {
-                "day": 3,
-                "stime": "09:00 AM",
-                "etime": "10:30 AM",
-                "name": "Year 1 BIC [C9]"
-            },
-            {
-                "day": 4,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 1 BIC-Spring [C11]"
-            },
-            {
-                "day": 4,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Year 1 BIC-Spring [C12]"
-            },
-            {
-                "day": 4,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Year 1 BIC [C7]"
-            },
-            {
-                "day": 4,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 1 BIC [C8]"
-            },
-            {
-                "day": 5,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Year 1 BIC-Spring [C13]"
-            },
-            {
-                "day": 5,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 1 BIC-Spring [C10]"
-            },
-            {
-                "day": 5,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Year 1 BIC [C9]"
-            },
-            {
                 "day": 5,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
                 "name": "Year 2 BIC [C10]"
-            },
-            {
-                "day": 6,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 1 BIC-Spring [C12]"
-            },
-            {
-                "day": 6,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 1 BIC-Spring [C11]"
-            },
-            {
-                "day": 6,
-                "stime": "09:00 AM",
-                "etime": "10:30 AM",
-                "name": "Year 1 BIC [C7]"
-            },
-            {
-                "day": 6,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Year 1 BIC [C8]"
             },
             {
                 "day": 6,
@@ -592,300 +294,134 @@
         ]
     },
     {
-        "id": "6e911468-44f4-42b8-9deb-bf1a0cd36f49",
-        "title": "Jeevan Pahari",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 1,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Year 3 BBA [B1]"
-            },
-            {
-                "day": 2,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Year 2 BBA [B1]"
-            },
-            {
-                "day": 3,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Year 3 BBA [B1]"
-            },
-            {
-                "day": 4,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Year 2 BBA [B1]"
-            },
-            {
-                "day": 5,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Year 3 BBA [B1]"
-            },
-            {
-                "day": 6,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Year 2 BBA [B1]"
-            }
-        ]
-    },
-    {
-        "id": "53a5df7f-ec42-4cd5-bd1d-fd14a3559af4",
+        "id": "9d6914ee-20cb-4225-955c-0063f362138c",
         "title": "Kiran Kunwar",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
+            {
+                "day": 1,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 1 BBA [B1]"
+            },
             {
                 "day": 1,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Year 1 BBA ( Spring) [B2]"
+                "name": "Year 3.5 BBA [B1]"
             },
             {
                 "day": 2,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Year 1 BBA [B1]"
-            },
-            {
-                "day": 2,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
                 "name": "Year 2 BBA [B1]"
             },
             {
                 "day": 3,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 1 BBA ( Spring) [B2]"
-            },
-            {
-                "day": 4,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
                 "name": "Year 1 BBA [B1]"
             },
             {
-                "day": 4,
+                "day": 3,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
+                "name": "Year 3.5 BBA [B3]"
+            },
+            {
+                "day": 4,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
                 "name": "Year 2 BBA [B1]"
             },
             {
                 "day": 5,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 1 BBA ( Spring) [B2]"
-            },
-            {
-                "day": 6,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
                 "name": "Year 1 BBA [B1]"
             },
             {
-                "day": 6,
+                "day": 5,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
+                "name": "Year 3.5 BBA [B1]"
+            },
+            {
+                "day": 6,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
                 "name": "Year 2 BBA [B1]"
             }
         ]
     },
     {
-        "id": "1fd7ae6c-0c30-4a6a-a4b6-d24b324a5b81",
-        "title": "Krishna Wagle",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 3,
-                "stime": "09:00 AM",
-                "etime": "10:30 AM",
-                "name": "Year 1 BIC-Spring [C10]"
-            },
-            {
-                "day": 3,
-                "stime": "03:00 PM",
-                "etime": "04:30 PM",
-                "name": "Year 1 BIC-Spring [C12]"
-            },
-            {
-                "day": 3,
-                "stime": "10:30 AM",
-                "etime": "12:00 PM",
-                "name": "Year 1 BIC [C7]"
-            },
-            {
-                "day": 3,
-                "stime": "12:00 PM",
-                "etime": "01:30 PM",
-                "name": "Year 1 BIC [C8]"
-            },
-            {
-                "day": 4,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Year 1 BIC-Spring [C11]"
-            },
-            {
-                "day": 4,
-                "stime": "01:00 PM",
-                "etime": "02:30 PM",
-                "name": "Year 1 BIC-Spring [C13]"
-            },
-            {
-                "day": 4,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Year 1 BIC [C6]"
-            },
-            {
-                "day": 4,
-                "stime": "02:30 PM",
-                "etime": "04:00 PM",
-                "name": "Year 1 BIC [C9]"
-            },
-            {
-                "day": 5,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Year 1 BIC-Spring [C10]"
-            },
-            {
-                "day": 5,
-                "stime": "03:30 PM",
-                "etime": "05:00 PM",
-                "name": "Year 1 BIC-Spring [C12]"
-            },
-            {
-                "day": 5,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Year 1 BIC [C7]"
-            },
-            {
-                "day": 5,
-                "stime": "01:00 PM",
-                "etime": "02:30 PM",
-                "name": "Year 1 BIC [C8]"
-            },
-            {
-                "day": 6,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Year 1 BIC-Spring [C11]"
-            },
-            {
-                "day": 6,
-                "stime": "03:00 PM",
-                "etime": "04:30 PM",
-                "name": "Year 1 BIC-Spring [C13]"
-            },
-            {
-                "day": 6,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Year 1 BIC [C6]"
-            },
-            {
-                "day": 6,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 1 BIC [C9]"
-            }
-        ]
-    },
-    {
-        "id": "547733a2-ce97-4c96-8dd4-80e05d97d03c",
+        "id": "8349f7a6-6a9a-4202-a83a-f89f1a67f1db",
         "title": "Mahesh Dhungana",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Year 3 BIC [C3]"
-            },
-            {
-                "day": 1,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Year 3 BIC [C1]"
-            },
-            {
-                "day": 1,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Year 3 BIC [C2]"
+                "name": "Year 3 BIC [C5]"
             },
             {
                 "day": 2,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Year 3 BIC [C5]"
+                "name": "Year 3 BIC [C1]"
             },
             {
                 "day": 2,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Year 3 BIC [C4]"
+                "name": "Year 3 BIC [C2]"
             },
             {
                 "day": 3,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Year 3 BIC [C1-C3]"
-            },
-            {
-                "day": 4,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 3 BIC [C4-C5]"
-            },
-            {
-                "day": 5,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
                 "name": "Year 3 BIC [C2]"
             },
             {
-                "day": 5,
+                "day": 3,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Year 3 BIC [C3]"
+                "name": "Year 3 BIC [C1]"
+            },
+            {
+                "day": 4,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3 BIC [C5]"
             },
             {
                 "day": 5,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Year 3 BIC [C5]"
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 3 BIC [C1-C3]"
+            },
+            {
+                "day": 5,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3 BIC [C4-C5]"
             },
             {
                 "day": 6,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Year 3 BIC [C1]"
-            },
-            {
-                "day": 6,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Year 3 BIC [C4]"
+                "name": "Year 3 BIC [C6-C7]"
             }
         ]
     },
     {
-        "id": "08a1884c-d88b-45ad-a428-2d0c01f97a02",
+        "id": "9beaf690-ee23-411b-af5f-14f02e5dbf39",
         "title": "Midhir Rana",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
@@ -986,29 +522,11 @@
         ]
     },
     {
-        "id": "9b96281e-7c27-45b7-b51f-01e0843bfdca",
+        "id": "768a0c6d-c92a-4787-9907-61f25fd2c400",
         "title": "Mission Babu Sapkota",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
-            {
-                "day": 1,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Year 1 BIC-Spring [C10-C12]"
-            },
-            {
-                "day": 1,
-                "stime": "01:00 PM",
-                "etime": "02:30 PM",
-                "name": "Year 1 BIC-Spring [C13]"
-            },
-            {
-                "day": 1,
-                "stime": "07:30 AM",
-                "etime": "09:00 AM",
-                "name": "Year 1 BIC [C1-C3]"
-            },
             {
                 "day": 1,
                 "stime": "07:00 AM",
@@ -1032,18 +550,6 @@
                 "stime": "01:30 PM",
                 "etime": "03:00 PM",
                 "name": "Year 2 BIC [C10]"
-            },
-            {
-                "day": 2,
-                "stime": "07:30 AM",
-                "etime": "09:00 AM",
-                "name": "Year 1 BIC [C4-C6]"
-            },
-            {
-                "day": 2,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Year 1 BIC [C7-C9]"
             },
             {
                 "day": 2,
@@ -1065,57 +571,9 @@
             },
             {
                 "day": 3,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 1 BIC [C1]"
-            },
-            {
-                "day": 3,
-                "stime": "09:00 AM",
-                "etime": "10:30 AM",
-                "name": "Year 1 BIC [C2]"
-            },
-            {
-                "day": 3,
-                "stime": "01:00 PM",
-                "etime": "02:30 PM",
-                "name": "Year 1 BIC [C3]"
-            },
-            {
-                "day": 3,
                 "stime": "11:00 AM",
                 "etime": "12:30 PM",
                 "name": "Year 2 BIC [C10-C11]"
-            },
-            {
-                "day": 4,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Year 1 BIC-Spring [C13]"
-            },
-            {
-                "day": 4,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 1 BIC-Spring [C10]"
-            },
-            {
-                "day": 5,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 1 BIC [C1]"
-            },
-            {
-                "day": 5,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Year 1 BIC [C2]"
-            },
-            {
-                "day": 5,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 1 BIC [C3]"
             },
             {
                 "day": 5,
@@ -1140,18 +598,6 @@
                 "stime": "01:30 PM",
                 "etime": "03:00 PM",
                 "name": "Year 2 BIC [C9]"
-            },
-            {
-                "day": 6,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Year 1 BIC-Spring [C10]"
-            },
-            {
-                "day": 6,
-                "stime": "12:30 PM",
-                "etime": "02:00 PM",
-                "name": "Year 1 BIC-Spring [C13]"
             },
             {
                 "day": 6,
@@ -1174,16 +620,16 @@
         ]
     },
     {
-        "id": "8c6d6c3f-3da1-400a-aa29-03973a381ae5",
-        "title": "Nabaraj Adhikari",
+        "id": "d60fb546-35b5-4536-8078-aee1e8b83e4b",
+        "title": "Niroj Karki",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Year 3 BIC [C1]"
+                "name": "Year 3 BIC [C3]"
             },
             {
                 "day": 1,
@@ -1192,540 +638,546 @@
                 "name": "Year 3 BIC [C4]"
             },
             {
-                "day": 1,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
+                "day": 2,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
                 "name": "Year 3 BIC [C5]"
             },
             {
                 "day": 2,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
+                "name": "Year 3 BIC [C6]"
+            },
+            {
+                "day": 3,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 3 BIC [C5]"
+            },
+            {
+                "day": 3,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3 BIC [C6]"
+            },
+            {
+                "day": 4,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
                 "name": "Year 3 BIC [C3]"
+            },
+            {
+                "day": 4,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3 BIC [C4]"
+            }
+        ]
+    },
+    {
+        "id": "198a100f-2551-4454-bae2-84aec6a2e17d",
+        "title": "Prasant Adhikari",
+        "creator": "_system",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
+        "events": [
+            {
+                "day": 1,
+                "stime": "10:00 AM",
+                "etime": "11:30 AM",
+                "name": "Year 2 BIC [C11]"
+            },
+            {
+                "day": 1,
+                "stime": "11:30 AM",
+                "etime": "01:00 PM",
+                "name": "Year 2 BIC [C5]"
+            },
+            {
+                "day": 1,
+                "stime": "01:30 PM",
+                "etime": "03:00 PM",
+                "name": "Year 2 BIC [C4]"
             },
             {
                 "day": 2,
                 "stime": "10:00 AM",
                 "etime": "11:30 AM",
-                "name": "Year 3 BIC [C2]"
+                "name": "Year 2 BIC [C3]"
+            },
+            {
+                "day": 2,
+                "stime": "11:30 AM",
+                "etime": "01:00 PM",
+                "name": "Year 2 BIC [C1]"
+            },
+            {
+                "day": 2,
+                "stime": "01:30 PM",
+                "etime": "03:00 PM",
+                "name": "Year 2 BIC [C2]"
             },
             {
                 "day": 3,
+                "stime": "09:30 AM",
+                "etime": "11:00 AM",
+                "name": "Year 2 BIC [C1-C3]"
+            },
+            {
+                "day": 3,
+                "stime": "01:30 PM",
+                "etime": "03:00 PM",
+                "name": "Year 2 BIC [C10-C11]"
+            },
+            {
+                "day": 4,
+                "stime": "09:30 AM",
+                "etime": "11:00 AM",
+                "name": "Year 2 BIC [C4-C6]"
+            },
+            {
+                "day": 4,
+                "stime": "01:30 PM",
+                "etime": "03:00 PM",
+                "name": "Year 2 BIC [C7-C9]"
+            },
+            {
+                "day": 5,
+                "stime": "09:30 AM",
+                "etime": "11:00 AM",
+                "name": "Year 2 BIC [C5]"
+            },
+            {
+                "day": 5,
+                "stime": "11:00 AM",
+                "etime": "12:30 PM",
+                "name": "Year 2 BIC [C4]"
+            },
+            {
+                "day": 5,
+                "stime": "01:30 PM",
+                "etime": "03:00 PM",
+                "name": "Year 2 BIC [C11]"
+            },
+            {
+                "day": 6,
+                "stime": "10:00 AM",
+                "etime": "11:30 AM",
+                "name": "Year 2 BIC [C1]"
+            },
+            {
+                "day": 6,
+                "stime": "12:00 PM",
+                "etime": "01:30 PM",
+                "name": "Year 2 BIC [C2]"
+            },
+            {
+                "day": 6,
+                "stime": "01:30 PM",
+                "etime": "03:00 PM",
+                "name": "Year 2 BIC [C3]"
+            }
+        ]
+    },
+    {
+        "id": "916b73e6-1c5b-411d-b34e-7fa2d95244d8",
+        "title": "Pratibha Gurung",
+        "creator": "_system",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
+        "events": [
+            {
+                "day": 1,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 3 BIC [C6]"
+            },
+            {
+                "day": 1,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3 BIC [C5]"
+            },
+            {
+                "day": 2,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 3 BIC [C2]"
+            },
+            {
+                "day": 2,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3 BIC [C1]"
+            },
+            {
+                "day": 3,
+                "stime": "11:30 AM",
+                "etime": "01:00 PM",
+                "name": "Year 2 BIC [C4-C6]"
+            },
+            {
+                "day": 3,
+                "stime": "01:30 PM",
+                "etime": "03:00 PM",
+                "name": "Year 2 BIC [C7-C9]"
+            },
+            {
+                "day": 3,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3 BIC [C2]"
+            },
+            {
+                "day": 4,
+                "stime": "11:30 AM",
+                "etime": "01:00 PM",
+                "name": "Year 2 BIC [C1-C3]"
+            },
+            {
+                "day": 4,
+                "stime": "01:30 PM",
+                "etime": "03:00 PM",
+                "name": "Year 2 BIC [C10-C11]"
+            },
+            {
+                "day": 4,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 3 BIC [C5]"
+            },
+            {
+                "day": 5,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
                 "name": "Year 3 BIC [C4-C5]"
             },
             {
-                "day": 4,
+                "day": 5,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3 BIC [C6-C7]"
+            },
+            {
+                "day": 6,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
                 "name": "Year 3 BIC [C1-C3]"
             },
             {
+                "day": 6,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3 BIC [C6]"
+            }
+        ]
+    },
+    {
+        "id": "2e5a9786-d8a5-4be6-b922-7f25ee65442a",
+        "title": "Sajena Dwa",
+        "creator": "_system",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
+        "events": [
+            {
+                "day": 1,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 1 BBA [B1]"
+            },
+            {
+                "day": 1,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 2 BBA [B1]"
+            },
+            {
+                "day": 2,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3.5 BBA [B1]"
+            },
+            {
+                "day": 3,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 1 BBA [B2]"
+            },
+            {
+                "day": 3,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 2 BBA [B1]"
+            },
+            {
+                "day": 4,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3.5 BBA [B1]"
+            },
+            {
                 "day": 5,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Year 3 BIC [C1]"
+                "name": "Year 1 BBA [B1]"
             },
             {
                 "day": 5,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Year 3 BIC [C5]"
+                "name": "Year 2 BBA [B1]"
             },
             {
                 "day": 6,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3.5 BBA [B1]"
+            }
+        ]
+    },
+    {
+        "id": "ac016211-8278-4027-9222-5004d07624de",
+        "title": "Sanam Katwal",
+        "creator": "_system",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
+        "events": [
+            {
+                "day": 1,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 3 BIC [C7]"
+            },
+            {
+                "day": 1,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3 BIC [C6]"
+            },
+            {
+                "day": 2,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 3 BIC [C3]"
+            },
+            {
+                "day": 2,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3 BIC [C4]"
+            },
+            {
+                "day": 3,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 3 BIC [C3]"
+            },
+            {
+                "day": 3,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3 BIC [C4]"
+            },
+            {
+                "day": 4,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 3 BIC [C6]"
+            },
+            {
+                "day": 4,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3 BIC [C7]"
+            }
+        ]
+    },
+    {
+        "id": "3ca963b5-e66d-4fc3-91d5-f6bd31effca0",
+        "title": "Sandeep Gurung",
+        "creator": "_system",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
+        "events": [
+            {
+                "day": 1,
+                "stime": "10:00 AM",
+                "etime": "11:30 AM",
+                "name": "Year 2 BIC [C1]"
+            },
+            {
+                "day": 1,
+                "stime": "11:30 PM",
+                "etime": "01:30 PM",
+                "name": "Year 2 BIC [C2]"
+            },
+            {
+                "day": 2,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 2 BIC [C4]"
+            },
+            {
+                "day": 2,
+                "stime": "11:00 AM",
+                "etime": "12:30 PM",
+                "name": "Year 2 BIC [C5]"
+            },
+            {
+                "day": 3,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 2 BIC [C1-C3]"
+            },
+            {
+                "day": 4,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 2 BIC [C4-C6]"
+            },
+            {
+                "day": 4,
+                "stime": "11:00 AM",
+                "etime": "12:30 PM",
+                "name": "Year 2 BIC [C7-C9]"
+            },
+            {
+                "day": 5,
+                "stime": "10:00 AM",
+                "etime": "11:30 AM",
+                "name": "Year 2 BIC [C2]"
+            },
+            {
+                "day": 5,
+                "stime": "11:30 AM",
+                "etime": "01:00 PM",
+                "name": "Year 2 BIC [C1]"
+            },
+            {
+                "day": 6,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 2 BIC [C4]"
+            },
+            {
+                "day": 6,
+                "stime": "10:00 AM",
+                "etime": "11:30 AM",
+                "name": "Year 2 BIC [C5]"
+            }
+        ]
+    },
+    {
+        "id": "a3f5529f-e51a-4b14-b808-9648ec0f78d0",
+        "title": "Sandip Adhikari",
+        "creator": "_system",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
+        "events": [
+            {
+                "day": 1,
+                "stime": "09:30 AM",
+                "etime": "11:00 AM",
+                "name": "Year 2 BIC [C3]"
+            },
+            {
+                "day": 1,
+                "stime": "12:00 PM",
+                "etime": "01:30 PM",
+                "name": "Year 2 BIC [C1]"
+            },
+            {
+                "day": 1,
+                "stime": "01:30 PM",
+                "etime": "03:00 PM",
+                "name": "Year 2 BIC [C2]"
+            },
+            {
+                "day": 2,
+                "stime": "09:30 AM",
+                "etime": "11:00 AM",
+                "name": "Year 2 BIC [C4]"
+            },
+            {
+                "day": 2,
+                "stime": "01:30 PM",
+                "etime": "03:00 PM",
+                "name": "Year 2 BIC [C5]"
+            },
+            {
+                "day": 3,
+                "stime": "09:30 AM",
+                "etime": "11:00 AM",
+                "name": "Year 2 BIC [C4-C6]"
+            },
+            {
+                "day": 3,
+                "stime": "11:00 AM",
+                "etime": "12:30 PM",
+                "name": "Year 2 BIC [C7-C9]"
+            },
+            {
+                "day": 4,
+                "stime": "09:00 AM",
+                "etime": "10:30 AM",
+                "name": "Year 2 BIC [C1-C3]"
+            },
+            {
+                "day": 4,
+                "stime": "11:30 AM",
+                "etime": "01:00 PM",
+                "name": "Year 2 BIC [C10-C11]"
+            },
+            {
+                "day": 5,
+                "stime": "10:00 AM",
+                "etime": "11:30 AM",
+                "name": "Year 2 BIC [C3]"
+            },
+            {
+                "day": 5,
+                "stime": "12:00 PM",
+                "etime": "01:30 PM",
+                "name": "Year 2 BIC [C2]"
+            },
+            {
+                "day": 5,
+                "stime": "01:30 PM",
+                "etime": "03:00 PM",
+                "name": "Year 2 BIC [C1]"
+            },
+            {
+                "day": 6,
+                "stime": "09:30 AM",
+                "etime": "11:00 AM",
+                "name": "Year 2 BIC [C4]"
+            },
+            {
+                "day": 6,
+                "stime": "12:30 PM",
+                "etime": "02:00 PM",
+                "name": "Year 2 BIC [C5]"
+            }
+        ]
+    },
+    {
+        "id": "86f18e66-a91a-4892-b778-eaa9d15318e7",
+        "title": "Sanjog Hamal",
+        "creator": "_system",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
+        "events": [
+            {
+                "day": 1,
+                "stime": "11:30 AM",
+                "etime": "01:00 PM",
+                "name": "Year 2 BIC [C9]"
+            },
+            {
+                "day": 1,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
                 "name": "Year 3 BIC [C2]"
             },
             {
-                "day": 6,
+                "day": 1,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Year 3 BIC [C3]"
-            },
-            {
-                "day": 6,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Year 3 BIC [C4]"
-            }
-        ]
-    },
-    {
-        "id": "5c539cc5-7180-400a-8041-9f6036f4ae15",
-        "title": "Prasant Adhikari",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 1,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Year 2 BIC [C11]"
-            },
-            {
-                "day": 1,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Year 2 BIC [C5]"
-            },
-            {
-                "day": 1,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 2 BIC [C4]"
-            },
-            {
-                "day": 2,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Year 2 BIC [C3]"
-            },
-            {
-                "day": 2,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Year 2 BIC [C1]"
-            },
-            {
-                "day": 2,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 2 BIC [C2]"
-            },
-            {
-                "day": 3,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Year 2 BIC [C1-C3]"
-            },
-            {
-                "day": 3,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 2 BIC [C10-C11]"
-            },
-            {
-                "day": 4,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Year 2 BIC [C4-C6]"
-            },
-            {
-                "day": 4,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 2 BIC [C7-C9]"
-            },
-            {
-                "day": 5,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Year 2 BIC [C5]"
-            },
-            {
-                "day": 5,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Year 2 BIC [C4]"
-            },
-            {
-                "day": 5,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 2 BIC [C11]"
-            },
-            {
-                "day": 6,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Year 2 BIC [C1]"
-            },
-            {
-                "day": 6,
-                "stime": "12:00 PM",
-                "etime": "01:30 PM",
-                "name": "Year 2 BIC [C2]"
-            },
-            {
-                "day": 6,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 2 BIC [C3]"
-            }
-        ]
-    },
-    {
-        "id": "50e053f3-0356-4114-98b0-64e15c917658",
-        "title": "Pratibha Gurung",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 3,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Year 2 BIC [C4-C6]"
-            },
-            {
-                "day": 3,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 2 BIC [C7-C9]"
-            },
-            {
-                "day": 4,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Year 2 BIC [C1-C3]"
-            },
-            {
-                "day": 4,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 2 BIC [C10-C11]"
-            }
-        ]
-    },
-    {
-        "id": "7c7d503a-1325-4d8c-b394-1493fc0ef7c5",
-        "title": "Sajena Dwa",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 1,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Year 1 BBA ( Spring) [B2]"
-            },
-            {
-                "day": 1,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 2 BBA [B1]"
-            },
-            {
-                "day": 2,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 1 BBA [B1]"
-            },
-            {
-                "day": 3,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Year 1 BBA ( Spring) [B2]"
-            },
-            {
-                "day": 3,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 2 BBA [B1]"
-            },
-            {
-                "day": 4,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 1 BBA [B1]"
-            },
-            {
-                "day": 5,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Year 1 BBA ( Spring) [B2]"
-            },
-            {
-                "day": 5,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 2 BBA [B1]"
-            },
-            {
-                "day": 6,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 1 BBA [B1]"
-            }
-        ]
-    },
-    {
-        "id": "4d2126f6-ea17-4f94-b9e4-9e7d4a2acd68",
-        "title": "Sandeep Gurung",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 1,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Year 2 BIC [C1]"
-            },
-            {
-                "day": 1,
-                "stime": "12:00 PM",
-                "etime": "01:30 PM",
-                "name": "Year 2 BIC [C2]"
-            },
-            {
-                "day": 2,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 2 BIC [C4]"
-            },
-            {
-                "day": 2,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Year 2 BIC [C5]"
-            },
-            {
-                "day": 3,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 2 BIC [C1-C3]"
-            },
-            {
-                "day": 4,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 2 BIC [C4-C6]"
-            },
-            {
-                "day": 4,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Year 2 BIC [C7-C9]"
-            },
-            {
-                "day": 5,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Year 2 BIC [C2]"
-            },
-            {
-                "day": 5,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Year 2 BIC [C1]"
-            },
-            {
-                "day": 6,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 2 BIC [C4]"
-            },
-            {
-                "day": 6,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Year 2 BIC [C5]"
-            }
-        ]
-    },
-    {
-        "id": "583586f4-2143-40ff-a6c1-14862d01184a",
-        "title": "Sandip Adhikari",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 1,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Year 2 BIC [C3]"
-            },
-            {
-                "day": 1,
-                "stime": "12:00 PM",
-                "etime": "01:30 PM",
-                "name": "Year 2 BIC [C1]"
-            },
-            {
-                "day": 1,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 2 BIC [C2]"
-            },
-            {
-                "day": 2,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Year 2 BIC [C4]"
-            },
-            {
-                "day": 2,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 2 BIC [C5]"
-            },
-            {
-                "day": 3,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Year 2 BIC [C4-C6]"
-            },
-            {
-                "day": 3,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Year 2 BIC [C7-C9]"
-            },
-            {
-                "day": 4,
-                "stime": "09:00 AM",
-                "etime": "10:30 AM",
-                "name": "Year 2 BIC [C1-C3]"
-            },
-            {
-                "day": 4,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Year 2 BIC [C10-C11]"
-            },
-            {
-                "day": 5,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Year 2 BIC [C3]"
-            },
-            {
-                "day": 5,
-                "stime": "12:00 PM",
-                "etime": "01:30 PM",
-                "name": "Year 2 BIC [C2]"
-            },
-            {
-                "day": 5,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 2 BIC [C1]"
-            },
-            {
-                "day": 6,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Year 2 BIC [C4]"
-            },
-            {
-                "day": 6,
-                "stime": "12:30 PM",
-                "etime": "02:00 PM",
-                "name": "Year 2 BIC [C5]"
-            }
-        ]
-    },
-    {
-        "id": "e81e5379-a6d8-4219-b5eb-7316ae0eb927",
-        "title": "Sandip Dhakal",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 1,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Year 1 BIC [C4-C6]"
-            },
-            {
-                "day": 1,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 1 BIC [C7-C9]"
-            },
-            {
-                "day": 2,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Year 1 BIC-Spring [C13]"
-            },
-            {
-                "day": 2,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Year 1 BIC-Spring [C10-C12]"
-            },
-            {
-                "day": 2,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Year 1 BIC [C1-C3]"
-            },
-            {
-                "day": 3,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Year 1 BIC [C1]"
-            },
-            {
-                "day": 3,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Year 1 BIC [C2]"
-            },
-            {
-                "day": 4,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 1 BIC [C3]"
-            },
-            {
-                "day": 4,
-                "stime": "10:30 AM",
-                "etime": "12:00 PM",
-                "name": "Year 1 BIC [C4]"
-            },
-            {
-                "day": 4,
-                "stime": "01:00 PM",
-                "etime": "02:30 PM",
-                "name": "Year 1 BIC [C5]"
-            },
-            {
-                "day": 5,
-                "stime": "07:30 AM",
-                "etime": "09:00 AM",
-                "name": "Year 1 BIC [C2]"
-            },
-            {
-                "day": 5,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Year 1 BIC [C1]"
-            },
-            {
-                "day": 6,
-                "stime": "07:30 AM",
-                "etime": "09:00 AM",
-                "name": "Year 1 BIC [C4]"
-            },
-            {
-                "day": 6,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Year 1 BIC [C3]"
-            },
-            {
-                "day": 6,
-                "stime": "12:00 PM",
-                "etime": "01:30 PM",
-                "name": "Year 1 BIC [C5]"
-            }
-        ]
-    },
-    {
-        "id": "98d16960-e645-4bb4-9347-231785e60080",
-        "title": "Sanjog Hamal",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 1,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Year 2 BIC [C9]"
+                "name": "Year 3 BIC [C1]"
             },
             {
                 "day": 2,
@@ -1740,10 +1192,46 @@
                 "name": "Year 2 BIC [C7]"
             },
             {
+                "day": 2,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 3 BIC [C7]"
+            },
+            {
+                "day": 3,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 3 BIC [C7]"
+            },
+            {
+                "day": 4,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 3 BIC [C1]"
+            },
+            {
+                "day": 4,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3 BIC [C2]"
+            },
+            {
                 "day": 5,
                 "stime": "11:00 AM",
                 "etime": "12:30 PM",
                 "name": "Year 2 BIC [C9]"
+            },
+            {
+                "day": 5,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 3 BIC [C6-C7]"
+            },
+            {
+                "day": 5,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3 BIC [C1-C3]"
             },
             {
                 "day": 6,
@@ -1756,118 +1244,20 @@
                 "stime": "09:30 AM",
                 "etime": "11:00 AM",
                 "name": "Year 2 BIC [C7]"
+            },
+            {
+                "day": 6,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 3 BIC [C4-C5]"
             }
         ]
     },
     {
-        "id": "b0c4062f-2fe6-4b70-a8b7-217e5644b4e2",
-        "title": "Subash Sapkota Hamal",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 3,
-                "stime": "09:00 AM",
-                "etime": "10:30 AM",
-                "name": "Year 1 BIC [C4]"
-            },
-            {
-                "day": 3,
-                "stime": "10:30 AM",
-                "etime": "12:00 PM",
-                "name": "Year 1 BIC [C6]"
-            },
-            {
-                "day": 3,
-                "stime": "01:00 PM",
-                "etime": "02:30 PM",
-                "name": "Year 1 BIC [C7]"
-            },
-            {
-                "day": 3,
-                "stime": "02:30 PM",
-                "etime": "04:00 PM",
-                "name": "Year 1 BIC [C8]"
-            },
-            {
-                "day": 4,
-                "stime": "09:00 AM",
-                "etime": "10:30 AM",
-                "name": "Year 1 BIC [C3]"
-            },
-            {
-                "day": 4,
-                "stime": "10:30 AM",
-                "etime": "12:00 PM",
-                "name": "Year 1 BIC [C1]"
-            },
-            {
-                "day": 4,
-                "stime": "12:30 PM",
-                "etime": "02:00 PM",
-                "name": "Year 1 BIC [C2]"
-            },
-            {
-                "day": 4,
-                "stime": "03:30 PM",
-                "etime": "05:00 PM",
-                "name": "Year 1 BIC [C5]"
-            },
-            {
-                "day": 5,
-                "stime": "09:00 AM",
-                "etime": "10:30 AM",
-                "name": "Year 1 BIC [C6]"
-            },
-            {
-                "day": 5,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Year 1 BIC [C4]"
-            },
-            {
-                "day": 5,
-                "stime": "01:00 PM",
-                "etime": "02:30 PM",
-                "name": "Year 1 BIC [C7]"
-            },
-            {
-                "day": 5,
-                "stime": "03:00 PM",
-                "etime": "04:30 PM",
-                "name": "Year 1 BIC [C8]"
-            },
-            {
-                "day": 6,
-                "stime": "09:00 AM",
-                "etime": "10:30 AM",
-                "name": "Year 1 BIC [C1]"
-            },
-            {
-                "day": 6,
-                "stime": "10:30 AM",
-                "etime": "12:00 PM",
-                "name": "Year 1 BIC [C2]"
-            },
-            {
-                "day": 6,
-                "stime": "12:30 PM",
-                "etime": "02:00 PM",
-                "name": "Year 1 BIC [C3]"
-            },
-            {
-                "day": 6,
-                "stime": "02:00 PM",
-                "etime": "03:30 PM",
-                "name": "Year 1 BIC [C5]"
-            }
-        ]
-    },
-    {
-        "id": "6f6b32af-171d-43de-a970-ed8ee1b73dfc",
+        "id": "8d5f8c30-07c3-4df6-8b27-778fd590af5c",
         "title": "Sunil Thapa",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
@@ -1944,1360 +1334,228 @@
         ]
     },
     {
-        "id": "de0fe209-67f5-47fc-836f-d4e8c0d98f57",
-        "title": "Sushil Paudel",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 1,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Year 1 BIC-Spring [C10-C12]"
-            },
-            {
-                "day": 1,
-                "stime": "10:30 AM",
-                "etime": "12:00 PM",
-                "name": "Year 1 BIC-Spring [C13]"
-            },
-            {
-                "day": 1,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 1 BIC [C4-C6]"
-            },
-            {
-                "day": 2,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Year 1 BIC [C1-C3]"
-            },
-            {
-                "day": 2,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Year 1 BIC [C7-C9]"
-            }
-        ]
-    },
-    {
-        "id": "a50e06ae-5556-4e30-b26c-f5c3b0316601",
+        "id": "073ec50f-c2be-4672-bada-1c64935bcadd",
         "title": "Vikram Rana",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
+                "day": 1,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Year 3 BBA [B1]"
+            },
+            {
                 "day": 2,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 2 BBA [B1]"
+            },
+            {
+                "day": 3,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
                 "name": "Year 3 BBA [B1]"
             },
             {
                 "day": 4,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 2 BBA [B1]"
+            },
+            {
+                "day": 5,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
                 "name": "Year 3 BBA [B1]"
             },
             {
                 "day": 6,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Year 3 BBA [B1]"
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Year 2 BBA [B1]"
             }
         ]
     },
     {
-        "id": "1cff91c6-5f60-4a4b-8461-4abc446418dd",
+        "id": "56099ca2-948f-4df3-a868-43e013a7c546",
         "title": "[B1] Year 1 BBA",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 1,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Understanding the Business and Economic Environment @ Bigben"
-            },
-            {
-                "day": 1,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Financial Accounting @ Thames"
-            },
-            {
-                "day": 2,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Managing People in Organisations @ Bigben"
-            },
-            {
-                "day": 2,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Learning Through Organisations @ Bigben"
-            },
-            {
-                "day": 3,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Understanding the Business and Economic Environment @ Nilgiri"
-            },
-            {
-                "day": 3,
-                "stime": "12:00 PM",
-                "etime": "01:30 PM",
-                "name": "Financial Accounting @ Annapurna"
-            },
-            {
-                "day": 4,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Managing People in Organisations @ Thames"
-            },
-            {
-                "day": 4,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Learning Through Organisations @ Thames"
-            },
-            {
-                "day": 5,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Understanding the Business and Economic Environment @ Nilgiri"
-            },
-            {
-                "day": 5,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Financial Accounting @ Begnas"
-            },
-            {
-                "day": 6,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Managing People in Organisations @ Begnas"
-            },
-            {
-                "day": 6,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Learning Through Organisations @ Begnas"
-            }
-        ]
-    },
-    {
-        "id": "2412a5d8-72f9-487f-98ff-244b4bd73c60",
-        "title": "[B2] Year 1 BBA ( Spring)",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Business Law and Ethics @ Thames"
+                "name": "Principles of Management @ Gokyo"
             },
             {
                 "day": 1,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Principles of Management @ Thames"
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Business Law and Ethics @ Gokyo"
             },
             {
                 "day": 2,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Principles of Marketing @ OpenAccessLab"
+                "stime": "09:00 AM",
+                "etime": "10:30 AM",
+                "name": "Principle of Marketing @ Fewa"
             },
             {
                 "day": 2,
-                "stime": "12:00 PM",
-                "etime": "01:30 PM",
+                "stime": "10:30 AM",
+                "etime": "12:00 PM",
                 "name": "Understanding and Managing Data @ Fewa"
             },
             {
                 "day": 3,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Business Law and Ethics @ Gokyo"
-            },
-            {
-                "day": 3,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Principles of Management @ MeetingRoom"
-            },
-            {
-                "day": 4,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Principles of Marketing @ OpenAccessLab"
-            },
-            {
-                "day": 4,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Understanding and Managing Data @ Nilgiri"
-            },
-            {
-                "day": 5,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Business Law and Ethics @ Bigben"
-            },
-            {
-                "day": 5,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Principles of Management @ Stonehenge"
-            },
-            {
-                "day": 6,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Principles of Marketing @ Nilgiri"
-            },
-            {
-                "day": 6,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Understanding and Managing Data @ Bigben"
-            }
-        ]
-    },
-    {
-        "id": "a0c2ad26-a74c-4956-b6a3-61989f936953",
-        "title": "[C1] Year 1 BIC",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 1,
-                "stime": "07:30 AM",
-                "etime": "09:00 AM",
-                "name": "Logic & Problem Solving @ Machhapuchhre"
-            },
-            {
-                "day": 1,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Computer Hardware and Software Architecures @ Annapurna"
-            },
-            {
-                "day": 2,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Programming @ Machhapuchhre"
-            },
-            {
-                "day": 2,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Fundamentals of Computing @ Annapurna"
-            },
-            {
-                "day": 3,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Logic & Problem Solving @ Stonehenge"
-            },
-            {
-                "day": 3,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Fundamentals of Computing @ Stonehenge"
-            },
-            {
-                "day": 4,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Computer Hardware and Software Architecures @ Tilicho"
-            },
-            {
-                "day": 4,
-                "stime": "10:30 AM",
-                "etime": "12:00 PM",
-                "name": "Programming @ Gokyo"
-            },
-            {
-                "day": 5,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Logic & Problem Solving @ Rara"
-            },
-            {
-                "day": 5,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Fundamentals of Computing @ Begnas"
-            },
-            {
-                "day": 6,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Computer Hardware and Software Architecures @ Bigben"
-            },
-            {
-                "day": 6,
-                "stime": "09:00 AM",
-                "etime": "10:30 AM",
-                "name": "Programming @ Fewa"
-            }
-        ]
-    },
-    {
-        "id": "a5f227e5-41c8-4a8c-9be2-1b811085945d",
-        "title": "[C10] Year 1 BIC-Spring",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 1,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Programming @ Annapurna"
-            },
-            {
-                "day": 1,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Logic & Problem Solving @ Machhapuchhre"
-            },
-            {
-                "day": 2,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Computer Hardware and Software Architecures @ Machhapuchhre"
-            },
-            {
-                "day": 2,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Introduction to Information Systems @ Machhapuchhre"
-            },
-            {
-                "day": 3,
-                "stime": "09:00 AM",
-                "etime": "10:30 AM",
-                "name": "Introduction to Information Systems @ Annapurna"
-            },
-            {
-                "day": 3,
-                "stime": "12:00 PM",
-                "etime": "01:30 PM",
-                "name": "Computer Hardware and Software Architecures @ OpenAccessLab"
-            },
-            {
-                "day": 4,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Programming @ Annapurna"
-            },
-            {
-                "day": 4,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Logic & Problem Solving @ Gokyo"
-            },
-            {
-                "day": 5,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Introduction to Information Systems @ Stonehenge"
-            },
-            {
-                "day": 5,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Computer Hardware and Software Architecures @ OpenAccessLab"
-            },
-            {
-                "day": 6,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Logic & Problem Solving @ Tilicho"
-            },
-            {
-                "day": 6,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Programming @ Nilgiri"
-            }
-        ]
-    },
-    {
-        "id": "413379e7-fc1d-4674-9fbd-c73b671d4d8a",
-        "title": "[C11] Year 1 BIC-Spring",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 1,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Programming @ Annapurna"
-            },
-            {
-                "day": 1,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Logic & Problem Solving @ Machhapuchhre"
-            },
-            {
-                "day": 2,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Computer Hardware and Software Architecures @ Machhapuchhre"
-            },
-            {
-                "day": 2,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Introduction to Information Systems @ Machhapuchhre"
-            },
-            {
-                "day": 3,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Logic & Problem Solving @ Stonehenge"
-            },
-            {
-                "day": 3,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Programming @ Bigben"
-            },
-            {
-                "day": 4,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Computer Hardware and Software Architecures @ OpenAccessLab"
-            },
-            {
-                "day": 4,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Introduction to Information Systems @ Machhapuchhre"
-            },
-            {
-                "day": 5,
-                "stime": "07:30 AM",
-                "etime": "09:00 AM",
-                "name": "Logic & Problem Solving @ Begnas"
-            },
-            {
-                "day": 5,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Programming @ Nilgiri"
-            },
-            {
-                "day": 6,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Introduction to Information Systems @ Stonehenge"
-            },
-            {
-                "day": 6,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Computer Hardware and Software Architecures @ OpenAccessLab"
-            }
-        ]
-    },
-    {
-        "id": "ad74faaa-c990-4724-9730-b412e6649825",
-        "title": "[C12] Year 1 BIC-Spring",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 1,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Programming @ Annapurna"
-            },
-            {
-                "day": 1,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Logic & Problem Solving @ Machhapuchhre"
-            },
-            {
-                "day": 2,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Computer Hardware and Software Architecures @ Machhapuchhre"
-            },
-            {
-                "day": 2,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Introduction to Information Systems @ Machhapuchhre"
-            },
-            {
-                "day": 3,
-                "stime": "01:00 PM",
-                "etime": "02:30 PM",
-                "name": "Logic & Problem Solving @ Stonehenge"
-            },
-            {
-                "day": 3,
-                "stime": "03:00 PM",
-                "etime": "04:30 PM",
-                "name": "Introduction to Information Systems @ Tilicho"
-            },
-            {
-                "day": 4,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Computer Hardware and Software Architecures @ OpenAccessLab"
-            },
-            {
-                "day": 4,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Programming @ Fewa"
-            },
-            {
-                "day": 5,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Logic & Problem Solving @ Bigben"
-            },
-            {
-                "day": 5,
-                "stime": "03:30 PM",
-                "etime": "05:00 PM",
-                "name": "Introduction to Information Systems @ Tilicho"
-            },
-            {
-                "day": 6,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Computer Hardware and Software Architecures @ OpenAccessLab"
-            },
-            {
-                "day": 6,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Programming @ Thames"
-            }
-        ]
-    },
-    {
-        "id": "ac19fea6-a533-475f-9289-edf22877835b",
-        "title": "[C13] Year 1 BIC-Spring",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 1,
-                "stime": "10:30 AM",
-                "etime": "12:00 PM",
-                "name": "Programming @ Bigben"
-            },
-            {
-                "day": 1,
-                "stime": "01:00 PM",
-                "etime": "02:30 PM",
-                "name": "Logic & Problem Solving @ Annapurna"
-            },
-            {
-                "day": 2,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Introduction to Information Systems @ Rara"
-            },
-            {
-                "day": 2,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Computer Hardware and Software Architecures @ Annapurna"
-            },
-            {
-                "day": 3,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Programming @ Fewa"
-            },
-            {
-                "day": 3,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Computer Hardware and Software Architecures @ OpenAccessLab"
-            },
-            {
-                "day": 4,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Logic & Problem Solving @ Machhapuchhre"
-            },
-            {
-                "day": 4,
-                "stime": "01:00 PM",
-                "etime": "02:30 PM",
-                "name": "Introduction to Information Systems @ Bigben"
-            },
-            {
-                "day": 5,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Computer Hardware and Software Architecures @ OpenAccessLab"
-            },
-            {
-                "day": 5,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Programming @ Thames"
-            },
-            {
-                "day": 6,
-                "stime": "12:30 PM",
-                "etime": "02:00 PM",
-                "name": "Logic & Problem Solving @ Bigben"
-            },
-            {
-                "day": 6,
-                "stime": "03:00 PM",
-                "etime": "04:30 PM",
-                "name": "Introduction to Information Systems @ Gokyo"
-            }
-        ]
-    },
-    {
-        "id": "6b46bf44-f586-47d2-a4e0-a4ea5f40374b",
-        "title": "[C2] Year 1 BIC",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 1,
-                "stime": "07:30 AM",
-                "etime": "09:00 AM",
-                "name": "Logic & Problem Solving @ Machhapuchhre"
-            },
-            {
-                "day": 1,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Computer Hardware and Software Architecures @ Annapurna"
-            },
-            {
-                "day": 2,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Programming @ Machhapuchhre"
-            },
-            {
-                "day": 2,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Fundamentals of Computing @ Annapurna"
-            },
-            {
-                "day": 3,
-                "stime": "09:00 AM",
-                "etime": "10:30 AM",
-                "name": "Logic & Problem Solving @ Gokyo"
-            },
-            {
-                "day": 3,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Fundamentals of Computing @ Nilgiri"
-            },
-            {
-                "day": 4,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Computer Hardware and Software Architecures @ Thames"
-            },
-            {
-                "day": 4,
-                "stime": "12:30 PM",
-                "etime": "02:00 PM",
-                "name": "Programming @ Tilicho"
-            },
-            {
-                "day": 5,
-                "stime": "07:30 AM",
-                "etime": "09:00 AM",
-                "name": "Fundamentals of Computing @ Stonehenge"
-            },
-            {
-                "day": 5,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Logic & Problem Solving @ Fewa"
-            },
-            {
-                "day": 6,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Computer Hardware and Software Architecures @ OpenAccessLab"
-            },
-            {
-                "day": 6,
-                "stime": "10:30 AM",
-                "etime": "12:00 PM",
-                "name": "Programming @ Fewa"
-            }
-        ]
-    },
-    {
-        "id": "bfab627d-3125-46a4-8b12-07b3c9794b72",
-        "title": "[C3] Year 1 BIC",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 1,
-                "stime": "07:30 AM",
-                "etime": "09:00 AM",
-                "name": "Logic & Problem Solving @ Machhapuchhre"
-            },
-            {
-                "day": 1,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Computer Hardware and Software Architecures @ Annapurna"
-            },
-            {
-                "day": 2,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Programming @ Machhapuchhre"
-            },
-            {
-                "day": 2,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Fundamentals of Computing @ Annapurna"
-            },
-            {
-                "day": 3,
-                "stime": "10:30 AM",
-                "etime": "12:00 PM",
-                "name": "Computer Hardware and Software Architecures @ Gokyo"
-            },
-            {
-                "day": 3,
-                "stime": "01:00 PM",
-                "etime": "02:30 PM",
-                "name": "Logic & Problem Solving @ Rara"
-            },
-            {
-                "day": 4,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Fundamentals of Computing @ Gokyo"
+                "name": "Business Law and Ethics @ Fewa"
             },
             {
                 "day": 4,
                 "stime": "09:00 AM",
                 "etime": "10:30 AM",
-                "name": "Programming @ Nilgiri"
-            },
-            {
-                "day": 5,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Computer Hardware and Software Architecures @ Tilicho"
-            },
-            {
-                "day": 5,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Logic & Problem Solving @ Tilicho"
-            },
-            {
-                "day": 6,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Fundamentals of Computing @ Nilgiri"
-            },
-            {
-                "day": 6,
-                "stime": "12:30 PM",
-                "etime": "02:00 PM",
-                "name": "Programming @ Thames"
-            }
-        ]
-    },
-    {
-        "id": "d5f46143-5ff1-4175-bc51-c777d7e5d308",
-        "title": "[C4] Year 1 BIC",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 1,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Programming @ Annapurna"
-            },
-            {
-                "day": 1,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Fundamentals of Computing @ Machhapuchhre"
-            },
-            {
-                "day": 2,
-                "stime": "07:30 AM",
-                "etime": "09:00 AM",
-                "name": "Logic & Problem Solving @ Annapurna"
-            },
-            {
-                "day": 2,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Computer Hardware and Software Architecures @ Machhapuchhre"
-            },
-            {
-                "day": 3,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Computer Hardware and Software Architecures @ Bigben"
-            },
-            {
-                "day": 3,
-                "stime": "09:00 AM",
-                "etime": "10:30 AM",
-                "name": "Programming @ Tilicho"
-            },
-            {
-                "day": 4,
-                "stime": "07:30 AM",
-                "etime": "09:00 AM",
-                "name": "Logic & Problem Solving @ Nilgiri"
+                "name": "Principle of Marketing @ Gokyo"
             },
             {
                 "day": 4,
                 "stime": "10:30 AM",
                 "etime": "12:00 PM",
-                "name": "Fundamentals of Computing @ Stonehenge"
+                "name": "Understanding and Managing Data @ Begnas"
             },
             {
                 "day": 5,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Programming @ Gokyo"
-            },
-            {
-                "day": 5,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Computer Hardware and Software Architecures @ Nilgiri"
-            },
-            {
-                "day": 6,
-                "stime": "07:30 AM",
-                "etime": "09:00 AM",
-                "name": "Fundamentals of Computing @ Fewa"
-            },
-            {
-                "day": 6,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Logic & Problem Solving @ Rara"
-            }
-        ]
-    },
-    {
-        "id": "61c13131-30ba-4b5b-939f-6b4428f005bf",
-        "title": "[C5] Year 1 BIC",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 1,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Programming @ Annapurna"
-            },
-            {
-                "day": 1,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Fundamentals of Computing @ Machhapuchhre"
-            },
-            {
-                "day": 2,
-                "stime": "07:30 AM",
-                "etime": "09:00 AM",
-                "name": "Logic & Problem Solving @ Annapurna"
-            },
-            {
-                "day": 2,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Computer Hardware and Software Architecures @ Machhapuchhre"
-            },
-            {
-                "day": 3,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Logic & Problem Solving @ Fewa"
-            },
-            {
-                "day": 3,
-                "stime": "12:00 PM",
-                "etime": "01:30 PM",
-                "name": "Computer Hardware and Software Architecures @ Gokyo"
-            },
-            {
-                "day": 4,
-                "stime": "01:00 PM",
-                "etime": "02:30 PM",
-                "name": "Fundamentals of Computing @ Thames"
-            },
-            {
-                "day": 4,
-                "stime": "03:30 PM",
-                "etime": "05:00 PM",
-                "name": "Programming @ Tilicho"
+                "name": "Principle of Management @ Nilgiri"
             },
             {
                 "day": 5,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Computer Hardware and Software Architecures @ OpenAccessLab"
-            },
-            {
-                "day": 5,
-                "stime": "10:30 AM",
-                "etime": "12:00 PM",
-                "name": "Logic & Problem Solving @ Bigben"
+                "name": "Business Law and Ethics @ Nilgiri"
             },
             {
                 "day": 6,
-                "stime": "12:00 PM",
-                "etime": "01:30 PM",
-                "name": "Fundamentals of Computing @ Gokyo"
-            },
-            {
-                "day": 6,
-                "stime": "02:00 PM",
-                "etime": "03:30 PM",
-                "name": "Programming @ Thames"
-            }
-        ]
-    },
-    {
-        "id": "5f8303cc-183d-46d0-9d67-cc1b2034ffc2",
-        "title": "[C6] Year 1 BIC",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 1,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Programming @ Annapurna"
-            },
-            {
-                "day": 1,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Fundamentals of Computing @ Machhapuchhre"
-            },
-            {
-                "day": 2,
-                "stime": "07:30 AM",
-                "etime": "09:00 AM",
-                "name": "Logic & Problem Solving @ Annapurna"
-            },
-            {
-                "day": 2,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Computer Hardware and Software Architecures @ Machhapuchhre"
-            },
-            {
-                "day": 3,
-                "stime": "10:30 AM",
-                "etime": "12:00 PM",
-                "name": "Programming @ Annapurna"
-            },
-            {
-                "day": 3,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Computer Hardware and Software Architecures @ Gokyo"
-            },
-            {
-                "day": 4,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Fundamentals of Computing @ Bigben"
-            },
-            {
-                "day": 4,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Logic & Problem Solving @ Begnas"
-            },
-            {
-                "day": 5,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Computer Hardware and Software Architecures @ OpenAccessLab"
-            },
-            {
-                "day": 5,
-                "stime": "09:00 AM",
-                "etime": "10:30 AM",
-                "name": "Programming @ Rara"
-            },
-            {
-                "day": 6,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Logic & Problem Solving @ Nilgiri"
-            },
-            {
-                "day": 6,
-                "stime": "09:30 AM",
-                "etime": "11:00 AM",
-                "name": "Fundamentals of Computing @ Stonehenge"
-            }
-        ]
-    },
-    {
-        "id": "09dcb06f-21b4-4979-ae1e-8f4d8f10c91c",
-        "title": "[C7] Year 1 BIC",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 1,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Computer Hardware and Software Architecures @ Annapurna"
-            },
-            {
-                "day": 1,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Fundamentals of Computing @ Machhapuchhre"
-            },
-            {
-                "day": 2,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Programming @ Machhapuchhre"
-            },
-            {
-                "day": 2,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Logic & Problem Solving @ Annapurna"
-            },
-            {
-                "day": 3,
-                "stime": "10:30 AM",
-                "etime": "12:00 PM",
-                "name": "Fundamentals of Computing @ OpenAccessLab"
-            },
-            {
-                "day": 3,
-                "stime": "01:00 PM",
-                "etime": "02:30 PM",
-                "name": "Programming @ Nilgiri"
-            },
-            {
-                "day": 4,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Computer Hardware and Software Architecures @ OpenAccessLab"
-            },
-            {
-                "day": 4,
-                "stime": "12:00 PM",
-                "etime": "01:30 PM",
-                "name": "Logic & Problem Solving @ Begnas"
-            },
-            {
-                "day": 5,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Fundamentals of Computing @ Thames"
-            },
-            {
-                "day": 5,
-                "stime": "01:00 PM",
-                "etime": "02:30 PM",
-                "name": "Programming @ Gokyo"
+                "name": "Principle of Marketing @ Fewa"
             },
             {
                 "day": 6,
-                "stime": "09:00 AM",
-                "etime": "10:30 AM",
-                "name": "Computer Hardware and Software Architecures @ Bigben"
-            },
-            {
-                "day": 6,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Logic & Problem Solving @ Rara"
+                "stime": "10:00 AM",
+                "etime": "11:30 AM",
+                "name": "Understanding and Managing Data @ Fewa"
             }
         ]
     },
     {
-        "id": "0d8b3a67-3d0c-4f12-aed5-688bafe91433",
-        "title": "[C8] Year 1 BIC",
+        "id": "8cd2aa21-18b8-4e2e-82f9-857aeb8bf25e",
+        "title": "[B2] Year 1 BBA",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
-            {
-                "day": 1,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Computer Hardware and Software Architecures @ Annapurna"
-            },
-            {
-                "day": 1,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Fundamentals of Computing @ Machhapuchhre"
-            },
-            {
-                "day": 2,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Programming @ Machhapuchhre"
-            },
-            {
-                "day": 2,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Logic & Problem Solving @ Annapurna"
-            },
-            {
-                "day": 3,
-                "stime": "12:00 PM",
-                "etime": "01:30 PM",
-                "name": "Fundamentals of Computing @ Bigben"
-            },
-            {
-                "day": 3,
-                "stime": "02:30 PM",
-                "etime": "04:00 PM",
-                "name": "Programming @ Nilgiri"
-            },
-            {
-                "day": 4,
-                "stime": "10:30 AM",
-                "etime": "12:00 PM",
-                "name": "Logic & Problem Solving @ Rara"
-            },
-            {
-                "day": 4,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Computer Hardware and Software Architecures @ OpenAccessLab"
-            },
-            {
-                "day": 5,
-                "stime": "01:00 PM",
-                "etime": "02:30 PM",
-                "name": "Fundamentals of Computing @ Stonehenge"
-            },
-            {
-                "day": 5,
-                "stime": "03:00 PM",
-                "etime": "04:30 PM",
-                "name": "Programming @ Gokyo"
-            },
-            {
-                "day": 6,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Computer Hardware and Software Architecures @ OpenAccessLab"
-            },
-            {
-                "day": 6,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Logic & Problem Solving @ Rara"
-            }
-        ]
-    },
-    {
-        "id": "309fb644-82a7-4d8f-93b0-69f0b6602417",
-        "title": "[C9] Year 1 BIC",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 1,
-                "stime": "11:30 AM",
-                "etime": "01:00 PM",
-                "name": "Computer Hardware and Software Architecures @ Annapurna"
-            },
-            {
-                "day": 1,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Fundamentals of Computing @ Machhapuchhre"
-            },
-            {
-                "day": 2,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Programming @ Machhapuchhre"
-            },
-            {
-                "day": 2,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Logic & Problem Solving @ Annapurna"
-            },
             {
                 "day": 3,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Logic & Problem Solving @ Nilgiri"
-            },
-            {
-                "day": 3,
-                "stime": "09:00 AM",
-                "etime": "10:30 AM",
-                "name": "Computer Hardware and Software Architecures @ OpenAccessLab"
-            },
-            {
-                "day": 4,
-                "stime": "12:00 PM",
-                "etime": "01:30 PM",
-                "name": "Programming @ Stonehenge"
-            },
-            {
-                "day": 4,
-                "stime": "02:30 PM",
-                "etime": "04:00 PM",
-                "name": "Fundamentals of Computing @ Stonehenge"
-            },
-            {
-                "day": 5,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Computer Hardware and Software Architecures @ OpenAccessLab"
-            },
-            {
-                "day": 5,
-                "stime": "12:00 PM",
-                "etime": "01:30 PM",
-                "name": "Logic & Problem Solving @ Bigben"
-            },
-            {
-                "day": 6,
-                "stime": "11:00 AM",
-                "etime": "12:30 PM",
-                "name": "Programming @ Begnas"
-            },
-            {
-                "day": 6,
-                "stime": "01:30 PM",
-                "etime": "03:00 PM",
-                "name": "Fundamentals of Computing @ Gokyo"
+                "name": "Principle of Management @ Fewa"
             }
         ]
     },
     {
-        "id": "43e849b7-e5b7-40ef-85b2-1ff2439045f3",
+        "id": "2e84b3ca-4e71-43dc-b621-a46aae35ea30",
         "title": "[B1] Year 2 BBA",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Leading, Managing, and Developing People @ Begnas"
+                "name": "Effective Project Management @ Tilicho"
             },
             {
                 "day": 1,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Problem Solving: Methods and Analysis @ Begnas"
+                "name": "Talent Resourcing and Development @ Tilicho"
             },
             {
                 "day": 2,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Leading Innovation and Entrepreneurship @ Fewa"
+                "name": "Business Writing and Effective Lab Communication @ Rara"
             },
             {
                 "day": 2,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Organisation Design and Management @ Fewa"
-            },
-            {
-                "day": 3,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Leading, Managing, and Developing People @ Fewa"
-            },
-            {
-                "day": 3,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Problem Solving: Methods and Analysis @ Fewa"
-            },
-            {
-                "day": 4,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Leading Innovation and Entrepreneurship @ Begnas"
-            },
-            {
-                "day": 4,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Organisation Design and Management @ Begnas"
-            },
-            {
-                "day": 5,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Leading, Managing, and Developing People @ Fewa"
-            },
-            {
-                "day": 5,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Problem Solving: Methods and Analysis @ Fewa"
-            },
-            {
-                "day": 6,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
                 "name": "Leading Innovation and Entrepreneurship @ Rara"
             },
             {
+                "day": 3,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Effective Project Management @ Rupa"
+            },
+            {
+                "day": 3,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Talent Resourcing and Development @ Rupa"
+            },
+            {
+                "day": 4,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Business Writing and Effective Lab Communication @ Rupa"
+            },
+            {
+                "day": 4,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Leading Innovation and Entrepreneurship @ Rupa"
+            },
+            {
+                "day": 5,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Effective Project Management @ Fewa"
+            },
+            {
+                "day": 5,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Talent Resourcing and Development @ Fewa"
+            },
+            {
+                "day": 6,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Business Writing and Effective Lab Communication @ Rara"
+            },
+            {
                 "day": 6,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Organisation Design and Management @ Rara"
+                "name": "Leading Innovation and Entrepreneurship @ Rara"
             }
         ]
     },
     {
-        "id": "57e32d24-acaa-4925-8e40-8aaf3c87ca99",
+        "id": "2afdbcae-3a10-4595-bd94-10ec89fcc053",
         "title": "[C1] Year 2 BIC",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
                 "stime": "10:00 AM",
                 "etime": "11:30 AM",
-                "name": "Software Engineering @ Thames"
+                "name": "Software Engineering @ Begnas"
             },
             {
                 "day": 1,
@@ -3368,10 +1626,10 @@
         ]
     },
     {
-        "id": "3142a618-9547-428b-84ab-611f0e8c789b",
+        "id": "f3908cb4-bb0c-4971-aa89-56c16005a6cb",
         "title": "[C10] Year 2 BIC",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
@@ -3448,10 +1706,10 @@
         ]
     },
     {
-        "id": "a8c40753-7c6b-44e8-8448-a0ceb0e99385",
+        "id": "2ca90f3a-84b8-484f-be3c-5aad93bdd557",
         "title": "[C11] Year 2 BIC",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
@@ -3528,14 +1786,14 @@
         ]
     },
     {
-        "id": "5d1aceba-3349-4132-9911-72edf86ba2b6",
+        "id": "8c6d6101-9584-439d-bf35-53d1b865a625",
         "title": "[C2] Year 2 BIC",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
-                "stime": "12:00 PM",
+                "stime": "11:30 PM",
                 "etime": "01:30 PM",
                 "name": "Software Engineering @ Fewa"
             },
@@ -3608,10 +1866,10 @@
         ]
     },
     {
-        "id": "f25ee625-52f9-4ec7-9832-5678ec96d2a8",
+        "id": "30449252-6b56-40b2-a13d-2214b61eef01",
         "title": "[C3] Year 2 BIC",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
@@ -3688,10 +1946,10 @@
         ]
     },
     {
-        "id": "30ea0160-fee9-4d02-bec5-6840d0044d6d",
+        "id": "b3821df2-fba4-4aa6-8447-05bd5ed1b0f5",
         "title": "[C4] Year 2 BIC",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
@@ -3768,10 +2026,10 @@
         ]
     },
     {
-        "id": "2a63aa4f-50e9-422a-94ab-2b3fb5982d1b",
+        "id": "3eb746aa-5e97-43e5-b27c-6e7f5e918876",
         "title": "[C5] Year 2 BIC",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
@@ -3848,10 +2106,10 @@
         ]
     },
     {
-        "id": "a0755af2-0d7a-4e6a-a30d-1e4842686bd8",
+        "id": "94c66d19-3629-4c56-a2d7-21e95c4e9b61",
         "title": "[C6] Year 2 BIC",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
@@ -3928,10 +2186,10 @@
         ]
     },
     {
-        "id": "5d76585f-6f28-4959-9d05-a7778c28a2ba",
+        "id": "ef027b6b-4d4c-48b1-80db-f1b23def2789",
         "title": "[C7] Year 2 BIC",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
@@ -4008,10 +2266,10 @@
         ]
     },
     {
-        "id": "a2d14676-9ce2-4080-b1e1-cf72bb640c3c",
+        "id": "01a592b7-5f40-4509-9db1-0400284bd171",
         "title": "[C8] Year 2 BIC",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
@@ -4088,10 +2346,10 @@
         ]
     },
     {
-        "id": "a229bc03-989f-4c91-a5be-0829aaf4681a",
+        "id": "f77dcc63-e345-413e-84f7-f74f3b7259a1",
         "title": "[C9] Year 2 BIC",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
@@ -4168,302 +2426,612 @@
         ]
     },
     {
-        "id": "67014ab9-15c3-449b-9809-6290c670a6a7",
+        "id": "eca7ace5-76c4-4bb9-bed3-5bb836af6a38",
+        "title": "[B1] Year 3.5 BBA",
+        "creator": "_system",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
+        "events": [
+            {
+                "day": 1,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Developing Breakthrough Leadership Skills @ Begnas"
+            },
+            {
+                "day": 1,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Learning Through Work 2 @ Begnas"
+            },
+            {
+                "day": 2,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Creating a Winning Business 2 @ Nilgiri"
+            },
+            {
+                "day": 2,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Corporate Social Responsibility and Sustainability @ Nilgiri"
+            },
+            {
+                "day": 3,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Learning Through Work 2 @ Begnas"
+            },
+            {
+                "day": 4,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Corporate Social Responsibility and Sustainability @ Rara"
+            },
+            {
+                "day": 5,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Developing Breakthrough Leadership Skills @ Rara"
+            },
+            {
+                "day": 5,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Learning Through Work 2 @ Rara"
+            },
+            {
+                "day": 6,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Creating a Winning Business 2 @ Gokyo"
+            },
+            {
+                "day": 6,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Corporate Social Responsibility and Sustainability @ Gokyo"
+            }
+        ]
+    },
+    {
+        "id": "0e31c8d7-dfc0-45d6-ac43-64b8f25cdd47",
         "title": "[B1] Year 3 BBA",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Applied Information Technology for Professional Practice @ Stonehenge"
+                "name": "Emerging Technology in Digital Business Management @ Fewa"
             },
             {
                 "day": 1,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Achieve Your Potential @ Stonehenge"
+                "name": "Digital and Social media Marketing @ Fewa"
             },
             {
                 "day": 2,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Digital Marketing Trends and Practice @ Thames"
+                "name": "International Marketing and Sales in the Digital Era @ Tilicho"
             },
             {
                 "day": 2,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Use of Artificial Intelligence and Big Data in Business @ Thames"
+                "name": "Personal Finance @ Tilicho"
             },
             {
                 "day": 3,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Applied Information Technology for Professional Practice @ Thames"
+                "name": "Emeriging Technology in Digital Business Management @ Nilgiri"
             },
             {
                 "day": 3,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Achieve Your Potential @ Thames"
+                "name": "Digital and Social media Marketing @ Nilgiri"
             },
             {
                 "day": 4,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Digital Marketing Trends and Practice @ Stonehenge"
+                "name": "International Marketing and Sales in the Digital Era @ Begnas"
             },
             {
                 "day": 4,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Use of Artificial Intelligence and Big Data in Business @ Stonehenge"
+                "name": "Personal Finance @ Begnas"
             },
             {
                 "day": 5,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Applied Information Technology for Professional Practice @ Thames"
+                "name": "Emeriging Technology in Digital Business Management @ Begnas"
             },
             {
                 "day": 5,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Achieve Your Potential @ Thames"
+                "name": "Digital and Social media Marketing @ Begnas"
             },
             {
                 "day": 6,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Digital Marketing Trends and Practice @ Thames"
+                "name": "International Marketing and Sales in the Digital Era @ Begnas"
             },
             {
                 "day": 6,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Use of Artificial Intelligence and Big Data in Business @ Thames"
+                "name": "Personal Finance @ Begnas"
             }
         ]
     },
     {
-        "id": "95bcdf5f-ce61-4e09-9987-adbea91f3af8",
+        "id": "cbd0f39e-7fcf-4764-bd1e-4ab74f314bcf",
+        "title": "[B2] Year 3.5 BBA",
+        "creator": "_system",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
+        "events": [
+            {
+                "day": 4,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Creating a Winning Business 2 @ Rara"
+            }
+        ]
+    },
+    {
+        "id": "1b72acba-8a7d-4fb0-a468-d4d8725b2d5b",
+        "title": "[B3] Year 3.5 BBA",
+        "creator": "_system",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
+        "events": [
+            {
+                "day": 3,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Developing Breakthrough Leadership Skills @ Begnas"
+            }
+        ]
+    },
+    {
+        "id": "2cc5714c-ebba-4290-8aa8-33e8b9d6715f",
         "title": "[C1] Year 3 BIC",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Advance Database Systems @ Gokyo"
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Artificial Intelligence @ Nilgiri"
             },
             {
-                "day": 1,
+                "day": 2,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Application Development @ OpenAccessLab"
+            },
+            {
+                "day": 2,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Data and Web Development @ Begnas"
+            },
+            {
+                "day": 3,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
                 "name": "Application Development @ Tilicho"
             },
             {
-                "day": 3,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Application Development @ Machhapuchhre"
-            },
-            {
                 "day": 4,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Advance Database Systems @ Annapurna"
+                "name": "Artificial Intelligence @ Bigben"
+            },
+            {
+                "day": 4,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Data and Web Development @ Rara"
             },
             {
                 "day": 5,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Advance Database Systems @ Gokyo"
+                "name": "Application Development @ Machhapuchhre"
+            },
+            {
+                "day": 5,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Artificial Intelligence @ Machhapuchhre"
             },
             {
                 "day": 6,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Application Development @ Tilicho"
+                "name": "Data and Web Development @ Annapurna"
             }
         ]
     },
     {
-        "id": "989ab3c1-4485-4531-9e97-0dee35cafa06",
+        "id": "a29bcc91-6aad-4187-8a53-b254d392dcd8",
         "title": "[C2] Year 3 BIC",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Application Development @ Gokyo"
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Artificial Intelligence @ Nilgiri"
             },
             {
                 "day": 2,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Advance Database Systems @ Tilicho"
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Data and Web Development @ Begnas"
+            },
+            {
+                "day": 2,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Application Development @ OpenAccessLab"
             },
             {
                 "day": 3,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Application Development @ Machhapuchhre"
+                "name": "Application Development @ Tilicho"
+            },
+            {
+                "day": 3,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Data and Web Development @ Rara"
             },
             {
                 "day": 4,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Advance Database Systems @ Annapurna"
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Artificial Intelligence @ Bigben"
             },
             {
                 "day": 5,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Application Development @ Tilicho"
+                "name": "Application Development @ Machhapuchhre"
+            },
+            {
+                "day": 5,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Artificial Intelligence @ Machhapuchhre"
             },
             {
                 "day": 6,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Advance Database Systems @ Gokyo"
+                "name": "Data and Web Development @ Annapurna"
             }
         ]
     },
     {
-        "id": "d34df4a0-fb10-4a09-92aa-81ae9a05e6b6",
+        "id": "1c35c298-1386-468e-a8b5-97928cd0d335",
         "title": "[C3] Year 3 BIC",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
             {
                 "day": 1,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Application Development @ Tilicho"
+                "name": "Artificial Intelligence @ Thames"
+            },
+            {
+                "day": 2,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Application Development @ Thames"
             },
             {
                 "day": 2,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Advance Database Systems @ Tilicho"
+                "name": "Data and Web Development @ Kingston"
             },
             {
                 "day": 3,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Application Development @ Machhapuchhre"
+                "name": "Application Development @ Kingston"
+            },
+            {
+                "day": 3,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Data and Web Development @ Bigben"
             },
             {
                 "day": 4,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Advance Database Systems @ Annapurna"
+                "name": "Artificial Intelligence @ Stonehenge"
+            },
+            {
+                "day": 5,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Application Development @ Machhapuchhre"
             },
             {
                 "day": 5,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Application Development @ Tilicho"
+                "name": "Artificial Intelligence @ Machhapuchhre"
             },
             {
                 "day": 6,
-                "stime": "08:30 AM",
-                "etime": "10:00 AM",
-                "name": "Advance Database Systems @ Gokyo"
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Data and Web Development @ Annapurna"
             }
         ]
     },
     {
-        "id": "ce6db992-647b-4367-a657-4c88cf9766d9",
+        "id": "da3527a0-2560-420d-aa45-91d90a051222",
         "title": "[C4] Year 3 BIC",
         "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
         "events": [
+            {
+                "day": 1,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Data and Web Development @ OpenAccessLab"
+            },
             {
                 "day": 1,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Advance Database Systems @ Gokyo"
+                "name": "Artificial Intelligence @ Thames"
             },
             {
                 "day": 2,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Application Development @ Rara"
+                "name": "Application Development @ Thames"
             },
             {
                 "day": 3,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Advance Database Systems @ Annapurna"
+                "name": "Data and Web Development @ Bigben"
+            },
+            {
+                "day": 3,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Application Development @ Kingston"
+            },
+            {
+                "day": 4,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Artificial Intelligence @ Stonehenge"
+            },
+            {
+                "day": 5,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Data and Web Development @ Annapurna"
+            },
+            {
+                "day": 5,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Application Development @ Annapurna"
+            },
+            {
+                "day": 6,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Artificial Intelligence @ Machhapuchhre"
+            }
+        ]
+    },
+    {
+        "id": "25c66ecb-b583-4809-a643-1cae5965c72c",
+        "title": "[C5] Year 3 BIC",
+        "creator": "_system",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
+        "events": [
+            {
+                "day": 1,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Application Development @ Bigben"
+            },
+            {
+                "day": 1,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Data and Web Development @ Rupa"
+            },
+            {
+                "day": 2,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Artificial Intelligence @ Rupa"
+            },
+            {
+                "day": 3,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Artificial Intelligence @ Stonehenge"
             },
             {
                 "day": 4,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Application Development @ Machhapuchhre"
+                "name": "Data and Web Development @ Tilicho"
             },
             {
-                "day": 6,
+                "day": 4,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
                 "name": "Application Development @ Tilicho"
             },
             {
-                "day": 6,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Advance Database Systems @ Gokyo"
-            }
-        ]
-    },
-    {
-        "id": "0eaad3c8-23df-417c-859c-25fee3fd51db",
-        "title": "[C5] Year 3 BIC",
-        "creator": "_system",
-        "updated": "2024-09-14 09:37:39.736270+05:45",
-        "events": [
-            {
-                "day": 1,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Advance Database Systems @ Fewa"
-            },
-            {
-                "day": 2,
+                "day": 5,
                 "stime": "07:00 AM",
                 "etime": "08:30 AM",
-                "name": "Application Development @ Rara"
-            },
-            {
-                "day": 3,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Advance Database Systems @ Annapurna"
-            },
-            {
-                "day": 4,
-                "stime": "07:00 AM",
-                "etime": "08:30 AM",
-                "name": "Application Development @ Machhapuchhre"
+                "name": "Data and Web Development @ Annapurna"
             },
             {
                 "day": 5,
                 "stime": "08:30 AM",
                 "etime": "10:00 AM",
-                "name": "Advance Database Systems @ Gokyo"
+                "name": "Application Development @ Annapurna"
+            },
+            {
+                "day": 6,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Artificial Intelligence @ Machhapuchhre"
+            }
+        ]
+    },
+    {
+        "id": "e99b3b63-7369-49f7-8f02-ee7f4dc9d350",
+        "title": "[C6] Year 3 BIC",
+        "creator": "_system",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
+        "events": [
+            {
+                "day": 1,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Data and Web Development @ Rupa"
+            },
+            {
+                "day": 1,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Application Development @ OpenAccessLab"
+            },
+            {
+                "day": 2,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Artificial Intelligence @ Rupa"
+            },
+            {
+                "day": 3,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Artificial Intelligence @ Stonehenge"
+            },
+            {
+                "day": 4,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Application Development @ Gokyo"
             },
             {
                 "day": 5,
-                "stime": "10:00 AM",
-                "etime": "11:30 AM",
-                "name": "Application Development @ Gokyo"
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Artificial Intelligence @ Rupa"
+            },
+            {
+                "day": 5,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Data and Web Development @ Rupa"
+            },
+            {
+                "day": 6,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Application Development @ Rupa"
+            },
+            {
+                "day": 6,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Data and Web Development @ Rupa"
+            }
+        ]
+    },
+    {
+        "id": "2e991d77-3305-4d5f-a490-62ea8e957565",
+        "title": "[C7] Year 3 BIC",
+        "creator": "_system",
+        "updated": "2024-09-16 13:15:39.333563+05:45",
+        "events": [
+            {
+                "day": 1,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Application Development @ Stonehenge"
+            },
+            {
+                "day": 1,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Data and Web Development @ Stonehenge"
+            },
+            {
+                "day": 2,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Artificial Intelligence @ Bigben"
+            },
+            {
+                "day": 3,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Artificial Intelligence @ Gokyo"
+            },
+            {
+                "day": 4,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Data and Web Development @ Nilgiri"
+            },
+            {
+                "day": 4,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Application Development @ Nilgiri"
+            },
+            {
+                "day": 5,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Artificial Intelligence @ Rupa"
+            },
+            {
+                "day": 5,
+                "stime": "08:30 AM",
+                "etime": "10:00 AM",
+                "name": "Data and Web Development @ Rupa"
+            },
+            {
+                "day": 6,
+                "stime": "07:00 AM",
+                "etime": "08:30 AM",
+                "name": "Application Development @ Rupa"
             }
         ]
     }

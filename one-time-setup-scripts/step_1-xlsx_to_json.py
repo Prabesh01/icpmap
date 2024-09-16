@@ -57,4 +57,4 @@ def read_xlsx(source):
         json.dump(data, f)
 
 
-read_xlsx(BASE_DIR / "data-sources/23-24/Schedule.xlsx")
+read_xlsx(BASE_DIR / "data-sources/24-25/Class_Schedule.xlsx")

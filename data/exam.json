@@ -1,5 +1,375 @@
 {
-    "AY 2023-24 IT - Level 4": [
+    "L4 ICP BBA Term 2": [
+        {
+            "module": "Principles of Management",
+            "code": "MN4066NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Coursework (Individual Written Report - 2000 words)",
+                    "percentage": 100,
+                    "start_date": "2024-05-17",
+                    "end_date": "2024-05-17"
+                }
+            ]
+        },
+        {
+            "module": "Understanding and Managing Data",
+            "code": "FE4060NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Coursework (Individual Coursework - Quantitative Analysis and Report based on a set of Tasks and Business Objectives)",
+                    "percentage": 100,
+                    "start_date": "2024-05-10",
+                    "end_date": "2024-05-10"
+                }
+            ]
+        },
+        {
+            "module": "Principles of Marketing",
+            "code": "MC4064NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Coursework (Individual Essay - 1500 words)",
+                    "percentage": 100,
+                    "start_date": "2024-05-14",
+                    "end_date": "2024-05-14"
+                }
+            ]
+        },
+        {
+            "module": "Business Law and Ethics",
+            "code": "AC4057NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Examination (Case Study based Seen Exam  - 90 minutes)",
+                    "percentage": 60,
+                    "start_date": "2024-05-19",
+                    "end_date": "2024-05-24"
+                },
+                {
+                    "title": "Group Coursework (Individually assessed Group Presentation - 20 minutes)",
+                    "percentage": 40,
+                    "start_date": "2024-04-15",
+                    "end_date": "2024-04-15"
+                }
+            ]
+        },
+        {
+            "module": "Financial Accounting",
+            "code": "AC4058NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Coursework (1500 words)\nTask 1",
+                    "percentage": 100,
+                    "start_date": "2024-07-19",
+                    "end_date": "2024-07-19"
+                },
+                {
+                    "title": "Coursework (1500 words)\nTask 2",
+                    "percentage": 100,
+                    "start_date": "2024-08-20",
+                    "end_date": "2024-08-20"
+                }
+            ]
+        },
+        {
+            "module": "Managing People in Organisations",
+            "code": "HR4053NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Coursework (Project: Individual workbook consisting of a set of cumulative weekly tasks to build on HR concepts and knowledge) - Task 1",
+                    "percentage": 100,
+                    "start_date": "2024-06-28",
+                    "end_date": "2024-06-28"
+                },
+                {
+                    "title": "Coursework (Project: Individual workbook consisting of a set of cumulative weekly tasks to build on HR concepts and knowledge) - Task 2",
+                    "percentage": 100,
+                    "start_date": "2024-07-16",
+                    "end_date": "2024-07-16"
+                },
+                {
+                    "title": "Coursework (Project: Individual workbook consisting of a set of cumulative weekly tasks to build on HR concepts and knowledge) - Task 3",
+                    "percentage": 100,
+                    "start_date": "2024-08-30",
+                    "end_date": "2024-08-30"
+                }
+            ]
+        },
+        {
+            "module": "Understanding the Business and Economic Environment",
+            "code": "FE4061NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Individual Coursework 1500 words",
+                    "percentage": 100,
+                    "start_date": "2024-08-16",
+                    "end_date": "2024-08-16"
+                }
+            ]
+        },
+        {
+            "module": "Learning Through Organisations",
+            "code": "MN4W54NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Coursework (Learning Reflection - 1000 words)",
+                    "percentage": 30,
+                    "start_date": "2024-07-26",
+                    "end_date": "2024-07-26"
+                },
+                {
+                    "title": "Coursework (Professional Performance Episode, Reflective Practice Report)",
+                    "percentage": 70,
+                    "start_date": "2024-08-23",
+                    "end_date": "2024-08-23"
+                }
+            ]
+        }
+    ],
+    "L4 ICK BBA": [
+        {
+            "module": "Financial Accounting",
+            "code": "AC4058NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Coursework (1500 words)\nTask 1",
+                    "percentage": 100,
+                    "start_date": "2024-04-12",
+                    "end_date": "2024-04-12"
+                },
+                {
+                    "title": "Coursework (1500 words)\nTask 2",
+                    "percentage": 100,
+                    "start_date": "2024-05-07",
+                    "end_date": "2024-05-07"
+                }
+            ]
+        },
+        {
+            "module": "Managing People in Organisations",
+            "code": "HR4053NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Coursework (Project: Individual workbook consisting of a set of cumulative weekly tasks to build on HR concepts and knowledge) - Task 1",
+                    "percentage": 100,
+                    "start_date": "2024-03-15",
+                    "end_date": "2024-03-15"
+                },
+                {
+                    "title": "Coursework (Project: Individual workbook consisting of a set of cumulative weekly tasks to build on HR concepts and knowledge) - Task 2",
+                    "percentage": 100,
+                    "start_date": "2024-04-02",
+                    "end_date": "2024-04-02"
+                },
+                {
+                    "title": "Coursework (Project: Individual workbook consisting of a set of cumulative weekly tasks to build on HR concepts and knowledge) - Task 3",
+                    "percentage": 100,
+                    "start_date": "2024-05-05",
+                    "end_date": "2024-05-05"
+                }
+            ]
+        },
+        {
+            "module": "Understanding the Business and Economic Environment",
+            "code": "FE4061NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Individual Coursework 1500 words",
+                    "percentage": 100,
+                    "start_date": "2024-05-03",
+                    "end_date": "2024-05-03"
+                }
+            ]
+        },
+        {
+            "module": "Learning Through Organisations",
+            "code": "MN4W54NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Coursework (Learning Reflection - 1000 words)",
+                    "percentage": 30,
+                    "start_date": "2024-04-05",
+                    "end_date": "2024-04-05"
+                },
+                {
+                    "title": "Coursework (Professional Performance Episode, Reflective Practice Report)",
+                    "percentage": 70,
+                    "start_date": "2024-05-10",
+                    "end_date": "2024-05-10"
+                }
+            ]
+        }
+    ],
+    "L5 ICK BBA": [
+        {
+            "module": "Leading Innovation and Entrepreneurship",
+            "code": "MN5021NP",
+            "credits": "30",
+            "exams": [
+                {
+                    "title": "Coursework (Group Presentation on Leadership Theory)",
+                    "percentage": 30,
+                    "start_date": "2024-01-28",
+                    "end_date": "2024-01-28"
+                },
+                {
+                    "title": "Coursework (Individual Report on Interview)",
+                    "percentage": 30,
+                    "start_date": "2024-04-08",
+                    "end_date": "2024-04-08"
+                },
+                {
+                    "title": "Coursework (Group Report and Presentation Business Plan)",
+                    "percentage": 40,
+                    "start_date": "2024-05-13",
+                    "end_date": "2024-05-13"
+                }
+            ]
+        },
+        {
+            "module": "Problem Solving: Methods and Analysis",
+            "code": "FE5063NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Coursework (Individual Coursework - 2000 words)\nTask 1",
+                    "percentage": 100,
+                    "start_date": "2024-04-04",
+                    "end_date": "2024-04-04"
+                },
+                {
+                    "title": "Coursework (Individual Coursework - 2000 words)\nTask 2",
+                    "percentage": 100,
+                    "start_date": "2024-05-09",
+                    "end_date": "2024-05-09"
+                }
+            ]
+        },
+        {
+            "module": "Organisation Design and Management",
+            "code": "HR5066NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Coursework (Individual Workbook - 1000 words)",
+                    "percentage": 30,
+                    "start_date": "2024-04-22",
+                    "end_date": "2024-04-22"
+                },
+                {
+                    "title": "Coursework (Individual Essay - 2000 words)",
+                    "percentage": 70,
+                    "start_date": "2024-05-20",
+                    "end_date": "2024-05-20"
+                }
+            ]
+        },
+        {
+            "module": "Leading, Managing, and Developing People",
+            "code": "HR5067NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Group Presentation (Personality Test and Presentation 20 minutes)",
+                    "percentage": 50,
+                    "start_date": "2024-04-29",
+                    "end_date": "2024-04-29"
+                },
+                {
+                    "title": "Coursework (Individual Written Report -2000 words)",
+                    "percentage": 50,
+                    "start_date": "2024-05-16",
+                    "end_date": "2024-05-16"
+                }
+            ]
+        }
+    ],
+    "L6 ICK BBA": [
+        {
+            "module": "Achieve Your Potential",
+            "code": "MN6089NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Reflection on suitability to a chosen industry. \u2013 Individual Written Report (2000 words)",
+                    "percentage": 40,
+                    "start_date": "2024-04-10",
+                    "end_date": "2024-04-10"
+                },
+                {
+                    "title": "Simulation job application (Individual)",
+                    "percentage": 60,
+                    "start_date": "2024-05-16",
+                    "end_date": "2024-05-16"
+                }
+            ]
+        },
+        {
+            "module": "Use of Artificial Intelligence and Big Data in Business",
+            "code": "MN6092NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Coursework (Individual Presentation - 10 minutes)",
+                    "percentage": 40,
+                    "start_date": "2024-04-17",
+                    "end_date": "2024-04-17"
+                },
+                {
+                    "title": "Coursework (Individual Written Report - 3500 words)",
+                    "percentage": 60,
+                    "start_date": "2024-05-22",
+                    "end_date": "2024-05-22"
+                }
+            ]
+        },
+        {
+            "module": "Digital Marketing Trends and Practice",
+            "code": "MC6104NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Individual Written report (3500 words)",
+                    "percentage": 100,
+                    "start_date": "2024-05-27",
+                    "end_date": "2024-05-27"
+                }
+            ]
+        },
+        {
+            "module": "Applied Information Technology for Professional Practice",
+            "code": "FE6062NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Coursework (PRES: Individual presentation on IT projects - 10 minutes)",
+                    "percentage": 50,
+                    "start_date": "2024-04-24",
+                    "end_date": "2024-04-24"
+                },
+                {
+                    "title": "Examination (CST: In-class test - 60 minutes)",
+                    "percentage": 50,
+                    "start_date": "2024-05-26",
+                    "end_date": "2024-05-31"
+                }
+            ]
+        }
+    ],
+    "L4 ICK IT Term 2": [
         {
             "module": "Programming",
             "code": "CS4001NP",
@@ -8,20 +378,20 @@
                 {
                     "title": "Coursework 1 (Online Submission 1200 words + Software)",
                     "percentage": 30,
-                    "start_date": "2025-01-26",
-                    "end_date": "2025-01-26"
+                    "start_date": "2024-05-10",
+                    "end_date": "2024-05-10"
                 },
                 {
                     "title": "Coursework 2 (Online Submission 1200 words + Software)",
                     "percentage": 30,
-                    "start_date": "2025-05-10",
-                    "end_date": "2025-05-10"
+                    "start_date": "2024-08-23",
+                    "end_date": "2024-08-23"
                 },
                 {
                     "title": "Practical Exam (1.5 Hours MCQ Test)",
                     "percentage": 40,
-                    "start_date": "2025-05-12",
-                    "end_date": "2025-05-24"
+                    "start_date": "2024-08-05",
+                    "end_date": "2024-08-30"
                 }
             ]
         },
@@ -33,20 +403,20 @@
                 {
                     "title": "Written Exam (In-Class Test)",
                     "percentage": 20,
-                    "start_date": "2025-01-14",
-                    "end_date": "2025-01-19"
+                    "start_date": "2024-04-28",
+                    "end_date": "2024-05-03"
                 },
                 {
                     "title": "Unseen Written Examination",
                     "percentage": 50,
-                    "start_date": "2025-05-12",
-                    "end_date": "2025-05-17"
+                    "start_date": "2024-08-25",
+                    "end_date": "2024-08-30"
                 },
                 {
                     "title": "Practical Examination",
                     "percentage": 30,
-                    "start_date": "2025-05-19",
-                    "end_date": "2025-05-24"
+                    "start_date": "2024-08-28",
+                    "end_date": "2024-09-04"
                 }
             ]
         },
@@ -58,20 +428,20 @@
                 {
                     "title": "In-Class Test 1 (Problem Set 1 - 1.15 Hours)",
                     "percentage": 25,
-                    "start_date": "2023-12-24",
-                    "end_date": "2023-12-29"
+                    "start_date": "2024-04-07",
+                    "end_date": "2024-04-12"
                 },
                 {
                     "title": "In-Class Test 2 (Problem Set 2 - 1.15 Hours)",
                     "percentage": 25,
-                    "start_date": "2025-03-31",
-                    "end_date": "2025-04-05"
+                    "start_date": "2024-07-14",
+                    "end_date": "2024-07-19"
                 },
                 {
                     "title": "Group Coursework (2500 words)",
                     "percentage": 50,
-                    "start_date": "2025-05-16",
-                    "end_date": "2025-05-16"
+                    "start_date": "2024-08-25",
+                    "end_date": "2024-08-25"
                 }
             ]
         },
@@ -83,26 +453,14 @@
                 {
                     "title": "Test (In-Class Test with Learning Reflection)",
                     "percentage": 40,
-                    "start_date": "2023-12-15",
-                    "end_date": "2023-12-20"
+                    "start_date": "2024-03-29",
+                    "end_date": "2024-03-29"
                 },
                 {
                     "title": "Group Coursework (Information System Design and Protype with Detailed Presentation)",
                     "percentage": 60,
-                    "start_date": "2025-01-31",
-                    "end_date": "2025-01-31"
-                },
-                {
-                    "title": "Test (In-Class Test with Learning Reflection)",
-                    "percentage": 40,
-                    "start_date": "2023-12-10",
-                    "end_date": "2023-12-15"
-                },
-                {
-                    "title": "Group Coursework (Information System Design and Protype with Detailed Presentation)",
-                    "percentage": 60,
-                    "start_date": "2025-01-31",
-                    "end_date": "2025-01-31"
+                    "start_date": "2024-05-17",
+                    "end_date": "2024-05-17"
                 }
             ]
         },
@@ -114,23 +472,112 @@
                 {
                     "title": "Coursework (Numerical Data Program with Report)",
                     "percentage": 60,
-                    "start_date": "2025-05-07",
-                    "end_date": "2025-05-07"
+                    "start_date": "2024-08-18",
+                    "end_date": "2024-08-18"
                 },
                 {
                     "title": "Practical Exam (MCQ Test)",
                     "percentage": 40,
-                    "start_date": "2025-05-12",
-                    "end_date": "2025-05-17"
-                },
-                {
-                    "title": "Coursework (Numerical Data Program with Report)",
-                    "percentage": 60,
-                    "start_date": "2025-05-07",
-                    "end_date": "2025-05-07"
+                    "start_date": "2024-09-01",
+                    "end_date": "2024-09-06"
                 }
             ]
         }
     ],
-    "dummy class":[]
+    "L6 ICK IT": [
+        {
+            "module": "Advanced Database Systems Development",
+            "code": "CC6001NP",
+            "credits": "30",
+            "exams": [
+                {
+                    "title": "Coursework",
+                    "percentage": 40,
+                    "start_date": "2024-03-20",
+                    "end_date": "2024-03-20"
+                },
+                {
+                    "title": "In-Class Test (1 Hour)",
+                    "percentage": 20,
+                    "start_date": "2024-04-19",
+                    "end_date": "2024-04-19"
+                },
+                {
+                    "title": "Unseen Examination (2 Hours)",
+                    "percentage": 40,
+                    "start_date": "2024-05-16",
+                    "end_date": "2024-05-16"
+                }
+            ]
+        },
+        {
+            "module": "Application Development",
+            "code": "CS6004NP",
+            "credits": "30",
+            "exams": [
+                {
+                    "title": "Coursework (Individual Coursework \n[Software + 1000-word Report])",
+                    "percentage": 30,
+                    "start_date": "2024-01-11",
+                    "end_date": "2024-01-11"
+                },
+                {
+                    "title": "Groupwork",
+                    "percentage": 30,
+                    "start_date": "2024-05-03",
+                    "end_date": "2024-05-03"
+                },
+                {
+                    "title": "Written Exam (Unseen exam - 1 hour)",
+                    "percentage": 40,
+                    "start_date": "2024-05-22",
+                    "end_date": "2024-05-22"
+                }
+            ]
+        },
+        {
+            "module": "Project",
+            "code": "CS6P05NP",
+            "credits": "30",
+            "exams": [
+                {
+                    "title": "Coursework (Project Interim Report - 3500 words)",
+                    "percentage": 25,
+                    "start_date": "2024-01-03",
+                    "end_date": "2024-01-03"
+                },
+                {
+                    "title": "Coursework (Project Process including Project Artefacts)\na. Proposal (5%)\nb. Log and Artefacts (10% / 10%)",
+                    "percentage": 25,
+                    "start_date": "2024-04-24",
+                    "end_date": "2024-04-24"
+                },
+                {
+                    "title": "Coursework (Final Project Report - 8000 words)",
+                    "percentage": 40,
+                    "start_date": "2024-04-24",
+                    "end_date": "2024-04-24"
+                },
+                {
+                    "title": "Practical (Viva)",
+                    "percentage": 10,
+                    "start_date": "2024-05-09",
+                    "end_date": "2024-05-15"
+                }
+            ]
+        },
+        {
+            "module": "Work Related Learning II",
+            "code": "FC6W51NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Coursework (Learning Portfolio with Evidence - 3000 words)",
+                    "percentage": 100,
+                    "start_date": "2024-05-08",
+                    "end_date": "2024-05-08"
+                }
+            ]
+        }
+    ]
 }
