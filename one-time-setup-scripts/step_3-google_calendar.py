@@ -35,21 +35,21 @@ holidays=["2025/01/01","2025/02/03","2025/02/26","2024/03/13"]
 holiday_range="2024/10/03 - 2024/11/09"
 
 y1_spring_week1="2024/02/18" # first day must be sunday
-y1_autumn_week1="2023/10/01" # first day must be sunday
+y1_autumn_week1="2024/11/10" # first day must be sunday
 y2_3_week1="2024/09/15" # first day must be sunday
 
 y1_spring_until="2024/08/24"
-y1_autumn_until="2024/05/11"
+y1_autumn_until="2025/05/17"
 y2_3_until="2025/05/17"
 
 # first saturday of week 1 after break
 y1_spring_sem_break="2024/06/08"
-y1_autumn_sem_break="2024/02/24"
+y1_autumn_sem_break="2025/03/01"
 y2_3_sem_break="2025/03/01"
 y2_3_sem_break_range="2025/02/09 - 2025/02/22"
 
 y1_spring_exam_weeks=["2024/05/12 - 2024/06/01","2024/08/25 - 2024/09/14"]
-y1_autumn_exam_weeks=["2024/01/28 - 2024/02/17","2024/05/12 - 2024/05/31"]
+y1_autumn_exam_weeks=["2025/02/02 - 2025/02/22","2025/05/18 - 2025/06/07"]
 y2_3_exam_weeks=["2025/01/19 - 2025/02/08","2025/05/18 - 2025/06/07"]
 
 # not for spring intake...
