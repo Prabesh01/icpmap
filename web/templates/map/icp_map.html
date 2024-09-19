@@ -278,14 +278,15 @@ Used codes from these gentlemen:
       line-height: 20px;
       color: #333333;
       display: flex;
-      gap:40px;
+      gap: 40px;
       justify-content: center;
     }
+
     @media (max-width: 800px) {
-  #the_maps {
-    flex-direction: column;
-  }
-} 
+      #the_maps {
+        flex-direction: column;
+      }
+    }
 
     .roomName {
       margin-left: auto;
@@ -347,6 +348,11 @@ Used codes from these gentlemen:
       border-bottom: 10px solid #ad1A06;
     }
 
+    #library {
+      float: right;
+      margin-top: 6px;
+    }
+
     /******************************************/
     /*  ROOMS                                 */
     /******************************************/
@@ -376,6 +382,11 @@ Used codes from these gentlemen:
     #Tilicho:before {
       top: 100%;
       left: 70%;
+    }
+
+    #Rupa:before {
+      top: 100%;
+      left: 30%;
     }
 
     #MeetingRoom:before {
@@ -415,34 +426,39 @@ Used codes from these gentlemen:
     .inv_:before {
       border-color: transparent !important;
     }
-    .empty>p{
+
+    .empty>p {
       color: green !important;
     }
-    .taken>p{
+
+    .taken>p {
       color: red !important;
     }
+
     .back-icon {
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  position: sticky;
-  /* position:absolute; */
-  top: 15px;
-  left: 15px;
-}
-.back-icon__row {
-  height: 10px;
-  width: 30px;
-  display: flex;
-}
-.back-icon__elem {
-  height: 8px;
-  width: 8px;
-  margin-right: 2px;
-  margin-bottom: 2px;
-  background: red;
-  border-radius: 38%;
-}
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      position: sticky;
+      /* position:absolute; */
+      top: 15px;
+      left: 15px;
+    }
+
+    .back-icon__row {
+      height: 10px;
+      width: 30px;
+      display: flex;
+    }
+
+    .back-icon__elem {
+      height: 8px;
+      width: 8px;
+      margin-right: 2px;
+      margin-bottom: 2px;
+      background: red;
+      border-radius: 38%;
+    }
   </style>
 </head>
 
@@ -453,7 +469,7 @@ Used codes from these gentlemen:
       <div class="back-icon__elem"></div>
       <div class="back-icon__elem"></div>
     </div>
-     <div class="back-icon__row">
+    <div class="back-icon__row">
       <div class="back-icon__elem"></div>
       <div class="back-icon__elem"></div>
       <div class="back-icon__elem"></div>
@@ -475,28 +491,32 @@ Used codes from these gentlemen:
               <td id="Machhapuchhre" rowspan="2" colspan="2">
                 <p class="roomName">Machha.</p>
                 <div class="sub_texts">
-                  <div class="et_time"></div><div class="yc_name"></div>
+                  <div class="et_time"></div>
+                  <div class="yc_name"></div>
                 </div>
               </td>
               <td id="Nilgiri" colspan="2">
                 <p class="roomName">Nilgiri </p>
                 <div class="sub_texts">
-                  <div class="et_time"></div><div class="yc_name"></div>
-                 
+                  <div class="et_time"></div>
+                  <div class="yc_name"></div>
+
                 </div>
               </td>
               <td id="Annapurna" rowspan="2" colspan="2">
                 <p class="roomName">Anna. </p>
                 <div class="sub_texts">
-                  <div class="et_time"></div><div class="yc_name"></div>
+                  <div class="et_time"></div>
+                  <div class="yc_name"></div>
                 </div>
               </td>
             </tr>
-            <td colspan="2" class="pat_">&nbsp;                <div class="sub_texts">
-              <div class="et_time"></div><div class="yc_name"></div>
-            </div>
-</td>
-            
+            <td colspan="2" class="pat_">&nbsp; <div class="sub_texts">
+                <div class="et_time"></div>
+                <div class="yc_name"></div>
+              </div>
+            </td>
+
             </tr>
           </table>
           <br>
@@ -505,47 +525,72 @@ Used codes from these gentlemen:
               <td id="Begnas" colspan="2">
                 <p class="roomName">Begnas</p>
                 <div class="sub_texts">
-                  <div class="et_time"></div><div class="yc_name"></div>
+                  <div class="et_time"></div>
+                  <div class="yc_name"></div>
                 </div>
               </td>
               <td id="Gokyo" colspan="2">
                 <p class="roomName">Gokyo </p>
                 <div class="sub_texts">
-                  <div class="et_time"></div><div class="yc_name"></div>
-                 
+                  <div class="et_time"></div>
+                  <div class="yc_name"></div>
+
                 </div>
               </td>
 
               <td id="Rara" colspan="2">
                 <p class="roomName">Rara </p>
                 <div class="sub_texts">
-                  <div class="et_time"></div><div class="yc_name"></div>
-                 
+                  <div class="et_time"></div>
+                  <div class="yc_name"></div>
+
                 </div>
               </td>
             </tr>
             <td id="Fewa" colspan="2">
               <p class="roomName">Fewa </p>
               <div class="sub_texts">
-                <div class="et_time"></div><div class="yc_name"></div>
-               
+                <div class="et_time"></div>
+                <div class="yc_name"></div>
+
               </div>
             </td>
-            <td colspan="2" class="pat_">&nbsp;                <div class="sub_texts">
-              <div class="et_time"></div><div class="yc_name"></div>
-            </div>
-</td>
+            <td colspan="2" class="pat_">&nbsp; <div class="sub_texts">
+                <div class="et_time"></div>
+                <div class="yc_name"></div>
+              </div>
+            </td>
 
             <td id="Tilicho" colspan="2">
               <p class="roomName">Tilicho </p>
               <div class="sub_texts">
-                <div class="et_time"></div><div class="yc_name"></div>
-               
+                <div class="et_time"></div>
+                <div class="yc_name"></div>
+
               </div>
             </td>
 
             </tr>
           </table>
+
+          <table id="library">
+            <tr>
+              <td class="pat_">&nbsp; <div class="sub_texts">
+                  <div class="et_time"></div>
+                  <div class="yc_name"></div>
+                </div>
+              </td>
+
+              <td id="Rupa">
+                <p class="roomName">Rupa</p>
+                <div class="sub_texts">
+                  <div class="et_time"></div>
+                  <div class="yc_name"></div>
+                </div>
+              </td>
+            </tr>
+          </table>
+
           <div class="start"></div>
         </div>
         <div id="uk_block">
@@ -556,36 +601,42 @@ Used codes from these gentlemen:
               <td id="MeetingRoom" colspan="4">
                 <p class="roomName">Meeting room </p>
                 <div class="sub_texts">
-                  <div class="et_time"></div><div class="yc_name"></div>
-                 
+                  <div class="et_time"></div>
+                  <div class="yc_name"></div>
+
                 </div>
               </td>
-              <td class="inv_" style="border-bottom-color: transparent;">&nbsp;                <div class="sub_texts">
-                <div class="et_time"></div><div class="yc_name"></div>
-              </div>
-</td>
+              <td class="inv_" style="border-bottom-color: transparent;">&nbsp; <div class="sub_texts">
+                  <div class="et_time"></div>
+                  <div class="yc_name"></div>
+                </div>
+              </td>
               <td id="Thames" colspan="2">
                 <p class="roomName">Thames </p>
                 <div class="sub_texts">
-                  <div class="et_time"></div><div class="yc_name"></div>
-                 
+                  <div class="et_time"></div>
+                  <div class="yc_name"></div>
+
                 </div>
               </td>
             </tr>
             <tr>
-              <td class="inv_ pat_" colspan="4" class="pat_">&nbsp;                <div class="sub_texts">
-                <div class="et_time"></div><div class="yc_name"></div>
-              </div>
-</td>
-              <td class="inv_" style="border-bottom-color: transparent;">&nbsp;                <div class="sub_texts">
-                <div class="et_time"></div><div class="yc_name"></div>
-              </div>
-</td>
+              <td class="inv_ pat_" colspan="4" class="pat_">&nbsp; <div class="sub_texts">
+                  <div class="et_time"></div>
+                  <div class="yc_name"></div>
+                </div>
+              </td>
+              <td class="inv_" style="border-bottom-color: transparent;">&nbsp; <div class="sub_texts">
+                  <div class="et_time"></div>
+                  <div class="yc_name"></div>
+                </div>
+              </td>
               <td id="Stonehenge" colspan="2">
                 <p class="roomName">Stonehenge </p>
                 <div class="sub_texts">
-                  <div class="et_time"></div><div class="yc_name"></div>
-                 
+                  <div class="et_time"></div>
+                  <div class="yc_name"></div>
+
                 </div>
               </td>
             </tr>
@@ -593,23 +644,27 @@ Used codes from these gentlemen:
               <td id="OpenAccessLab" colspan="2">
                 <p class="roomName">LAB </p>
                 <div class="sub_texts">
-                  <div class="et_time"></div><div class="yc_name"></div>
-                 
+                  <div class="et_time"></div>
+                  <div class="yc_name"></div>
+
                 </div>
               </td>
-              <td class="inv_" colspan="2" style="border-right-color: transparent;">&nbsp;                <div class="sub_texts">
-                <div class="et_time"></div><div class="yc_name"></div>
-              </div>
-</td>
-              <td class="inv_" style="border-left-color: transparent;">&nbsp;                <div class="sub_texts">
-                <div class="et_time"></div><div class="yc_name"></div>
-              </div>
-</td>
+              <td class="inv_" colspan="2" style="border-right-color: transparent;">&nbsp; <div class="sub_texts">
+                  <div class="et_time"></div>
+                  <div class="yc_name"></div>
+                </div>
+              </td>
+              <td class="inv_" style="border-left-color: transparent;">&nbsp; <div class="sub_texts">
+                  <div class="et_time"></div>
+                  <div class="yc_name"></div>
+                </div>
+              </td>
               <td id="Bigben" colspan="2">
                 <p class="roomName">Bigben </p>
                 <div class="sub_texts">
-                  <div class="et_time"></div><div class="yc_name"></div>
-                 
+                  <div class="et_time"></div>
+                  <div class="yc_name"></div>
+
                 </div>
               </td>
             </tr>
@@ -679,7 +734,7 @@ Used codes from these gentlemen:
     <br><br>
     <a id="search_btn_a" href="#icp_map"> <button id="search_btn" onclick="search_()" type="submit">Find Empty
         Rooms</button></a>
-        
+
     <!-- add 7 week days -->
     <script>
       const append_here = document.getElementById("append_here")
@@ -815,7 +870,7 @@ Used codes from these gentlemen:
     </script>
     <!-- add teachers to options -->
     <script>
-      const teachers = {{ teachers|safe }}
+      const teachers = {{ teachers| safe }}
 
       var dropdownList = document.getElementsByClassName("dropdown-list")[0];
       for (var teacher of teachers) {
@@ -972,23 +1027,23 @@ Used codes from these gentlemen:
       const dropdown_search = document.getElementsByClassName("dropdown-search")[0]
       const teach_result = document.getElementById("teach_result")
       const sel_day_time = document.getElementById("sel_day_time");
-      const td_rooms=document.getElementById("the_maps").getElementsByTagName("td")
-function decor_room(room,time,yc_name=null,addClass='empty'){
-  console.log(room)
-            var tdElem=document.getElementById(room);
-            tdElem.classList.add(addClass);
-            if (time){
-              if(yc_name){
-                tdElem.getElementsByClassName("yc_name")[0].innerHTML+=yc_name + " @ " + time+"<br>";
-              }else{
-                tdElem.getElementsByClassName("et_time")[0].innerText=time+" min";                
-              }
-            }else{
-              tdElem.getElementsByClassName("et_time")[0].innerText="_";
-            }
-            
-}
-function process_teach(json) {
+      const td_rooms = document.getElementById("the_maps").getElementsByTagName("td")
+      function decor_room(room, time, yc_name = null, addClass = 'empty') {
+        console.log(room)
+        var tdElem = document.getElementById(room);
+        tdElem.classList.add(addClass);
+        if (time) {
+          if (yc_name) {
+            tdElem.getElementsByClassName("yc_name")[0].innerHTML += yc_name + " @ " + time + "<br>";
+          } else {
+            tdElem.getElementsByClassName("et_time")[0].innerText = time + " min";
+          }
+        } else {
+          tdElem.getElementsByClassName("et_time")[0].innerText = "_";
+        }
+
+      }
+      function process_teach(json) {
         console.log(json);
         if (json.room == null) {
           teach_result.innerHTML = dropdown_search.value + " is free atm. You can visit them in teacher's room."
@@ -996,9 +1051,9 @@ function process_teach(json) {
           teach_result.innerHTML = dropdown_search.value + " is taking class in " + json.room + " till " + json.time;
         }
         teach_result.innerHTML += " <h3>Their schedule for the day:</h3>"
-        for(var clas of json.schedule){
-            console.log(clas);
-            decor_room(clas[0],clas[2],yc_name=clas[1])
+        for (var clas of json.schedule) {
+          console.log(clas);
+          decor_room(clas[0], clas[2], yc_name = clas[1])
         }
         // decor_room(room,time,"yc_name")
       }
@@ -1006,13 +1061,13 @@ function process_teach(json) {
       function process_room(json) {
         console.log(json);
         teach_result.innerHTML = "Taken/Empty Rooms:"
-        var empty_rooms=json.empty_rooms
-        var taken_rooms=json.taken_rooms
-        for (var empty_room in empty_rooms){
-          decor_room(empty_room,empty_rooms[empty_room])
+        var empty_rooms = json.empty_rooms
+        var taken_rooms = json.taken_rooms
+        for (var empty_room in empty_rooms) {
+          decor_room(empty_room, empty_rooms[empty_room])
         }
-        for (var taken_room in taken_rooms){
-          decor_room(taken_room,taken_rooms[taken_room],yc_name=null,addClass="taken")
+        for (var taken_room in taken_rooms) {
+          decor_room(taken_room, taken_rooms[taken_room], yc_name = null, addClass = "taken")
         }
       }
 
@@ -1036,15 +1091,15 @@ function process_teach(json) {
         xhr.send(data);
       }
 
-      function clear_map(){
-        sel_day_time.innerText="ICP MAP"
+      function clear_map() {
+        sel_day_time.innerText = "ICP MAP"
         teach_result.innerText = "";
-        for(var room of td_rooms){
+        for (var room of td_rooms) {
           console.log(room);
           room.classList.remove("taken");
           room.classList.remove("empty");
-          room.getElementsByClassName("et_time")[0].innerText="";
-          room.getElementsByClassName("yc_name")[0].innerText="";
+          room.getElementsByClassName("et_time")[0].innerText = "";
+          room.getElementsByClassName("yc_name")[0].innerText = "";
         }
       }
       function search_() {
