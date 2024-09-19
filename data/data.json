@@ -1,1 +1,2763 @@
-{"classes": [{"class": "Year 1 BBA", "day": "SUN", "stime": "07:00 AM", "etime": "08:30 AM", "code": "MN4066NP", "module": "Principles of Management", "teacher": "Ms. Sajena Dwa", "sections": ["B1"], "room": "Gokyo"}, {"class": "Year 1 BBA", "day": "SUN", "stime": "08:30 AM", "etime": "10:00 AM", "code": "AC4057NP", "module": "Business Law and Ethics", "teacher": "Mr. Kiran Kunwar", "sections": ["B1"], "room": "Gokyo"}, {"class": "Year 1 BBA", "day": "MON", "stime": "09:00 AM", "etime": "10:30 AM", "code": "MC4064NP", "module": "Principle of Marketing", "teacher": "Mr. Ashish Subedi", "sections": ["B1"], "room": "Fewa"}, {"class": "Year 1 BBA", "day": "MON", "stime": "10:30 AM", "etime": "12:00 PM", "code": "FE4060NP", "module": "Understanding and Managing Data", "teacher": "Mr. Arjun Sapkota", "sections": ["B1"], "room": "Fewa"}, {"class": "Year 1 BBA", "day": "TUE", "stime": "07:00 AM", "etime": "08:30 AM", "code": "MN4066NP", "module": "Principle of Management", "teacher": "Ms. Sajena Dwa", "sections": ["B2"], "room": "Fewa"}, {"class": "Year 1 BBA", "day": "TUE", "stime": "08:30 AM", "etime": "10:00 AM", "code": "AC4057NP", "module": "Business Law and Ethics", "teacher": "Mr. Kiran Kunwar", "sections": ["B1"], "room": "Fewa"}, {"class": "Year 1 BBA", "day": "WED", "stime": "09:00 AM", "etime": "10:30 AM", "code": "MC4064NP", "module": "Principle of Marketing", "teacher": "Mr. Ashish Subedi", "sections": ["B1"], "room": "Gokyo"}, {"class": "Year 1 BBA", "day": "WED", "stime": "10:30 AM", "etime": "12:00 PM", "code": "FE4060NP", "module": "Understanding and Managing Data", "teacher": "Mr. Arjun Sapkota", "sections": ["B1"], "room": "Begnas"}, {"class": "Year 1 BBA", "day": "THU", "stime": "07:00 AM", "etime": "08:30 AM", "code": "MN4066NP", "module": "Principle of Management", "teacher": "Ms. Sajena Dwa", "sections": ["B1"], "room": "Nilgiri"}, {"class": "Year 1 BBA", "day": "THU", "stime": "08:30 AM", "etime": "10:00 AM", "code": "AC4057NP", "module": "Business Law and Ethics", "teacher": "Mr. Kiran Kunwar", "sections": ["B1"], "room": "Nilgiri"}, {"class": "Year 1 BBA", "day": "FRI", "stime": "08:30 AM", "etime": "10:00 AM", "code": "MC4064NP", "module": "Principle of Marketing", "teacher": "Mr. Ashish Subedi", "sections": ["B1"], "room": "Fewa"}, {"class": "Year 1 BBA", "day": "FRI", "stime": "10:00 AM", "etime": "11:30 AM", "code": "FE4060NP", "module": "Understanding and Managing Data", "teacher": "Mr. Arjun Sapkota", "sections": ["B1"], "room": "Fewa"}, {"class": "Year 2 BBA", "day": "SUN", "stime": "07:00 AM", "etime": "08:30 AM", "code": "BA5057NP", "module": "Effective Project Management", "teacher": "Mr. Ashish Subedi", "sections": ["B1"], "room": "Tilicho"}, {"class": "Year 2 BBA", "day": "SUN", "stime": "08:30 AM", "etime": "10:00 AM", "code": "HR5065NP", "module": "Talent Resourcing and Development", "teacher": "Ms. Sajena Dwa", "sections": ["B1"], "room": "Tilicho"}, {"class": "Year 2 BBA", "day": "MON", "stime": "07:00 AM", "etime": "08:30 AM", "code": "MN5079NP", "module": "Business Writing and Effective Lab Communication", "teacher": "Mr. Vikram Rana", "sections": ["B1"], "room": "Rara"}, {"class": "Year 2 BBA", "day": "MON", "stime": "08:30 AM", "etime": "10:00 AM", "code": "MN5004NP", "module": "Leading Innovation and Entrepreneurship", "teacher": "Mr. Kiran Kunwar", "sections": ["B1"], "room": "Rara"}, {"class": "Year 2 BBA", "day": "TUE", "stime": "07:00 AM", "etime": "08:30 AM", "code": "BA5057NP", "module": "Effective Project Management", "teacher": "Mr. Ashish Subedi", "sections": ["B1"], "room": "Rupa"}, {"class": "Year 2 BBA", "day": "TUE", "stime": "08:30 AM", "etime": "10:00 AM", "code": "AC5002NP", "module": "Talent Resourcing and Development", "teacher": "Ms. Sajena Dwa", "sections": ["B1"], "room": "Rupa"}, {"class": "Year 2 BBA", "day": "WED", "stime": "07:00 AM", "etime": "08:30 AM", "code": "MN5079NP", "module": "Business Writing and Effective Lab Communication", "teacher": "Mr. Vikram Rana", "sections": ["B1"], "room": "Rupa"}, {"class": "Year 2 BBA", "day": "WED", "stime": "08:30 AM", "etime": "10:00 AM", "code": "MN5004NP", "module": "Leading Innovation and Entrepreneurship", "teacher": "Mr. Kiran Kunwar", "sections": ["B1"], "room": "Rupa"}, {"class": "Year 2 BBA", "day": "THU", "stime": "07:00 AM", "etime": "08:30 AM", "code": "BA5057NP", "module": "Effective Project Management", "teacher": "Mr. Ashish Subedi", "sections": ["B1"], "room": "Fewa"}, {"class": "Year 2 BBA", "day": "THU", "stime": "08:30 AM", "etime": "10:00 AM", "code": "HR5065NP", "module": "Talent Resourcing and Development", "teacher": "Ms. Sajena Dwa", "sections": ["B1"], "room": "Fewa"}, {"class": "Year 2 BBA", "day": "FRI", "stime": "07:00 AM", "etime": "08:30 AM", "code": "MN5079NP", "module": "Business Writing and Effective Lab Communication", "teacher": "Mr. Vikram Rana", "sections": ["B1"], "room": "Rara"}, {"class": "Year 2 BBA", "day": "FRI", "stime": "08:30 AM", "etime": "10:00 AM", "code": "MN5004NP", "module": "Leading Innovation and Entrepreneurship", "teacher": "Mr. Kiran Kunwar", "sections": ["B1"], "room": "Rara"}, {"class": "Year 3 BBA", "day": "SUN", "stime": "07:00 AM", "etime": "08:30 AM", "code": "MN6091NP", "module": "Emerging Technology in Digital Business Management", "teacher": "Mr. Anil Rai", "sections": ["B1"], "room": "Fewa"}, {"class": "Year 3 BBA", "day": "SUN", "stime": "08:30 AM", "etime": "10:00 AM", "code": "MC6103NP", "module": "Digital and Social media Marketing", "teacher": "Mr. Vikram Rana", "sections": ["B1"], "room": "Fewa"}, {"class": "Year 3 BBA", "day": "MON", "stime": "07:00 AM", "etime": "08:30 AM", "code": "MN6090NP", "module": "International Marketing and Sales in the Digital Era", "teacher": "Mr. Ashish Subedi", "sections": ["B1"], "room": "Tilicho"}, {"class": "Year 3 BBA", "day": "MON", "stime": "08:30 AM", "etime": "10:00 AM", "code": "FE6061NP", "module": "Personal Finance", "teacher": "Mr. Arjun Sapkota", "sections": ["B1"], "room": "Tilicho"}, {"class": "Year 3 BBA", "day": "TUE", "stime": "07:00 AM", "etime": "08:30 AM", "code": "MN6091NP", "module": "Emeriging Technology in Digital Business Management", "teacher": "Mr. Anil Rai", "sections": ["B1"], "room": "Nilgiri"}, {"class": "Year 3 BBA", "day": "TUE", "stime": "08:30 AM", "etime": "10:00 AM", "code": "MC6103NP", "module": "Digital and Social media Marketing", "teacher": "Mr. Vikram Rana", "sections": ["B1"], "room": "Nilgiri"}, {"class": "Year 3 BBA", "day": "WED", "stime": "07:00 AM", "etime": "08:30 AM", "code": "MN6090NP", "module": "International Marketing and Sales in the Digital Era", "teacher": "Mr. Ashish Subedi", "sections": ["B1"], "room": "Begnas"}, {"class": "Year 3 BBA", "day": "WED", "stime": "08:30 AM", "etime": "10:00 AM", "code": "FE6061NP", "module": "Personal Finance", "teacher": "Mr. Arjun Sapkota", "sections": ["B1"], "room": "Begnas"}, {"class": "Year 3 BBA", "day": "THU", "stime": "07:00 AM", "etime": "08:30 AM", "code": "MN6091NP", "module": "Emeriging Technology in Digital Business Management", "teacher": "Mr. Anil Rai", "sections": ["B1"], "room": "Begnas"}, {"class": "Year 3 BBA", "day": "THU", "stime": "08:30 AM", "etime": "10:00 AM", "code": "MC6103NP", "module": "Digital and Social media Marketing", "teacher": "Mr. Vikram Rana", "sections": ["B1"], "room": "Begnas"}, {"class": "Year 3 BBA", "day": "FRI", "stime": "07:00 AM", "etime": "08:30 AM", "code": "MN6090NP", "module": "International Marketing and Sales in the Digital Era", "teacher": "Mr. Ashish Subedi", "sections": ["B1"], "room": "Begnas"}, {"class": "Year 3 BBA", "day": "FRI", "stime": "08:30 AM", "etime": "10:00 AM", "code": "FE6061NP", "module": "Personal Finance", "teacher": "Mr. Arjun Sapkota", "sections": ["B1"], "room": "Begnas"}, {"class": "Year 3.5 BBA", "day": "SUN", "stime": "07:00 AM", "etime": "08:30 AM", "code": "MN6094NP", "module": "Developing Breakthrough Leadership Skills", "teacher": "Mr. Kiran Kunwar", "sections": ["B1"], "room": "Begnas"}, {"class": "Year 3.5 BBA", "day": "SUN", "stime": "08:30 AM", "etime": "10:00 AM", "code": "MN6W63NP", "module": "Learning Through Work 2", "teacher": "Mr. Arjun Sapkota", "sections": ["B1"], "room": "Begnas"}, {"class": "Year 3.5 BBA", "day": "MON", "stime": "07:00 AM", "etime": "08:30 AM", "code": "MN6W63NP", "module": "Creating a Winning Business 2", "teacher": "Ms. Ganga Ghale", "sections": ["B1"], "room": "Nilgiri"}, {"class": "Year 3.5 BBA", "day": "MON", "stime": "08:30 AM", "etime": "10:00 AM", "code": "AC6069NP", "module": "Corporate Social Responsibility and Sustainability", "teacher": "Ms. Sajena Dwa", "sections": ["B1"], "room": "Nilgiri"}, {"class": "Year 3.5 BBA", "day": "TUE", "stime": "07:00 AM", "etime": "08:30 AM", "code": "MN6094NP", "module": "Developing Breakthrough Leadership Skills", "teacher": "Mr. Kiran Kunwar", "sections": ["B3"], "room": "Begnas"}, {"class": "Year 3.5 BBA", "day": "TUE", "stime": "08:30 AM", "etime": "10:00 AM", "code": "MN6W63NP", "module": "Learning Through Work 2", "teacher": "Mr. Arjun Sapkota", "sections": ["B1"], "room": "Begnas"}, {"class": "Year 3.5 BBA", "day": "WED", "stime": "07:00 AM", "etime": "08:30 AM", "code": "MN6W64NP", "module": "Creating a Winning Business 2", "teacher": "Ms. Ganga Ghale", "sections": ["B2"], "room": "Rara"}, {"class": "Year 3.5 BBA", "day": "WED", "stime": "08:30 AM", "etime": "10:00 AM", "code": "AC6069NP", "module": "Corporate Social Responsibility and Sustainability", "teacher": "Ms. Sajena Dwa", "sections": ["B1"], "room": "Rara"}, {"class": "Year 3.5 BBA", "day": "THU", "stime": "07:00 AM", "etime": "08:30 AM", "code": "MN6094NP", "module": "Developing Breakthrough Leadership Skills", "teacher": "Mr. Kiran Kunwar", "sections": ["B1"], "room": "Rara"}, {"class": "Year 3.5 BBA", "day": "THU", "stime": "08:30 AM", "etime": "10:00 AM", "code": "MN6W63NP", "module": "Learning Through Work 2", "teacher": "Mr. Arjun Sapkota", "sections": ["B1"], "room": "Rara"}, {"class": "Year 3.5 BBA", "day": "FRI", "stime": "07:00 AM", "etime": "08:30 AM", "code": "MN6W64NP", "module": "Creating a Winning Business 2", "teacher": "Ms. Ganga Ghale", "sections": ["B1"], "room": "Gokyo"}, {"class": "Year 3.5 BBA", "day": "FRI", "stime": "08:30 AM", "etime": "10:00 AM", "code": "AC6069NP", "module": "Corporate Social Responsibility and Sustainability", "teacher": "Ms. Sajena Dwa", "sections": ["B1"], "room": "Gokyo"}, {"class": "Year 2 BIC", "day": "SUN", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Mission Babu Sapkota", "sections": ["C3"], "room": "Rara"}, {"class": "Year 2 BIC", "day": "SUN", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CC5051NP", "module": "Databases", "teacher": "Mr. Midhir Rana", "sections": ["C6"], "room": "Kingston"}, {"class": "Year 2 BIC", "day": "SUN", "stime": "09:00 AM", "etime": "10:30 AM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Mission Babu Sapkota", "sections": ["C9"], "room": "Bigben"}, {"class": "Year 2 BIC", "day": "SUN", "stime": "09:30 AM", "etime": "11:00 AM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sandip Adhikari", "sections": ["C3"], "room": "Rara"}, {"class": "Year 2 BIC", "day": "SUN", "stime": "09:30 AM", "etime": "11:00 AM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sunil Thapa", "sections": ["C6"], "room": "Kingston"}, {"class": "Year 2 BIC", "day": "SUN", "stime": "10:00 AM", "etime": "11:30 AM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Sandeep Gurung", "sections": ["C1"], "room": "Begnas"}, {"class": "Year 2 BIC", "day": "SUN", "stime": "10:00 AM", "etime": "11:30 AM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Prasant Adhikari", "sections": ["C11"], "room": "Fewa"}, {"class": "Year 2 BIC", "day": "SUN", "stime": "10:00 AM", "etime": "11:30 AM", "code": "CC5051NP", "module": "Databases", "teacher": "Mr. Midhir Rana", "sections": ["C7"], "room": "Stonehenge"}, {"class": "Year 2 BIC", "day": "SUN", "stime": "11:00 AM", "etime": "12:30 PM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Idu Nepali", "sections": ["C10"], "room": "Nilgiri"}, {"class": "Year 2 BIC", "day": "SUN", "stime": "11:30 PM", "etime": "01:30 PM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Sandeep Gurung", "sections": ["C2"], "room": "Fewa"}, {"class": "Year 2 BIC", "day": "SUN", "stime": "11:30 AM", "etime": "01:00 PM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Prasant Adhikari", "sections": ["C5"], "room": "Rara"}, {"class": "Year 2 BIC", "day": "SUN", "stime": "11:30 AM", "etime": "01:00 PM", "code": "CC5051NP", "module": "Databases", "teacher": "Mr. Achyut Parajuli", "sections": ["C4"], "room": "Tilicho"}, {"class": "Year 2 BIC", "day": "SUN", "stime": "11:30 AM", "etime": "01:00 PM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Mission Babu Sapkota", "sections": ["C11"], "room": "Gokyo"}, {"class": "Year 2 BIC", "day": "SUN", "stime": "11:30 AM", "etime": "01:00 PM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Sanjog Hamal", "sections": ["C9"], "room": "Bigben"}, {"class": "Year 2 BIC", "day": "SUN", "stime": "11:30 AM", "etime": "01:00 PM", "code": "CC5051NP", "module": "Databases", "teacher": "Mr. Midhir Rana", "sections": ["C8"], "room": "Stonehenge"}, {"class": "Year 2 BIC", "day": "SUN", "stime": "12:00 PM", "etime": "01:30 PM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sunil Thapa", "sections": ["C7"], "room": "Rupa"}, {"class": "Year 2 BIC", "day": "SUN", "stime": "12:00 PM", "etime": "01:30 PM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sandip Adhikari", "sections": ["C1"], "room": "Begnas"}, {"class": "Year 2 BIC", "day": "SUN", "stime": "01:30 PM", "etime": "03:00 PM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sunil Thapa", "sections": ["C8"], "room": "Rupa"}, {"class": "Year 2 BIC", "day": "SUN", "stime": "01:30 PM", "etime": "03:00 PM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sandip Adhikari", "sections": ["C2"], "room": "Fewa"}, {"class": "Year 2 BIC", "day": "SUN", "stime": "01:30 PM", "etime": "03:00 PM", "code": "CC5051NP", "module": "Databases", "teacher": "Mr. Midhir Rana", "sections": ["C5"], "room": "Rara"}, {"class": "Year 2 BIC", "day": "SUN", "stime": "01:30 PM", "etime": "03:00 PM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Prasant Adhikari", "sections": ["C4"], "room": "Tilicho"}, {"class": "Year 2 BIC", "day": "SUN", "stime": "01:30 PM", "etime": "03:00 PM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Mission Babu Sapkota", "sections": ["C10"], "room": "Gokyo"}, {"class": "Year 2 BIC", "day": "MON", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Sandeep Gurung", "sections": ["C4"], "room": "Gokyo"}, {"class": "Year 2 BIC", "day": "MON", "stime": "07:30 AM", "etime": "09:00 AM", "code": "CC5051NP", "module": "Databases", "teacher": "Mr. Midhir Rana", "sections": ["C3"], "room": "Fewa"}, {"class": "Year 2 BIC", "day": "MON", "stime": "07:30 AM", "etime": "09:00 AM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sunil Thapa", "sections": ["C11"], "room": "Stonehenge"}, {"class": "Year 2 BIC", "day": "MON", "stime": "09:30 AM", "etime": "11:00 AM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sandip Adhikari", "sections": ["C4"], "room": "Gokyo"}, {"class": "Year 2 BIC", "day": "MON", "stime": "09:30 AM", "etime": "11:00 AM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Mission Babu Sapkota", "sections": ["C6"], "room": "Bigben"}, {"class": "Year 2 BIC", "day": "MON", "stime": "09:30 AM", "etime": "11:00 AM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sunil Thapa", "sections": ["C10"], "room": "Stonehenge"}, {"class": "Year 2 BIC", "day": "MON", "stime": "10:00 AM", "etime": "11:30 AM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Prasant Adhikari", "sections": ["C3"], "room": "Begnas"}, {"class": "Year 2 BIC", "day": "MON", "stime": "10:00 AM", "etime": "11:30 AM", "code": "CC5051NP", "module": "Databases", "teacher": "Mr. Midhir Rana", "sections": ["C11"], "room": "Tilicho"}, {"class": "Year 2 BIC", "day": "MON", "stime": "11:00 AM", "etime": "12:30 PM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Sandeep Gurung", "sections": ["C5"], "room": "Gokyo"}, {"class": "Year 2 BIC", "day": "MON", "stime": "11:30 AM", "etime": "01:00 PM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Sanjog Hamal", "sections": ["C6"], "room": "Rupa"}, {"class": "Year 2 BIC", "day": "MON", "stime": "11:30 AM", "etime": "01:00 PM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Prasant Adhikari", "sections": ["C1"], "room": "Begnas"}, {"class": "Year 2 BIC", "day": "MON", "stime": "11:30 AM", "etime": "01:00 PM", "code": "CC5051NP", "module": "Databases", "teacher": "Mr. Achyut Parajuli", "sections": ["C2"], "room": "Rara"}, {"class": "Year 2 BIC", "day": "MON", "stime": "11:30 AM", "etime": "01:00 PM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Mission Babu Sapkota", "sections": ["C7"], "room": "Tilicho"}, {"class": "Year 2 BIC", "day": "MON", "stime": "11:30 AM", "etime": "01:00 PM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Idu Nepali", "sections": ["C8"], "room": "Nilgiri"}, {"class": "Year 2 BIC", "day": "MON", "stime": "11:30 AM", "etime": "01:00 PM", "code": "CC5051NP", "module": "Databases", "teacher": "Mr. Midhir Rana", "sections": ["C10"], "room": "Bigben"}, {"class": "Year 2 BIC", "day": "MON", "stime": "11:30 AM", "etime": "01:00 PM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sunil Thapa", "sections": ["C9"], "room": "Stonehenge"}, {"class": "Year 2 BIC", "day": "MON", "stime": "01:30 PM", "etime": "03:00 PM", "code": "CC5051NP", "module": "Databases", "teacher": "Mr. Achyut Parajuli", "sections": ["C9"], "room": "Fewa"}, {"class": "Year 2 BIC", "day": "MON", "stime": "01:30 PM", "etime": "03:00 PM", "code": "CC5051NP", "module": "Databases", "teacher": "Mr. Midhir Rana", "sections": ["C1"], "room": "Begnas"}, {"class": "Year 2 BIC", "day": "MON", "stime": "01:30 PM", "etime": "03:00 PM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Prasant Adhikari", "sections": ["C2"], "room": "Rara"}, {"class": "Year 2 BIC", "day": "MON", "stime": "01:30 PM", "etime": "03:00 PM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Sanjog Hamal", "sections": ["C7"], "room": "Tilicho"}, {"class": "Year 2 BIC", "day": "MON", "stime": "01:30 PM", "etime": "03:00 PM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sandip Adhikari", "sections": ["C5"], "room": "Gokyo"}, {"class": "Year 2 BIC", "day": "MON", "stime": "01:30 PM", "etime": "03:00 PM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Mission Babu Sapkota", "sections": ["C8"], "room": "Nilgiri"}, {"class": "Year 2 BIC", "day": "TUE", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Sandeep Gurung", "sections": ["C1", "C2", "C3"], "room": "Annapurna"}, {"class": "Year 2 BIC", "day": "TUE", "stime": "09:30 AM", "etime": "11:00 AM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Prasant Adhikari", "sections": ["C1", "C2", "C3"], "room": "Machhapuchhre"}, {"class": "Year 2 BIC", "day": "TUE", "stime": "09:30 AM", "etime": "11:00 AM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sandip Adhikari", "sections": ["C4", "C5", "C6"], "room": "Annapurna"}, {"class": "Year 2 BIC", "day": "TUE", "stime": "11:00 AM", "etime": "12:30 PM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sandip Adhikari", "sections": ["C7", "C8", "C9"], "room": "Machhapuchhre"}, {"class": "Year 2 BIC", "day": "TUE", "stime": "11:00 AM", "etime": "12:30 PM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Mission Babu Sapkota", "sections": ["C10", "C11"], "room": "Rupa"}, {"class": "Year 2 BIC", "day": "TUE", "stime": "11:30 AM", "etime": "01:00 PM", "code": "CC5051NP", "module": "Databases", "teacher": "Ms. Pratibha Gurung", "sections": ["C4", "C5", "C6"], "room": "Annapurna"}, {"class": "Year 2 BIC", "day": "TUE", "stime": "01:30 PM", "etime": "03:00 PM", "code": "CC5051NP", "module": "Databases", "teacher": "Ms. Pratibha Gurung", "sections": ["C7", "C8", "C9"], "room": "Machhapuchhre"}, {"class": "Year 2 BIC", "day": "TUE", "stime": "01:30 PM", "etime": "03:00 PM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Prasant Adhikari", "sections": ["C10", "C11"], "room": "Annapurna"}, {"class": "Year 2 BIC", "day": "WED", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Sandeep Gurung", "sections": ["C4", "C5", "C6"], "room": "Annapurna"}, {"class": "Year 2 BIC", "day": "WED", "stime": "09:00 AM", "etime": "10:30 AM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sandip Adhikari", "sections": ["C1", "C2", "C3"], "room": "Machhapuchhre"}, {"class": "Year 2 BIC", "day": "WED", "stime": "09:30 AM", "etime": "11:00 AM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Prasant Adhikari", "sections": ["C4", "C5", "C6"], "room": "Annapurna"}, {"class": "Year 2 BIC", "day": "WED", "stime": "11:00 AM", "etime": "12:30 PM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Sandeep Gurung", "sections": ["C7", "C8", "C9"], "room": "Machhapuchhre"}, {"class": "Year 2 BIC", "day": "WED", "stime": "11:30 AM", "etime": "01:00 PM", "code": "CC5051NP", "module": "Databases", "teacher": "Ms. Pratibha Gurung", "sections": ["C1", "C2", "C3"], "room": "Annapurna"}, {"class": "Year 2 BIC", "day": "WED", "stime": "11:30 AM", "etime": "01:00 PM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sandip Adhikari", "sections": ["C10", "C11"], "room": "Rupa"}, {"class": "Year 2 BIC", "day": "WED", "stime": "01:30 PM", "etime": "03:00 PM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Prasant Adhikari", "sections": ["C7", "C8", "C9"], "room": "Machhapuchhre"}, {"class": "Year 2 BIC", "day": "WED", "stime": "01:30 PM", "etime": "03:00 PM", "code": "CC5051NP", "module": "Databases", "teacher": "Ms. Pratibha Gurung", "sections": ["C10", "C11"], "room": "Rupa"}, {"class": "Year 2 BIC", "day": "THU", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Idu Nepali", "sections": ["C10"], "room": "Gokyo"}, {"class": "Year 2 BIC", "day": "THU", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CC5051NP", "module": "Databases", "teacher": "Mr. Midhir Rana", "sections": ["C6"], "room": "Stonehenge"}, {"class": "Year 2 BIC", "day": "THU", "stime": "07:30 AM", "etime": "09:00 AM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Mission Babu Sapkota", "sections": ["C3"], "room": "Tilicho"}, {"class": "Year 2 BIC", "day": "THU", "stime": "07:30 AM", "etime": "09:00 AM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sunil Thapa", "sections": ["C8"], "room": "Bigben"}, {"class": "Year 2 BIC", "day": "THU", "stime": "09:00 AM", "etime": "10:30 AM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Mission Babu Sapkota", "sections": ["C10"], "room": "Gokyo"}, {"class": "Year 2 BIC", "day": "THU", "stime": "09:30 AM", "etime": "11:00 AM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Prasant Adhikari", "sections": ["C5"], "room": "Tilicho"}, {"class": "Year 2 BIC", "day": "THU", "stime": "09:30 AM", "etime": "11:00 AM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sunil Thapa", "sections": ["C6"], "room": "Bigben"}, {"class": "Year 2 BIC", "day": "THU", "stime": "10:00 AM", "etime": "11:30 AM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sandip Adhikari", "sections": ["C3"], "room": "Begnas"}, {"class": "Year 2 BIC", "day": "THU", "stime": "10:00 AM", "etime": "11:30 AM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Sandeep Gurung", "sections": ["C2"], "room": "Rara"}, {"class": "Year 2 BIC", "day": "THU", "stime": "10:00 AM", "etime": "11:30 AM", "code": "CC5051NP", "module": "Databases", "teacher": "Mr. Midhir Rana", "sections": ["C8"], "room": "Nilgiri"}, {"class": "Year 2 BIC", "day": "THU", "stime": "11:00 AM", "etime": "12:30 PM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Prasant Adhikari", "sections": ["C4"], "room": "Rupa"}, {"class": "Year 2 BIC", "day": "THU", "stime": "11:00 AM", "etime": "12:30 PM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Sanjog Hamal", "sections": ["C9"], "room": "Thames"}, {"class": "Year 2 BIC", "day": "THU", "stime": "11:30 AM", "etime": "01:00 PM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Sandeep Gurung", "sections": ["C1"], "room": "Rara"}, {"class": "Year 2 BIC", "day": "THU", "stime": "11:30 AM", "etime": "01:00 PM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Mission Babu Sapkota", "sections": ["C11"], "room": "Gokyo"}, {"class": "Year 2 BIC", "day": "THU", "stime": "11:30 AM", "etime": "01:00 PM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sunil Thapa", "sections": ["C7"], "room": "Stonehenge"}, {"class": "Year 2 BIC", "day": "THU", "stime": "12:00 PM", "etime": "01:30 PM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sandip Adhikari", "sections": ["C2"], "room": "Begnas"}, {"class": "Year 2 BIC", "day": "THU", "stime": "12:00 PM", "etime": "01:30 PM", "code": "CC5051NP", "module": "Databases", "teacher": "Mr. Midhir Rana", "sections": ["C5"], "room": "Tilicho"}, {"class": "Year 2 BIC", "day": "THU", "stime": "01:30 PM", "etime": "03:00 PM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Mission Babu Sapkota", "sections": ["C9"], "room": "Begnas"}, {"class": "Year 2 BIC", "day": "THU", "stime": "01:30 PM", "etime": "03:00 PM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sandip Adhikari", "sections": ["C1"], "room": "Rara"}, {"class": "Year 2 BIC", "day": "THU", "stime": "01:30 PM", "etime": "03:00 PM", "code": "CC5051NP", "module": "Databases", "teacher": "Mr. Achyut Parajuli", "sections": ["C4"], "room": "Tilicho"}, {"class": "Year 2 BIC", "day": "THU", "stime": "01:30 PM", "etime": "03:00 PM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Prasant Adhikari", "sections": ["C11"], "room": "Gokyo"}, {"class": "Year 2 BIC", "day": "THU", "stime": "01:30 PM", "etime": "03:00 PM", "code": "CC5051NP", "module": "Databases", "teacher": "Mr. Midhir Rana", "sections": ["C7"], "room": "Nilgiri"}, {"class": "Year 2 BIC", "day": "FRI", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sunil Thapa", "sections": ["C11"], "room": "Tilicho"}, {"class": "Year 2 BIC", "day": "FRI", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Sandeep Gurung", "sections": ["C4"], "room": "Nilgiri"}, {"class": "Year 2 BIC", "day": "FRI", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Sanjog Hamal", "sections": ["C6"], "room": "Bigben"}, {"class": "Year 2 BIC", "day": "FRI", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Mission Babu Sapkota", "sections": ["C7"], "room": "Stonehenge"}, {"class": "Year 2 BIC", "day": "FRI", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CC5051NP", "module": "Databases", "teacher": "Mr. Achyut Parajuli", "sections": ["C9"], "room": "OpenAccessLab"}, {"class": "Year 2 BIC", "day": "FRI", "stime": "07:30 AM", "etime": "09:00 AM", "code": "CC5051NP", "module": "Databases", "teacher": "Mr. Midhir Rana", "sections": ["C1"], "room": "Thames"}, {"class": "Year 2 BIC", "day": "FRI", "stime": "09:00 AM", "etime": "10:30 AM", "code": "CC5051NP", "module": "Databases", "teacher": "Mr. Midhir Rana", "sections": ["C11"], "room": "Kingston"}, {"class": "Year 2 BIC", "day": "FRI", "stime": "09:30 AM", "etime": "11:00 AM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sandip Adhikari", "sections": ["C4"], "room": "Nilgiri"}, {"class": "Year 2 BIC", "day": "FRI", "stime": "09:30 AM", "etime": "11:00 AM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Sanjog Hamal", "sections": ["C7"], "room": "Bigben"}, {"class": "Year 2 BIC", "day": "FRI", "stime": "09:30 AM", "etime": "11:00 AM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Mission Babu Sapkota", "sections": ["C6"], "room": "Stonehenge"}, {"class": "Year 2 BIC", "day": "FRI", "stime": "09:30 AM", "etime": "11:00 AM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sunil Thapa", "sections": ["C9"], "room": "Thames"}, {"class": "Year 2 BIC", "day": "FRI", "stime": "10:00 AM", "etime": "11:30 AM", "code": "CC5051NP", "module": "Databases", "teacher": "Mr. Achyut Parajuli", "sections": ["C2"], "room": "Begnas"}, {"class": "Year 2 BIC", "day": "FRI", "stime": "10:00 AM", "etime": "11:30 AM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Prasant Adhikari", "sections": ["C1"], "room": "Rara"}, {"class": "Year 2 BIC", "day": "FRI", "stime": "10:00 AM", "etime": "11:30 AM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Sandeep Gurung", "sections": ["C5"], "room": "Gokyo"}, {"class": "Year 2 BIC", "day": "FRI", "stime": "11:30 AM", "etime": "01:00 PM", "code": "CC5051NP", "module": "Databases", "teacher": "Mr. Midhir Rana", "sections": ["C3"], "room": "Rara"}, {"class": "Year 2 BIC", "day": "FRI", "stime": "11:30 AM", "etime": "01:00 PM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Idu Nepali", "sections": ["C8"], "room": "Gokyo"}, {"class": "Year 2 BIC", "day": "FRI", "stime": "11:30 AM", "etime": "01:00 PM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sunil Thapa", "sections": ["C10"], "room": "Nilgiri"}, {"class": "Year 2 BIC", "day": "FRI", "stime": "12:00 PM", "etime": "01:30 PM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Prasant Adhikari", "sections": ["C2"], "room": "Tilicho"}, {"class": "Year 2 BIC", "day": "FRI", "stime": "12:30 PM", "etime": "02:00 PM", "code": "CS5053NP", "module": "Cloud Computing and Internet of Things", "teacher": "Mr. Sandip Adhikari", "sections": ["C5"], "room": "Begnas"}, {"class": "Year 2 BIC", "day": "FRI", "stime": "01:30 PM", "etime": "03:00 PM", "code": "CT5052NP", "module": "Network Operating Systems", "teacher": "Mr. Prasant Adhikari", "sections": ["C3"], "room": "Tilicho"}, {"class": "Year 2 BIC", "day": "FRI", "stime": "01:30 PM", "etime": "03:00 PM", "code": "CS5002NP", "module": "Software Engineering", "teacher": "Mr. Mission Babu Sapkota", "sections": ["C8"], "room": "Gokyo"}, {"class": "Year 2 BIC", "day": "FRI", "stime": "01:30 PM", "etime": "03:00 PM", "code": "CC5051NP", "module": "Databases", "teacher": "Mr. Midhir Rana", "sections": ["C10"], "room": "Nilgiri"}, {"class": "Year 3 BIC", "day": "SUN", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CC6012NP", "module": "Data and Web Development", "teacher": "Ms. Pratibha Gurung", "sections": ["C6"], "room": "Rupa"}, {"class": "Year 3 BIC", "day": "SUN", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CU6051NP", "module": "Artificial Intelligence", "teacher": "Mr. Sanjog Hamal", "sections": ["C2"], "room": "Nilgiri"}, {"class": "Year 3 BIC", "day": "SUN", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CS6004NP", "module": "Application Development", "teacher": "Mr. Mahesh Dhungana", "sections": ["C5"], "room": "Bigben"}, {"class": "Year 3 BIC", "day": "SUN", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CS6004NP", "module": "Application Development", "teacher": "Mr. Sanam Katwal", "sections": ["C7"], "room": "Stonehenge"}, {"class": "Year 3 BIC", "day": "SUN", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CU6051NP", "module": "Artificial Intelligence", "teacher": "Mr. Niroj Karki", "sections": ["C3"], "room": "Thames"}, {"class": "Year 3 BIC", "day": "SUN", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CC6012NP", "module": "Data and Web Development", "teacher": "Mr. Achyut Parajuli", "sections": ["C4"], "room": "OpenAccessLab"}, {"class": "Year 3 BIC", "day": "SUN", "stime": "08:30 AM", "etime": "10:00 AM", "code": "CC6012NP", "module": "Data and Web Development", "teacher": "Ms. Pratibha Gurung", "sections": ["C5"], "room": "Rupa"}, {"class": "Year 3 BIC", "day": "SUN", "stime": "08:30 AM", "etime": "10:00 AM", "code": "CU6051NP", "module": "Artificial Intelligence", "teacher": "Mr. Sanjog Hamal", "sections": ["C1"], "room": "Nilgiri"}, {"class": "Year 3 BIC", "day": "SUN", "stime": "08:30 AM", "etime": "10:00 AM", "code": "CC6012NP", "module": "Data and Web Development", "teacher": "Mr. Achyut Parajuli", "sections": ["C7"], "room": "Stonehenge"}, {"class": "Year 3 BIC", "day": "SUN", "stime": "08:30 AM", "etime": "10:00 AM", "code": "CU6051NP", "module": "Artificial Intelligence", "teacher": "Mr. Niroj Karki", "sections": ["C4"], "room": "Thames"}, {"class": "Year 3 BIC", "day": "SUN", "stime": "08:30 AM", "etime": "10:00 AM", "code": "CS6004NP", "module": "Application Development", "teacher": "Mr. Sanam Katwal", "sections": ["C6"], "room": "OpenAccessLab"}, {"class": "Year 3 BIC", "day": "MON", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CU6051NP", "module": "Artificial Intelligence", "teacher": "Mr. Niroj Karki", "sections": ["C5"], "room": "Rupa"}, {"class": "Year 3 BIC", "day": "MON", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CC6012NP", "module": "Data and Web Development", "teacher": "Ms. Pratibha Gurung", "sections": ["C2"], "room": "Begnas"}, {"class": "Year 3 BIC", "day": "MON", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CU6051NP", "module": "Artificial Intelligence", "teacher": "Mr. Sanjog Hamal", "sections": ["C7"], "room": "Bigben"}, {"class": "Year 3 BIC", "day": "MON", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CS6004NP", "module": "Application Development", "teacher": "Mr. Sanam Katwal", "sections": ["C3"], "room": "Thames"}, {"class": "Year 3 BIC", "day": "MON", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CS6004NP", "module": "Application Development", "teacher": "Mr. Mahesh Dhungana", "sections": ["C1"], "room": "OpenAccessLab"}, {"class": "Year 3 BIC", "day": "MON", "stime": "08:30 AM", "etime": "10:00 AM", "code": "CU6051NP", "module": "Artificial Intelligence", "teacher": "Mr. Niroj Karki", "sections": ["C6"], "room": "Rupa"}, {"class": "Year 3 BIC", "day": "MON", "stime": "08:30 AM", "etime": "10:00 AM", "code": "CC6012NP", "module": "Data and Web Development", "teacher": "Ms. Pratibha Gurung", "sections": ["C1"], "room": "Begnas"}, {"class": "Year 3 BIC", "day": "MON", "stime": "08:30 AM", "etime": "10:00 AM", "code": "CS6004NP", "module": "Application Development", "teacher": "Mr. Sanam Katwal", "sections": ["C4"], "room": "Thames"}, {"class": "Year 3 BIC", "day": "MON", "stime": "08:30 AM", "etime": "10:00 AM", "code": "CS6004NP", "module": "Application Development", "teacher": "Mr. Mahesh Dhungana", "sections": ["C2"], "room": "OpenAccessLab"}, {"class": "Year 3 BIC", "day": "MON", "stime": "08:30 AM", "etime": "10:00 AM", "code": "CC6012NP", "module": "Data and Web Development", "teacher": "Mr. Achyut Parajuli", "sections": ["C3"], "room": "Kingston"}, {"class": "Year 3 BIC", "day": "TUE", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CS6004NP", "module": "Application Development", "teacher": "Mr. Mahesh Dhungana", "sections": ["C2"], "room": "Tilicho"}, {"class": "Year 3 BIC", "day": "TUE", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CU6051NP", "module": "Artificial Intelligence", "teacher": "Mr. Sanjog Hamal", "sections": ["C7"], "room": "Gokyo"}, {"class": "Year 3 BIC", "day": "TUE", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CC6012NP", "module": "Data and Web Development", "teacher": "Mr. Achyut Parajuli", "sections": ["C4"], "room": "Bigben"}, {"class": "Year 3 BIC", "day": "TUE", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CU6051NP", "module": "Artificial Intelligence", "teacher": "Mr. Niroj Karki", "sections": ["C5"], "room": "Stonehenge"}, {"class": "Year 3 BIC", "day": "TUE", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CS6004NP", "module": "Application Development", "teacher": "Mr. Sanam Katwal", "sections": ["C3"], "room": "Kingston"}, {"class": "Year 3 BIC", "day": "TUE", "stime": "08:30 AM", "etime": "10:00 AM", "code": "CC6012NP", "module": "Data and Web Development", "teacher": "Ms. Pratibha Gurung", "sections": ["C2"], "room": "Rara"}, {"class": "Year 3 BIC", "day": "TUE", "stime": "08:30 AM", "etime": "10:00 AM", "code": "CS6004NP", "module": "Application Development", "teacher": "Mr. Mahesh Dhungana", "sections": ["C1"], "room": "Tilicho"}, {"class": "Year 3 BIC", "day": "TUE", "stime": "08:30 AM", "etime": "10:00 AM", "code": "CU6051NP", "module": "Artificial Intelligence", "teacher": "Mr. Niroj Karki", "sections": ["C6"], "room": "Stonehenge"}, {"class": "Year 3 BIC", "day": "TUE", "stime": "08:30 AM", "etime": "10:00 AM", "code": "CC6012NP", "module": "Data and Web Development", "teacher": "Mr. Achyut Parajuli", "sections": ["C3"], "room": "Bigben"}, {"class": "Year 3 BIC", "day": "TUE", "stime": "08:30 AM", "etime": "10:00 AM", "code": "CS6004NP", "module": "Application Development", "teacher": "Mr. Sanam Katwal", "sections": ["C4"], "room": "Kingston"}, {"class": "Year 3 BIC", "day": "WED", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CC6012NP", "module": "Data and Web Development", "teacher": "Ms. Pratibha Gurung", "sections": ["C5"], "room": "Tilicho"}, {"class": "Year 3 BIC", "day": "WED", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CS6004NP", "module": "Application Development", "teacher": "Mr. Sanam Katwal", "sections": ["C6"], "room": "Gokyo"}, {"class": "Year 3 BIC", "day": "WED", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CC6012NP", "module": "Data and Web Development", "teacher": "Mr. Achyut Parajuli", "sections": ["C7"], "room": "Nilgiri"}, {"class": "Year 3 BIC", "day": "WED", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CU6051NP", "module": "Artificial Intelligence", "teacher": "Mr. Sanjog Hamal", "sections": ["C1"], "room": "Bigben"}, {"class": "Year 3 BIC", "day": "WED", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CU6051NP", "module": "Artificial Intelligence", "teacher": "Mr. Niroj Karki", "sections": ["C3"], "room": "Stonehenge"}, {"class": "Year 3 BIC", "day": "WED", "stime": "08:30 AM", "etime": "10:00 AM", "code": "CS6004NP", "module": "Application Development", "teacher": "Mr. Mahesh Dhungana", "sections": ["C5"], "room": "Tilicho"}, {"class": "Year 3 BIC", "day": "WED", "stime": "08:30 AM", "etime": "10:00 AM", "code": "CS6004NP", "module": "Application Development", "teacher": "Mr. Sanam Katwal", "sections": ["C7"], "room": "Nilgiri"}, {"class": "Year 3 BIC", "day": "WED", "stime": "08:30 AM", "etime": "10:00 AM", "code": "CU6051NP", "module": "Artificial Intelligence", "teacher": "Mr. Sanjog Hamal", "sections": ["C2"], "room": "Bigben"}, {"class": "Year 3 BIC", "day": "WED", "stime": "08:30 AM", "etime": "10:00 AM", "code": "CC6012NP", "module": "Data and Web Development", "teacher": "Mr. Achyut Parajuli", "sections": ["C1"], "room": "Rara"}, {"class": "Year 3 BIC", "day": "WED", "stime": "08:30 AM", "etime": "10:00 AM", "code": "CU6051NP", "module": "Artificial Intelligence", "teacher": "Mr. Niroj Karki", "sections": ["C4"], "room": "Stonehenge"}, {"class": "Year 3 BIC", "day": "THU", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CS6004NP", "module": "Application Development", "teacher": "Mr. Mahesh Dhungana", "sections": ["C1", "C2", "C3"], "room": "Machhapuchhre"}, {"class": "Year 3 BIC", "day": "THU", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CC6012NP", "module": "Data and Web Development", "teacher": "Ms. Pratibha Gurung", "sections": ["C4", "C5"], "room": "Annapurna"}, {"class": "Year 3 BIC", "day": "THU", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CU6051NP", "module": "Artificial Intelligence", "teacher": "Mr. Sanjog Hamal", "sections": ["C6", "C7"], "room": "Rupa"}, {"class": "Year 3 BIC", "day": "THU", "stime": "08:30 AM", "etime": "10:00 AM", "code": "CU6051NP", "module": "Artificial Intelligence", "teacher": "Mr. Sanjog Hamal", "sections": ["C1", "C2", "C3"], "room": "Machhapuchhre"}, {"class": "Year 3 BIC", "day": "THU", "stime": "08:30 AM", "etime": "10:00 AM", "code": "CS6004NP", "module": "Application Development", "teacher": "Mr. Mahesh Dhungana", "sections": ["C4", "C5"], "room": "Annapurna"}, {"class": "Year 3 BIC", "day": "THU", "stime": "08:30 AM", "etime": "10:00 AM", "code": "CC6012NP", "module": "Data and Web Development", "teacher": "Ms. Pratibha Gurung", "sections": ["C6", "C7"], "room": "Rupa"}, {"class": "Year 3 BIC", "day": "FRI", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CU6051NP", "module": "Artificial Intelligence", "teacher": "Mr. Sanjog Hamal", "sections": ["C4", "C5"], "room": "Machhapuchhre"}, {"class": "Year 3 BIC", "day": "FRI", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CC6012NP", "module": "Data and Web Development", "teacher": "Ms. Pratibha Gurung", "sections": ["C1", "C2", "C3"], "room": "Annapurna"}, {"class": "Year 3 BIC", "day": "FRI", "stime": "07:00 AM", "etime": "08:30 AM", "code": "CS6004NP", "module": "Application Development", "teacher": "Mr. Mahesh Dhungana", "sections": ["C6", "C7"], "room": "Rupa"}, {"class": "Year 3 BIC", "day": "FRI", "stime": "08:30 AM", "etime": "10:00 AM", "code": "CC6012NP", "module": "Data and Web Development", "teacher": "Ms. Pratibha Gurung", "sections": ["C6"], "room": "Rupa"}], "sections": {"Year 1 BBA": ["B1", "B2"], "Year 2 BBA": ["B1"], "Year 3 BBA": ["B1"], "Year 3.5 BBA": ["B1", "B2", "B3"], "Year 2 BIC": ["C1", "C10", "C11", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "C9"], "Year 3 BIC": ["C1", "C2", "C3", "C4", "C5", "C6", "C7"]}, "rooms": ["Gokyo", "Fewa", "Begnas", "Nilgiri", "Tilicho", "Rara", "Rupa", "Kingston", "Bigben", "Stonehenge", "Annapurna", "Machhapuchhre", "Thames", "OpenAccessLab"], "teachers": ["Ms. Sajena Dwa", "Mr. Kiran Kunwar", "Mr. Ashish Subedi", "Mr. Arjun Sapkota", "Mr. Vikram Rana", "Mr. Anil Rai", "Ms. Ganga Ghale", "Mr. Mission Babu Sapkota", "Mr. Midhir Rana", "Mr. Sandip Adhikari", "Mr. Sunil Thapa", "Mr. Sandeep Gurung", "Mr. Prasant Adhikari", "Mr. Idu Nepali", "Mr. Achyut Parajuli", "Mr. Sanjog Hamal", "Ms. Pratibha Gurung", "Mr. Mahesh Dhungana", "Mr. Sanam Katwal", "Mr. Niroj Karki"]}
+{
+    "classes": [
+        {
+            "class": "Year 1 BBA",
+            "day": "SUN",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "MN4066NP",
+            "module": "Principles of Management",
+            "teacher": "Ms. Sajena Dwa",
+            "sections": [
+                "B1"
+            ],
+            "room": "Gokyo"
+        },
+        {
+            "class": "Year 1 BBA",
+            "day": "SUN",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "AC4057NP",
+            "module": "Business Law and Ethics",
+            "teacher": "Mr. Kiran Kunwar",
+            "sections": [
+                "B1"
+            ],
+            "room": "Gokyo"
+        },
+        {
+            "class": "Year 1 BBA",
+            "day": "MON",
+            "stime": "09:00 AM",
+            "etime": "10:30 AM",
+            "code": "MC4064NP",
+            "module": "Principle of Marketing",
+            "teacher": "Mr. Ashish Subedi",
+            "sections": [
+                "B1"
+            ],
+            "room": "Fewa"
+        },
+        {
+            "class": "Year 1 BBA",
+            "day": "MON",
+            "stime": "10:30 AM",
+            "etime": "12:00 PM",
+            "code": "FE4060NP",
+            "module": "Understanding and Managing Data",
+            "teacher": "Mr. Arjun Sapkota",
+            "sections": [
+                "B1"
+            ],
+            "room": "Fewa"
+        },
+        {
+            "class": "Year 1 BBA",
+            "day": "TUE",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "MN4066NP",
+            "module": "Principle of Management",
+            "teacher": "Ms. Sajena Dwa",
+            "sections": [
+                "B2"
+            ],
+            "room": "Fewa"
+        },
+        {
+            "class": "Year 1 BBA",
+            "day": "TUE",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "AC4057NP",
+            "module": "Business Law and Ethics",
+            "teacher": "Mr. Kiran Kunwar",
+            "sections": [
+                "B1"
+            ],
+            "room": "Fewa"
+        },
+        {
+            "class": "Year 1 BBA",
+            "day": "WED",
+            "stime": "09:00 AM",
+            "etime": "10:30 AM",
+            "code": "MC4064NP",
+            "module": "Principle of Marketing",
+            "teacher": "Mr. Ashish Subedi",
+            "sections": [
+                "B1"
+            ],
+            "room": "Gokyo"
+        },
+        {
+            "class": "Year 1 BBA",
+            "day": "WED",
+            "stime": "10:30 AM",
+            "etime": "12:00 PM",
+            "code": "FE4060NP",
+            "module": "Understanding and Managing Data",
+            "teacher": "Mr. Arjun Sapkota",
+            "sections": [
+                "B1"
+            ],
+            "room": "Begnas"
+        },
+        {
+            "class": "Year 1 BBA",
+            "day": "THU",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "MN4066NP",
+            "module": "Principle of Management",
+            "teacher": "Ms. Sajena Dwa",
+            "sections": [
+                "B1"
+            ],
+            "room": "Nilgiri"
+        },
+        {
+            "class": "Year 1 BBA",
+            "day": "THU",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "AC4057NP",
+            "module": "Business Law and Ethics",
+            "teacher": "Mr. Kiran Kunwar",
+            "sections": [
+                "B1"
+            ],
+            "room": "Nilgiri"
+        },
+        {
+            "class": "Year 1 BBA",
+            "day": "FRI",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "MC4064NP",
+            "module": "Principle of Marketing",
+            "teacher": "Mr. Ashish Subedi",
+            "sections": [
+                "B1"
+            ],
+            "room": "Fewa"
+        },
+        {
+            "class": "Year 1 BBA",
+            "day": "FRI",
+            "stime": "10:00 AM",
+            "etime": "11:30 AM",
+            "code": "FE4060NP",
+            "module": "Understanding and Managing Data",
+            "teacher": "Mr. Arjun Sapkota",
+            "sections": [
+                "B1"
+            ],
+            "room": "Fewa"
+        },
+        {
+            "class": "Year 2 BBA",
+            "day": "SUN",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "BA5057NP",
+            "module": "Effective Project Management",
+            "teacher": "Mr. Ashish Subedi",
+            "sections": [
+                "B1"
+            ],
+            "room": "Tilicho"
+        },
+        {
+            "class": "Year 2 BBA",
+            "day": "SUN",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "HR5065NP",
+            "module": "Talent Resourcing and Development",
+            "teacher": "Ms. Sajena Dwa",
+            "sections": [
+                "B1"
+            ],
+            "room": "Tilicho"
+        },
+        {
+            "class": "Year 2 BBA",
+            "day": "MON",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "MN5079NP",
+            "module": "Business Writing and Effective Lab Communication",
+            "teacher": "Mr. Vikram Rana",
+            "sections": [
+                "B1"
+            ],
+            "room": "Rara"
+        },
+        {
+            "class": "Year 2 BBA",
+            "day": "MON",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "MN5004NP",
+            "module": "Leading Innovation and Entrepreneurship",
+            "teacher": "Mr. Kiran Kunwar",
+            "sections": [
+                "B1"
+            ],
+            "room": "Rara"
+        },
+        {
+            "class": "Year 2 BBA",
+            "day": "TUE",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "BA5057NP",
+            "module": "Effective Project Management",
+            "teacher": "Mr. Ashish Subedi",
+            "sections": [
+                "B1"
+            ],
+            "room": "Rupa"
+        },
+        {
+            "class": "Year 2 BBA",
+            "day": "TUE",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "AC5002NP",
+            "module": "Talent Resourcing and Development",
+            "teacher": "Ms. Sajena Dwa",
+            "sections": [
+                "B1"
+            ],
+            "room": "Rupa"
+        },
+        {
+            "class": "Year 2 BBA",
+            "day": "WED",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "MN5079NP",
+            "module": "Business Writing and Effective Lab Communication",
+            "teacher": "Mr. Vikram Rana",
+            "sections": [
+                "B1"
+            ],
+            "room": "Rupa"
+        },
+        {
+            "class": "Year 2 BBA",
+            "day": "WED",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "MN5004NP",
+            "module": "Leading Innovation and Entrepreneurship",
+            "teacher": "Mr. Kiran Kunwar",
+            "sections": [
+                "B1"
+            ],
+            "room": "Rupa"
+        },
+        {
+            "class": "Year 2 BBA",
+            "day": "THU",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "BA5057NP",
+            "module": "Effective Project Management",
+            "teacher": "Mr. Ashish Subedi",
+            "sections": [
+                "B1"
+            ],
+            "room": "Fewa"
+        },
+        {
+            "class": "Year 2 BBA",
+            "day": "THU",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "HR5065NP",
+            "module": "Talent Resourcing and Development",
+            "teacher": "Ms. Sajena Dwa",
+            "sections": [
+                "B1"
+            ],
+            "room": "Fewa"
+        },
+        {
+            "class": "Year 2 BBA",
+            "day": "FRI",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "MN5079NP",
+            "module": "Business Writing and Effective Lab Communication",
+            "teacher": "Mr. Vikram Rana",
+            "sections": [
+                "B1"
+            ],
+            "room": "Rara"
+        },
+        {
+            "class": "Year 2 BBA",
+            "day": "FRI",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "MN5004NP",
+            "module": "Leading Innovation and Entrepreneurship",
+            "teacher": "Mr. Kiran Kunwar",
+            "sections": [
+                "B1"
+            ],
+            "room": "Rara"
+        },
+        {
+            "class": "Year 3 BBA",
+            "day": "SUN",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "MN6091NP",
+            "module": "Emerging Technology in Digital Business Management",
+            "teacher": "Mr. Anil Rai",
+            "sections": [
+                "B1"
+            ],
+            "room": "Fewa"
+        },
+        {
+            "class": "Year 3 BBA",
+            "day": "SUN",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "MC6103NP",
+            "module": "Digital and Social media Marketing",
+            "teacher": "Mr. Vikram Rana",
+            "sections": [
+                "B1"
+            ],
+            "room": "Fewa"
+        },
+        {
+            "class": "Year 3 BBA",
+            "day": "MON",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "MN6090NP",
+            "module": "International Marketing and Sales in the Digital Era",
+            "teacher": "Mr. Ashish Subedi",
+            "sections": [
+                "B1"
+            ],
+            "room": "Tilicho"
+        },
+        {
+            "class": "Year 3 BBA",
+            "day": "MON",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "FE6061NP",
+            "module": "Personal Finance",
+            "teacher": "Mr. Arjun Sapkota",
+            "sections": [
+                "B1"
+            ],
+            "room": "Tilicho"
+        },
+        {
+            "class": "Year 3 BBA",
+            "day": "TUE",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "MN6091NP",
+            "module": "Emeriging Technology in Digital Business Management",
+            "teacher": "Mr. Anil Rai",
+            "sections": [
+                "B1"
+            ],
+            "room": "Nilgiri"
+        },
+        {
+            "class": "Year 3 BBA",
+            "day": "TUE",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "MC6103NP",
+            "module": "Digital and Social media Marketing",
+            "teacher": "Mr. Vikram Rana",
+            "sections": [
+                "B1"
+            ],
+            "room": "Nilgiri"
+        },
+        {
+            "class": "Year 3 BBA",
+            "day": "WED",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "MN6090NP",
+            "module": "International Marketing and Sales in the Digital Era",
+            "teacher": "Mr. Ashish Subedi",
+            "sections": [
+                "B1"
+            ],
+            "room": "Begnas"
+        },
+        {
+            "class": "Year 3 BBA",
+            "day": "WED",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "FE6061NP",
+            "module": "Personal Finance",
+            "teacher": "Mr. Arjun Sapkota",
+            "sections": [
+                "B1"
+            ],
+            "room": "Begnas"
+        },
+        {
+            "class": "Year 3 BBA",
+            "day": "THU",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "MN6091NP",
+            "module": "Emeriging Technology in Digital Business Management",
+            "teacher": "Mr. Anil Rai",
+            "sections": [
+                "B1"
+            ],
+            "room": "Begnas"
+        },
+        {
+            "class": "Year 3 BBA",
+            "day": "THU",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "MC6103NP",
+            "module": "Digital and Social media Marketing",
+            "teacher": "Mr. Vikram Rana",
+            "sections": [
+                "B1"
+            ],
+            "room": "Begnas"
+        },
+        {
+            "class": "Year 3 BBA",
+            "day": "FRI",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "MN6090NP",
+            "module": "International Marketing and Sales in the Digital Era",
+            "teacher": "Mr. Ashish Subedi",
+            "sections": [
+                "B1"
+            ],
+            "room": "Begnas"
+        },
+        {
+            "class": "Year 3 BBA",
+            "day": "FRI",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "FE6061NP",
+            "module": "Personal Finance",
+            "teacher": "Mr. Arjun Sapkota",
+            "sections": [
+                "B1"
+            ],
+            "room": "Begnas"
+        },
+        {
+            "class": "Year 3.5 BBA",
+            "day": "SUN",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "MN6094NP",
+            "module": "Developing Breakthrough Leadership Skills",
+            "teacher": "Mr. Kiran Kunwar",
+            "sections": [
+                "B1"
+            ],
+            "room": "Begnas"
+        },
+        {
+            "class": "Year 3.5 BBA",
+            "day": "SUN",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "MN6W63NP",
+            "module": "Learning Through Work 2",
+            "teacher": "Mr. Arjun Sapkota",
+            "sections": [
+                "B1"
+            ],
+            "room": "Begnas"
+        },
+        {
+            "class": "Year 3.5 BBA",
+            "day": "MON",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "MN6W63NP",
+            "module": "Creating a Winning Business 2",
+            "teacher": "Ms. Ganga Ghale",
+            "sections": [
+                "B1"
+            ],
+            "room": "Nilgiri"
+        },
+        {
+            "class": "Year 3.5 BBA",
+            "day": "MON",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "AC6069NP",
+            "module": "Corporate Social Responsibility and Sustainability",
+            "teacher": "Ms. Sajena Dwa",
+            "sections": [
+                "B1"
+            ],
+            "room": "Nilgiri"
+        },
+        {
+            "class": "Year 3.5 BBA",
+            "day": "TUE",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "MN6094NP",
+            "module": "Developing Breakthrough Leadership Skills",
+            "teacher": "Mr. Kiran Kunwar",
+            "sections": [
+                "B3"
+            ],
+            "room": "Begnas"
+        },
+        {
+            "class": "Year 3.5 BBA",
+            "day": "TUE",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "MN6W63NP",
+            "module": "Learning Through Work 2",
+            "teacher": "Mr. Arjun Sapkota",
+            "sections": [
+                "B1"
+            ],
+            "room": "Begnas"
+        },
+        {
+            "class": "Year 3.5 BBA",
+            "day": "WED",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "MN6W64NP",
+            "module": "Creating a Winning Business 2",
+            "teacher": "Ms. Ganga Ghale",
+            "sections": [
+                "B2"
+            ],
+            "room": "Rara"
+        },
+        {
+            "class": "Year 3.5 BBA",
+            "day": "WED",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "AC6069NP",
+            "module": "Corporate Social Responsibility and Sustainability",
+            "teacher": "Ms. Sajena Dwa",
+            "sections": [
+                "B1"
+            ],
+            "room": "Rara"
+        },
+        {
+            "class": "Year 3.5 BBA",
+            "day": "THU",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "MN6094NP",
+            "module": "Developing Breakthrough Leadership Skills",
+            "teacher": "Mr. Kiran Kunwar",
+            "sections": [
+                "B1"
+            ],
+            "room": "Rara"
+        },
+        {
+            "class": "Year 3.5 BBA",
+            "day": "THU",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "MN6W63NP",
+            "module": "Learning Through Work 2",
+            "teacher": "Mr. Arjun Sapkota",
+            "sections": [
+                "B1"
+            ],
+            "room": "Rara"
+        },
+        {
+            "class": "Year 3.5 BBA",
+            "day": "FRI",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "MN6W64NP",
+            "module": "Creating a Winning Business 2",
+            "teacher": "Ms. Ganga Ghale",
+            "sections": [
+                "B1"
+            ],
+            "room": "Gokyo"
+        },
+        {
+            "class": "Year 3.5 BBA",
+            "day": "FRI",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "AC6069NP",
+            "module": "Corporate Social Responsibility and Sustainability",
+            "teacher": "Ms. Sajena Dwa",
+            "sections": [
+                "B1"
+            ],
+            "room": "Gokyo"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "SUN",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Mission Babu Sapkota",
+            "sections": [
+                "C3"
+            ],
+            "room": "Rara"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "SUN",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Mr. Midhir Rana",
+            "sections": [
+                "C6"
+            ],
+            "room": "Kingston"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "SUN",
+            "stime": "09:00 AM",
+            "etime": "10:30 AM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Mission Babu Sapkota",
+            "sections": [
+                "C9"
+            ],
+            "room": "Bigben"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "SUN",
+            "stime": "09:30 AM",
+            "etime": "11:00 AM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sandip Adhikari",
+            "sections": [
+                "C3"
+            ],
+            "room": "Rara"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "SUN",
+            "stime": "09:30 AM",
+            "etime": "11:00 AM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sunil Thapa",
+            "sections": [
+                "C6"
+            ],
+            "room": "Kingston"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "SUN",
+            "stime": "10:00 AM",
+            "etime": "11:30 AM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Sandeep Gurung",
+            "sections": [
+                "C1"
+            ],
+            "room": "Begnas"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "SUN",
+            "stime": "10:00 AM",
+            "etime": "11:30 AM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Prasant Adhikari",
+            "sections": [
+                "C11"
+            ],
+            "room": "Fewa"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "SUN",
+            "stime": "10:00 AM",
+            "etime": "11:30 AM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Mr. Midhir Rana",
+            "sections": [
+                "C7"
+            ],
+            "room": "Stonehenge"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "SUN",
+            "stime": "11:00 AM",
+            "etime": "12:30 PM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Idu Nepali",
+            "sections": [
+                "C10"
+            ],
+            "room": "Nilgiri"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "SUN",
+            "stime": "11:30 PM",
+            "etime": "01:30 PM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Sandeep Gurung",
+            "sections": [
+                "C2"
+            ],
+            "room": "Fewa"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "SUN",
+            "stime": "11:30 AM",
+            "etime": "01:00 PM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Prasant Adhikari",
+            "sections": [
+                "C5"
+            ],
+            "room": "Rara"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "SUN",
+            "stime": "11:30 AM",
+            "etime": "01:00 PM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Mr. Achyut Parajuli",
+            "sections": [
+                "C4"
+            ],
+            "room": "Tilicho"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "SUN",
+            "stime": "11:30 AM",
+            "etime": "01:00 PM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Mission Babu Sapkota",
+            "sections": [
+                "C11"
+            ],
+            "room": "Gokyo"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "SUN",
+            "stime": "11:30 AM",
+            "etime": "01:00 PM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Sanjog Hamal",
+            "sections": [
+                "C9"
+            ],
+            "room": "Bigben"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "SUN",
+            "stime": "11:30 AM",
+            "etime": "01:00 PM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Mr. Midhir Rana",
+            "sections": [
+                "C8"
+            ],
+            "room": "Stonehenge"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "SUN",
+            "stime": "12:00 PM",
+            "etime": "01:30 PM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sunil Thapa",
+            "sections": [
+                "C7"
+            ],
+            "room": "Rupa"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "SUN",
+            "stime": "12:00 PM",
+            "etime": "01:30 PM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sandip Adhikari",
+            "sections": [
+                "C1"
+            ],
+            "room": "Begnas"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "SUN",
+            "stime": "01:30 PM",
+            "etime": "03:00 PM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sunil Thapa",
+            "sections": [
+                "C8"
+            ],
+            "room": "Rupa"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "SUN",
+            "stime": "01:30 PM",
+            "etime": "03:00 PM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sandip Adhikari",
+            "sections": [
+                "C2"
+            ],
+            "room": "Fewa"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "SUN",
+            "stime": "01:30 PM",
+            "etime": "03:00 PM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Mr. Midhir Rana",
+            "sections": [
+                "C5"
+            ],
+            "room": "Rara"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "SUN",
+            "stime": "01:30 PM",
+            "etime": "03:00 PM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Prasant Adhikari",
+            "sections": [
+                "C4"
+            ],
+            "room": "Tilicho"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "SUN",
+            "stime": "01:30 PM",
+            "etime": "03:00 PM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Mission Babu Sapkota",
+            "sections": [
+                "C10"
+            ],
+            "room": "Gokyo"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "MON",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Sandeep Gurung",
+            "sections": [
+                "C4"
+            ],
+            "room": "Gokyo"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "MON",
+            "stime": "07:30 AM",
+            "etime": "09:00 AM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Mr. Midhir Rana",
+            "sections": [
+                "C3"
+            ],
+            "room": "Fewa"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "MON",
+            "stime": "07:30 AM",
+            "etime": "09:00 AM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sunil Thapa",
+            "sections": [
+                "C11"
+            ],
+            "room": "Stonehenge"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "MON",
+            "stime": "09:30 AM",
+            "etime": "11:00 AM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sandip Adhikari",
+            "sections": [
+                "C4"
+            ],
+            "room": "Gokyo"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "MON",
+            "stime": "09:30 AM",
+            "etime": "11:00 AM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Mission Babu Sapkota",
+            "sections": [
+                "C6"
+            ],
+            "room": "Bigben"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "MON",
+            "stime": "09:30 AM",
+            "etime": "11:00 AM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sunil Thapa",
+            "sections": [
+                "C10"
+            ],
+            "room": "Stonehenge"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "MON",
+            "stime": "10:00 AM",
+            "etime": "11:30 AM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Prasant Adhikari",
+            "sections": [
+                "C3"
+            ],
+            "room": "Begnas"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "MON",
+            "stime": "10:00 AM",
+            "etime": "11:30 AM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Mr. Midhir Rana",
+            "sections": [
+                "C11"
+            ],
+            "room": "Tilicho"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "MON",
+            "stime": "11:00 AM",
+            "etime": "12:30 PM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Sandeep Gurung",
+            "sections": [
+                "C5"
+            ],
+            "room": "Gokyo"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "MON",
+            "stime": "11:30 AM",
+            "etime": "01:00 PM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Sanjog Hamal",
+            "sections": [
+                "C6"
+            ],
+            "room": "Rupa"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "MON",
+            "stime": "11:30 AM",
+            "etime": "01:00 PM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Prasant Adhikari",
+            "sections": [
+                "C1"
+            ],
+            "room": "Begnas"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "MON",
+            "stime": "11:30 AM",
+            "etime": "01:00 PM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Mr. Achyut Parajuli",
+            "sections": [
+                "C2"
+            ],
+            "room": "Rara"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "MON",
+            "stime": "11:30 AM",
+            "etime": "01:00 PM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Mission Babu Sapkota",
+            "sections": [
+                "C7"
+            ],
+            "room": "Tilicho"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "MON",
+            "stime": "11:30 AM",
+            "etime": "01:00 PM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Idu Nepali",
+            "sections": [
+                "C8"
+            ],
+            "room": "Nilgiri"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "MON",
+            "stime": "11:30 AM",
+            "etime": "01:00 PM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Mr. Midhir Rana",
+            "sections": [
+                "C10"
+            ],
+            "room": "Bigben"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "MON",
+            "stime": "11:30 AM",
+            "etime": "01:00 PM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sunil Thapa",
+            "sections": [
+                "C9"
+            ],
+            "room": "Stonehenge"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "MON",
+            "stime": "01:30 PM",
+            "etime": "03:00 PM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Mr. Achyut Parajuli",
+            "sections": [
+                "C9"
+            ],
+            "room": "Fewa"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "MON",
+            "stime": "01:30 PM",
+            "etime": "03:00 PM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Mr. Midhir Rana",
+            "sections": [
+                "C1"
+            ],
+            "room": "Begnas"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "MON",
+            "stime": "01:30 PM",
+            "etime": "03:00 PM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Prasant Adhikari",
+            "sections": [
+                "C2"
+            ],
+            "room": "Rara"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "MON",
+            "stime": "01:30 PM",
+            "etime": "03:00 PM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Sanjog Hamal",
+            "sections": [
+                "C7"
+            ],
+            "room": "Tilicho"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "MON",
+            "stime": "01:30 PM",
+            "etime": "03:00 PM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sandip Adhikari",
+            "sections": [
+                "C5"
+            ],
+            "room": "Gokyo"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "MON",
+            "stime": "01:30 PM",
+            "etime": "03:00 PM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Mission Babu Sapkota",
+            "sections": [
+                "C8"
+            ],
+            "room": "Nilgiri"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "TUE",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Sandeep Gurung",
+            "sections": [
+                "C1",
+                "C2",
+                "C3"
+            ],
+            "room": "Annapurna"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "TUE",
+            "stime": "09:30 AM",
+            "etime": "11:00 AM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Prasant Adhikari",
+            "sections": [
+                "C1",
+                "C2",
+                "C3"
+            ],
+            "room": "Machhapuchhre"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "TUE",
+            "stime": "09:30 AM",
+            "etime": "11:00 AM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sandip Adhikari",
+            "sections": [
+                "C4",
+                "C5",
+                "C6"
+            ],
+            "room": "Annapurna"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "TUE",
+            "stime": "11:00 AM",
+            "etime": "12:30 PM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sandip Adhikari",
+            "sections": [
+                "C7",
+                "C8",
+                "C9"
+            ],
+            "room": "Machhapuchhre"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "TUE",
+            "stime": "11:00 AM",
+            "etime": "12:30 PM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Mission Babu Sapkota",
+            "sections": [
+                "C10",
+                "C11"
+            ],
+            "room": "Rupa"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "TUE",
+            "stime": "11:30 AM",
+            "etime": "01:00 PM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Ms. Pratibha Gurung",
+            "sections": [
+                "C4",
+                "C5",
+                "C6"
+            ],
+            "room": "Annapurna"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "TUE",
+            "stime": "01:30 PM",
+            "etime": "03:00 PM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Ms. Pratibha Gurung",
+            "sections": [
+                "C7",
+                "C8",
+                "C9"
+            ],
+            "room": "Machhapuchhre"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "TUE",
+            "stime": "01:30 PM",
+            "etime": "03:00 PM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Prasant Adhikari",
+            "sections": [
+                "C10",
+                "C11"
+            ],
+            "room": "Annapurna"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "WED",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Sandeep Gurung",
+            "sections": [
+                "C4",
+                "C5",
+                "C6"
+            ],
+            "room": "Annapurna"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "WED",
+            "stime": "09:00 AM",
+            "etime": "10:30 AM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sandip Adhikari",
+            "sections": [
+                "C1",
+                "C2",
+                "C3"
+            ],
+            "room": "Machhapuchhre"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "WED",
+            "stime": "09:30 AM",
+            "etime": "11:00 AM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Prasant Adhikari",
+            "sections": [
+                "C4",
+                "C5",
+                "C6"
+            ],
+            "room": "Annapurna"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "WED",
+            "stime": "11:00 AM",
+            "etime": "12:30 PM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Sandeep Gurung",
+            "sections": [
+                "C7",
+                "C8",
+                "C9"
+            ],
+            "room": "Machhapuchhre"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "WED",
+            "stime": "11:30 AM",
+            "etime": "01:00 PM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Ms. Pratibha Gurung",
+            "sections": [
+                "C1",
+                "C2",
+                "C3"
+            ],
+            "room": "Annapurna"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "WED",
+            "stime": "11:30 AM",
+            "etime": "01:00 PM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sandip Adhikari",
+            "sections": [
+                "C10",
+                "C11"
+            ],
+            "room": "Rupa"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "WED",
+            "stime": "01:30 PM",
+            "etime": "03:00 PM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Prasant Adhikari",
+            "sections": [
+                "C7",
+                "C8",
+                "C9"
+            ],
+            "room": "Machhapuchhre"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "WED",
+            "stime": "01:30 PM",
+            "etime": "03:00 PM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Ms. Pratibha Gurung",
+            "sections": [
+                "C10",
+                "C11"
+            ],
+            "room": "Rupa"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "THU",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Idu Nepali",
+            "sections": [
+                "C10"
+            ],
+            "room": "Gokyo"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "THU",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Mr. Midhir Rana",
+            "sections": [
+                "C6"
+            ],
+            "room": "Stonehenge"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "THU",
+            "stime": "07:30 AM",
+            "etime": "09:00 AM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Mission Babu Sapkota",
+            "sections": [
+                "C3"
+            ],
+            "room": "Tilicho"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "THU",
+            "stime": "07:30 AM",
+            "etime": "09:00 AM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sunil Thapa",
+            "sections": [
+                "C8"
+            ],
+            "room": "Bigben"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "THU",
+            "stime": "09:00 AM",
+            "etime": "10:30 AM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Mission Babu Sapkota",
+            "sections": [
+                "C10"
+            ],
+            "room": "Gokyo"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "THU",
+            "stime": "09:30 AM",
+            "etime": "11:00 AM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Prasant Adhikari",
+            "sections": [
+                "C5"
+            ],
+            "room": "Tilicho"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "THU",
+            "stime": "09:30 AM",
+            "etime": "11:00 AM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sunil Thapa",
+            "sections": [
+                "C6"
+            ],
+            "room": "Bigben"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "THU",
+            "stime": "10:00 AM",
+            "etime": "11:30 AM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sandip Adhikari",
+            "sections": [
+                "C3"
+            ],
+            "room": "Begnas"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "THU",
+            "stime": "10:00 AM",
+            "etime": "11:30 AM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Sandeep Gurung",
+            "sections": [
+                "C2"
+            ],
+            "room": "Rara"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "THU",
+            "stime": "10:00 AM",
+            "etime": "11:30 AM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Mr. Midhir Rana",
+            "sections": [
+                "C8"
+            ],
+            "room": "Nilgiri"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "THU",
+            "stime": "11:00 AM",
+            "etime": "12:30 PM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Prasant Adhikari",
+            "sections": [
+                "C4"
+            ],
+            "room": "Rupa"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "THU",
+            "stime": "11:00 AM",
+            "etime": "12:30 PM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Sanjog Hamal",
+            "sections": [
+                "C9"
+            ],
+            "room": "Thames"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "THU",
+            "stime": "11:30 AM",
+            "etime": "01:00 PM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Sandeep Gurung",
+            "sections": [
+                "C1"
+            ],
+            "room": "Rara"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "THU",
+            "stime": "11:30 AM",
+            "etime": "01:00 PM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Mission Babu Sapkota",
+            "sections": [
+                "C11"
+            ],
+            "room": "Gokyo"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "THU",
+            "stime": "11:30 AM",
+            "etime": "01:00 PM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sunil Thapa",
+            "sections": [
+                "C7"
+            ],
+            "room": "Stonehenge"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "THU",
+            "stime": "12:00 PM",
+            "etime": "01:30 PM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sandip Adhikari",
+            "sections": [
+                "C2"
+            ],
+            "room": "Begnas"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "THU",
+            "stime": "12:00 PM",
+            "etime": "01:30 PM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Mr. Midhir Rana",
+            "sections": [
+                "C5"
+            ],
+            "room": "Tilicho"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "THU",
+            "stime": "01:30 PM",
+            "etime": "03:00 PM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Mission Babu Sapkota",
+            "sections": [
+                "C9"
+            ],
+            "room": "Begnas"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "THU",
+            "stime": "01:30 PM",
+            "etime": "03:00 PM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sandip Adhikari",
+            "sections": [
+                "C1"
+            ],
+            "room": "Rara"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "THU",
+            "stime": "01:30 PM",
+            "etime": "03:00 PM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Mr. Achyut Parajuli",
+            "sections": [
+                "C4"
+            ],
+            "room": "Tilicho"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "THU",
+            "stime": "01:30 PM",
+            "etime": "03:00 PM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Prasant Adhikari",
+            "sections": [
+                "C11"
+            ],
+            "room": "Gokyo"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "THU",
+            "stime": "01:30 PM",
+            "etime": "03:00 PM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Mr. Midhir Rana",
+            "sections": [
+                "C7"
+            ],
+            "room": "Nilgiri"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "FRI",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sunil Thapa",
+            "sections": [
+                "C11"
+            ],
+            "room": "Tilicho"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "FRI",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Sandeep Gurung",
+            "sections": [
+                "C4"
+            ],
+            "room": "Nilgiri"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "FRI",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Sanjog Hamal",
+            "sections": [
+                "C6"
+            ],
+            "room": "Bigben"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "FRI",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Mission Babu Sapkota",
+            "sections": [
+                "C7"
+            ],
+            "room": "Stonehenge"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "FRI",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Mr. Achyut Parajuli",
+            "sections": [
+                "C9"
+            ],
+            "room": "OpenAccessLab"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "FRI",
+            "stime": "07:30 AM",
+            "etime": "09:00 AM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Mr. Midhir Rana",
+            "sections": [
+                "C1"
+            ],
+            "room": "Thames"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "FRI",
+            "stime": "09:00 AM",
+            "etime": "10:30 AM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Mr. Midhir Rana",
+            "sections": [
+                "C11"
+            ],
+            "room": "Kingston"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "FRI",
+            "stime": "09:30 AM",
+            "etime": "11:00 AM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sandip Adhikari",
+            "sections": [
+                "C4"
+            ],
+            "room": "Nilgiri"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "FRI",
+            "stime": "09:30 AM",
+            "etime": "11:00 AM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Sanjog Hamal",
+            "sections": [
+                "C7"
+            ],
+            "room": "Bigben"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "FRI",
+            "stime": "09:30 AM",
+            "etime": "11:00 AM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Mission Babu Sapkota",
+            "sections": [
+                "C6"
+            ],
+            "room": "Stonehenge"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "FRI",
+            "stime": "09:30 AM",
+            "etime": "11:00 AM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sunil Thapa",
+            "sections": [
+                "C9"
+            ],
+            "room": "Thames"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "FRI",
+            "stime": "10:00 AM",
+            "etime": "11:30 AM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Mr. Achyut Parajuli",
+            "sections": [
+                "C2"
+            ],
+            "room": "Begnas"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "FRI",
+            "stime": "10:00 AM",
+            "etime": "11:30 AM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Prasant Adhikari",
+            "sections": [
+                "C1"
+            ],
+            "room": "Rara"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "FRI",
+            "stime": "10:00 AM",
+            "etime": "11:30 AM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Sandeep Gurung",
+            "sections": [
+                "C5"
+            ],
+            "room": "Gokyo"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "FRI",
+            "stime": "11:30 AM",
+            "etime": "01:00 PM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Mr. Midhir Rana",
+            "sections": [
+                "C3"
+            ],
+            "room": "Rara"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "FRI",
+            "stime": "11:30 AM",
+            "etime": "01:00 PM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Idu Nepali",
+            "sections": [
+                "C8"
+            ],
+            "room": "Gokyo"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "FRI",
+            "stime": "11:30 AM",
+            "etime": "01:00 PM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sunil Thapa",
+            "sections": [
+                "C10"
+            ],
+            "room": "Nilgiri"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "FRI",
+            "stime": "12:00 PM",
+            "etime": "01:30 PM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Prasant Adhikari",
+            "sections": [
+                "C2"
+            ],
+            "room": "Tilicho"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "FRI",
+            "stime": "12:30 PM",
+            "etime": "02:00 PM",
+            "code": "CS5053NP",
+            "module": "Cloud Computing and Internet of Things",
+            "teacher": "Mr. Sandip Adhikari",
+            "sections": [
+                "C5"
+            ],
+            "room": "Begnas"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "FRI",
+            "stime": "01:30 PM",
+            "etime": "03:00 PM",
+            "code": "CT5052NP",
+            "module": "Network Operating Systems",
+            "teacher": "Mr. Prasant Adhikari",
+            "sections": [
+                "C3"
+            ],
+            "room": "Tilicho"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "FRI",
+            "stime": "01:30 PM",
+            "etime": "03:00 PM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Mission Babu Sapkota",
+            "sections": [
+                "C8"
+            ],
+            "room": "Gokyo"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "FRI",
+            "stime": "01:30 PM",
+            "etime": "03:00 PM",
+            "code": "CC5051NP",
+            "module": "Databases",
+            "teacher": "Mr. Midhir Rana",
+            "sections": [
+                "C10"
+            ],
+            "room": "Nilgiri"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "SUN",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CC6012NP",
+            "module": "Data and Web Development",
+            "teacher": "Ms. Pratibha Gurung",
+            "sections": [
+                "C6"
+            ],
+            "room": "Rupa"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "SUN",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CU6051NP",
+            "module": "Artificial Intelligence",
+            "teacher": "Mr. Sanjog Hamal",
+            "sections": [
+                "C2"
+            ],
+            "room": "Nilgiri"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "SUN",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CS6004NP",
+            "module": "Application Development",
+            "teacher": "Mr. Mahesh Dhungana",
+            "sections": [
+                "C5"
+            ],
+            "room": "Bigben"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "SUN",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CS6004NP",
+            "module": "Application Development",
+            "teacher": "Mr. Sanam Katwal",
+            "sections": [
+                "C7"
+            ],
+            "room": "Stonehenge"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "SUN",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CU6051NP",
+            "module": "Artificial Intelligence",
+            "teacher": "Mr. Niroj Karki",
+            "sections": [
+                "C3"
+            ],
+            "room": "Thames"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "SUN",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CC6012NP",
+            "module": "Data and Web Development",
+            "teacher": "Mr. Achyut Parajuli",
+            "sections": [
+                "C4"
+            ],
+            "room": "OpenAccessLab"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "SUN",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "CC6012NP",
+            "module": "Data and Web Development",
+            "teacher": "Ms. Pratibha Gurung",
+            "sections": [
+                "C5"
+            ],
+            "room": "Rupa"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "SUN",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "CU6051NP",
+            "module": "Artificial Intelligence",
+            "teacher": "Mr. Sanjog Hamal",
+            "sections": [
+                "C1"
+            ],
+            "room": "Nilgiri"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "SUN",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "CC6012NP",
+            "module": "Data and Web Development",
+            "teacher": "Mr. Achyut Parajuli",
+            "sections": [
+                "C7"
+            ],
+            "room": "Stonehenge"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "SUN",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "CU6051NP",
+            "module": "Artificial Intelligence",
+            "teacher": "Mr. Niroj Karki",
+            "sections": [
+                "C4"
+            ],
+            "room": "Thames"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "SUN",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "CS6004NP",
+            "module": "Application Development",
+            "teacher": "Mr. Sanam Katwal",
+            "sections": [
+                "C6"
+            ],
+            "room": "OpenAccessLab"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "MON",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CU6051NP",
+            "module": "Artificial Intelligence",
+            "teacher": "Mr. Niroj Karki",
+            "sections": [
+                "C5"
+            ],
+            "room": "Rupa"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "MON",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CC6012NP",
+            "module": "Data and Web Development",
+            "teacher": "Ms. Pratibha Gurung",
+            "sections": [
+                "C2"
+            ],
+            "room": "Begnas"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "MON",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CU6051NP",
+            "module": "Artificial Intelligence",
+            "teacher": "Mr. Sanjog Hamal",
+            "sections": [
+                "C7"
+            ],
+            "room": "Bigben"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "MON",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CS6004NP",
+            "module": "Application Development",
+            "teacher": "Mr. Sanam Katwal",
+            "sections": [
+                "C3"
+            ],
+            "room": "Thames"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "MON",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CS6004NP",
+            "module": "Application Development",
+            "teacher": "Mr. Mahesh Dhungana",
+            "sections": [
+                "C1"
+            ],
+            "room": "OpenAccessLab"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "MON",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "CU6051NP",
+            "module": "Artificial Intelligence",
+            "teacher": "Mr. Niroj Karki",
+            "sections": [
+                "C6"
+            ],
+            "room": "Rupa"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "MON",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "CC6012NP",
+            "module": "Data and Web Development",
+            "teacher": "Ms. Pratibha Gurung",
+            "sections": [
+                "C1"
+            ],
+            "room": "Begnas"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "MON",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "CS6004NP",
+            "module": "Application Development",
+            "teacher": "Mr. Sanam Katwal",
+            "sections": [
+                "C4"
+            ],
+            "room": "Thames"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "MON",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "CS6004NP",
+            "module": "Application Development",
+            "teacher": "Mr. Mahesh Dhungana",
+            "sections": [
+                "C2"
+            ],
+            "room": "OpenAccessLab"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "MON",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "CC6012NP",
+            "module": "Data and Web Development",
+            "teacher": "Mr. Achyut Parajuli",
+            "sections": [
+                "C3"
+            ],
+            "room": "Kingston"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "TUE",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CS6004NP",
+            "module": "Application Development",
+            "teacher": "Mr. Mahesh Dhungana",
+            "sections": [
+                "C2"
+            ],
+            "room": "Tilicho"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "TUE",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CU6051NP",
+            "module": "Artificial Intelligence",
+            "teacher": "Mr. Sanjog Hamal",
+            "sections": [
+                "C7"
+            ],
+            "room": "Gokyo"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "TUE",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CC6012NP",
+            "module": "Data and Web Development",
+            "teacher": "Mr. Achyut Parajuli",
+            "sections": [
+                "C4"
+            ],
+            "room": "Bigben"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "TUE",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CU6051NP",
+            "module": "Artificial Intelligence",
+            "teacher": "Mr. Niroj Karki",
+            "sections": [
+                "C5"
+            ],
+            "room": "Stonehenge"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "TUE",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CS6004NP",
+            "module": "Application Development",
+            "teacher": "Mr. Sanam Katwal",
+            "sections": [
+                "C3"
+            ],
+            "room": "Kingston"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "TUE",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "CC6012NP",
+            "module": "Data and Web Development",
+            "teacher": "Ms. Pratibha Gurung",
+            "sections": [
+                "C2"
+            ],
+            "room": "Rara"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "TUE",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "CS6004NP",
+            "module": "Application Development",
+            "teacher": "Mr. Mahesh Dhungana",
+            "sections": [
+                "C1"
+            ],
+            "room": "Tilicho"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "TUE",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "CU6051NP",
+            "module": "Artificial Intelligence",
+            "teacher": "Mr. Niroj Karki",
+            "sections": [
+                "C6"
+            ],
+            "room": "Stonehenge"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "TUE",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "CC6012NP",
+            "module": "Data and Web Development",
+            "teacher": "Mr. Achyut Parajuli",
+            "sections": [
+                "C3"
+            ],
+            "room": "Bigben"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "TUE",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "CS6004NP",
+            "module": "Application Development",
+            "teacher": "Mr. Sanam Katwal",
+            "sections": [
+                "C4"
+            ],
+            "room": "Kingston"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "WED",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CC6012NP",
+            "module": "Data and Web Development",
+            "teacher": "Ms. Pratibha Gurung",
+            "sections": [
+                "C5"
+            ],
+            "room": "Tilicho"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "WED",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CS6004NP",
+            "module": "Application Development",
+            "teacher": "Mr. Sanam Katwal",
+            "sections": [
+                "C6"
+            ],
+            "room": "Gokyo"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "WED",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CC6012NP",
+            "module": "Data and Web Development",
+            "teacher": "Mr. Achyut Parajuli",
+            "sections": [
+                "C7"
+            ],
+            "room": "Nilgiri"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "WED",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CU6051NP",
+            "module": "Artificial Intelligence",
+            "teacher": "Mr. Sanjog Hamal",
+            "sections": [
+                "C1"
+            ],
+            "room": "Bigben"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "WED",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CU6051NP",
+            "module": "Artificial Intelligence",
+            "teacher": "Mr. Niroj Karki",
+            "sections": [
+                "C3"
+            ],
+            "room": "Stonehenge"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "WED",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "CS6004NP",
+            "module": "Application Development",
+            "teacher": "Mr. Mahesh Dhungana",
+            "sections": [
+                "C5"
+            ],
+            "room": "Tilicho"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "WED",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "CS6004NP",
+            "module": "Application Development",
+            "teacher": "Mr. Sanam Katwal",
+            "sections": [
+                "C7"
+            ],
+            "room": "Nilgiri"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "WED",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "CU6051NP",
+            "module": "Artificial Intelligence",
+            "teacher": "Mr. Sanjog Hamal",
+            "sections": [
+                "C2"
+            ],
+            "room": "Bigben"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "WED",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "CC6012NP",
+            "module": "Data and Web Development",
+            "teacher": "Mr. Achyut Parajuli",
+            "sections": [
+                "C1"
+            ],
+            "room": "Rara"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "WED",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "CU6051NP",
+            "module": "Artificial Intelligence",
+            "teacher": "Mr. Niroj Karki",
+            "sections": [
+                "C4"
+            ],
+            "room": "Stonehenge"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "THU",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CS6004NP",
+            "module": "Application Development",
+            "teacher": "Mr. Mahesh Dhungana",
+            "sections": [
+                "C1",
+                "C2",
+                "C3"
+            ],
+            "room": "Machhapuchhre"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "THU",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CC6012NP",
+            "module": "Data and Web Development",
+            "teacher": "Ms. Pratibha Gurung",
+            "sections": [
+                "C4",
+                "C5"
+            ],
+            "room": "Annapurna"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "THU",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CU6051NP",
+            "module": "Artificial Intelligence",
+            "teacher": "Mr. Sanjog Hamal",
+            "sections": [
+                "C6",
+                "C7"
+            ],
+            "room": "Rupa"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "THU",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "CU6051NP",
+            "module": "Artificial Intelligence",
+            "teacher": "Mr. Sanjog Hamal",
+            "sections": [
+                "C1",
+                "C2",
+                "C3"
+            ],
+            "room": "Machhapuchhre"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "THU",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "CS6004NP",
+            "module": "Application Development",
+            "teacher": "Mr. Mahesh Dhungana",
+            "sections": [
+                "C4",
+                "C5"
+            ],
+            "room": "Annapurna"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "THU",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "CC6012NP",
+            "module": "Data and Web Development",
+            "teacher": "Ms. Pratibha Gurung",
+            "sections": [
+                "C6",
+                "C7"
+            ],
+            "room": "Rupa"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "FRI",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CU6051NP",
+            "module": "Artificial Intelligence",
+            "teacher": "Mr. Sanjog Hamal",
+            "sections": [
+                "C4",
+                "C5"
+            ],
+            "room": "Machhapuchhre"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "FRI",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CC6012NP",
+            "module": "Data and Web Development",
+            "teacher": "Ms. Pratibha Gurung",
+            "sections": [
+                "C1",
+                "C2",
+                "C3"
+            ],
+            "room": "Annapurna"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "FRI",
+            "stime": "07:00 AM",
+            "etime": "08:30 AM",
+            "code": "CS6004NP",
+            "module": "Application Development",
+            "teacher": "Mr. Mahesh Dhungana",
+            "sections": [
+                "C6",
+                "C7"
+            ],
+            "room": "Rupa"
+        },
+        {
+            "class": "Year 3 BIC",
+            "day": "FRI",
+            "stime": "08:30 AM",
+            "etime": "10:00 AM",
+            "code": "CC6012NP",
+            "module": "Data and Web Development",
+            "teacher": "Ms. Pratibha Gurung",
+            "sections": [
+                "C6"
+            ],
+            "room": "Rupa"
+        }
+    ],
+    "sections": {
+        "Year 1 BBA": [
+            "B1",
+            "B2"
+        ],
+        "Year 2 BBA": [
+            "B1"
+        ],
+        "Year 3 BBA": [
+            "B1"
+        ],
+        "Year 3.5 BBA": [
+            "B1",
+            "B2",
+            "B3"
+        ],
+        "Year 2 BIC": [
+            "C1",
+            "C10",
+            "C11",
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C7",
+            "C8",
+            "C9"
+        ],
+        "Year 3 BIC": [
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C7"
+        ]
+    },
+    "rooms": [
+        "Gokyo",
+        "Fewa",
+        "Begnas",
+        "Nilgiri",
+        "Tilicho",
+        "Rara",
+        "Rupa",
+        "Kingston",
+        "Bigben",
+        "Stonehenge",
+        "Annapurna",
+        "Machhapuchhre",
+        "Thames",
+        "OpenAccessLab"
+    ],
+    "teachers": [
+        "Ms. Sajena Dwa",
+        "Mr. Kiran Kunwar",
+        "Mr. Ashish Subedi",
+        "Mr. Arjun Sapkota",
+        "Mr. Vikram Rana",
+        "Mr. Anil Rai",
+        "Ms. Ganga Ghale",
+        "Mr. Mission Babu Sapkota",
+        "Mr. Midhir Rana",
+        "Mr. Sandip Adhikari",
+        "Mr. Sunil Thapa",
+        "Mr. Sandeep Gurung",
+        "Mr. Prasant Adhikari",
+        "Mr. Idu Nepali",
+        "Mr. Achyut Parajuli",
+        "Mr. Sanjog Hamal",
+        "Ms. Pratibha Gurung",
+        "Mr. Mahesh Dhungana",
+        "Mr. Sanam Katwal",
+        "Mr. Niroj Karki"
+    ],
+    "cal_ids":{
+        "Year 2 BIC - C4": "c_25cd918915beea26e4c7eaf44bafef3b7d025b5d9fbbd15ffcd9279b8cf2dacb@group.calendar.google.com"
+    }
+}
