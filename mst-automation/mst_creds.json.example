@@ -1,0 +1,26 @@
+{
+    "y1_a": {
+        "webhook": "https://discord.com/api/webhooks/XXX/XXX-XXX",
+        "user": "xxx.xxx.xxx@icp.edu.np",
+        "pass": "*****",
+        "token": ""
+    },
+    "y1_s": {
+        "webhook": "https://discord.com/api/webhooks/XXX/XXX-XXX",
+        "user": "xxx.xxx.xxx@icp.edu.np",
+        "pass": "*****",
+        "token": ""
+    },    
+    "y2": {
+        "webhook": "https://discord.com/api/webhooks/XXX/XXX-XXX",
+        "user": "xxx.xxx.xxx@icp.edu.np",
+        "pass": "*****",
+        "token": ""
+    },
+    "y3": {
+        "webhook": "https://discord.com/api/webhooks/XXX/XXX-XXX",
+        "user": "xxx.xxx.xxx@icp.edu.np",
+        "pass": "*****",
+        "token": ""
+    }        
+}
