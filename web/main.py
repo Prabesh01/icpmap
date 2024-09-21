@@ -608,7 +608,7 @@ def get_mst_home():
                 current[part] = {'__children__': {}}
             current = current[part]['__children__']
         current[parts[-1]] = {'__children__': {}}
-    return flask.render_template('mst/index.html', token=gitlab_token, tree=tree)
+    return flask.render_template('mst_/index.html', token=gitlab_token, tree=tree)
 
 
 port = int(os.environ.get("PORT", 5000))
