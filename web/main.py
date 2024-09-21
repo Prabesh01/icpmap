@@ -590,6 +590,26 @@ def smart_linebreak(text):
         return part1
     return text
 
+##############################################################
+                        # mst
+##############################################################
+
+
+gitlab_token="glpat-PCDAKKhQedujuxP4wx6u"
+@app.get('/mst')
+def get_mst_home():
+    url=f"https://gitlab.com/api/v4/projects/61879485/repository/tree/?ref=main&private_token={gitlab_token}&per_page=100&recursive=true"
+    tree = {}
+    for item in requests.get(url).json():
+        parts = item['path'].split('/')
+        current = tree
+        for part in parts[:-1]:
+            if part not in current:
+                current[part] = {'__children__': {}}
+            current = current[part]['__children__']
+        current[parts[-1]] = {'__children__': {}}
+    return flask.render_template('mst/index.html', token=gitlab_token, tree=tree)
+
 
 port = int(os.environ.get("PORT", 5000))
 if __name__ == '__main__':
