@@ -3,6 +3,8 @@ import json
 import os
 import re
 from pathlib import Path
+from time import sleep
+from random import randint
 
 BASE_DIR = Path(__file__).resolve().parent
 
@@ -14,8 +16,10 @@ if not os.path.isdir(out_dir):
     os.mkdir(out_dir)
 
 header={
-    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:129.0) Gecko/20100101 Firefox/129.0',
     'Accept-Language': 'en',
+    'Platform': 'web-app',
+    'Referer': 'https://app.mysecondteacher.com.np/',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:129.0) Gecko/20100101 Firefox/129.0',
     }
 
 
@@ -31,6 +35,7 @@ def resub(txt):
     return re.sub(r'[^\w]', ' ', txt)
 
 def downloadFile(path, itemid, classid):
+    sleep(randint(10, 60))
     r=requests.get("https://api.mysecondteacher.com.np/api/users/content/generate-link?resourceId="+str(itemid)+"&classId="+str(classid),headers=header)
     dwnurl=r.json()['result']
     if not os.path.exists(path):
@@ -39,7 +44,6 @@ def downloadFile(path, itemid, classid):
             f.write(r.content)
 
 def recursive_lookup(contents, download_dir, classid, teacherid):
-    print(download_dir)
     for item in contents["items"]:
         folddir=download_dir/resub(item["displayName"])
         if item["url"]==None:
