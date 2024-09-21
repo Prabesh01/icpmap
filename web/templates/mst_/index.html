@@ -188,7 +188,7 @@ li {
     <body class="dark">
         <div class="article">
           <h1 class="title">Bulk Download MST Contents</h1>
-          <p><em>First Install: <a style="color: white" href="https://git-scm.com/downloads" target="_blank">git</a> and <a style="color: white" href="https://git-lfs.com/" target="_blank">git-lfs</a></em></p>
+          <p><em>First Install: <a style="color:#cc4499" href="https://git-scm.com/downloads" target="_blank">git</a> and <a style="color:#cc4499" href="https://git-lfs.com/" target="_blank">git-lfs</a></em></p>
           <p><b><u>One-Time Setup:</u></b></p>
       
           <p>Go to the directory where you want to download contents and run these commands,</p>
@@ -205,6 +205,9 @@ GIT_LFS_SKIP_SMUDGE=1 git pull --set-upstream origin main</code></pre>
 git pull; git lfs pull --include="y2/**"</code></pre>  
 <p><em>**Only Teacher's Content is downloaded; Not Assignments.</em></p>     
       <div class="gradient-stripe"></div>
+      <p class="centered">
+        What is this? </p>
+<span style="color: white;">We have to download files one by one from mysecondteacher. So my <a href="https://github.com/Prabesh01/icpmap/blob/main/mst-automation/files_download.py" style="color:#cc4499" target="_blank">script</a> dumps all the MST contents into gitlab daily. Now, other students can just fetch all contents at once from the gitlab repo.</p>
       {% if tree %}
           <p class="centered">
           Folder Structure: </p>
