@@ -596,19 +596,25 @@ def smart_linebreak(text):
 
 gitlab_token="glpat-PCDAKKhQedujuxP4wx6u"
 tree = {}
-try:
-    for item in requests.get(f"https://gitlab.com/api/v4/projects/61879485/repository/tree/?ref=main&private_token={gitlab_token}&per_page=100&recursive=true", timeout=3).json():
-        parts = item['path'].split('/')
-        current = tree
-        for part in parts[:-1]:
-            if part not in current:
-                current[part] = {'__children__': {}}
-            current = current[part]['__children__']
-        current[parts[-1]] = {'__children__': {}}
-except: pass
+def get_tree():
+    global tree
+    try:
+        for item in requests.get(f"https://gitlab.com/api/v4/projects/61879485/repository/tree/?ref=main&private_token={gitlab_token}&per_page=100&recursive=true", timeout=3).json():
+            parts = item['path'].split('/')
+            current = tree
+            for part in parts[:-1]:
+                if part not in current:
+                    current[part] = {'__children__': {}}
+                current = current[part]['__children__']
+            current[parts[-1]] = {'__children__': {}}
+    except: pass
+    return tree
+get_tree()
 
 @app.get('/mst')
 def get_mst_home():
+    if not tree:
+        tree=get_tree()    
     return flask.render_template('mst_/index.html', token=gitlab_token, tree=tree)
 
 
