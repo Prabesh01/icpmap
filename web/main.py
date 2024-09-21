@@ -613,6 +613,7 @@ get_tree()
 
 @app.get('/mst')
 def get_mst_home():
+    global tree
     if not tree:
         tree=get_tree()    
     return flask.render_template('mst_/index.html', token=gitlab_token, tree=tree)
