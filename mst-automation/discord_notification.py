@@ -69,7 +69,7 @@ def fetch_notification(year):
     # send unseen notifications and mark them as seen
     for notif in notifs:
         unmatched=assignment=announcement=False
-        # if notif['seen']: continue
+        if notif['seen']: continue
         msg=notif['title']
         urldata=json.loads(notif['payload'])
         if notif['type']=='TEACHINGRESOURCES':
