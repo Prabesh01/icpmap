@@ -68,20 +68,24 @@ def fetch_notification(year):
     if not notifs: return
     # send unseen notifications and mark them as seen
     for notif in notifs:
-        if notif['seen']: continue
+        unmatched=assignment=announcement=False
+        # if notif['seen']: continue
         msg=notif['title']
         urldata=json.loads(notif['payload'])
         if notif['type']=='TEACHINGRESOURCES':
             url=f'https://app.mysecondteacher.com.np/subjects/{urldata["SubjectId"]}/classroom/{urldata["ClassRoomId"]}/content'
         elif notif['type']=='ASSIGNMENTLATER' or notif['type']=='ASSIGNMENTCREATE' or notif['type']=='ASSIGNMENT' or notif['type']=='ASSIGNMENTREMINDER':
+            assignment=True
             url=f'https://app.mysecondteacher.com.np/classroom/subject/{urldata["SubjectId"]}/class/{urldata["ClassRoomId"]}/assignments/{urldata["AssignmentId"]}'
         elif notif['type']=="ANNOUNCEMENT":
+            announcement=True
             url=f"https://app.mysecondteacher.com.np/#dashboard-notice-board"
         else:
-            url=']()\n`'+notif['payload']+'` ['
-            msg=msg+url
-            url=''
-        msg=f'[{msg}]({url})'
+            unmatched=True
+        if unmatched: 
+            msg=msg+'\n`'+notif['payload']+'`'
+        else:
+            msg=f"[{'🚩 ' if assignment else ''}{'📢  ' if announcement else ''}{msg}]({url})"
         send(json_data[year]["webhook"], msg)
         requests.put(f"{notification_url}/{notif['id']}/seen",headers=header)
 
