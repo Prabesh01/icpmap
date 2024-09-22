@@ -78,7 +78,7 @@ def fetch_notification(year):
             msg=f"[{msg}]({url})"
         elif notif['type']=='ASSIGNMENTLATER' or notif['type']=='ASSIGNMENTCREATE' or notif['type']=='ASSIGNMENT' or notif['type']=='ASSIGNMENTREMINDER':
             msg=f"[{msg}]({url})"
-            deadline_request=requests.get(f"https://api.mysecondteacher.com.np/api/v2/student-submission/{urldata["AssignmentId"]}",headers=header)
+            deadline_request=requests.get(f"https://api.mysecondteacher.com.np/api/v2/student-submission/{urldata['AssignmentId']}",headers=header)
             if deadline_request.status_code==200:
                 try:
                     deadline=deadline_request.json()['result']['deadline']
