@@ -77,6 +77,7 @@ def fetch_notification(year):
             url=f'https://app.mysecondteacher.com.np/classroom/subject/{urldata["SubjectId"]}/class/{urldata["ClassRoomId"]}/content'
             msg=f"[{msg}]({url})"
         elif notif['type']=='ASSIGNMENTLATER' or notif['type']=='ASSIGNMENTCREATE' or notif['type']=='ASSIGNMENT' or notif['type']=='ASSIGNMENTREMINDER':
+            url=f'https://app.mysecondteacher.com.np/classroom/subject/{urldata["SubjectId"]}/class/{urldata["ClassRoomId"]}/assignments/{urldata["AssignmentId"]}'
             msg=f"[{msg}]({url})"
             deadline_request=requests.get(f"https://api.mysecondteacher.com.np/api/v2/student-submission/{urldata['AssignmentId']}",headers=header)
             if deadline_request.status_code==200:
@@ -87,11 +88,10 @@ def fetch_notification(year):
                     msg='🚩 '+msg
             else:
                 msg='🚩 '+msg
-            url=f'https://app.mysecondteacher.com.np/classroom/subject/{urldata["SubjectId"]}/class/{urldata["ClassRoomId"]}/assignments/{urldata["AssignmentId"]}'
         elif notif['type']=="ANNOUNCEMENT":
+            url=f"https://app.mysecondteacher.com.np/#dashboard-notice-board"
             msg=f"[{msg}]({url})"
             msg='📢  '+msg
-            url=f"https://app.mysecondteacher.com.np/#dashboard-notice-board"
         else:
             msg=msg+'\n`'+notif['payload']+'`'
         send(json_data[year]["webhook"], msg)
