@@ -92,6 +92,7 @@ def fetch_notification(year):
             url=f"https://app.mysecondteacher.com.np/#dashboard-notice-board"
             msg=f"[{msg}]({url})"
             msg='📢  '+msg
+        elif notif['type']=="ASSIGNMENTDELETE": pass
         else:
             msg=msg+'\n`'+notif['payload']+'`'
         send(json_data[year]["webhook"], msg)
