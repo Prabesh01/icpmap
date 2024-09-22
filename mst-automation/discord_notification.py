@@ -73,7 +73,7 @@ def fetch_notification(year):
         msg=notif['title']
         urldata=json.loads(notif['payload'])
         if notif['type']=='TEACHINGRESOURCES':
-            url=f'https://app.mysecondteacher.com.np/subjects/{urldata["SubjectId"]}/classroom/{urldata["ClassRoomId"]}/content'
+            url=f'https://app.mysecondteacher.com.np/classroom/subject/{urldata["SubjectId"]}/class/{urldata["ClassRoomId"]}/content'
         elif notif['type']=='ASSIGNMENTLATER' or notif['type']=='ASSIGNMENTCREATE' or notif['type']=='ASSIGNMENT' or notif['type']=='ASSIGNMENTREMINDER':
             assignment=True
             url=f'https://app.mysecondteacher.com.np/classroom/subject/{urldata["SubjectId"]}/class/{urldata["ClassRoomId"]}/assignments/{urldata["AssignmentId"]}'
