@@ -2,6 +2,8 @@ import requests
 import json
 import os
 from pathlib import Path
+from datetime import datetime
+
 
 BASE_DIR = Path(__file__).resolve().parent
 
@@ -68,24 +70,30 @@ def fetch_notification(year):
     if not notifs: return
     # send unseen notifications and mark them as seen
     for notif in notifs:
-        unmatched=assignment=announcement=False
         if notif['seen']: continue
         msg=notif['title']
         urldata=json.loads(notif['payload'])
         if notif['type']=='TEACHINGRESOURCES':
             url=f'https://app.mysecondteacher.com.np/classroom/subject/{urldata["SubjectId"]}/class/{urldata["ClassRoomId"]}/content'
+            msg=f"[{msg}]({url})"
         elif notif['type']=='ASSIGNMENTLATER' or notif['type']=='ASSIGNMENTCREATE' or notif['type']=='ASSIGNMENT' or notif['type']=='ASSIGNMENTREMINDER':
-            assignment=True
+            msg=f"[{msg}]({url})"
+            deadline_request=requests.get(f"https://api.mysecondteacher.com.np/api/v2/student-submission/{urldata["AssignmentId"]}",headers=header)
+            if deadline_request.status_code==200:
+                try:
+                    deadline=deadline_request.json()['result']['deadline']
+                    msg=f'🚩 [<t:{int(datetime.strptime(deadline, "%Y-%m-%dT%H:%M:%SZ").timestamp())}:R>] ' +msg
+                except:
+                    msg='🚩 '+msg
+            else:
+                msg='🚩 '+msg
             url=f'https://app.mysecondteacher.com.np/classroom/subject/{urldata["SubjectId"]}/class/{urldata["ClassRoomId"]}/assignments/{urldata["AssignmentId"]}'
         elif notif['type']=="ANNOUNCEMENT":
-            announcement=True
+            msg=f"[{msg}]({url})"
+            msg='📢  '+msg
             url=f"https://app.mysecondteacher.com.np/#dashboard-notice-board"
         else:
-            unmatched=True
-        if unmatched: 
             msg=msg+'\n`'+notif['payload']+'`'
-        else:
-            msg=f"[{'🚩 ' if assignment else ''}{'📢  ' if announcement else ''}{msg}]({url})"
         send(json_data[year]["webhook"], msg)
         requests.put(f"{notification_url}/{notif['id']}/seen",headers=header)
 
