@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Edit Schedule | Free Time Slot Finder</title>
+{% extends "base.html" %}
+{% block title %}Edit Schedule | Free Time Slot Finder{% endblock title %}
+
+{% block css %}   
       <style>
          .table-inputs { 
          border-spacing:0; 
@@ -114,47 +112,11 @@
             margin-left: 10px;
             border-radius: 50%;
         }      
-        .back-icon {
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  position:absolute;
-  top: 15px;
-  left: 15px;
-}
-.back-icon__row {
-  height: 10px;
-  width: 30px;
-  display: flex;
-}
-.back-icon__elem {
-  height: 8px;
-  width: 8px;
-  margin-right: 2px;
-  margin-bottom: 2px;
-  background: red;
-  border-radius: 38%;
-}  
       </style>
-   </head>
-   <body>
-    <a class="back-icon" href="{{ url_for('get_event_home') }}"">
-        <div class="back-icon__row">
-          <div class="back-icon__elem"></div>
-          <div class="back-icon__elem"></div>
-          <div class="back-icon__elem"></div>
-        </div>
-         <div class="back-icon__row">
-          <div class="back-icon__elem"></div>
-          <div class="back-icon__elem"></div>
-          <div class="back-icon__elem"></div>
-        </div>
-        <div class="back-icon__row">
-          <div class="back-icon__elem"></div>
-          <div class="back-icon__elem"></div>
-          <div class="back-icon__elem"></div>
-        </div>
-      </a>
+{% endblock css %}
+
+{% block backbtn_href %}{{ url_for('get_event_home') }}{% endblock backbtn_href %}    
+{% block body %}
 
       <form method="post" style="text-align:center;">
          <input type="text" name="title" id="title" placeholder="Title" value="{{ data.title }}" required>
@@ -302,5 +264,4 @@
                  }
              }    
       </script>
-   </body>
-</html>
+{% endblock body %}

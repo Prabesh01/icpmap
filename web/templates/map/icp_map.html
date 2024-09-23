@@ -5,14 +5,13 @@ Used codes from these gentlemen:
   - https://codepen.io/kay8/pen/qOqQdE
 -->
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ICP MAP</title>
+{% extends "base.html" %}
+{% block title %}ICP MAP{% endblock title %}
+{% block imports %}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  {% endblock imports %}
+  {% block css %}
+
   <style>
     /* html,
         body {
@@ -435,51 +434,10 @@ Used codes from these gentlemen:
       color: red !important;
     }
 
-    .back-icon {
-      width: 30px;
-      height: 30px;
-      display: inline-block;
-      position: sticky;
-      /* position:absolute; */
-      top: 15px;
-      left: 15px;
-    }
-
-    .back-icon__row {
-      height: 10px;
-      width: 30px;
-      display: flex;
-    }
-
-    .back-icon__elem {
-      height: 8px;
-      width: 8px;
-      margin-right: 2px;
-      margin-bottom: 2px;
-      background: red;
-      border-radius: 38%;
-    }
   </style>
-</head>
+  {% endblock css %}
 
-<body>
-  <a class="back-icon" href="/">
-    <div class="back-icon__row">
-      <div class="back-icon__elem"></div>
-      <div class="back-icon__elem"></div>
-      <div class="back-icon__elem"></div>
-    </div>
-    <div class="back-icon__row">
-      <div class="back-icon__elem"></div>
-      <div class="back-icon__elem"></div>
-      <div class="back-icon__elem"></div>
-    </div>
-    <div class="back-icon__row">
-      <div class="back-icon__elem"></div>
-      <div class="back-icon__elem"></div>
-      <div class="back-icon__elem"></div>
-    </div>
-  </a>
+  {% block body %}
   <center>
     <div id="icp_map">
       <i id="sel_day_time">ICP MAP</i><b id="teach_result"></b>
@@ -1124,6 +1082,4 @@ Used codes from these gentlemen:
         }
       }
     </script>
-</body>
-
-</html>
+{% endblock body %}

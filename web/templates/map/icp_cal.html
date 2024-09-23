@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICP Calendar</title>
+{% block title %}ICP Calendar{% endblock title %}
+    {% block css %}
     <style>
         table,
         th,
@@ -25,41 +22,11 @@
   top: 15px;
   left: 15px;
 }
-.back-icon__row {
-  height: 10px;
-  width: 30px;
-  display: flex;
-}
-.back-icon__elem {
-  height: 8px;
-  width: 8px;
-  margin-right: 2px;
-  margin-bottom: 2px;
-  background: red;
-  border-radius: 38%;
-}
-    </style>
-</head>
+</style>
+{% endblock css %}
 
-<body>
-    <a class="back-icon" href="/">
-        <div class="back-icon__row">
-          <div class="back-icon__elem"></div>
-          <div class="back-icon__elem"></div>
-          <div class="back-icon__elem"></div>
-        </div>
-         <div class="back-icon__row">
-          <div class="back-icon__elem"></div>
-          <div class="back-icon__elem"></div>
-          <div class="back-icon__elem"></div>
-        </div>
-        <div class="back-icon__row">
-          <div class="back-icon__elem"></div>
-          <div class="back-icon__elem"></div>
-          <div class="back-icon__elem"></div>
-        </div>
-      </a>
-    <center>
+{% block body %}
+<center>
         <label for="classes">Classs:</label>
         <select name="classes" id="classes" onchange="classChanged()">
 
@@ -88,7 +55,7 @@
 </table>
 
     </center>
-</body>
+
 <script>
 let sections={{ sections|safe }}
 let cal_ids={{ cal_ids|safe }}
@@ -273,4 +240,4 @@ window.onload=loadUserSelection;
         }
     
     </script>
-</html>
+{% endblock body %}

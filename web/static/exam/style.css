@@ -685,26 +685,3 @@
   justify-content: center;
   text-align: center;
 }
-
-
-.back-icon {
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  position:absolute;
-  top: 15px;
-  left: 15px;
-}
-.back-icon__row {
-  height: 10px;
-  width: 30px;
-  display: flex;
-}
-.back-icon__elem {
-  height: 8px;
-  width: 8px;
-  margin-right: 2px;
-  margin-bottom: 2px;
-  background: grey;
-  border-radius: 38%;
-}

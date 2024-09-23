@@ -2,14 +2,17 @@
 Borrowed page design from:
  - https://codepen.io/jeremias-c/pen/oNWMXVV
 -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MST Bulk Download</title>
+    {% extends "base.html" %}
+    {% block title %}MST Bulk Download{% endblock title %}
+    {% block backbtn_color %}white{% endblock backbtn_color %}
+
+    {% block imports %}
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/themes/prism-tomorrow.css">
+    {% endblock imports %}
+
+    {% block css %}
     <style>
         @import url("https://rsms.me/inter/inter.css");
 
@@ -142,49 +145,9 @@ li {
     list-style-type: none;
     margin: 5px 0; /* Adds some spacing between items */
 }     
-.back-icon {
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  position:absolute;
-  top: 15px;
-  left: 15px;
-}
-.back-icon__row {
-  height: 10px;
-  width: 30px;
-  display: flex;
-}
-.back-icon__elem {
-  height: 8px;
-  width: 8px;
-  margin-right: 2px;
-  margin-bottom: 2px;
-  background: white;
-  border-radius: 38%;
-}
-
     </style>
-</head>
-<body>
-    <a class="back-icon" href="/">
-        <div class="back-icon__row">
-          <div class="back-icon__elem"></div>
-          <div class="back-icon__elem"></div>
-          <div class="back-icon__elem"></div>
-        </div>
-         <div class="back-icon__row">
-          <div class="back-icon__elem"></div>
-          <div class="back-icon__elem"></div>
-          <div class="back-icon__elem"></div>
-        </div>
-        <div class="back-icon__row">
-          <div class="back-icon__elem"></div>
-          <div class="back-icon__elem"></div>
-          <div class="back-icon__elem"></div>
-        </div>
-      </a>
- 
+    {% endblock css %}
+    {% block body %} 
     <body class="dark">
         <div class="article">
           <h1 class="title">Bulk Download MST Contents</h1>
@@ -252,6 +215,4 @@ git pull; git lfs pull --include="y2/**"</code></pre>
         });
     }
 </script>
-
-</body>
-</html>
+{% endblock body %}

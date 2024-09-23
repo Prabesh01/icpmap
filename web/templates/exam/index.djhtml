@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/exam/style.css">
+    {% extends "base.html" %}
+    {% block title %}Assessment Schedule{% endblock title %}
+    {% block backbtn_color %}grey{% endblock backbtn_color %}
 
+    {% block imports %}
+    <link rel="stylesheet" href="/static/exam/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <title>Assessment Schedule</title>
-</head>
 <script>
 function formatExamDate(startDateStr, endDateStr) {
   // Parse the dates
@@ -42,25 +39,9 @@ function formatExamDate(startDateStr, endDateStr) {
 }
 
 </script>
-<body>
-    <a class="back-icon" href="/">
-        <div class="back-icon__row">
-          <div class="back-icon__elem"></div>
-          <div class="back-icon__elem"></div>
-          <div class="back-icon__elem"></div>
-        </div>
-         <div class="back-icon__row">
-          <div class="back-icon__elem"></div>
-          <div class="back-icon__elem"></div>
-          <div class="back-icon__elem"></div>
-        </div>
-        <div class="back-icon__row">
-          <div class="back-icon__elem"></div>
-          <div class="back-icon__elem"></div>
-          <div class="back-icon__elem"></div>
-        </div>
-      </a>
+{% endblock imports %}
 
+{% block body %}
     <select class="btn-group sem-button" id="class_drop">
         {% for c in classes %}
         <option value="{{ c }}">{{ c }}</option>
@@ -133,5 +114,4 @@ classDrop.value="{{ current }}";
     </div>              
     <script src="/static/exam/ytm.js"></script>      
     <script src="/static/exam/script.js"></script>
-</body>
-</html>
+    {% endblock body %}
