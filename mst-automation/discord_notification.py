@@ -88,7 +88,7 @@ def fetch_notification(year):
                     msg='🚩 '+msg
             else:
                 msg='🚩 '+msg
-        elif notif['type']=="ANNOUNCEMENT":
+        elif notif['type']=="ANNOUNCEMENT" or notif['type']=="ANNOUNCEMENTLATER":
             url=f"https://app.mysecondteacher.com.np/#dashboard-notice-board"
             msg=f"[{msg}]({url})"
             msg='📢  '+msg
