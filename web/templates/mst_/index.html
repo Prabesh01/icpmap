@@ -305,7 +305,7 @@ Borrowed page design from:
     <p><b><u>One-Time Setup:</u></b></p>
 
     <pre><code class="lang-css sh">
-git clone --filter=blob:none --sparse https://oauth2:{{ token }}@gitlab.com/Prabesh01/mst.git; cd mst; rm -rf README.md;</code></pre>
+git clone --filter=blob:none --sparse https://oauth2:{{ token }}@gitlab.com/Prabesh01/mst.git && cd mst</code></pre>
     <p>Replace xxx with <code class="lang-css">y1_a</code>, <code class="lang-css">y1_s</code>, <code
         class="lang-css">y2</code> or <code class="lang-css">y3</code></p>
     <pre><code class="lang-css sh">git sparse-checkout set xxx</code></pre>
