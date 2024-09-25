@@ -254,7 +254,7 @@ class GDriveDL(object):
 
     def _exists(self, file_path, modified):
         file_name = os.path.basename(file_path)
-        if file_name.endswith('.iso'): return True
+        # if file_name.endswith('.iso'): return True
         file_dir = os.path.dirname(file_path)
         prefix = file_name[:2]
         if prefix.isdigit() and int(prefix) < 100:
