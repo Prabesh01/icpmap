@@ -1,0 +1,218 @@
+<!--
+Borrowed page design from:
+ - https://codepen.io/jeremias-c/pen/oNWMXVV
+-->
+    {% extends "base.html" %}
+    {% block title %}MST Bulk Download{% endblock title %}
+    {% block backbtn_color %}white{% endblock backbtn_color %}
+
+    {% block imports %}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/themes/prism-tomorrow.css">
+    {% endblock imports %}
+
+    {% block css %}
+    <style>
+        @import url("https://rsms.me/inter/inter.css");
+
+:root {
+  --body-bg: whitesmoke;
+  --article-bg: white;
+  --text-color: black;
+  --primary-shadow: lavender;
+  --code-bg: #1f1f1f;
+  --code-color: #2c2c2c;
+}
+.dark {
+  --body-bg: #1f2933;
+  --article-bg: #323f4b;
+  --text-color: white;
+  --primary-shadow: #191f26;
+  --code-bg: #1f2933;
+  --code-color: white;
+  scrollbar-color: var(--article-bg) var(--code-bg);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: "Inter", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: var(--body-bg);
+}
+
+.article {
+  width: 640px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .article {
+    width: 80vw;
+  }
+
+  .opinion {
+    right: 40vw;
+    align: center;
+    top: -40px;
+  }
+}
+
+.article {
+  margin: 20px auto;
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 20px var(--primary-shadow);
+  background-color: var(--article-bg);
+}
+
+.title {
+  margin-bottom: 40px;
+  color: var(--text-color);
+}
+
+p {
+  margin-top: 30px;
+  color: var(--text-color);
+}
+
+pre {
+  border-radius: 15px;
+  background: var(--code-bg) !important;
+}
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: var(--code-bg) !important;
+}
+
+.gradient-stripe {
+  height: 5px;
+  background-color: var(--text-color);
+  background-image: linear-gradient(
+    319deg,
+    #663dff 0%,
+    #aa00ff 37%,
+    #cc4499 100%
+  );
+  margin: 50px 0 0;
+  border-radius: 15px;
+}
+
+.centered {
+  text-align: center;
+}
+
+        .caret {
+            cursor: pointer;
+            user-select: none;
+            display: inline-block;
+            color: var(--text-color);
+        }
+
+        .caret::before {
+            content: "\25B6"; /* Right-pointing triangle */
+            color: var(--text-color);
+            display: inline-block;
+            margin-right: 6px;
+        }
+
+        .caret-down::before {
+            transform: rotate(90deg); /* Downward-pointing triangle */
+        }
+
+        .nested {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+        ul {
+    list-style-type: none; /* Removes the bullets */
+    padding-left: 20px; /* Optional: adds indentation to maintain hierarchy */
+}
+
+li {
+    list-style-type: none;
+    margin: 5px 0; /* Adds some spacing between items */
+}     
+    </style>
+    {% endblock css %}
+    {% block body %} 
+    <body class="dark">
+        <div class="article">
+          <h1 class="title">Bulk Download MST Contents</h1>
+          <p><em>First Install: <a style="color:#cc4499" href="https://git-scm.com/downloads" target="_blank">git</a> and <a style="color:#cc4499" href="https://git-lfs.com/" target="_blank">git-lfs</a></em></p>
+          <p><b><u>One-Time Setup:</u></b></p>
+      
+          <p>Go to the directory where you want to download contents and run these commands,</p>
+          <pre><code class="lang-css sh">
+git init
+git remote add origin -f https://oauth2:{{ token }}@gitlab.com/Prabesh01/mst.git
+GIT_LFS_SKIP_SMUDGE=1 git pull --set-upstream origin main</code></pre>
+          </p>
+          <p class="centered"><em>That's all!</em></p>
+          <p><hr></p>
+      <p><b><u>Start Syncing:</u></b></p>
+      <p>Run this command everytime you want to sync new contents. Mention folders you wish to download inside  <code class="lang-css">--include=""</code> followed by <code class="lang-css">/**</code>.</p>
+      <pre><code class="lang-css sh">
+git pull; git lfs pull --include="y2/**"</code></pre>  
+<p><em>**Only Teacher's Content is downloaded; Not Assignments.</em></p>     
+      <div class="gradient-stripe"></div>
+      <p class="centered">
+        What is this? </p>
+<span style="color: white;">We have to download files one by one from mysecondteacher. So my <a href="https://github.com/Prabesh01/icpmap/blob/main/mst-automation/files_download.py" style="color:#cc4499" target="_blank">script</a> dumps all the MST contents into gitlab daily. Now, other students can just fetch required contents in bulk from the gitlab repo.</p>
+      {% if tree %}
+          <p class="centered">
+          Folder Structure: </p>
+          {% endif %}
+          <ul>
+              {% macro render_tree(node) %}
+                  {% for key, value in node.items() %}
+                      {% if key != '__children__' %}
+                          <li>
+                              {% if value.__children__ %}
+                                  <span class="caret">{{ key }}</span>
+                                  <ul class="nested">
+                                      {{ render_tree(value.__children__) }}
+                                  </ul>
+                              {% else %}
+                                  {{ key }}
+                              {% endif %}
+                          </li>
+                      {% endif %}
+                  {% endfor %}
+              {% endmacro %}
+              
+              
+          </ul>
+          {% if tree %}
+          {{ render_tree(tree) }}
+          {% endif %}
+        </div>
+      
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script>
+          feather.replace()
+        </script>
+</body>
+
+<script>
+    var toggler = document.getElementsByClassName("caret");
+    for (var i = 0; i < toggler.length; i++) {
+        toggler[i].addEventListener("click", function() {
+            this.parentElement.querySelector(".nested").classList.toggle("active");
+            this.classList.toggle("caret-down");
+        });
+    }
+</script>
+{% endblock body %}
