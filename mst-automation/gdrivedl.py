@@ -6,13 +6,11 @@ import os
 import re
 import sys
 import unicodedata
-import argparse
 import logging
 from contextlib import contextmanager
 from datetime import datetime, timedelta
 
 from urllib.request import Request, build_opener, HTTPCookieProcessor
-from html.parser import HTMLParser
 from http.cookiejar import CookieJar
 
 from html import unescape
@@ -32,6 +30,12 @@ ID_PATTERNS = [
 FOLDER_PATTERN = re.compile(
     '<a href="(https://drive.google.com/.*?)".*?<div class="flip-entry-title">(.*?)</div>.*?<div class="flip-entry-last-modified"><div>(.*?)</div>',
     re.DOTALL | re.IGNORECASE,
+)
+N_FOLDER_PATTERN = re.compile(
+    r'<div class="flip-entry-info"><a\s+href="(https://(?:docs|drive)\.google\.com/.*?)".*?'
+    r'<div class="flip-entry-title">(.*?)</div>.*?'
+    r'<div class="flip-entry-last-modified">\s*<div>(.*?)</div>',
+    re.DOTALL | re.IGNORECASE
 )
 CONFIRM_PATTERNS = [
     re.compile(b"confirm=([0-9A-Za-z_-]+)", re.IGNORECASE),
@@ -182,7 +186,7 @@ class GDriveDL(object):
 
         logging.debug("HTML page contents:\n\n{}\n\n".format(html))
 
-        matches = re.findall(FOLDER_PATTERN, html)
+        matches = re.findall(N_FOLDER_PATTERN, html)
 
         if not matches and "ServiceLogin" in html:
             self._error("{}: does not have link sharing enabled".format(id))
@@ -194,8 +198,16 @@ class GDriveDL(object):
             if not id:
                 self._error("{}: Unable to find ID from url".format(url))
                 continue
-
-            if "/file/" in url.lower():
+            if 'docs.google.com' in url:
+                docx_file_path=directory+'/'+item_name+'.docx'
+                if not self._exists(docx_file_path, False):
+                    logging.info("{file_path}".format(file_path=docx_file_path))
+                    with self._request("https://docs.google.com/document/export?format=docx&id="+id) as resp:
+                        with open(docx_file_path,'wb') as f:
+                            f.write(resp.read())
+                else:
+                    logging.info("{file_path} [Exists]".format(file_path=docx_file_path))
+            elif "/file/" in url.lower():
                 self.process_file(
                     id, directory, filename=sanitize(item_name), modified=modified
                 )
@@ -242,6 +254,7 @@ class GDriveDL(object):
 
     def _exists(self, file_path, modified):
         file_name = os.path.basename(file_path)
+        if file_name.endswith('.iso'): return True
         file_dir = os.path.dirname(file_path)
         prefix = file_name[:2]
         if prefix.isdigit() and int(prefix) < 100:
