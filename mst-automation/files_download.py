@@ -31,6 +31,30 @@ def read_json():
 json_data=read_json()
 
 
+#login
+def login(mst_email,mst_pass):
+    r=requests.post(login_url,json={'userNameOrEmailAddress':mst_email,'password':mst_pass,'rememberClient':True})
+    try:
+        access_token=r.json()['result']['accessToken']
+        return access_token
+    except:
+        return None
+
+
+# refresh token
+def write_token(year):
+    global json_data
+    token=login(json_data[year]['user'],json_data[year]['pass'])
+    if not token:
+        print("Login Failed!")
+        return token
+    else:
+        with open(creds_file,'w') as f:
+            json_data[year]['token']=token
+            json.dump(json_data,f)
+    return token
+
+
 def resub(txt):
     return re.sub(r'[^\w]', ' ', txt)
 
@@ -85,7 +109,13 @@ def fetch_files_folders(year):
     download_dir=out_dir/parse_path(year)
     mkdir(download_dir)
     
-    subjects=requests.get("https://api.mysecondteacher.com.np/api/classroom-subjects",headers=header).json()['result']
+    r=requests.get("https://api.mysecondteacher.com.np/api/classroom-subjects",headers=header)
+    if r.status_code==401:
+        print("Trying to login..")
+        token=write_token(year)
+        if not token: return
+        fetch_files_folders(year)
+    subjects=r.json()['result']
     for sub in subjects:
         subid=sub["subjectId"]
         subname=sub["subjectName"]
