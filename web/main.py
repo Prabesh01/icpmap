@@ -599,7 +599,7 @@ tree = {}
 def get_tree():
     global tree
     try:
-        for item in requests.get(f"https://gitlab.com/api/v4/projects/61879485/repository/tree/?ref=main&private_token={gitlab_token}&per_page=100&recursive=true", timeout=3).json():
+        for item in requests.get(f"https://gitlab.com/api/v4/projects/61879485/repository/tree/?ref=main&private_token={gitlab_token}&per_page=10000&recursive=true", timeout=3).json():
             parts = item['path'].split('/')
             current = tree
             for part in parts[:-1]:
