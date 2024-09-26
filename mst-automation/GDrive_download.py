@@ -1,5 +1,3 @@
-# required google drive api enabled credentials from google cloud console
-
 import os
 from pathlib import Path
 import shutil
