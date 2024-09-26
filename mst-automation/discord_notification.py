@@ -1,3 +1,4 @@
+# */15 * * * * nohup python3 -u /root/discord/mst.py > /root/discord/mst.log 2>&1 &
 import requests
 import json
 import os
