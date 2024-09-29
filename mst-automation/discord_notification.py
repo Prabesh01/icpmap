@@ -4,6 +4,8 @@ import json
 import os
 from pathlib import Path
 from datetime import datetime
+from lxml import html
+import re
 
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -91,8 +93,23 @@ def fetch_notification(year):
                 msg='🚩 '+msg
         elif notif['type']=="ANNOUNCEMENT" or notif['type']=="ANNOUNCEMENTLATER":
             url=f"https://app.mysecondteacher.com.np/#dashboard-notice-board"
-            msg=f"[{msg}]({url})"
-            msg='📢  '+msg
+            try:
+                r=requests.get("https://api.mysecondteacher.com.np/api/v2/ongoing-announcements-student?recordPerPage=1&pageNumber=1",headers=header).json()
+                announcement_item=r['result']['items'][0]
+                announcement_text=re.sub(r'(https?://[^\s]+)', r'<\1>',html.fromstring(announcement_item['message']).text_content())
+                announcement_creator=announcement_item['creatorName']
+                links=[]
+                l=f=0
+                for item in announcement_item['announcementFiles']:
+                    if item['fileType']=='link':
+                        l+=1
+                        links.append(f"[Link-{l}](<{item['fileTitle']}>)")
+                    else:
+                        f+=1
+                        links.append(f"[File-{f}](<{item['fileUrl']}>)")
+                msg=f"📢 {announcement_text}\n{' | '.join(links)}\n- {announcement_creator} | [View on mst]({url})"
+            except:
+                msg=f"📢 [{msg}]({url})"
         elif notif['type']=="ASSIGNMENTDELETE": pass
         else:
             msg=msg+'\n`'+notif['payload']+'`'
