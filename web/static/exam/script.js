@@ -96,10 +96,14 @@ function updateEventStatus() {
   
   
   if (daysUntilExam >= 0) {
-  if(daysUntilExam<nearestExam){
+    if (daysUntilExam==nearestExam){}
+  else if(daysUntilExam<nearestExam){
     nearestExam2=nearestExam;
     nearestExam=daysUntilExam;
+  } else if(daysUntilExam<nearestExam2){
+    nearestExam2=daysUntilExam;
   }
+
   document.getElementById("nextExam").innerHTML = `Next Exam in: ${nearestExam} days and ${nearestExam2} days`;
   }
   allCount++;

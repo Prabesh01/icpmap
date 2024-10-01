@@ -1,4 +1,123 @@
 {
+    "Y2 BIC Term 1 (Unofficial - Approximately Guessed)":[
+        {
+            "module": "Databases",
+            "code": "CC5051NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Case study – Introduction, Design and Implementation (3000 words + a combination of entities / relationships / queries)",
+                    "percentage": 100,
+                    "start_date": "2025-01-12",
+                    "end_date": "2025-01-12"
+                },{
+                    "title": "VIVA of Case Study",
+                    "percentage": 100,
+                    "start_date": "2025-01-12",
+                    "end_date": "2025-01-12"
+                }
+            ]
+        },
+        {
+            "module": "Cloud Computing and Internet of Things",
+            "code": "CS5053NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Tutorial Questions Submission",
+                    "percentage": 100,
+                    "start_date": "2024-11-10",
+                    "end_date": "2024-11-10"
+                }, {
+                    "title": "AWS atleast 6 solves",
+                    "percentage": 100,
+                    "start_date": "2024-11-10",
+                    "end_date": "2024-11-10"
+                }
+            ]
+        },
+        {
+            "module": "Network Operating Systems",
+            "code": "CT5052NP",
+            "credits": "15",
+            "exams": [
+                {
+                    "title": "Log 1",
+                    "percentage": 10,
+                    "start_date": "2024-09-30",
+                    "end_date": "2024-09-30"
+                },{
+                    "title": "Log 2",
+                    "percentage": 10,
+                    "start_date": "2024-11-11",
+                    "end_date": "2024-11-11"
+                },{
+                    "title": "Log 3",
+                    "percentage": 10,
+                    "start_date": "2024-11-18",
+                    "end_date": "2024-11-18"
+                },{
+                    "title": "Log 4",
+                    "percentage": 10,
+                    "start_date": "2024-11-25",
+                    "end_date": "2024-11-25"
+                },{
+                    "title": "Log 5",
+                    "percentage": 10,
+                    "start_date": "2024-12-02",
+                    "end_date": "2024-12-02"
+                },{
+                    "title": "Log 6",
+                    "percentage": 10,
+                    "start_date": "2024-12-09",
+                    "end_date": "2024-12-09"
+                },{
+                    "title": "Log 7",
+                    "percentage": 10,
+                    "start_date": "2024-12-16",
+                    "end_date": "2024-12-16"
+                },{
+                    "title": "Log 8",
+                    "percentage": 10,
+                    "start_date": "2024-12-23",
+                    "end_date": "2024-12-23"
+                },{
+                    "title": "Log 9",
+                    "percentage": 10,
+                    "start_date": "2024-12-30",
+                    "end_date": "2024-12-30"
+                },{
+                    "title": "Extra Credit - Reports for Bandit, IP/DHCP, TCP, HTTP & Hour Of Hack",
+                    "percentage": 10,
+                    "start_date": "2024-12-30",
+                    "end_date": "2024-12-30"
+                }
+            ]
+        },
+        {
+            "module": "Software Engineering",
+            "code": "CS5002NP",
+            "credits": "30",
+            "exams": [
+                {
+                    "title": "Group Coursework",
+                    "percentage": 20,
+                    "start_date": "2025-01-05",
+                    "end_date": "2025-01-05"
+                },{
+                    "title": "Individual Coursework",
+                    "percentage": 35,
+                    "start_date": "2025-05-04",
+                    "end_date": "2025-05-04"
+                },{
+                    "title": "Individual Examination (In-Paper Written)",
+                    "percentage": 45,
+                    "start_date": "2025-05-11",
+                    "end_date": "2025-05-11"
+                }
+            ]
+        }                        
+    ],
     "L4 ICP BBA Term 2": [
         {
             "module": "Principles of Management",
