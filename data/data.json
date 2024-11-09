@@ -670,7 +670,7 @@
             "etime": "11:00 AM",
             "code": "CS5053NP",
             "module": "Cloud Computing and Internet of Things",
-            "teacher": "Mr. Sandip Adhikari",
+            "teacher": "Mr. Sunil Thapa",
             "sections": [
                 "C3"
             ],
@@ -683,24 +683,11 @@
             "etime": "11:00 AM",
             "code": "CS5053NP",
             "module": "Cloud Computing and Internet of Things",
-            "teacher": "Mr. Sunil Thapa",
+            "teacher": "Mr. Sandip Adhikari",
             "sections": [
                 "C6"
             ],
             "room": "Kingston"
-        },
-        {
-            "class": "Year 2 BIC",
-            "day": "SUN",
-            "stime": "10:00 AM",
-            "etime": "11:30 AM",
-            "code": "CS5002NP",
-            "module": "Software Engineering",
-            "teacher": "Mr. Sandeep Gurung",
-            "sections": [
-                "C1"
-            ],
-            "room": "Begnas"
         },
         {
             "class": "Year 2 BIC",
@@ -727,6 +714,19 @@
                 "C7"
             ],
             "room": "Stonehenge"
+        },
+        {
+            "class": "Year 2 BIC",
+            "day": "SUN",
+            "stime": "10:00 AM",
+            "etime": "11:30 AM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Mr. Sandeep Gurung",
+            "sections": [
+                "C1"
+            ],
+            "room": "Thames"
         },
         {
             "class": "Year 2 BIC",
@@ -852,7 +852,7 @@
             "etime": "03:00 PM",
             "code": "CS5053NP",
             "module": "Cloud Computing and Internet of Things",
-            "teacher": "Mr. Sunil Thapa",
+            "teacher": "Mr. Sandip Adhikari",
             "sections": [
                 "C8"
             ],
@@ -865,7 +865,7 @@
             "etime": "03:00 PM",
             "code": "CS5053NP",
             "module": "Cloud Computing and Internet of Things",
-            "teacher": "Mr. Sandip Adhikari",
+            "teacher": "Mr. Sunil Thapa",
             "sections": [
                 "C2"
             ],
@@ -943,7 +943,7 @@
             "etime": "09:00 AM",
             "code": "CS5053NP",
             "module": "Cloud Computing and Internet of Things",
-            "teacher": "Mr. Sunil Thapa",
+            "teacher": "Mr. Sandip Adhikari",
             "sections": [
                 "C11"
             ],
@@ -1177,7 +1177,7 @@
             "etime": "03:00 PM",
             "code": "CS5053NP",
             "module": "Cloud Computing and Internet of Things",
-            "teacher": "Mr. Sandip Adhikari",
+            "teacher": "Mr. Sunil Thapa",
             "sections": [
                 "C5"
             ],
@@ -1478,7 +1478,7 @@
             "etime": "09:00 AM",
             "code": "CS5053NP",
             "module": "Cloud Computing and Internet of Things",
-            "teacher": "Mr. Sunil Thapa",
+            "teacher": "Mr. Sandip Adhikari",
             "sections": [
                 "C8"
             ],
@@ -1517,7 +1517,7 @@
             "etime": "11:00 AM",
             "code": "CS5053NP",
             "module": "Cloud Computing and Internet of Things",
-            "teacher": "Mr. Sunil Thapa",
+            "teacher": "Mr. Sandip Adhikari",
             "sections": [
                 "C6"
             ],
@@ -1530,7 +1530,7 @@
             "etime": "11:30 AM",
             "code": "CS5053NP",
             "module": "Cloud Computing and Internet of Things",
-            "teacher": "Mr. Sandip Adhikari",
+            "teacher": "Mr. Sunil Thapa",
             "sections": [
                 "C3"
             ],
@@ -1621,7 +1621,7 @@
             "etime": "01:00 PM",
             "code": "CS5053NP",
             "module": "Cloud Computing and Internet of Things",
-            "teacher": "Mr. Sunil Thapa",
+            "teacher": "Mr. Sandip Adhikari",
             "sections": [
                 "C7"
             ],
@@ -1634,7 +1634,7 @@
             "etime": "01:30 PM",
             "code": "CS5053NP",
             "module": "Cloud Computing and Internet of Things",
-            "teacher": "Mr. Sandip Adhikari",
+            "teacher": "Mr. Sunil Thapa",
             "sections": [
                 "C2"
             ],
@@ -1673,7 +1673,7 @@
             "etime": "03:00 PM",
             "code": "CS5053NP",
             "module": "Cloud Computing and Internet of Things",
-            "teacher": "Mr. Sandip Adhikari",
+            "teacher": "Mr. Sunil Thapa",
             "sections": [
                 "C1"
             ],
@@ -1725,7 +1725,7 @@
             "etime": "08:30 AM",
             "code": "CS5053NP",
             "module": "Cloud Computing and Internet of Things",
-            "teacher": "Mr. Sunil Thapa",
+            "teacher": "Mr. Sandip Adhikari",
             "sections": [
                 "C11"
             ],
@@ -1955,11 +1955,11 @@
         {
             "class": "Year 2 BIC",
             "day": "FRI",
-            "stime": "12:30 PM",
-            "etime": "02:00 PM",
+            "stime": "01:00 PM",
+            "etime": "02:30 PM",
             "code": "CS5053NP",
             "module": "Cloud Computing and Internet of Things",
-            "teacher": "Mr. Sandip Adhikari",
+            "teacher": "Mr. Sunil Thapa",
             "sections": [
                 "C5"
             ],
@@ -2003,7 +2003,7 @@
                 "C10"
             ],
             "room": "Nilgiri"
-        },
+        },        
         {
             "class": "Year 3 BIC",
             "day": "SUN",
@@ -2783,6 +2783,9 @@
         "Year 2 BIC - C6": "c_cc763119842b358fbc86192ea9308c3b069e9f4d424cc8b2e7a117271b096fec@group.calendar.google.com",
         "Year 2 BIC - C7": "c_59fabfa5043a9a6ecb9535ad6bbddaa399aaf6730f1e900ddba5fd2233c4a8bf@group.calendar.google.com",
         "Year 2 BIC - C8": "c_f58d0cd6eac3d38416e7fc35180cb178be2098febfb7974e90bdb2edc041e535@group.calendar.google.com",
+        "Year 2 BIC - C9": "c_f58d0cd6eac3d38416e7fc35180cb178be2098febfb7974e90bdb2edc041e535@group.calendar.google.com",
+        "Year 2 BIC - C10": "c_f58d0cd6eac3d38416e7fc35180cb178be2098febfb7974e90bdb2edc041e535@group.calendar.google.com",
+        "Year 2 BIC - C11": "c_f58d0cd6eac3d38416e7fc35180cb178be2098febfb7974e90bdb2edc041e535@group.calendar.google.com",        
         "Year 3 BIC - C1": "c_e312ad9d44f4bd7112654e52eb03d3dfb81519ffa54edcebb223856728536f96@group.calendar.google.com",
         "Year 3 BIC - C2": "c_fdfcf4f3b2fa0a1c23ca403cea4a909cb100ed9a9855a62e29e94bae42efe590@group.calendar.google.com",
         "Year 3 BIC - C3": "c_f8673e57f73b84de2a96e11eb0f03e0252aedbcd0e79de5d5450b195cfdfec0f@group.calendar.google.com",
