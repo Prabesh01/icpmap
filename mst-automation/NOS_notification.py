@@ -4,6 +4,8 @@ from pathlib import Path
 from datetime import datetime
 import json
 import requests
+import pytz
+np_tz = pytz.timezone('Asia/Kathmandu')
 
 assignments={
     "y2": {
@@ -27,7 +29,7 @@ with open(creds_file) as f:
 
 for year in assignments:
     for assignment in assignments[year]:
-        due_date=datetime.strptime(assignments[year][assignment], '%m/%d/%Y').replace(hour=23, minute=59)
-        days_left=(due_date.date()-datetime.now().date()).days
+        due_date=np_tz.localize(datetime.strptime(assignments[year][assignment], '%m/%d/%Y').replace(hour=23, minute=59))
+        days_left=(due_date.date()-datetime.now(np_tz).date()).days
         if days_left==5:
             requests.post(creds[year]['webhook'], data={'content':f'🚩 [<t:{int(due_date.timestamp())}:R>] ' +assignment})
