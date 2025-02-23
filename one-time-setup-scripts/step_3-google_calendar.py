@@ -29,6 +29,10 @@ for c in data["classes"]:
     classes[name].append(c)
 del data
 
+# class schedule are different before and after the sem break.
+# if set true, add classes for only pre-sem-break periods.
+populate_pre_sem_break_classes=False
+
 # new-year, saraswati-puja, shivaratri, holi
 holidays=["2025/01/01","2025/02/03","2025/02/26","2024/03/13"]
 # dashain-tihar holiday range
@@ -121,11 +125,16 @@ def add_classes():
           sedate=(datetime.strptime(y1_autumn_week1, "%Y/%m/%d")+ timedelta(days=day_offset)).strftime("%Y-%m-%d")
           until=y1_autumn_until
         else:
-          sedate=(datetime.strptime(y2_3_week1, "%Y/%m/%d")+ timedelta(days=day_offset)).strftime("%Y-%m-%d")
-          until=y2_3_until
+          if populate_pre_sem_break_classes:
+            sedate=(datetime.strptime(y2_3_week1, "%Y/%m/%d")+ timedelta(days=day_offset)).strftime("%Y-%m-%d")
+            until= y2_3_sem_break_range.split('-')[0]
+          else:
+            sedate=y2_3_sem_break_range.split('-')[-1]
+            until=y2_3_until
         for section in clas["sections"]:
           cal_name=sheet+" - "+section
           cal_name=cal_name.strip()
+          if cal_name!='Year 2 BIC - C4': continue
         
           event = {
           'summary': clas["module"],
@@ -159,6 +168,7 @@ def del_classes_when_events():
       for section in sections[sheet]:
         cal_name=sheet+" - "+section
         cal_name=cal_name.strip()
+        if cal_name!='Year 2 BIC - C4': continue
         cal_id=cal_ids[cal_name]
         page_token = None
         while True:
@@ -247,6 +257,7 @@ def add_events():
         for section in sections[sheet]:
           cal_name=sheet+" - "+section
           cal_name=cal_name.strip()
+          if cal_name!='Year 2 BIC - C4': continue
           event = service.events().insert(calendarId=cal_ids[cal_name], body=event).execute()
 
       week_cnt_sec=0

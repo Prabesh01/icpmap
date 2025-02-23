@@ -772,8 +772,8 @@
             "day": "SUN",
             "stime": "11:30 AM",
             "etime": "01:00 PM",
-            "code": "CC5051NP",
-            "module": "Databases",
+            "code": "CS5071NP",
+            "module": "Professional and Ethical Issues",
             "teacher": "Mr. Achyut Parajuli",
             "sections": [
                 "C4"
@@ -889,9 +889,9 @@
             "day": "SUN",
             "stime": "01:30 PM",
             "etime": "03:00 PM",
-            "code": "CT5052NP",
-            "module": "Network Operating Systems",
-            "teacher": "Mr. Prasant Adhikari",
+            "code": "CC5067NP",
+            "module": "Smart Data Discovery",
+            "teacher": "Mr. Sanjog Hamal",
             "sections": [
                 "C4"
             ],
@@ -917,7 +917,7 @@
             "etime": "08:30 AM",
             "code": "CS5002NP",
             "module": "Software Engineering",
-            "teacher": "Mr. Sandeep Gurung",
+            "teacher": "Mr. Eliza Gautam",
             "sections": [
                 "C4"
             ],
@@ -954,8 +954,8 @@
             "day": "MON",
             "stime": "09:30 AM",
             "etime": "11:00 AM",
-            "code": "CS5053NP",
-            "module": "Cloud Computing and Internet of Things",
+            "code": "CS5054NP",
+            "module": "Advanced Programming and Technologies",
             "teacher": "Mr. Sandip Adhikari",
             "sections": [
                 "C4"
@@ -1231,8 +1231,8 @@
             "day": "TUE",
             "stime": "09:30 AM",
             "etime": "11:00 AM",
-            "code": "CS5053NP",
-            "module": "Cloud Computing and Internet of Things",
+            "code": "CS5054NP",
+            "module": "Advanced Programming and Technologies",
             "teacher": "Mr. Sandip Adhikari",
             "sections": [
                 "C4",
@@ -1275,8 +1275,8 @@
             "day": "TUE",
             "stime": "11:30 AM",
             "etime": "01:00 PM",
-            "code": "CC5051NP",
-            "module": "Databases",
+            "code": "CS5071NP",
+            "module": "Professional and Ethical Issues",
             "teacher": "Ms. Pratibha Gurung",
             "sections": [
                 "C4",
@@ -1349,9 +1349,9 @@
             "day": "WED",
             "stime": "09:30 AM",
             "etime": "11:00 AM",
-            "code": "CT5052NP",
-            "module": "Network Operating Systems",
-            "teacher": "Mr. Prasant Adhikari",
+            "code": "CC5067NP",
+            "module": "Smart Data Discovery",
+            "teacher": "Mr. Sanjog Hamal",
             "sections": [
                 "C4",
                 "C5",
@@ -1567,9 +1567,9 @@
             "day": "THU",
             "stime": "11:00 AM",
             "etime": "12:30 PM",
-            "code": "CT5052NP",
-            "module": "Network Operating Systems",
-            "teacher": "Mr. Prasant Adhikari",
+            "code": "CC5067NP",
+            "module": "Smart Data Discovery",
+            "teacher": "Mr. Sanjog Hamal",
             "sections": [
                 "C4"
             ],
@@ -1684,8 +1684,8 @@
             "day": "THU",
             "stime": "01:30 PM",
             "etime": "03:00 PM",
-            "code": "CC5051NP",
-            "module": "Databases",
+            "code": "CS5071NP",
+            "module": "Professional and Ethical Issues",
             "teacher": "Mr. Achyut Parajuli",
             "sections": [
                 "C4"
@@ -1734,11 +1734,11 @@
         {
             "class": "Year 2 BIC",
             "day": "FRI",
-            "stime": "07:00 AM",
-            "etime": "08:30 AM",
-            "code": "CS5002NP",
-            "module": "Software Engineering",
-            "teacher": "Mr. Sandeep Gurung",
+            "stime": "09:30 AM",
+            "etime": "11:00 AM",
+            "code": "CS5054NP",
+            "module": "Advanced Programming and Technologies",
+            "teacher": "Mr. Sandip Adhikari",
             "sections": [
                 "C4"
             ],
@@ -1812,15 +1812,15 @@
         {
             "class": "Year 2 BIC",
             "day": "FRI",
-            "stime": "09:30 AM",
-            "etime": "11:00 AM",
-            "code": "CS5053NP",
-            "module": "Cloud Computing and Internet of Things",
-            "teacher": "Mr. Sandip Adhikari",
+            "stime": "12:00 AM",
+            "etime": "1:30 AM",
+            "code": "CS5002NP",
+            "module": "Software Engineering",
+            "teacher": "Ms. Eliza Gautam",
             "sections": [
                 "C4"
             ],
-            "room": "Nilgiri"
+            "room": "Machhapuchhre"
         },
         {
             "class": "Year 2 BIC",
