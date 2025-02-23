@@ -50,7 +50,7 @@ y2_3_until="2025/05/17"
 y1_spring_sem_break="2024/06/08"
 y1_autumn_sem_break="2025/03/01"
 y2_3_sem_break="2025/03/01"
-y2_3_sem_break_range="2025/02/09 - 2025/02/22"
+y2_3_sem_break_range="2025/02/09 - 2025/02/22" # end on saturday
 
 y1_spring_exam_weeks=["2024/05/12 - 2024/06/01","2024/08/25 - 2024/09/14"]
 y1_autumn_exam_weeks=["2025/02/02 - 2025/02/22","2025/05/18 - 2025/06/07"]
@@ -127,9 +127,9 @@ def add_classes():
         else:
           if populate_pre_sem_break_classes:
             sedate=(datetime.strptime(y2_3_week1, "%Y/%m/%d")+ timedelta(days=day_offset)).strftime("%Y-%m-%d")
-            until= y2_3_sem_break_range.split('-')[0]
+            until= y2_3_sem_break_range.split('-')[0].strip()
           else:
-            sedate=y2_3_sem_break_range.split('-')[-1]
+            sedate=(datetime.strptime(y2_3_sem_break_range.split('-')[-1].strip(), "%Y/%m/%d")+ timedelta(days=day_offset+1)).strftime("%Y-%m-%d")
             until=y2_3_until
         for section in clas["sections"]:
           cal_name=sheet+" - "+section
@@ -152,6 +152,7 @@ def add_classes():
               'RRULE:FREQ=WEEKLY;UNTIL='+until.replace("/","")+"T240000Z"
           ],
           }
+          print(event)
           event = service.events().insert(calendarId=cal_ids[cal_name], body=event).execute()
 
 # add_classes()
@@ -179,10 +180,16 @@ def del_classes_when_events():
             recurrence_exceptions.append(current_date.strftime('%Y%m%d'))
             current_date += timedelta(days=1)
 
+          ignore_the_event=False
           for event in events['items']:
             temp_recurrence_exceptions=[]
             for re in recurrence_exceptions:
+               # if not dateTime in event, its prolly whole day or longer events. not a class sched. do not delete these.
+               if not 'dateTime' in event["start"]: 
+                ignore_the_event=True
+                break
                temp_recurrence_exceptions.append(str(re)+"T"+event["start"]["dateTime"].split("T")[-1].split("+")[0].replace(":",""))
+            if ignore_the_event: continue
             recurrence = event.get('recurrence', [])
             exdate_rule = None
             for rule in recurrence:
@@ -229,7 +236,7 @@ def del_classes_when_events():
        del_event_all_sections(sem_break_start,sem_break_end)
     del_event_all_sections(exam_week_start,exam_week_end)
 
-# del_classes_when_events()
+del_classes_when_events()
 
 
 def add_events():
