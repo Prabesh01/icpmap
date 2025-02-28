@@ -1812,8 +1812,8 @@
         {
             "class": "Year 2 BIC",
             "day": "FRI",
-            "stime": "12:00 AM",
-            "etime": "1:30 AM",
+            "stime": "12:00 PM",
+            "etime": "1:30 PM",
             "code": "CS5002NP",
             "module": "Software Engineering",
             "teacher": "Ms. Eliza Gautam",
