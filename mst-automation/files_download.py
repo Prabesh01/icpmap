@@ -120,12 +120,16 @@ def fetch_files_folders(year):
         subid=sub["subjectId"]
         subname=sub["subjectName"]
         download_dir=out_dir/parse_path(year)/parse_path(subname)
+        # ignore y2_sem1 subjects for y2_sem2
+        if parse_path(year)=='y2' and parse_path(subname) in ['CC5051_Database','CS4051_Fundamentals_of_Computing','CT4005_Computer_Hardware_&_Software_Architectures','CS5053_Cloud_Computing_and_the_Internet_of_Things','CT5052_Network_Operating_Systems']: continue
         mkdir(download_dir)
             
         classes=requests.get("https://api.mysecondteacher.com.np/api/subject/"+str(subid)+"/class-detail",headers=header).json()['result']
         for clas in classes:
             classid=clas["classId"]
             classname=clas["className"]
+            # ignore sem1 assessments for y2_sem2
+            if parse_path(subname)=='Assessment' and parse_path(classname) in ['CC5051NP_Databases_Assessment_AU_24','CS5053NP_Cloud_Computing_and_the_Internet_of_Things_Assessment_AU_24','CT5052NP_Network_Operating_Systems_Assessment_AU_24']: continue
             print(subname+'-->'+classname)
             download_dir=out_dir/parse_path(year)/parse_path(subname)/parse_path(classname)
             mkdir(download_dir)
