@@ -142,7 +142,7 @@ def add_classes():
         for section in clas["sections"]:
           cal_name=sheet+" - "+section
           cal_name=cal_name.strip()
-          if cal_name!='Year 2 BIC - C4': continue
+          if 'spring' in cal_name.lower(): continue
         
           event = {
           'summary': clas["module"],
@@ -177,7 +177,7 @@ def del_classes_when_events():
       for section in sections[sheet]:
         cal_name=sheet+" - "+section
         cal_name=cal_name.strip()
-        if cal_name!='Year 2 BIC - C4': continue
+        if 'spring' in cal_name.lower(): continue
         cal_id=cal_ids[cal_name]
         page_token = None
         while True:
@@ -246,11 +246,9 @@ def del_classes_when_events():
 
 # del_classes_when_events()
 
-
 def add_events():
     holiday_start=datetime.strptime(holiday_range.split(' - ')[0], "%Y/%m/%d")
     holiday_end=datetime.strptime(holiday_range.split(' - ')[1], "%Y/%m/%d")
-  
     for sheet in sections:
       print(sheet)
       def add_event_all_sections(summary,evstart,evend):
@@ -272,7 +270,7 @@ def add_events():
         for section in sections[sheet]:
           cal_name=sheet+" - "+section
           cal_name=cal_name.strip()
-          if cal_name!='Year 2 BIC - C4': continue
+          if 'spring' in cal_name.lower(): continue
           event = service.events().insert(calendarId=cal_ids[cal_name], body=event).execute()
 
       week_cnt_sec=0
@@ -372,7 +370,7 @@ def make_cals_public():
 # make_cals_public()
 
 
-def delete_all_events_from_calendar():
+def clear_calendar():
     for cal_name,cal_id in cal_ids.items():
         if cal_name!="xxx": continue
 
@@ -381,6 +379,26 @@ def delete_all_events_from_calendar():
             events = service.events().list(calendarId=cal_id, pageToken=page_token).execute()
             for event in events['items']:
                 service.events().delete(calendarId=cal_id, eventId=event["id"]).execute()
+            page_token = events.get('nextPageToken')
+            if not page_token:
+                break
+
+# clear_calendar()
+
+
+def delete_all_events_from_calendar():
+    for cal_name,cal_id in cal_ids.items():
+        if not cal_name.startswith('Year 3 BIC - '): continue
+        print(cal_name)
+        page_token = None
+        while True:
+            events = service.events().list(calendarId=cal_id, pageToken=page_token).execute()
+            for event in events['items']:
+                if 'originalStartTime' in event:
+                  continue
+                else:
+                  if not 'dateTime' in event["start"]: 
+                    service.events().delete(calendarId=cal_id, eventId=event["id"]).execute()
             page_token = events.get('nextPageToken')
             if not page_token:
                 break
