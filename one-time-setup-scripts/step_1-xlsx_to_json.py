@@ -27,7 +27,7 @@ def read_xlsx(source):
             for col in dataframe1.iter_cols(1, dataframe1.max_column):
                 val=col[row].value
                 if val: val=str(val).strip()
-                else:
+                if not val: 
                     i+=1
                     continue
                 if val=="SUN":cont=True
@@ -53,8 +53,10 @@ def read_xlsx(source):
         sections[sheet].sort()
 
     data={"classes":classes, "sections": sections, "rooms":rooms, "teachers":teachers}
+    old_data=json.load(open(BASE_DIR / "data/data.json"))
+    data["cal_ids"]=old_data["cal_ids"]
     with open(BASE_DIR / "data/data.json", "w") as f:
         json.dump(data, f)
 
 
-read_xlsx(BASE_DIR / "data-sources/24-25/Class_Schedule.xlsx")
+read_xlsx(BASE_DIR / "data-sources/24-25/Class Schedule of Autumn 2024-25 2nd Sem.xlsx")

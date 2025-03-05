@@ -4,6 +4,7 @@ SCRIPT_DIR="$(dirname "$(realpath "${BASH_SOURCE[0]}")")"
 
 source "$SCRIPT_DIR/../.venv/bin/activate"
 python "$SCRIPT_DIR/files_download.py"
+python "$SCRIPT_DIR/GDrive_download.py"
 
 cd "$SCRIPT_DIR/mst"
 git add .; git commit -m "y2 auto update"; git push;

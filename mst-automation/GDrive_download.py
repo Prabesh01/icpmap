@@ -6,7 +6,7 @@ from gdrivedl import donwload_gdrive
 
 BASE_DIR = Path(__file__).resolve().parent
 g_drives={
-    "y2/NOS": "https://drive.google.com/drive/folders/13RmdIj_U_DCnsQxWES9cv4CFncdkFSgO",
+    "y2/CC5067_Smart_Data_Discovery": "https://drive.google.com/drive/folders/1ElYESqIdhbCNiOstE0y8h7qWHoo5MamH",
 }
 
 out_dir=BASE_DIR/'mst'
@@ -24,22 +24,23 @@ def parse_path(path):
 
 # run
 for mod,url in g_drives.items():
-    donwload_gdrive(url, str(out_dir)+'/'+mod+'_GDRIVE')
+    donwload_gdrive(url, str(out_dir)+'/'+mod)
 
 # arrange files
 for mod in g_drives:
+    break
     path=str(out_dir)+'/'+mod+'_GDRIVE'
     for f in os.listdir(path):
         full_file_path = os.path.join(path, f)
 
         if os.path.isfile(full_file_path):
             prefix = f[:2]
-            
+
             if prefix.isdigit() and int(prefix) < 100:
                 folder_path = os.path.join(path, prefix)
-                
+
                 if not os.path.exists(folder_path):
                     os.makedirs(folder_path)
-                
-                shutil.move(full_file_path, os.path.join(folder_path, f))            
-            
+
+                shutil.move(full_file_path, os.path.join(folder_path, f))
+

@@ -23,6 +23,7 @@ USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 
 ID_PATTERNS = [
     re.compile("/file/d/([0-9A-Za-z_-]{10,})(?:/|$)", re.IGNORECASE),
+    re.compile("/presentation/d/([0-9A-Za-z_-]{10,})(?:/|$)", re.IGNORECASE),
     re.compile("/folders/([0-9A-Za-z_-]{10,})(?:/|$)", re.IGNORECASE),
     re.compile("id=([0-9A-Za-z_-]{10,})(?:&|$)", re.IGNORECASE),
     re.compile("([0-9A-Za-z_-]{10,})", re.IGNORECASE),
@@ -199,10 +200,17 @@ class GDriveDL(object):
                 self._error("{}: Unable to find ID from url".format(url))
                 continue
             if 'docs.google.com' in url:
-                docx_file_path=directory+'/'+item_name+'.docx'
+                if not os.path.isdir(directory):
+                    os.mkdir(directory)
+                if '/presentation/' in url.lower():
+                    docx_file_path=directory+'/'+item_name+'.pptx'
+                    dwnurl="https://docs.google.com/presentation/export/pptx?id="+id
+                else:
+                    docx_file_path=directory+'/'+item_name+'.docx'
+                    dwnurl="https://docs.google.com/document/export?format=docx&id="+id
                 if not self._exists(docx_file_path, False):
                     logging.info("{file_path}".format(file_path=docx_file_path))
-                    with self._request("https://docs.google.com/document/export?format=docx&id="+id) as resp:
+                    with self._request(dwnurl) as resp:
                         with open(docx_file_path,'wb') as f:
                             f.write(resp.read())
                 else:

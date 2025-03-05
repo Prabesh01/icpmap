@@ -119,11 +119,19 @@ def add_classes():
       for clas in clase:
         day_offset=weekdays.index(clas["day"])
         if 'year 1' in sheet.lower() and 'spring' in sheet.lower():
-          sedate=(datetime.strptime(y1_spring_week1, "%Y/%m/%d")+ timedelta(days=day_offset)).strftime("%Y-%m-%d")
-          until=y1_spring_until
+          if populate_pre_sem_break_classes:
+            sedate=(datetime.strptime(y1_spring_week1, "%Y/%m/%d")+ timedelta(days=day_offset)).strftime("%Y-%m-%d")
+            until=y1_spring_sem_break
+          else:
+            sedate=(datetime.strptime(y1_spring_sem_break, "%Y/%m/%d")+ timedelta(days=day_offset+1)).strftime("%Y-%m-%d")
+            until=y1_spring_until
         elif 'year 1' in sheet.lower() :
-          sedate=(datetime.strptime(y1_autumn_week1, "%Y/%m/%d")+ timedelta(days=day_offset)).strftime("%Y-%m-%d")
-          until=y1_autumn_until
+          if populate_pre_sem_break_classes:
+            sedate=(datetime.strptime(y1_autumn_week1, "%Y/%m/%d")+ timedelta(days=day_offset)).strftime("%Y-%m-%d")
+            until=y1_autumn_sem_break
+          else:
+            sedate=(datetime.strptime(y1_autumn_sem_break, "%Y/%m/%d")+ timedelta(days=day_offset+1)).strftime("%Y-%m-%d")
+            until=y1_autumn_until
         else:
           if populate_pre_sem_break_classes:
             sedate=(datetime.strptime(y2_3_week1, "%Y/%m/%d")+ timedelta(days=day_offset)).strftime("%Y-%m-%d")
@@ -236,7 +244,7 @@ def del_classes_when_events():
        del_event_all_sections(sem_break_start,sem_break_end)
     del_event_all_sections(exam_week_start,exam_week_end)
 
-del_classes_when_events()
+# del_classes_when_events()
 
 
 def add_events():
