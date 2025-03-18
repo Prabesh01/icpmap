@@ -106,7 +106,7 @@ def fetch_notification(year):
                         links.append(f"[Link-{l}](<{item['fileTitle']}>)")
                     else:
                         f+=1
-                        links.append(f"[File-{f}](<{item['fileUrl']}>)")
+                        links.append(f"[File-{f}](<https://nepal-assets-apollo.mysecondteacher.com{item['fileUrl']}>)")
                 msg=f"📢 {announcement_text}\n{' | '.join(links)}\n- {announcement_creator} | [View on mst]({url})"
             except:
                 msg=f"📢 [{msg}]({url})"
