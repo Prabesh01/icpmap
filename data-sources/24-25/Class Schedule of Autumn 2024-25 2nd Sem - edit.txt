@@ -1,4 +1,7 @@
 - fix 2 occurance of "Mr.Sunil Thapa"
 - remove 1 occurance of "Mr.Sunil Thapa" in teachers list
 
+- fix 2 occurance of 04Kingston
+- remove 1 occurance of "04Kingston" in rooms list
+
 - change code of module "Introduction to Information Systems" from "CS4051NP" to "CC4057NP"

@@ -54,7 +54,7 @@
             "sections": [
                 "B2"
             ],
-            "room": "04Kingston"
+            "room": "Kingston"
         },
         {
             "class": "Year 1 BBA Spring",
@@ -3188,7 +3188,7 @@
             "sections": [
                 "C6"
             ],
-            "room": "04Kingston"
+            "room": "Kingston"
         },
         {
             "class": "Year 2 BIC",
@@ -4869,7 +4869,6 @@
         "Nilgiri",
         "Thames",
         "Rupa",
-        "04Kingston",
         "Rara",
         "Gokyo",
         "Begnas",
