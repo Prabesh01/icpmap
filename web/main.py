@@ -19,7 +19,7 @@ app.secret_key = jwt_secret = str(uuid.uuid4())
 @app.after_request
 def gnu_terry_pratchett(resp):
     resp.headers.add("X-Clacks-Overhead", "GNU Binit Ghimire")
-    return resp 
+    return resp
 
 @app.get('/static/<path:filepath>')
 def vendors(filepath):
@@ -104,15 +104,15 @@ def empty(day=None,check_time=None,teach=None):
 
     for clase in empty_rooms_list:
         # empty for x minutes, find the next start time closest (gt) to given time
-        closest=None 
+        closest=None
         for classez in daywise_classes[day]:
-            if classez["room"]==clase: 
+            if classez["room"]==clase:
                 start_time = datetime.strptime(classez["stime"], "%I:%M %p").time()
                 end_time = datetime.strptime(classez["etime"], "%I:%M %p").time()
 
                 diff=calculate_time_difference(start_time,check_time).total_seconds()
-                
-                if start_time >= check_time: 
+
+                if start_time >= check_time:
                     if closest:
                         if diff>closest: continue
                     closest=diff
@@ -125,7 +125,7 @@ def empty(day=None,check_time=None,teach=None):
 def get_home():
     user=None
     if 'user' in flask.session:
-        user = flask.session['user']    
+        user = flask.session['user']
     return flask.render_template('home.html',user=user)
 
 @app.get('/icp-map')
@@ -145,7 +145,7 @@ def post_icp_map():
     if "teach" in parsed_post_data:
         teach=parsed_post_data["teach"][0]
     # try:
-    returned_data=empty(day,time,teach) 
+    returned_data=empty(day,time,teach)
     # except:
         # return "N/A"
     if teach:
@@ -174,7 +174,7 @@ client_config = {
         "client_id": os.getenv('GOOGLE_CLIENT_ID'),
         "client_secret": os.getenv('GOOGLE_CLIENT_SECRET'),
         "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-        "token_uri": "https://oauth2.googleapis.com/token",        
+        "token_uri": "https://oauth2.googleapis.com/token",
     }
 }
 flow = google_auth_oauthlib.flow.Flow.from_client_config(
@@ -205,12 +205,12 @@ def login():
         json_creds = flow.credentials.to_json()
         dict_creds = json.loads(json_creds)
         r=requests.get('https://www.googleapis.com/oauth2/v3/userinfo', headers={"Authorization":"Bearer "+dict_creds['token']})
-        if r.status_code != 200: 
+        if r.status_code != 200:
             message="Login Unsucessfull:/ Please try again later!"
             return flask.render_template('auth/login.html',url=authorization_url,message=message)
         email_name, domain_part = r.json()['email'].lower().strip().rsplit('@', 1)
         if domain_part!="icp.edu.np":
-            message="Only icp.edu.np mail allowed!" 
+            message="Only icp.edu.np mail allowed!"
             return flask.render_template('auth/login.html',url=authorization_url,message=message)
         flask.session['user'] = email_name
         return flask.redirect(flask.url_for('get_home'))
@@ -224,7 +224,7 @@ def post_login():
     authorization_url, state = flow.authorization_url(access_type='online')
     if username and password:
         if not username.endswith('@icp.edu.np'):
-            message="Only icp.edu.np mail allowed!" 
+            message="Only icp.edu.np mail allowed!"
             return flask.render_template('auth/login.html',url=authorization_url,message=message)
         r=requests.post("https://api.mysecondteacher.com.np/api/TokenAuth/Authenticate",
                         headers={
@@ -239,8 +239,8 @@ def post_login():
                             "Sec-Fetch-Site":"cross-site",
                             "User-Agent":"Mozilla/5.0 (X11; Linux x86_64; rv:129.0) Gecko/20100101 Firefox/129.0"
                             },json={"userNameOrEmailAddress":username,"password":password})
-        if r.status_code!=200: 
-            message="Invalid Credentials!" 
+        if r.status_code!=200:
+            message="Invalid Credentials!"
             return flask.render_template('auth/login.html',url=authorization_url,message=message)
         email_name, _ = username.lower().strip().rsplit('@', 1)
         flask.session['user'] = email_name
@@ -277,7 +277,7 @@ def format_date(dt):
         return 'Just now'
     elif diff.total_seconds() <= 6 * 3600:
         if int(diff.total_seconds() / 3600)==0:
-            return f"{int(diff.total_seconds() / 60)} minutes ago"        
+            return f"{int(diff.total_seconds() / 60)} minutes ago"
         return f"{int(diff.total_seconds() / 3600)} hours ago"
     elif date == now.date():
         return time
@@ -330,7 +330,7 @@ def parse_event_data(req,user):
         return None
     for i in range(len(events)):
         if not start_times[i] or not end_times[i]:
-            continue 
+            continue
         event = {
             "day": int(days[i]),
             "stime": start_times[i],
@@ -363,7 +363,7 @@ def calculate_free_time(events_data):
             stime = time_to_minutes(event["stime"])
             etime = time_to_minutes(event["etime"])
             days_events[day].append((stime, etime))
-    
+
     free_times = {}
 
     # Calculate free time slots for each day
@@ -371,22 +371,22 @@ def calculate_free_time(events_data):
         slots.sort()  # Sort events by start time
         free_slots = []
         last_end = TIME_RANGE_START
-        
+
         # Check time before the first event
         if slots:
             if slots[0][0] > TIME_RANGE_START:
                 free_slots.append((TIME_RANGE_START, slots[0][0]))
-        
+
         # Check time between events
         for start, end in slots:
             if start > last_end:
                 free_slots.append((last_end, start))
             last_end = max(last_end, end)
-        
+
         # Check time after the last event
         if last_end < TIME_RANGE_END:
             free_slots.append((last_end, TIME_RANGE_END))
-        
+
         # Filter out slots shorter than MIN_DURATION
         free_slots = [(start, end) for start, end in free_slots if end - start >= MIN_DURATION]
 
@@ -395,7 +395,7 @@ def calculate_free_time(events_data):
 
         # Convert slots back to readable format
         free_times[day] = [(str(timedelta(minutes=start)), str(timedelta(minutes=end))) for start, end in free_slots]
-    
+
     return free_times
 
 
@@ -489,7 +489,7 @@ def get_event_view(event_id):
 def post_event_home():
     user=None
     if 'user' in flask.session:
-        user = flask.session['user']    
+        user = flask.session['user']
     events = get_event_data()
     ids = flask.request.form.getlist('id')
     order = flask.request.form.getlist('order')
@@ -529,6 +529,50 @@ def post_event_home():
 
     return flask.redirect(flask.url_for('get_event_home'))
 
+@app.post('/free-slots-recalculate')
+def post_event_recalculate():
+    user = None
+    if 'user' in flask.session:
+        user = flask.session['user']
+
+    events = get_event_data()
+    ids = flask.request.form.getlist('id')
+    order = flask.request.form.getlist('order')
+    reorder = 'reorder' in flask.request.form
+
+    # Check if this is a recalculation from the view page
+    selected_titles = flask.request.form.getlist('selected_title')
+
+    if (not ids and not reorder) and not selected_titles:
+        return flask.redirect(flask.url_for('get_event_home'))
+
+    # Process the events and determine which ones are selected
+    all_titles = []
+    selected_events = []
+
+    for event in events:
+        event['updated'] = format_date(datetime.fromisoformat(event['updated']))
+        all_titles.append(event['title'])
+
+        # If we're recalculating based on selected_titles checkboxes
+        if selected_titles and event['title'] in selected_titles:
+            selected_events.append(event)
+        # Or if we're calculating based on the original form's IDs
+        elif not selected_titles and event['id'] in ids:
+            selected_events.append(event)
+
+    # Calculate free time slots
+    free_time_slots = calculate_free_time(selected_events)
+    selected = [event['title'] for event in selected_events]
+
+    return flask.render_template(
+        'events/view.html',
+        data=parse_for_view(free_time_slots),
+        days=days,
+        titles=all_titles,
+        selected=selected
+    )
+
 @app.get('/free-slots/events.json')
 def get_eevnt_json():
     events = get_event_data()
@@ -539,7 +583,7 @@ def get_eevnt_json():
 def get_event_home():
     user=None
     if 'user' in flask.session:
-        user = flask.session['user']    
+        user = flask.session['user']
     events = get_event_data()
     for event in events:
         event['updated'] = format_date(datetime.fromisoformat(event['updated']))
@@ -615,7 +659,7 @@ get_tree()
 def get_mst_home():
     global tree
     if not tree:
-        tree=get_tree()    
+        tree=get_tree()
     return flask.render_template('mst_/index.html', token=gitlab_token, tree=tree)
 
 

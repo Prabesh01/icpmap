@@ -164,6 +164,7 @@
                </div>
             {% endfor %}
          </div>
+         <form method="post" action="{{ url_for('post_event_recalculate') }}">
          {% if titles %}
          <ul class="title-list">
            Free time slot calculated based on <br>these {{ selected|length }} selected schedules:<br>
@@ -172,27 +173,28 @@
            {% for title in titles %}
              {% if title in selected %}
              <li class="selected">
-               <label>
-                 <input disabled type="checkbox" checked>
-                 {{ title }}
-               </label>
+              <label>
+                <input type="checkbox" name="selected_title" value="{{ title }}" checked>
+                {{ title }}
+              </label>
              </li>
              {% endif %}
            {% endfor %}
-
+           <button type="submit" name="calculate">Recalculate</button>
            <!-- Then show all unselected titles -->
            {% for title in titles %}
              {% if title not in selected %}
              <li class="unselected">
-               <label>
-                 <input disabled type="checkbox">
-                 {{ title }}
-               </label>
+              <label>
+                <input type="checkbox" name="selected_title" value="{{ title }}">
+                {{ title }}
+              </label>
              </li>
              {% endif %}
            {% endfor %}
          </ul>
          {% endif %}
+        </form>
       </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
