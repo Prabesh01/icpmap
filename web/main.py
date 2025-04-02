@@ -655,6 +655,26 @@ def get_tree():
     return tree
 get_tree()
 
+@app.get('/all-classes-today')
+def all_classes_today():
+    with open(data_file) as f:
+        data = json.load(f)
+    # get today's day: SUN, MON, ..
+    today = datetime.now(tz_NP).strftime("%a").upper()
+    schedules_today={}
+    classes = data["classes"]
+    for cl in classes:
+        year = cl["class"]
+        day = cl["day"]
+        if day != today: continue
+        for s in cl["sections"]:
+            if not year in schedules_today:
+                schedules_today[year]={}
+            if not s in schedules_today[year]:
+                schedules_today[year][s]=[]
+            schedules_today[year][s].append([cl["stime"], cl["room"]])
+    return flask.render_template('all-classes-today.html', data=schedules_today)
+
 @app.get('/mst')
 def get_mst_home():
     global tree

@@ -1,0 +1,39 @@
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Section</th>
+      <th>Class Time</th>
+      <th>Room</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for year, sections in data.items() %}
+      {% set total_classes = [] %}
+      {% for section in sections.values() %}
+        {% for class in section %}
+          {% if total_classes.append(1) %}{% endif %}
+        {% endfor %}
+      {% endfor %}
+
+      {% set ns = namespace(year_printed=false) %}
+
+      {% for section, classes in sections.items() %}
+          {% for i in range(classes|length) %}
+            <tr>
+                {% if not ns.year_printed %}
+                 <td rowspan="{{ total_classes|length }}">{{ year }}</td>
+                 {% set ns.year_printed = true %}
+                 {% endif %}
+
+                {% if i == 0 %}
+                    <td rowspan="{{ classes|length }}">{{ section }}</td>
+                {% endif %}
+                <td>{{ classes[i][0] }}</td>
+                <td>{{ classes[i][1] }}</td>
+            </tr>
+        {% endfor %}
+      {% endfor %}
+    {% endfor %}
+  </tbody>
+</table>
