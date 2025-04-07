@@ -1,0 +1,436 @@
+{% extends "base.html" %}
+{% block title %}Exam Seat Plan Visualizer{% endblock title %}
+{% block css %}
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .search-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .room-selector {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .room-selector button {
+            min-width: 100px;
+            margin: 0 5px;
+            background-color: #2196F3;
+        }
+        .room-selector button:hover {
+            background-color: #0b7dda;
+        }
+        .result {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #e8f5e9;
+            border-radius: 4px;
+            display: none;
+        }
+        .classroom {
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: none;
+        }
+        .classroom h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .seat-grid {
+            display: grid;
+            gap: 10px;
+            justify-content: center;
+        }
+        .seat {
+            width: 100px;
+            height: 60px;
+            background-color: #e1f5fe;
+            border: 1px solid #b3e5fc;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+        .seat:hover {
+            background-color: #b3e5fc;
+        }
+        .seat.highlight {
+            background-color: #a5d6a7;
+            border-color: #81c784;
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .seat-id {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        .student-name {
+            font-size: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 90px;
+        }
+        .empty {
+            background-color: #f5f5f5 !important;
+            color: #999;
+        }
+        .grid-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .coordinates {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #666;
+        }
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .search-container input[type="text"] {
+                width: 70%;
+                margin-bottom: 10px;
+            }
+
+            .room-selector {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .room-selector button {
+                margin: 5px;
+                padding: 8px 12px;
+            }
+
+            .seat-grid {
+                grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)) !important;
+                gap: 5px;
+            }
+
+            .seat {
+                width: 100%;
+                height: 50px;
+                font-size: 10px;
+            }
+
+            .student-name {
+                font-size: 8px;
+                max-width: 70px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .search-container input[type="text"] {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .seat {
+                height: 45px;
+            }
+
+            .seat-id, .coordinates {
+                font-size: 9px;
+            }
+        }
+    </style>
+    {% endblock css %}
+
+    {% block body %}
+    <div class="container">
+        <h1>Classroom Seat Plan Visualizer</h1>
+
+        <div class="search-container">
+            <form onsubmit="searchStudent(); return false;">
+                <input type="text" id="studentSearch" placeholder="Enter student name...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <div class="room-selector" id="roomButtons">
+        </div>
+
+        <div id="searchResult" class="result"></div>
+
+        <div id="Annapurna" class="classroom"></div>
+        <div id="Fewa" class="classroom"></div>
+        <div id="Tilicho" class="classroom"></div>
+    </div>
+
+    <script>
+        const data = {{ data | tojson }};
+        function createRoomButtons() {
+            const roomButtonsDiv = document.getElementById('roomButtons');
+            roomButtonsDiv.innerHTML = ''; // Clear any existing buttons
+
+            const firstRoom = Object.keys(data)[0];
+
+            // Create a button for each classroom in the data
+            Object.keys(data).forEach(roomName => {
+                const button = document.createElement('button');
+                button.textContent = roomName;
+                button.id = roomName + "_btn";
+                button.onclick = () => showClassroom(roomName);
+                roomButtonsDiv.appendChild(button);
+
+                const roomDiv = document.createElement('div');
+                roomDiv.id = roomName;
+                roomDiv.className = 'classroom';
+                roomDiv.style.display = 'none'; // Hide all classrooms initially
+                document.body.appendChild(roomDiv);
+                createSeatPlan(roomName);
+            });
+        if (firstRoom) {
+            showClassroom(firstRoom);
+        }
+        }
+
+        // Initialize the seat plans when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            createRoomButtons();
+        });
+
+        function title(str) {
+            return str.toLowerCase().split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+        }
+
+
+        function createSeatPlan(roomName) {
+            const room = data[roomName];
+            const classroomDiv = document.getElementById(roomName);
+
+            // Create grid container
+            const gridContainer = document.createElement('div');
+            gridContainer.className = 'grid-container';
+
+            // Create seat grid
+            const seatGrid = document.createElement('div');
+            seatGrid.className = 'seat-grid';
+            seatGrid.style.gridTemplateColumns = `repeat(${room.max_col}, 100px)`;
+            seatGrid.style.gridTemplateRows = `repeat(${room.max_row}, 70px)`;
+
+            // Create a 2D array to organize seats by their coordinates
+            const seatsGrid = Array(room.max_row).fill().map(() => Array(room.max_col).fill(null));
+
+            // First pass: place all seats in the grid
+            for (const [seatId, seatData] of Object.entries(room.seats)) {
+                const {x, y, student} = seatData;
+                seatsGrid[x][y] = {seatId, student};
+            }
+            has_student = false;
+            // Second pass: create seat elements in proper order
+
+            for (let x = 0; x < room.max_row; x++) {
+                for (let y = 0; y < room.max_col; y++) {
+                    var seat_row = room.max_row - x; // Reverse the order of columns
+                    var seat_col = y+1; // Keep the order of rows
+                    const seatInfo = seatsGrid[x][y];
+                    const seat = document.createElement('div');
+                    seat.className = 'seat';
+
+                    if (seatInfo) {
+                        const {seatId, student} = seatInfo;
+                        if (student) {
+                            has_student = true;
+                        }
+                        // <div class="seat-id">${seatId}</div>
+                        seat.innerHTML = `
+                            <div class="student-name">${student}</div>
+                            <div class="coordinates">(${seat_row}, ${seat_col})</div>
+                        `;
+
+                        if (!student) {
+                            seat.classList.add('empty');
+                        }else{
+                            seat.title = title(student);
+                        }
+                    } else {
+                        seat.innerHTML = '<div class="seat-id">Empty</div><div class="coordinates">Row: '+(seat_row)+', Col: '+(seat_col)+'</div>';
+                        seat.classList.add('empty');
+                    }
+
+                    seatGrid.appendChild(seat);
+                }
+            }
+
+            gridContainer.appendChild(seatGrid);
+            classroomDiv.innerHTML = ""; // Clear previous content
+            classroomDiv.appendChild(gridContainer);
+            classroomDiv.innerHTML += `<h2>${roomName} Classroom</h2>`;
+            if (!has_student) {
+                document.getElementById(roomName+"_btn").style.display="none";
+            }
+        }
+
+        function showClassroom(roomName) {
+            // Hide all classrooms
+            document.querySelectorAll('.classroom').forEach(el => {
+                el.style.display = 'none';
+            });
+
+            // Show selected classroom
+            document.getElementById(roomName).style.display = 'block';
+
+            // Clear any previous highlights
+            clearHighlights();
+
+            // Hide search result
+            document.getElementById('searchResult').style.display = 'none';
+
+            // Update button styles
+            document.querySelectorAll('.room-selector button').forEach(btn => {
+                btn.style.backgroundColor = '#2196F3'; // Default blue color
+            });
+            // Highlight the clicked button
+            const activeButton = [...document.querySelectorAll('.room-selector button')]
+                .find(btn => btn.textContent === roomName);
+            if (activeButton) {
+                activeButton.style.backgroundColor = '#0b5ed7'; // Darker blue for active
+            }
+        }
+
+    function ordinal_suffix_of(i) {
+        let j = i % 10,
+            k = i % 100;
+        if (j === 1 && k !== 11) {
+            return i + "st";
+        }
+        if (j === 2 && k !== 12) {
+            return i + "nd";
+        }
+        if (j === 3 && k !== 13) {
+            return i + "rd";
+        }
+        return i + "th";
+    }
+
+        function searchStudent() {
+            const searchInput = document.getElementById('studentSearch').value.trim().toUpperCase();
+            if (!searchInput) return;
+
+            let found = false;
+            let resultHtml = '';
+
+            // Clear previous highlights
+            clearHighlights();
+
+            // Search through all classrooms
+            for (const [roomName, roomData] of Object.entries(data)) {
+                exist_in_this_room = false;
+                for (const [seatId, seatData] of Object.entries(roomData.seats)) {
+                    if (seatData.student && seatData.student.toUpperCase().includes(searchInput)) {
+                        found = true;
+                        exist_in_this_room = true;
+
+                        // Highlight the seat in the corresponding classroom
+                        const classroom = document.getElementById(roomName);
+                        const seats = classroom.querySelectorAll('.seat');
+                        const seatIndex = seatData.x * roomData.max_col + seatData.y;
+
+                        if (seats[seatIndex]) {
+                            seats[seatIndex].classList.add('highlight');
+                        }
+
+                        // Show the classroom where the student is found
+                        classroom.style.display = 'block';
+                        var seat_row = roomData.max_row - seatData.x;
+                        var seat_col = seatData.y+1;
+
+                        var diff = roomData.max_row - seat_row;
+                        break_point = Math.floor(roomData.max_row/3);
+                        if (diff < break_point){
+                            if (diff == 0){
+                                seat_row = "last"
+                            }else{
+                                seat_row = ordinal_suffix_of(diff+1)+" last"
+                            }
+                        }else{
+                            seat_row = ordinal_suffix_of(seat_row);
+                        }
+                        var diff = roomData.max_col - seat_col;
+                        break_point = Math.floor(roomData.max_col/3);
+                        if (diff < break_point){
+                            if (diff == 0){
+                                seat_col = "last"
+                            }else{
+                                seat_col = ordinal_suffix_of(diff+1)+" last"
+                            }
+                        }else{
+                            seat_col = ordinal_suffix_of(seat_col);
+                        }
+                        // Build result message
+                        // <strong>${seatId}</strong>
+                        resultHtml += `
+                            <p><strong>${title(seatData.student)}</strong> @ <strong>${roomName}</strong> : ${seat_row} row,  ${seat_col} column</p>
+                        `;
+                    }
+                }
+                if (!exist_in_this_room) {
+                    document.getElementById(roomName).style.display="none";
+                }
+            }
+
+            const resultDiv = document.getElementById('searchResult');
+            if (found) {
+                resultDiv.innerHTML = resultHtml;
+                resultDiv.style.display = 'block';
+            } else {
+                resultDiv.innerHTML = '<p>No student found with that name.</p>';
+                resultDiv.style.display = 'block';
+            }
+        }
+
+        function clearHighlights() {
+            document.querySelectorAll('.seat').forEach(seat => {
+                seat.classList.remove('highlight');
+            });
+        }
+    </script>
+    {% endblock body %}

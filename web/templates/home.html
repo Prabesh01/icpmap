@@ -1,4 +1,4 @@
-<!-- 
+<!--
 Borrowed design from: https://fserver.icp.edu.np/ and https://codepen.io/Thomascullen/pen/mBepNx
 -->
 {% extends "base.html" %}
@@ -20,7 +20,7 @@ Borrowed design from: https://fserver.icp.edu.np/ and https://codepen.io/Thomasc
       height:75px;
       width: 250px;
       margin-top: -50px;
-      
+
     }
 
     .title{
@@ -135,17 +135,17 @@ Borrowed design from: https://fserver.icp.edu.np/ and https://codepen.io/Thomasc
   {% block body %}
   <!-- <div class="color-overlay"></div> -->
       <div class="container" style="margin-top:80px;">
-        
+
       <a href="http://www.icp.edu.np/">  <img class="img" src="imgs/logo.png" class="img-responsive"></a>
       </div>
       <div class="container-fluid"  style=" background: url(imgs/server.png);">
       <div class="container" style=" min-height:400px; margin-top:100px;">
           <br/><br/>
         <h1 class="title" style="text-align: center;">By the Students, For the Students</h1>
-     
+
       <hr style="background-color:#cecbcb; height: 1px; width:95%; margin-top: 20px;">
 
-    
+
     <p class="info text-center">
         <a class="btn btn-danger btn-lg" href="#" role="button" style="margin-bottom: 10px;">Attendance</a>
         <a class="btn btn-danger btn-lg" href="#" role="button" style="margin-bottom: 10px;">Student Lookup</a>
@@ -154,6 +154,7 @@ Borrowed design from: https://fserver.icp.edu.np/ and https://codepen.io/Thomasc
   <a class="btn btn-success btn-lg" href="{{ url_for('get_icp_cal') }}" role="button" style="margin-bottom: 10px;">Class Schedule</a>
   <a class="btn btn-success btn-lg" href="{{ url_for('get_exam_home') }}" role="button" style="margin-bottom: 10px;">Exam Schedule</a>
   <br>
+  <a class="btn btn-success btn-lg" href="{{ url_for('get_exam_seat') }}" role="button" style="margin-bottom: 10px;">Exam Seat Plan</a>
   <a class="btn btn-success btn-lg" href="{{ url_for('get_event_home') }}" role="button" style="margin-bottom: 10px;">Find Free Slot</a>
   <a class="btn btn-success btn-lg" href="{{ url_for('get_mst_home') }}" role="button" style="margin-bottom: 10px;">MST Downloader</a>
   <br>
@@ -182,5 +183,5 @@ Borrowed design from: https://fserver.icp.edu.np/ and https://codepen.io/Thomasc
 
     <p style="text-align: center; margin-top: 30px;">Tools Developed by the members of ICP Developer's Community to solve regular problems faced winthin and out the college</p>
 
-   
+
     {% endblock body %}

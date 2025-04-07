@@ -30,16 +30,16 @@
         <label for="classes">Classs:</label>
         <select name="classes" id="classes" onchange="classChanged()">
 
-        </select> 
+        </select>
 
         <label for="sections">Section:</label>
         <select name="sections" id="sections" onchange="sectionChanged()">
 
-        </select> 
+        </select>
 <h3 id="cur_class"></h3>
 <p><canvas id="canvas" style="display:none;border:2px solid black;" width="500" height="500"></canvas>
 <i><a href="javascript:void(0)" onclick="save_img()" id="save_img">Download this table as image</a> | <a target="_blank" href="" id="cal_url_view">View in Google Calendar</a> | <a target="_blank" href="" id="cal_url_add">Add to Google Calendar</a></i>
-<br> <br> 
+<br> <br>
 
 <table id="table">
     <thead>
@@ -53,8 +53,10 @@
     <tbody id="schedule-body">
     </tbody>
 </table>
-
-    </center>
+<br><br>
+<i><a href="{{ url_for('all_classes_today') }}">View All Classes Today</a> </i>
+<br>
+</center>
 
 <script>
 let sections={{ sections|safe }}
@@ -102,7 +104,7 @@ function changeSchedule(class_name="Year 1 BIC - C1"){
             if (dayClasses.length > 0) {
                 dayClasses.forEach((classItem, classIndex) => {
                     let row = document.createElement('tr');
-                    
+
                     // If it's the first class for the day, add a rowspan cell for the day
                     if (classIndex === 0) {
                         let dayCell = document.createElement('td');
@@ -140,7 +142,7 @@ function changeSchedule(class_name="Year 1 BIC - C1"){
             //     row.appendChild(emptyCell);
             //     tableBody.appendChild(row);
             // }
-        });    
+        });
         highlight_today();
 
     cal_url_view.href='https://calendar.google.com/calendar/embed?src='+cal_ids[class_name]+'&ctz=Asia/Kathmandu&csspa=1'
@@ -155,13 +157,13 @@ function loadSection(class_name="Year 1 BIC"){
     var i, L = sectionDrop.options.length - 1;
    for(i = L; i >= 0; i--) {
     sectionDrop.remove(i);
-   }    
+   }
 
     for (var key in sections[class_name]) {
         var option = document.createElement("option");
         option.text = sections[class_name][key];
         option.value = sections[class_name][key];
-        sectionDrop.add(option); 
+        sectionDrop.add(option);
 }
 
 }
@@ -194,11 +196,11 @@ function highlight_today(){
                 highlight = true;
                 row.classList.add("today");
             }else if (highlight && row.firstChild && (!row.firstChild.textContent.endsWith("day"))) {
-                row.classList.add('today'); 
+                row.classList.add('today');
             }else{
                 highlight=false;
             }
-        });   
+        });
 }
 function loadUserSelection(){
     class_cookie=getCookie("class");
@@ -226,7 +228,7 @@ window.onload=loadUserSelection;
 
             if (save_img_link.innerText.includes("Click")){
                 return;
-            } 
+            }
             todayRows.forEach(row => row.classList.remove('today'));
             html2canvas(document.getElementById("table")).then(function(canvas) {
                     var img = canvas.toDataURL("image/png");
@@ -238,6 +240,6 @@ window.onload=loadUserSelection;
             );
             todayRows.forEach(row => row.classList.add('today'));
         }
-    
+
     </script>
 {% endblock body %}

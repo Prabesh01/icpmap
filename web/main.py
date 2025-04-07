@@ -655,6 +655,13 @@ def get_tree():
     return tree
 get_tree()
 
+@app.get('/seat-plan')
+def get_exam_seat():
+    with open(BASE_DIR/'data/seat_plan.json') as f:
+        data = json.load(f)
+    return flask.render_template('map/seat_plan.html', data=data)
+
+
 @app.get('/all-classes-today')
 def all_classes_today():
     with open(data_file) as f:

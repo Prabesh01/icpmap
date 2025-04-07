@@ -1,0 +1,1722 @@
+{
+    "Machhapuchhre": {
+        "entrance": [
+            9,
+            5
+        ],
+        "max_row": 9,
+        "max_col": 5,
+        "seats": {
+            "M-D45": {
+                "x": 0,
+                "y": 0,
+                "student": ";"
+            },
+            "M-D36": {
+                "x": 0,
+                "y": 1,
+                "student": ""
+            },
+            "M-D27": {
+                "x": 0,
+                "y": 2,
+                "student": ""
+            },
+            "M-D18": {
+                "x": 0,
+                "y": 3,
+                "student": ""
+            },
+            "M-D09": {
+                "x": 0,
+                "y": 4,
+                "student": ""
+            },
+            "M-D44": {
+                "x": 1,
+                "y": 0,
+                "student": ""
+            },
+            "M-D35": {
+                "x": 1,
+                "y": 1,
+                "student": ""
+            },
+            "M-D26": {
+                "x": 1,
+                "y": 2,
+                "student": ""
+            },
+            "M-D17": {
+                "x": 1,
+                "y": 3,
+                "student": ""
+            },
+            "M-D08": {
+                "x": 1,
+                "y": 4,
+                "student": ""
+            },
+            "M-D43": {
+                "x": 2,
+                "y": 0,
+                "student": ""
+            },
+            "M-D34": {
+                "x": 2,
+                "y": 1,
+                "student": ""
+            },
+            "M-D25": {
+                "x": 2,
+                "y": 2,
+                "student": ""
+            },
+            "M-D16": {
+                "x": 2,
+                "y": 3,
+                "student": ""
+            },
+            "M-D07": {
+                "x": 2,
+                "y": 4,
+                "student": ""
+            },
+            "M-D42": {
+                "x": 3,
+                "y": 0,
+                "student": ""
+            },
+            "M-D33": {
+                "x": 3,
+                "y": 1,
+                "student": ""
+            },
+            "M-D24": {
+                "x": 3,
+                "y": 2,
+                "student": ""
+            },
+            "M-D15": {
+                "x": 3,
+                "y": 3,
+                "student": ""
+            },
+            "M-D06": {
+                "x": 3,
+                "y": 4,
+                "student": ""
+            },
+            "M-D41": {
+                "x": 4,
+                "y": 0,
+                "student": ""
+            },
+            "M-D32": {
+                "x": 4,
+                "y": 1,
+                "student": ""
+            },
+            "M-D23": {
+                "x": 4,
+                "y": 2,
+                "student": ""
+            },
+            "M-D14": {
+                "x": 4,
+                "y": 3,
+                "student": ""
+            },
+            "M-D05": {
+                "x": 4,
+                "y": 4,
+                "student": ""
+            },
+            "M-D40": {
+                "x": 5,
+                "y": 0,
+                "student": ""
+            },
+            "M-D31": {
+                "x": 5,
+                "y": 1,
+                "student": ""
+            },
+            "M-D22": {
+                "x": 5,
+                "y": 2,
+                "student": ""
+            },
+            "M-D13": {
+                "x": 5,
+                "y": 3,
+                "student": ""
+            },
+            "M-D04": {
+                "x": 5,
+                "y": 4,
+                "student": ""
+            },
+            "M-D39": {
+                "x": 6,
+                "y": 0,
+                "student": ""
+            },
+            "M-D30": {
+                "x": 6,
+                "y": 1,
+                "student": ""
+            },
+            "M-D21": {
+                "x": 6,
+                "y": 2,
+                "student": ""
+            },
+            "M-D12": {
+                "x": 6,
+                "y": 3,
+                "student": ""
+            },
+            "M-D03": {
+                "x": 6,
+                "y": 4,
+                "student": ""
+            },
+            "M-D38": {
+                "x": 7,
+                "y": 0,
+                "student": ""
+            },
+            "M-D29": {
+                "x": 7,
+                "y": 1,
+                "student": ""
+            },
+            "M-D20": {
+                "x": 7,
+                "y": 2,
+                "student": ""
+            },
+            "M-D11": {
+                "x": 7,
+                "y": 3,
+                "student": ""
+            },
+            "M-D02": {
+                "x": 7,
+                "y": 4,
+                "student": ""
+            },
+            "M-D37": {
+                "x": 8,
+                "y": 0,
+                "student": ""
+            },
+            "M-D28": {
+                "x": 8,
+                "y": 1,
+                "student": ""
+            },
+            "M-D19": {
+                "x": 8,
+                "y": 2,
+                "student": ""
+            },
+            "M-D10": {
+                "x": 8,
+                "y": 3,
+                "student": ""
+            },
+            "M-D01": {
+                "x": 8,
+                "y": 4,
+                "student": ""
+            }
+        }
+    },
+    "Annapurna": {
+        "entrance": [
+            9,
+            0
+        ],
+        "max_row": 9,
+        "max_col": 5,
+        "seats": {
+            "A-D09": {
+                "x": 0,
+                "y": 0,
+                "student": "ALEX DEVKOTA"
+            },
+            "A-D18": {
+                "x": 0,
+                "y": 1,
+                "student": "BIMAL PANDEY"
+            },
+            "A-D27": {
+                "x": 0,
+                "y": 2,
+                "student": "AMAN GURUNG"
+            },
+            "A-D36": {
+                "x": 0,
+                "y": 3,
+                "student": "ARIYA TIMSINA"
+            },
+            "A-D45": {
+                "x": 0,
+                "y": 4,
+                "student": "ALEX SHARMA"
+            },
+            "A-D08": {
+                "x": 1,
+                "y": 0,
+                "student": "BISHWAS RANA MAGAR"
+            },
+            "A-D17": {
+                "x": 1,
+                "y": 1,
+                "student": "DHIRAJ DHUNGANA"
+            },
+            "A-D26": {
+                "x": 1,
+                "y": 2,
+                "student": "ISHAN K.C."
+            },
+            "A-D35": {
+                "x": 1,
+                "y": 3,
+                "student": "DIPESH THAPA"
+            },
+            "A-D44": {
+                "x": 1,
+                "y": 4,
+                "student": "BIPANA TIMILSINA"
+            },
+            "A-D07": {
+                "x": 2,
+                "y": 0,
+                "student": "ANUSKA BHATTARAI"
+            },
+            "A-D16": {
+                "x": 2,
+                "y": 1,
+                "student": "KUSHAL PALIKHE"
+            },
+            "A-D25": {
+                "x": 2,
+                "y": 2,
+                "student": "MANASBI KARKI"
+            },
+            "A-D34": {
+                "x": 2,
+                "y": 3,
+                "student": "KARINA THAPA"
+            },
+            "A-D43": {
+                "x": 2,
+                "y": 4,
+                "student": "APEEL RAJ ADHIKARI"
+            },
+            "A-D06": {
+                "x": 3,
+                "y": 0,
+                "student": "HIRAMANI PUN"
+            },
+            "A-D15": {
+                "x": 3,
+                "y": 1,
+                "student": "MILAN THAPA"
+            },
+            "A-D24": {
+                "x": 3,
+                "y": 2,
+                "student": "MELINA CHHETRI"
+            },
+            "A-D33": {
+                "x": 3,
+                "y": 3,
+                "student": "MANISH GURUNG"
+            },
+            "A-D42": {
+                "x": 3,
+                "y": 4,
+                "student": "KAMALA KUMARI GURUNG"
+            },
+            "A-D05": {
+                "x": 4,
+                "y": 0,
+                "student": "KUSHAL GIRI"
+            },
+            "A-D14": {
+                "x": 4,
+                "y": 1,
+                "student": "NIRAJAN KARKI"
+            },
+            "A-D23": {
+                "x": 4,
+                "y": 2,
+                "student": "PRASEN KARKI"
+            },
+            "A-D32": {
+                "x": 4,
+                "y": 3,
+                "student": "PRATIK GURUNG"
+            },
+            "A-D41": {
+                "x": 4,
+                "y": 4,
+                "student": "NISHU GURUNG"
+            },
+            "A-D04": {
+                "x": 5,
+                "y": 0,
+                "student": "PRATIK PANTA"
+            },
+            "A-D13": {
+                "x": 5,
+                "y": 1,
+                "student": "RACHIT PANDEY"
+            },
+            "A-D22": {
+                "x": 5,
+                "y": 2,
+                "student": "SIDDHARTHA MALLA"
+            },
+            "A-D31": {
+                "x": 5,
+                "y": 3,
+                "student": "RESHAB JAISHWAL"
+            },
+            "A-D40": {
+                "x": 5,
+                "y": 4,
+                "student": "PRANISH POUDEL"
+            },
+            "A-D03": {
+                "x": 6,
+                "y": 0,
+                "student": "SANJEEP MAGAR"
+            },
+            "A-D12": {
+                "x": 6,
+                "y": 1,
+                "student": "SARTHAK GHIMIRE"
+            },
+            "A-D21": {
+                "x": 6,
+                "y": 2,
+                "student": "SUSHAN GURUNG"
+            },
+            "A-D30": {
+                "x": 6,
+                "y": 3,
+                "student": "SUGAM BASTOLA"
+            },
+            "A-D39": {
+                "x": 6,
+                "y": 4,
+                "student": "ROJAN SHRESTHA"
+            },
+            "A-D02": {
+                "x": 7,
+                "y": 0,
+                "student": "SAMIR THAPA"
+            },
+            "A-D11": {
+                "x": 7,
+                "y": 1,
+                "student": "SUYOG LUITEL"
+            },
+            "A-D20": {
+                "x": 7,
+                "y": 2,
+                "student": "UTSHAB KANDEL"
+            },
+            "A-D29": {
+                "x": 7,
+                "y": 3,
+                "student": "SUSHIL BARUWAL"
+            },
+            "A-D38": {
+                "x": 7,
+                "y": 4,
+                "student": ""
+            },
+            "A-D01": {
+                "x": 8,
+                "y": 0,
+                "student": "ASHRIK KAYASTHA"
+            },
+            "A-D10": {
+                "x": 8,
+                "y": 1,
+                "student": "SAMBRIDDHI BARAL"
+            },
+            "A-D19": {
+                "x": 8,
+                "y": 2,
+                "student": "AYUSH GURUNG"
+            },
+            "A-D28": {
+                "x": 8,
+                "y": 3,
+                "student": "SABINA RANABHAT"
+            },
+            "A-D37": {
+                "x": 8,
+                "y": 4,
+                "student": "ASMIT BHUJEL"
+            }
+        }
+    },
+    "Rupa": {
+        "entrance": [
+            6,
+            0
+        ],
+        "max_row": 6,
+        "max_col": 5,
+        "seats": {
+            "R-D11": {
+                "x": 0,
+                "y": 0,
+                "student": ""
+            },
+            "R-D17": {
+                "x": 0,
+                "y": 1,
+                "student": ""
+            },
+            "R-D23": {
+                "x": 0,
+                "y": 2,
+                "student": ""
+            },
+            "R-D29": {
+                "x": 0,
+                "y": 3,
+                "student": ""
+            },
+            "R-D05": {
+                "x": 1,
+                "y": 0,
+                "student": ""
+            },
+            "R-D10": {
+                "x": 1,
+                "y": 1,
+                "student": ""
+            },
+            "R-D16": {
+                "x": 1,
+                "y": 2,
+                "student": ""
+            },
+            "R-D22": {
+                "x": 1,
+                "y": 3,
+                "student": ""
+            },
+            "R-D28": {
+                "x": 1,
+                "y": 4,
+                "student": ""
+            },
+            "R-D04": {
+                "x": 2,
+                "y": 0,
+                "student": ""
+            },
+            "R-D09": {
+                "x": 2,
+                "y": 1,
+                "student": ""
+            },
+            "R-D15": {
+                "x": 2,
+                "y": 2,
+                "student": ""
+            },
+            "R-D21": {
+                "x": 2,
+                "y": 3,
+                "student": ""
+            },
+            "R-D27": {
+                "x": 2,
+                "y": 4,
+                "student": ""
+            },
+            "R-D03": {
+                "x": 3,
+                "y": 0,
+                "student": ""
+            },
+            "R-D08": {
+                "x": 3,
+                "y": 1,
+                "student": ""
+            },
+            "R-D14": {
+                "x": 3,
+                "y": 2,
+                "student": ""
+            },
+            "R-D20": {
+                "x": 3,
+                "y": 3,
+                "student": ""
+            },
+            "R-D26": {
+                "x": 3,
+                "y": 4,
+                "student": ""
+            },
+            "R-D02": {
+                "x": 4,
+                "y": 0,
+                "student": ""
+            },
+            "R-D07": {
+                "x": 4,
+                "y": 1,
+                "student": ""
+            },
+            "R-D13": {
+                "x": 4,
+                "y": 2,
+                "student": ""
+            },
+            "R-D19": {
+                "x": 4,
+                "y": 3,
+                "student": ""
+            },
+            "R-D25": {
+                "x": 4,
+                "y": 4,
+                "student": ""
+            },
+            "R-D01": {
+                "x": 5,
+                "y": 0,
+                "student": ""
+            },
+            "R-D06": {
+                "x": 5,
+                "y": 1,
+                "student": ""
+            },
+            "R-D12": {
+                "x": 5,
+                "y": 2,
+                "student": ""
+            },
+            "R-D18": {
+                "x": 5,
+                "y": 3,
+                "student": ""
+            },
+            "R-D24": {
+                "x": 5,
+                "y": 4,
+                "student": ""
+            }
+        }
+    },
+    "Fewa": {
+        "entrance": [
+            5,
+            4
+        ],
+        "max_row": 5,
+        "max_col": 4,
+        "seats": {
+            "F-D20": {
+                "x": 0,
+                "y": 0,
+                "student": "AAYUSH THAPA"
+            },
+            "F-D15": {
+                "x": 0,
+                "y": 1,
+                "student": "HRISHAB GURUNG"
+            },
+            "F-D10": {
+                "x": 0,
+                "y": 2,
+                "student": "ASHISH BHANDARI"
+            },
+            "F-D05": {
+                "x": 0,
+                "y": 3,
+                "student": "ABINASH LAMGADE BK"
+            },
+            "F-D19": {
+                "x": 1,
+                "y": 0,
+                "student": "MADAN SAPKOTA"
+            },
+            "F-D14": {
+                "x": 1,
+                "y": 1,
+                "student": "PRASHANTA SHARMA"
+            },
+            "F-D09": {
+                "x": 1,
+                "y": 2,
+                "student": "NIPESH DEVKOTA"
+            },
+            "F-D04": {
+                "x": 1,
+                "y": 3,
+                "student": "MAHIMA KUNWAR"
+            },
+            "F-D18": {
+                "x": 2,
+                "y": 0,
+                "student": "PRATIK GARBUJA PUN"
+            },
+            "F-D13": {
+                "x": 2,
+                "y": 1,
+                "student": "SANDIP KHATRI"
+            },
+            "F-D08": {
+                "x": 2,
+                "y": 2,
+                "student": "SAMRAT THAPA"
+            },
+            "F-D03": {
+                "x": 2,
+                "y": 3,
+                "student": "NILIMA GURUNG"
+            },
+            "F-D17": {
+                "x": 3,
+                "y": 0,
+                "student": "DARSHAN JUNG K.C."
+            },
+            "F-D12": {
+                "x": 3,
+                "y": 1,
+                "student": "ROHAN KHATRI"
+            },
+            "F-D07": {
+                "x": 3,
+                "y": 2,
+                "student": "SUMINA SHAHI"
+            },
+            "F-D02": {
+                "x": 3,
+                "y": 3,
+                "student": "BIJAY ADHIKARI"
+            },
+            "F-D16": {
+                "x": 4,
+                "y": 0,
+                "student": "AJEET KUMAR THAPA"
+            },
+            "F-D11": {
+                "x": 4,
+                "y": 1,
+                "student": "JEEYA B.K."
+            },
+            "F-D06": {
+                "x": 4,
+                "y": 2,
+                "student": "RISHES PUN"
+            },
+            "F-D01": {
+                "x": 4,
+                "y": 3,
+                "student": "ASHISH ADHIKARI"
+            }
+        }
+    },
+    "Begnas": {
+        "entrance": [
+            5,
+            0
+        ],
+        "max_row": 5,
+        "max_col": 4,
+        "seats": {
+            "B-D05": {
+                "x": 0,
+                "y": 0,
+                "student": ""
+            },
+            "B-D10": {
+                "x": 0,
+                "y": 1,
+                "student": ""
+            },
+            "B-D15": {
+                "x": 0,
+                "y": 2,
+                "student": ""
+            },
+            "B-D20": {
+                "x": 0,
+                "y": 3,
+                "student": ""
+            },
+            "B-D04": {
+                "x": 1,
+                "y": 0,
+                "student": ""
+            },
+            "B-D09": {
+                "x": 1,
+                "y": 1,
+                "student": ""
+            },
+            "B-D14": {
+                "x": 1,
+                "y": 2,
+                "student": ""
+            },
+            "B-D19": {
+                "x": 1,
+                "y": 3,
+                "student": ""
+            },
+            "B-D03": {
+                "x": 2,
+                "y": 0,
+                "student": ""
+            },
+            "B-D08": {
+                "x": 2,
+                "y": 1,
+                "student": ""
+            },
+            "B-D13": {
+                "x": 2,
+                "y": 2,
+                "student": ""
+            },
+            "B-D18": {
+                "x": 2,
+                "y": 3,
+                "student": ""
+            },
+            "B-D02": {
+                "x": 3,
+                "y": 0,
+                "student": ""
+            },
+            "B-D07": {
+                "x": 3,
+                "y": 1,
+                "student": ""
+            },
+            "B-D12": {
+                "x": 3,
+                "y": 2,
+                "student": ""
+            },
+            "B-D17": {
+                "x": 3,
+                "y": 3,
+                "student": ""
+            },
+            "B-D01": {
+                "x": 4,
+                "y": 0,
+                "student": ""
+            },
+            "B-D06": {
+                "x": 4,
+                "y": 1,
+                "student": ""
+            },
+            "B-D11": {
+                "x": 4,
+                "y": 2,
+                "student": ""
+            },
+            "B-D16": {
+                "x": 4,
+                "y": 3,
+                "student": ""
+            }
+        }
+    },
+    "Rara": {
+        "entrance": [
+            5,
+            0
+        ],
+        "max_row": 5,
+        "max_col": 4,
+        "seats": {
+            "R-D05": {
+                "x": 0,
+                "y": 0,
+                "student": ""
+            },
+            "R-D10": {
+                "x": 0,
+                "y": 1,
+                "student": ""
+            },
+            "R-D15": {
+                "x": 0,
+                "y": 2,
+                "student": ""
+            },
+            "R-D20": {
+                "x": 0,
+                "y": 3,
+                "student": ""
+            },
+            "R-D04": {
+                "x": 1,
+                "y": 0,
+                "student": ""
+            },
+            "R-D09": {
+                "x": 1,
+                "y": 1,
+                "student": ""
+            },
+            "R-D14": {
+                "x": 1,
+                "y": 2,
+                "student": ""
+            },
+            "R-D19": {
+                "x": 1,
+                "y": 3,
+                "student": ""
+            },
+            "R-D03": {
+                "x": 2,
+                "y": 0,
+                "student": ""
+            },
+            "R-D08": {
+                "x": 2,
+                "y": 1,
+                "student": ""
+            },
+            "R-D13": {
+                "x": 2,
+                "y": 2,
+                "student": ""
+            },
+            "R-D18": {
+                "x": 2,
+                "y": 3,
+                "student": ""
+            },
+            "R-D02": {
+                "x": 3,
+                "y": 0,
+                "student": ""
+            },
+            "R-D07": {
+                "x": 3,
+                "y": 1,
+                "student": ""
+            },
+            "R-D12": {
+                "x": 3,
+                "y": 2,
+                "student": ""
+            },
+            "R-D17": {
+                "x": 3,
+                "y": 3,
+                "student": ""
+            },
+            "R-D01": {
+                "x": 4,
+                "y": 0,
+                "student": ""
+            },
+            "R-D06": {
+                "x": 4,
+                "y": 1,
+                "student": ""
+            },
+            "R-D11": {
+                "x": 4,
+                "y": 2,
+                "student": ""
+            },
+            "R-D16": {
+                "x": 4,
+                "y": 3,
+                "student": ""
+            }
+        }
+    },
+    "Tilicho": {
+        "entrance": [
+            5,
+            4
+        ],
+        "max_row": 5,
+        "max_col": 4,
+        "seats": {
+            "T-D20": {
+                "x": 0,
+                "y": 0,
+                "student": "AMRIT THAPA"
+            },
+            "T-D15": {
+                "x": 0,
+                "y": 1,
+                "student": "GOBIN CHHANTYAL"
+            },
+            "T-D10": {
+                "x": 0,
+                "y": 2,
+                "student": "BHUMIKA GURUNG"
+            },
+            "T-D05": {
+                "x": 0,
+                "y": 3,
+                "student": "ASHOK KARKI"
+            },
+            "T-D19": {
+                "x": 1,
+                "y": 0,
+                "student": "KRISH SHAI"
+            },
+            "T-D14": {
+                "x": 1,
+                "y": 1,
+                "student": "MANITA GURUNG"
+            },
+            "T-D09": {
+                "x": 1,
+                "y": 2,
+                "student": "MAYANK GURUNG"
+            },
+            "T-D04": {
+                "x": 1,
+                "y": 3,
+                "student": "KOBIT GURUNG"
+            },
+            "T-D18": {
+                "x": 2,
+                "y": 0,
+                "student": "PRAWESH GURUNG"
+            },
+            "T-D13": {
+                "x": 2,
+                "y": 1,
+                "student": "RABIN BANIYA"
+            },
+            "T-D08": {
+                "x": 2,
+                "y": 2,
+                "student": "SAKSHAM POUDEL"
+            },
+            "T-D03": {
+                "x": 2,
+                "y": 3,
+                "student": "PRANISH BADGAMI"
+            },
+            "T-D17": {
+                "x": 3,
+                "y": 0,
+                "student": "SAUGAT POUDEL"
+            },
+            "T-D12": {
+                "x": 3,
+                "y": 1,
+                "student": "SUMIT MAHAT"
+            },
+            "T-D07": {
+                "x": 3,
+                "y": 2,
+                "student": "SHRESHKAR GURUNG"
+            },
+            "T-D02": {
+                "x": 3,
+                "y": 3,
+                "student": "PRAKASH GURUNG"
+            },
+            "T-D16": {
+                "x": 4,
+                "y": 0,
+                "student": "ANGEL GURUNG"
+            },
+            "T-D11": {
+                "x": 4,
+                "y": 1,
+                "student": "DEV RAJ KANDEL"
+            },
+            "T-D06": {
+                "x": 4,
+                "y": 2,
+                "student": "SACHIN GURUNG"
+            },
+            "T-D01": {
+                "x": 4,
+                "y": 3,
+                "student": "ANKIT YOGI"
+            }
+        }
+    },
+    "Gokyo": {
+        "entrance": [
+            6,
+            0
+        ],
+        "max_row": 6,
+        "max_col": 4,
+        "seats": {
+            "G-D06": {
+                "x": 0,
+                "y": 0,
+                "student": ""
+            },
+            "G-D12": {
+                "x": 0,
+                "y": 1,
+                "student": ""
+            },
+            "G-D18": {
+                "x": 0,
+                "y": 2,
+                "student": ""
+            },
+            "G-D24": {
+                "x": 0,
+                "y": 3,
+                "student": ""
+            },
+            "G-D05": {
+                "x": 1,
+                "y": 0,
+                "student": ""
+            },
+            "G-D11": {
+                "x": 1,
+                "y": 1,
+                "student": ""
+            },
+            "G-D17": {
+                "x": 1,
+                "y": 2,
+                "student": ""
+            },
+            "G-D23": {
+                "x": 1,
+                "y": 3,
+                "student": ""
+            },
+            "G-D04": {
+                "x": 2,
+                "y": 0,
+                "student": ""
+            },
+            "G-D10": {
+                "x": 2,
+                "y": 1,
+                "student": ""
+            },
+            "G-D16": {
+                "x": 2,
+                "y": 2,
+                "student": ""
+            },
+            "G-D22": {
+                "x": 2,
+                "y": 3,
+                "student": ""
+            },
+            "G-D03": {
+                "x": 3,
+                "y": 0,
+                "student": ""
+            },
+            "G-D09": {
+                "x": 3,
+                "y": 1,
+                "student": ""
+            },
+            "G-D15": {
+                "x": 3,
+                "y": 2,
+                "student": ""
+            },
+            "G-D21": {
+                "x": 3,
+                "y": 3,
+                "student": ""
+            },
+            "G-D02": {
+                "x": 4,
+                "y": 0,
+                "student": ""
+            },
+            "G-D08": {
+                "x": 4,
+                "y": 1,
+                "student": ""
+            },
+            "G-D14": {
+                "x": 4,
+                "y": 2,
+                "student": ""
+            },
+            "G-D20": {
+                "x": 4,
+                "y": 3,
+                "student": ""
+            },
+            "G-D01": {
+                "x": 5,
+                "y": 0,
+                "student": ""
+            },
+            "G-D07": {
+                "x": 5,
+                "y": 1,
+                "student": ""
+            },
+            "G-D13": {
+                "x": 5,
+                "y": 2,
+                "student": ""
+            },
+            "G-D19": {
+                "x": 5,
+                "y": 3,
+                "student": ""
+            }
+        }
+    },
+    "Nilgiri": {
+        "entrance": [
+            6,
+            0
+        ],
+        "max_row": 6,
+        "max_col": 4,
+        "seats": {
+            "N-D06": {
+                "x": 0,
+                "y": 0,
+                "student": ""
+            },
+            "N-D12": {
+                "x": 0,
+                "y": 1,
+                "student": ""
+            },
+            "N-D18": {
+                "x": 0,
+                "y": 2,
+                "student": ""
+            },
+            "N-D24": {
+                "x": 0,
+                "y": 3,
+                "student": ""
+            },
+            "N-D05": {
+                "x": 1,
+                "y": 0,
+                "student": ""
+            },
+            "N-D11": {
+                "x": 1,
+                "y": 1,
+                "student": ""
+            },
+            "N-D17": {
+                "x": 1,
+                "y": 2,
+                "student": ""
+            },
+            "N-D23": {
+                "x": 1,
+                "y": 3,
+                "student": ""
+            },
+            "N-D04": {
+                "x": 2,
+                "y": 0,
+                "student": ""
+            },
+            "N-D10": {
+                "x": 2,
+                "y": 1,
+                "student": ""
+            },
+            "N-D16": {
+                "x": 2,
+                "y": 2,
+                "student": ""
+            },
+            "N-D22": {
+                "x": 2,
+                "y": 3,
+                "student": ""
+            },
+            "N-D03": {
+                "x": 3,
+                "y": 0,
+                "student": ""
+            },
+            "N-D09": {
+                "x": 3,
+                "y": 1,
+                "student": ""
+            },
+            "N-D15": {
+                "x": 3,
+                "y": 2,
+                "student": ""
+            },
+            "N-D21": {
+                "x": 3,
+                "y": 3,
+                "student": ""
+            },
+            "N-D02": {
+                "x": 4,
+                "y": 0,
+                "student": ""
+            },
+            "N-D08": {
+                "x": 4,
+                "y": 1,
+                "student": ""
+            },
+            "N-D14": {
+                "x": 4,
+                "y": 2,
+                "student": ""
+            },
+            "N-D20": {
+                "x": 4,
+                "y": 3,
+                "student": ""
+            },
+            "N-D01": {
+                "x": 5,
+                "y": 0,
+                "student": ""
+            },
+            "N-D07": {
+                "x": 5,
+                "y": 1,
+                "student": ""
+            },
+            "N-D13": {
+                "x": 5,
+                "y": 2,
+                "student": ""
+            },
+            "N-D19": {
+                "x": 5,
+                "y": 3,
+                "student": ""
+            }
+        }
+    },
+    "Big Ben": {
+        "entrance": [
+            5,
+            0
+        ],
+        "max_row": 5,
+        "max_col": 4,
+        "seats": {
+            "B-D05": {
+                "x": 0,
+                "y": 0,
+                "student": ""
+            },
+            "B-D09": {
+                "x": 0,
+                "y": 1,
+                "student": ""
+            },
+            "B-D13": {
+                "x": 0,
+                "y": 2,
+                "student": ""
+            },
+            "B-D16": {
+                "x": 0,
+                "y": 3,
+                "student": ""
+            },
+            "B-D04": {
+                "x": 1,
+                "y": 0,
+                "student": ""
+            },
+            "B-D08": {
+                "x": 1,
+                "y": 1,
+                "student": ""
+            },
+            "B-D12": {
+                "x": 1,
+                "y": 2,
+                "student": ""
+            },
+            "B-D15": {
+                "x": 1,
+                "y": 3,
+                "student": ""
+            },
+            "B-D03": {
+                "x": 2,
+                "y": 0,
+                "student": ""
+            },
+            "B-D07": {
+                "x": 2,
+                "y": 1,
+                "student": ""
+            },
+            "B-D11": {
+                "x": 2,
+                "y": 2,
+                "student": ""
+            },
+            "B-D14": {
+                "x": 2,
+                "y": 3,
+                "student": ""
+            },
+            "B-D02": {
+                "x": 3,
+                "y": 0,
+                "student": ""
+            },
+            "B-D06": {
+                "x": 3,
+                "y": 1,
+                "student": ""
+            },
+            "B-D10": {
+                "x": 3,
+                "y": 2,
+                "student": ""
+            },
+            "B-D01": {
+                "x": 4,
+                "y": 0,
+                "student": ""
+            }
+        }
+    },
+    "Stonehenge": {
+        "entrance": [
+            5,
+            4
+        ],
+        "max_row": 5,
+        "max_col": 4,
+        "seats": {
+            "S-D17": {
+                "x": 0,
+                "y": 0,
+                "student": ""
+            },
+            "S-D13": {
+                "x": 0,
+                "y": 1,
+                "student": ""
+            },
+            "S-D09": {
+                "x": 0,
+                "y": 2,
+                "student": ""
+            },
+            "S-D05": {
+                "x": 0,
+                "y": 3,
+                "student": ""
+            },
+            "S-D16": {
+                "x": 1,
+                "y": 0,
+                "student": ""
+            },
+            "S-D12": {
+                "x": 1,
+                "y": 1,
+                "student": ""
+            },
+            "S-D08": {
+                "x": 1,
+                "y": 2,
+                "student": ""
+            },
+            "S-D04": {
+                "x": 1,
+                "y": 3,
+                "student": ""
+            },
+            "S-D15": {
+                "x": 2,
+                "y": 0,
+                "student": ""
+            },
+            "S-D11": {
+                "x": 2,
+                "y": 1,
+                "student": ""
+            },
+            "S-D07": {
+                "x": 2,
+                "y": 2,
+                "student": ""
+            },
+            "S-D03": {
+                "x": 2,
+                "y": 3,
+                "student": ""
+            },
+            "S-D14": {
+                "x": 3,
+                "y": 0,
+                "student": ""
+            },
+            "S-D10": {
+                "x": 3,
+                "y": 1,
+                "student": ""
+            },
+            "S-D06": {
+                "x": 3,
+                "y": 2,
+                "student": ""
+            },
+            "S-D02": {
+                "x": 3,
+                "y": 3,
+                "student": ""
+            },
+            "S-D01": {
+                "x": 4,
+                "y": 0,
+                "student": ""
+            }
+        }
+    },
+    "Thames": {
+        "entrance": [
+            5,
+            4
+        ],
+        "max_row": 5,
+        "max_col": 4,
+        "seats": {
+            "T-D17": {
+                "x": 0,
+                "y": 0,
+                "student": ""
+            },
+            "T-D13": {
+                "x": 0,
+                "y": 1,
+                "student": ""
+            },
+            "T-D09": {
+                "x": 0,
+                "y": 2,
+                "student": ""
+            },
+            "T-D05": {
+                "x": 0,
+                "y": 3,
+                "student": ""
+            },
+            "T-D16": {
+                "x": 1,
+                "y": 0,
+                "student": ""
+            },
+            "T-D12": {
+                "x": 1,
+                "y": 1,
+                "student": ""
+            },
+            "T-D08": {
+                "x": 1,
+                "y": 2,
+                "student": ""
+            },
+            "T-D04": {
+                "x": 1,
+                "y": 3,
+                "student": ""
+            },
+            "T-D15": {
+                "x": 2,
+                "y": 0,
+                "student": ""
+            },
+            "T-D11": {
+                "x": 2,
+                "y": 1,
+                "student": ""
+            },
+            "T-D07": {
+                "x": 2,
+                "y": 2,
+                "student": ""
+            },
+            "T-D03": {
+                "x": 2,
+                "y": 3,
+                "student": ""
+            },
+            "T-D14": {
+                "x": 3,
+                "y": 0,
+                "student": ""
+            },
+            "T-D10": {
+                "x": 3,
+                "y": 1,
+                "student": ""
+            },
+            "T-D06": {
+                "x": 3,
+                "y": 2,
+                "student": ""
+            },
+            "T-D02": {
+                "x": 3,
+                "y": 3,
+                "student": ""
+            },
+            "T-D01": {
+                "x": 4,
+                "y": 0,
+                "student": ""
+            }
+        }
+    },
+    "Open Access": {
+        "entrance": [
+            7,
+            0
+        ],
+        "max_row": 7,
+        "max_col": 3,
+        "seats": {
+            "O-D07": {
+                "x": 0,
+                "y": 0,
+                "student": ""
+            },
+            "O-D14": {
+                "x": 0,
+                "y": 1,
+                "student": ""
+            },
+            "O-D21": {
+                "x": 0,
+                "y": 2,
+                "student": ""
+            },
+            "O-D06": {
+                "x": 1,
+                "y": 0,
+                "student": ""
+            },
+            "O-D13": {
+                "x": 1,
+                "y": 1,
+                "student": ""
+            },
+            "O-D20": {
+                "x": 1,
+                "y": 2,
+                "student": ""
+            },
+            "O-D05": {
+                "x": 2,
+                "y": 0,
+                "student": ""
+            },
+            "O-D12": {
+                "x": 2,
+                "y": 1,
+                "student": ""
+            },
+            "O-D19": {
+                "x": 2,
+                "y": 2,
+                "student": ""
+            },
+            "O-D04": {
+                "x": 3,
+                "y": 0,
+                "student": ""
+            },
+            "O-D11": {
+                "x": 3,
+                "y": 1,
+                "student": ""
+            },
+            "O-D18": {
+                "x": 3,
+                "y": 2,
+                "student": ""
+            },
+            "O-D03": {
+                "x": 4,
+                "y": 0,
+                "student": ""
+            },
+            "O-D10": {
+                "x": 4,
+                "y": 1,
+                "student": ""
+            },
+            "O-D17": {
+                "x": 4,
+                "y": 2,
+                "student": ""
+            },
+            "O-D02": {
+                "x": 5,
+                "y": 0,
+                "student": ""
+            },
+            "O-D09": {
+                "x": 5,
+                "y": 1,
+                "student": ""
+            },
+            "O-D16": {
+                "x": 5,
+                "y": 2,
+                "student": ""
+            },
+            "O-D01": {
+                "x": 6,
+                "y": 0,
+                "student": ""
+            },
+            "O-D08": {
+                "x": 6,
+                "y": 1,
+                "student": ""
+            },
+            "O-D15": {
+                "x": 6,
+                "y": 2,
+                "student": ""
+            }
+        }
+    }
+}
