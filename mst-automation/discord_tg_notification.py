@@ -92,7 +92,7 @@ def fetch_notification(year):
         # unless..
         # it is a assignment notification and
         # unless we have to edit telegram message
-        if notif['seen'] and notif['type'] not in ['ASSIGNMENTLATER', 'ASSIGNMENTCREATE', 'ASSIGNMENT', 'ASSIGNMENTREMINDER'] and 'tg_bot_token' not in json_data[year].keys(): continue
+        if notif['seen'] and notif['type'] not in ['ASSIGNMENTLATER', 'ASSIGNMENTCREATE', 'ASSIGNMENT', 'ASSIGNMENTREMINDER']: continue
         msg=notif['title']
         urldata=json.loads(notif['payload'])
         if notif['type']=='TEACHINGRESOURCES':
