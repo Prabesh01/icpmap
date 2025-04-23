@@ -15,7 +15,10 @@
         "webhook": "https://discord.com/api/webhooks/XXX/XXX-XXX",
         "user": "xxx.xxx.xxx@icp.edu.np",
         "pass": "*****",
-        "token": ""
+        "token": "",
+        "tg_bot_token": "xxx:xxx",
+        "tg_group_id": 2550067966,
+        "tg_topic_id": 2
     },
     "y3": {
         "webhook": "https://discord.com/api/webhooks/XXX/XXX-XXX",
