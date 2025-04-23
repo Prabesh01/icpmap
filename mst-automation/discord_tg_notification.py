@@ -88,13 +88,15 @@ def fetch_notification(year):
     if not notifs: return
     # send unseen notifications and mark them as seen
     for notif in notifs:
+        msg=notif['title']
+        urldata=json.loads(notif['payload'])
         # skip to another notification if notification is seen
         # unless..
         # it is a assignment notification and
-        # unless we have to edit telegram message
-        if notif['seen'] and notif['type'] not in ['ASSIGNMENTLATER', 'ASSIGNMENTCREATE', 'ASSIGNMENT', 'ASSIGNMENTREMINDER']: continue
-        msg=notif['title']
-        urldata=json.loads(notif['payload'])
+        # we have to edit telegram message
+        if notif['seen']:
+            if notif['type'] not in ['ASSIGNMENTLATER', 'ASSIGNMENTCREATE']: continue
+            elif urldata['AssignmentId'] not in tg_records.keys(): continue
         if notif['type']=='TEACHINGRESOURCES':
             url=f'https://app.mysecondteacher.com.np/classroom/subject/{urldata["SubjectId"]}/class/{urldata["ClassRoomId"]}/content'
             msg=f"[{msg}]({url})"
@@ -128,7 +130,9 @@ def fetch_notification(year):
                     seconds %= 3600
                     minutes = seconds // 60
                     seconds %= 60
-                    msg = f"🚩 ({days}d {hours}h {minutes}m left)\n\n<a href='{url}'>{notif['title']}</a>"
+                    deadline_str=deadline_dt.strftime("%a, %-d %B %-I:%M %p")
+                    title = notif['title'].replace('You have an assignment ', '')
+                    msg = f"🚩 ({days}d {hours}h {minutes}m left)\n📅 {deadline_str}\n\n<a href='{url}'>{title}</a>"
                 # check if message is already sent
                 if urldata['AssignmentId'] in tg_records.keys():
                     # if assignment is expired, delete the message and remove it from records
