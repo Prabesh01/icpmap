@@ -119,7 +119,7 @@ def fetch_notification(year):
                 tg_bot_token=json_data[year]['tg_bot_token']
                 tg_group_id=json_data[year]['tg_group_id']
                 tg_topic_id=json_data[year]['tg_topic_id']
-                msg  = time_left = None
+                time_left = None
                 # check if assignment is expired
                 deadline_dt = datetime.strptime(deadline,"%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=dt.timezone.utc).astimezone(tz_NP)
                 if deadline_dt > datetime.now(tz=tz_NP):
@@ -132,7 +132,7 @@ def fetch_notification(year):
                     seconds %= 60
                     deadline_str=deadline_dt.strftime("%a, %-d %B %-I:%M %p")
                     title = notif['title'].replace('You have an assignment ', '')
-                    msg = f"🚩 ({days}d {hours}h {minutes}m left)\n📅 {deadline_str}\n\n<a href='{url}'>{title}</a>"
+                    tg_msg = f"🚩 ({days}d {hours}h {minutes}m left)\n📅 {deadline_str}\n\n<a href='{url}'>{title}</a>"
                 # check if message is already sent
                 if urldata['AssignmentId'] in tg_records.keys():
                     # if assignment is expired, delete the message and remove it from records
@@ -150,7 +150,7 @@ chat_id=-100{tg_group_id}&\
 message_id={tg_records[urldata['AssignmentId']]}&\
 parse_mode=HTML&\
 text="
-                        requests.get(tg_edit_msg_url+msg)
+                        requests.get(tg_edit_msg_url+tg_msg)
                 elif time_left:
                     # send new message and record its message id
                     tg_send_msg_url = f"https://api.telegram.org/bot{tg_bot_token}/sendMessage?\
@@ -158,7 +158,7 @@ chat_id=-100{tg_group_id}&\
 message_thread_id={tg_topic_id}&\
 parse_mode=HTML&\
 text="
-                    response = requests.post(tg_send_msg_url+msg).json()
+                    response = requests.post(tg_send_msg_url+tg_msg).json()
                     tg_records[urldata['AssignmentId']]=response['result']['message_id']
                     write_tg_records(tg_records)
             # if message isn't new, no need to send message to discord.
