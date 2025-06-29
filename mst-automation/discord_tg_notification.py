@@ -21,6 +21,20 @@ header={
     }
 tg_message_recrod_file = BASE_DIR/"tg_message_record.json"
 
+
+def log_err(msg):
+    file=BASE_DIR/f"{msg}.err"
+    if os.path.exists(file): return False
+    else:
+        with open(file,"w") as f: f.write("")
+        return True
+
+
+def no_err(msg):
+    file=BASE_DIR/f"{msg}.err"
+    if os.path.exists(file): os.remove(file)
+
+
 def send(hook,msg):
     requests.post(hook, data={'content':msg})
 
@@ -62,9 +76,11 @@ def write_token(year):
     global json_data
     token=login(json_data[year]['user'],json_data[year]['pass'])
     if not token:
-        send(json_data[year]['webhook'], 'mst login err!')
+        if log_err('login'):
+            send(json_data[year]['webhook'], 'mst login err!')
         return token
     else:
+        no_err("login")
         with open(creds_file,'w') as f:
             json_data[year]['token']=token
             json.dump(json_data,f)
@@ -133,6 +149,7 @@ def fetch_notification(year):
                     deadline_str=deadline_dt.strftime("%a, %-d %B %-I:%M %p")
                     title = notif['title'].replace('You have an assignment ', '')
                     tg_msg = f"🚩 ({days}d {hours}h {minutes}m left)\n📅 {deadline_str}\n\n<a href='{url}'>{title}</a>"
+
                 # check if message is already sent
                 if urldata['AssignmentId'] in tg_records.keys():
                     # if assignment is expired, delete the message and remove it from records
@@ -140,7 +157,15 @@ def fetch_notification(year):
                         tg_delete_msg_url = f"https://api.telegram.org/bot{tg_bot_token}/deleteMessage?\
 chat_id=-100{tg_group_id}&\
 message_id={tg_records[urldata['AssignmentId']]}"
-                        requests.get(tg_delete_msg_url)
+                        hya=requests.get(tg_delete_msg_url)
+                        if hya.status_code==400:
+                            print("Coudlnt delete the message. Attempting to edit the message instead")
+                            tg_redact_msg_url = f"https://api.telegram.org/bot{tg_bot_token}/editMessageText?\
+chat_id=-100{tg_group_id}&\
+message_id={tg_records[urldata['AssignmentId']]}&\
+parse_mode=HTML&\
+text=."
+                            requests.get(tg_redact_msg_url)
                         del tg_records[urldata['AssignmentId']]
                         write_tg_records(tg_records)
                     else:
