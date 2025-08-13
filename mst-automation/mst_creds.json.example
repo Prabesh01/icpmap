@@ -1,4 +1,5 @@
 {
+    ".env": {"fcb_key": "xxx"},
     "y1_a": {
         "webhook": "https://discord.com/api/webhooks/XXX/XXX-XXX",
         "user": "xxx.xxx.xxx@icp.edu.np",
