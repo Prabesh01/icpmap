@@ -230,7 +230,7 @@ def getCaptchaToken():
         r=requests.post("https://freecaptchabypass.com/getTaskResult",json={"clientKey":os.getenv('fcb_key'),"taskId":taskid})
         if r.status_code!=200: return False
         if r.json()['status']!='ready': continue
-        if i>=6: return False
+        if i>=5: return False
         return r.json()['solution']['gRecaptchaResponse']
 
 
