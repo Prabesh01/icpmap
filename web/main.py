@@ -217,6 +217,23 @@ def login():
     else:
         return flask.render_template('auth/login.html',url=authorization_url)
 
+
+#captcha-bypass
+def getCaptchaToken():
+    r=requests.post("https://freecaptchabypass.com/createTask",json={"clientKey":os.getenv('fcb_key'),"task":{"type":"ReCaptchaV3TaskProxyLess","websiteURL":"https://app.mysecondteacher.com.np/","websiteKey":"6LeuUMonAAAAABv-aLjhx_JTT7utsNhCwSPcBb5m"}})
+    if r.status_code!=200: return False
+    taskid=r.json()['taskId']
+    i=0
+    while True:
+        i+=1
+        requests.get("https://tools-httpstatus.pickup-services.com/200?sleep=5000")
+        r=requests.post("https://freecaptchabypass.com/getTaskResult",json={"clientKey":os.getenv('fcb_key'),"taskId":taskid})
+        if r.status_code!=200: return False
+        if r.json()['status']!='ready': continue
+        if i>=6: return False
+        return r.json()['solution']['gRecaptchaResponse']
+
+
 @app.post('/login')
 def post_login():
     username= flask.request.form.get('username').strip()
@@ -226,6 +243,10 @@ def post_login():
         if not username.endswith('@icp.edu.np'):
             message="Only icp.edu.np mail allowed!"
             return flask.render_template('auth/login.html',url=authorization_url,message=message)
+        reCaptchaToken=getCaptchaToken()
+        if not reCaptchaToken: 
+            message="Error when attempting to connect to mst. Try again later!"
+            return flask.render_template('auth/login.html',url=authorization_url,message=message)            
         r=requests.post("https://api.mysecondteacher.com.np/api/TokenAuth/Authenticate",
                         headers={
                             "Accept":"*/*",
@@ -238,7 +259,7 @@ def post_login():
                             "Sec-Fetch-Mode":"cors",
                             "Sec-Fetch-Site":"cross-site",
                             "User-Agent":"Mozilla/5.0 (X11; Linux x86_64; rv:129.0) Gecko/20100101 Firefox/129.0"
-                            },json={"userNameOrEmailAddress":username,"password":password})
+                            },json={"userNameOrEmailAddress":username,"password":password,'reCaptchaToken':reCaptchaToken})
         if r.status_code!=200:
             message="Invalid Credentials!"
             return flask.render_template('auth/login.html',url=authorization_url,message=message)
