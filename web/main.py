@@ -238,11 +238,12 @@ def getCaptchaToken():
 def post_login():
     username= flask.request.form.get('username').strip()
     password=flask.request.form.get('password').strip()
-    captcha=flask.request.form.get('g-recaptcha-response').strip()
+    captcha=flask.request.form.get('g-recaptcha-response')
     authorization_url, state = flow.authorization_url(access_type='online')
     if not captcha: 
         message="Captcha misisng! Please let the site load completely and try again later."
         return flask.render_template('auth/login.html',url=authorization_url,message=message)
+    else: captcha=captcha.strip()
     if username and password and captcha:
         if not username.endswith('@icp.edu.np'):
             message="Only icp.edu.np mail allowed!"
