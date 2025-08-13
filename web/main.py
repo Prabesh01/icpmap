@@ -238,11 +238,28 @@ def getCaptchaToken():
 def post_login():
     username= flask.request.form.get('username').strip()
     password=flask.request.form.get('password').strip()
+    captcha=flask.request.form.get('g-recaptcha-response').strip()
     authorization_url, state = flow.authorization_url(access_type='online')
-    if username and password:
+    if not captcha: 
+        message="Captcha misisng! Please let the site load completely and try again later."
+        return flask.render_template('auth/login.html',url=authorization_url,message=message)
+    if username and password and captcha:
         if not username.endswith('@icp.edu.np'):
             message="Only icp.edu.np mail allowed!"
             return flask.render_template('auth/login.html',url=authorization_url,message=message)
+
+        # validate captcha
+        if 'X-Forwarded-For' in request.headers: remoteip=request.headers.get('X-Forwarded-For').split(',')[-1].strip()
+        else: remoteip=request.remote_addr
+        verify=requests.post('https://www.google.com/recaptcha/api/siteverify',headers = {"content-type": "text/html"},params={"secret":os.getenv('captcha_secret'),"response":captcha,"remoteip":remoteip}).json()
+        if verify['success']!=True:
+            message="Captha Verification failed. Please try again later!"
+            return flask.render_template('auth/login.html',url=authorization_url,message=message)
+        if verify['score']<0.5:
+            message="Captcha says you are sus. Please try again later!"
+            return flask.render_template('auth/login.html',url=authorization_url,message=message)
+
+        # attempt to login to mst
         reCaptchaToken=getCaptchaToken()
         if not reCaptchaToken: 
             message="Error when attempting to connect to mst. Try again later!"
