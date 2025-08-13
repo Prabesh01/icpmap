@@ -61,9 +61,27 @@ def write_tg_records(data):
         json.dump(data, f, indent=4)
 
 
+#captcha-bypass
+def getCaptchaToken():
+    r=requests.post("https://freecaptchabypass.com/createTask",json={"clientKey":json_data['.env']['fcb_key'],"task":{"type":"ReCaptchaV3TaskProxyLess","websiteURL":"https://app.mysecondteacher.com.np/","websiteKey":"6LeuUMonAAAAABv-aLjhx_JTT7utsNhCwSPcBb5m"}})
+    if r.status_code!=200: return False
+    taskid=r.json()['taskId']
+    i=0
+    while True:
+        i+=1
+        sleep(10)
+        r=requests.post("https://freecaptchabypass.com/getTaskResult",json={"clientKey":json_data['.env']['fcb_key'],"taskId":taskid})
+        if r.status_code!=200: return False
+        if r.json()['status']!='ready': continue
+        if i>=10: return False
+        return r.json()['solution']['gRecaptchaResponse']
+
+
 #login
 def login(mst_email,mst_pass):
-    r=requests.post(login_url,json={'userNameOrEmailAddress':mst_email,'password':mst_pass,'rememberClient':False})
+    reCaptchaToken=getCaptchaToken()
+    if not reCaptchaToken: return None
+    r=requests.post(login_url,json={'userNameOrEmailAddress':mst_email,'password':mst_pass,'rememberClient':False,'reCaptchaToken':reCaptchaToken}, headers=header)
     try:
         access_token=r.json()['result']['accessToken']
         return access_token
@@ -216,4 +234,5 @@ text="
 
 # run
 for year in json_data:
+    if year=='.env': continue
     fetch_notification(year)
