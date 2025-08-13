@@ -4,6 +4,10 @@
  - Type: Web application
  - Authorized redirect URI: flask_web_url/login and http://127.0.0.1:5000/login
 
+2. For login with mysecondteacher,
+   - create an account on [fcb](https://freecaptchabypass.com/) and keep its api key as `fcb_key` in `credentials/.env` file.
+   - to limit the requests, get recaptcha v3 keys from [here](https://www.google.com/recaptcha/admin/create) and keep captcha_secret in .env file and site key in web/templates/auth/login.html file inside data-sitekey.
+
 2. For google calendar automation with step_3.py, download credentials.json file from Google Cloud Project as mentioned [here](https://developers.google.com/calendar/api/quickstart/python). 
  - Type: Web application
  - Authorized redirect URI: flask_web_url with trailing slash and http://localhost/
