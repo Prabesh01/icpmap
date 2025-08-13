@@ -9,6 +9,7 @@ Borrowed design from: https://access.heropowered.com/school/login
 
   <link rel="stylesheet" href="https://di37jvg7iglxw.cloudfront.net/assets/css/screen.css?hero=5.0.87" />
   <link rel="stylesheet" href="https://di37jvg7iglxw.cloudfront.net/assets/css/login.css?hero=5.0.87" />
+   <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body id="login">
@@ -21,14 +22,14 @@ Borrowed design from: https://access.heropowered.com/school/login
           <img src="imgs/98640e2d9995df24.png" width="120" height="100" alt="Hero"/>
         </div>
         <p style="color: red;">{{ message }} </p>
-        <form method="post" class="clearfix">
+        <form id="login-form" method="post" class="clearfix">
           <div class="input">
             <input type="text" name="username" id="username" placeholder="ENTER USERNAME" />
           </div>
           <div class="input">
             <input type="password" name="password" id="password" placeholder="ENTER PASSWORD" />
           </div>
-          <input type="submit" id="login-button" class="button blue large" value="Login" /><br><br><br>
+          <button class="g-recaptcha button blue large" data-sitekey="6LcPIaUrAAAAAG4oXyyWmX4aGollnQC1a8eWS_3K" data-callback='onSubmit' data-action='submit' type="submit" id="login-button" value="Login">Login</button><br><br><br>
           <a href="{{ url }}"><input type="button" id="login-button" class="button yello large" value="Login with icp.edu.np gmail" /></a>
 <br><br><br>
           <a href="/"><input type="button" id="login-button" class="button green large" value="Guest Login" /></a>
@@ -60,5 +61,10 @@ Borrowed design from: https://access.heropowered.com/school/login
   </div>
     </div>
   </div>
+ <script>
+   function onSubmit(token) {
+     document.getElementById("login-form").submit();
+   }
+ </script>
 </body>
 </html>
