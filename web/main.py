@@ -249,8 +249,8 @@ def post_login():
             return flask.render_template('auth/login.html',url=authorization_url,message=message)
 
         # validate captcha
-        if 'X-Forwarded-For' in request.headers: remoteip=request.headers.get('X-Forwarded-For').split(',')[-1].strip()
-        else: remoteip=request.remote_addr
+        if 'X-Forwarded-For' in flask.request.headers: remoteip=flask.request.headers.get('X-Forwarded-For').split(',')[-1].strip()
+        else: remoteip=flask.request.remote_addr
         verify=requests.post('https://www.google.com/recaptcha/api/siteverify',headers = {"content-type": "text/html"},params={"secret":os.getenv('captcha_secret'),"response":captcha,"remoteip":remoteip}).json()
         if verify['success']!=True:
             message="Captha Verification failed. Please try again later!"
