@@ -7,6 +7,7 @@ import datetime as dt
 from datetime import datetime
 from lxml import html
 import re
+from time import sleep
 
 tz_NP = dt.timezone(dt.timedelta(hours=5, minutes=45))  # NEPAL TIMEZONE
 
