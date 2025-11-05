@@ -33,31 +33,31 @@ del data
 # if set true, add classes for only pre-sem-break periods.
 populate_pre_sem_break_classes=False
 
-# new-year, saraswati-puja, shivaratri, holi
-holidays=["2025/01/01","2025/02/03","2025/02/26","2024/03/13"]
+# new-year, saraswati-puja, shivaratri, holi, nepali new year, lobor day
+holidays=["2026/01/01","2026/01/15","2026/02/15","2026/03/02","2026/04/14","2026/05/01"]
 # dashain-tihar holiday range
-holiday_range="2024/10/03 - 2024/11/09"
+holiday_range="2025/09/21 - 2025/11/01" # count revision week as well
 
 y1_spring_week1="2024/02/18" # first day must be sunday
-y1_autumn_week1="2024/11/10" # first day must be sunday
-y2_3_week1="2024/09/15" # first day must be sunday
+y1_autumn_week1="2025/11/02" # first day must be sunday
+y2_3_week1="2025/09/07" # first day must be sunday
 
 y1_spring_until="2024/08/24"
-y1_autumn_until="2025/05/17"
-y2_3_until="2025/05/17"
+y1_autumn_until="2026/05/30"
+y2_3_until="2026/05/30"
 
 # first saturday of week 1 after break
 y1_spring_sem_break="2024/06/08"
-y1_autumn_sem_break="2025/03/01"
-y2_3_sem_break="2025/03/01"
-y2_3_sem_break_range="2025/02/09 - 2025/02/22" # end on saturday
+y1_autumn_sem_break="2026/02/21" # Saturday Week-1
+y2_3_sem_break="2026/02/21" # Saturday of Week-1
+y2_3_sem_break_range="2026/02/01 - 2026/02/14" # end on saturday
 
 y1_spring_exam_weeks=["2024/05/12 - 2024/06/01","2024/08/25 - 2024/09/14"]
-y1_autumn_exam_weeks=["2025/02/02 - 2025/02/22","2025/05/18 - 2025/06/07"]
-y2_3_exam_weeks=["2025/01/19 - 2025/02/08","2025/05/18 - 2025/06/07"]
+y1_autumn_exam_weeks=["2026/01/25 - 2026/02/14","2026/05/10 - 2026/05/30"]
+y2_3_exam_weeks=["2026/01/11 - 2026/01/31","2026/05/10 - 2026/05/30"]
 
 # not for spring intake...
-reasestment_range="2025/08/03 - 2025/08/23"
+reasestment_range="2026/08/02 - 2026/08/22"
 
 ###############################################################3
                  # begin deals with google calendar
