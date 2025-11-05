@@ -61,4 +61,4 @@ def read_xlsx(source):
         json.dump(data, f)
 
 
-read_xlsx(BASE_DIR / "data-sources/24-25/Class Schedule of Autumn 2024-25 2nd Sem.xlsx")
+read_xlsx(BASE_DIR / "data-sources/25-26/Class_Schedule.xlsx")
