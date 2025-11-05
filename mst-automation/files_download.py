@@ -51,7 +51,7 @@ def mkdir(path):
 
 
 def downloadFile(path, itemid, classid):
-    sleep(randint(10, 20))
+    sleep(randint(10, 60))
     r=requests.get("https://api.mysecondteacher.com.np/api/users/content/generate-link?resourceId="+str(itemid)+"&classId="+str(classid),headers=header)
     dwnurl=r.json()['result']['resourceContentUrl']
     if not os.path.exists(path):
@@ -72,7 +72,8 @@ def recursive_lookup(contents, download_dir, classid, teacherid):
             if ext:
                 dwnfiledir=str(folddir)+"."+parse_path(ext)
                 if os.path.exists(dwnfiledir):
-                    if os.stat(dwnfiledir).st_size==item["fileSizeInt"]: continue                        
+                    if os.stat(dwnfiledir).st_size==item["fileSizeInt"]: continue
+                print(dwnfiledir)
                 downloadFile(dwnfiledir,item["id"],classid)
             else:
                 dwnfiledir=str(folddir)+".url"
