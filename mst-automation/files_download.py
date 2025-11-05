@@ -11,6 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent
 login_url='https://api.mysecondteacher.com.np/api/TokenAuth/Authenticate'
 creds_file=BASE_DIR/'mst_creds.json'
 out_dir=BASE_DIR/'mst'
+
 if not os.path.isdir(out_dir):
     os.mkdir(out_dir)
 
@@ -29,30 +30,6 @@ def read_json():
     else:
         return {}
 json_data=read_json()
-
-
-#login
-def login(mst_email,mst_pass):
-    r=requests.post(login_url,json={'userNameOrEmailAddress':mst_email,'password':mst_pass,'rememberClient':True})
-    try:
-        access_token=r.json()['result']['accessToken']
-        return access_token
-    except:
-        return None
-
-
-# refresh token
-def write_token(year):
-    global json_data
-    token=login(json_data[year]['user'],json_data[year]['pass'])
-    if not token:
-        print("Login Failed!")
-        return token
-    else:
-        with open(creds_file,'w') as f:
-            json_data[year]['token']=token
-            json.dump(json_data,f)
-    return token
 
 
 def resub(txt):
@@ -74,7 +51,7 @@ def mkdir(path):
 
 
 def downloadFile(path, itemid, classid):
-    sleep(randint(10, 60))
+    sleep(randint(10, 20))
     r=requests.get("https://api.mysecondteacher.com.np/api/users/content/generate-link?resourceId="+str(itemid)+"&classId="+str(classid),headers=header)
     dwnurl=r.json()['result']['resourceContentUrl']
     if not os.path.exists(path):
@@ -111,10 +88,8 @@ def fetch_files_folders(year):
     
     r=requests.get("https://api.mysecondteacher.com.np/api/classroom-subjects",headers=header)
     if r.status_code==401:
-        print("Trying to login..")
-        token=write_token(year)
-        if not token: return
-        fetch_files_folders(year)
+        print('Invalid token')
+        return
     subjects=r.json()['result']
     for sub in subjects:
         subid=sub["subjectId"]
@@ -141,4 +116,5 @@ def fetch_files_folders(year):
                 recursive_lookup(contents, download_dir, classid, teacherid)
 # run
 for year in json_data:
+    if year==".env": continue
     fetch_files_folders(year)
