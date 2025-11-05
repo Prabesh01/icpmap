@@ -357,7 +357,11 @@ def add_events():
 
 
 def make_cals_public():
+  tot=len(cal_ids.items())
+  cnt=0
   for _,id in cal_ids.items():
+    cnt+=1
+    print(f"{cnt}/{tot}")
     rule = {
         'scope': {
             'type': 'default'
