@@ -63,6 +63,9 @@ reasestment_range="2026/08/02 - 2026/08/22"
                  # begin deals with google calendar
 ###############################################################3
 
+sh_name="Year 3 BIC"
+sc_name="C3"
+
 SCOPES = ["https://www.googleapis.com/auth/calendar"]
 def gCalServ():
   creds = None
@@ -114,6 +117,7 @@ def create_cal():
 weekdays=["SUN","MON","TUE","WED","THU","FRI","SAT"]
 def add_classes():
     for sheet in classes:
+      if sheet!=sh_name: continue
       print(sheet)
       clase=classes[sheet]
       for clas in clase:
@@ -140,6 +144,7 @@ def add_classes():
             sedate=(datetime.strptime(y2_3_sem_break_range.split('-')[-1].strip(), "%Y/%m/%d")+ timedelta(days=day_offset+1)).strftime("%Y-%m-%d")
             until=y2_3_until
         for section in clas["sections"]:
+          if section!=sc_name: continue
           cal_name=sheet+" - "+section
           cal_name=cal_name.strip()
           if 'spring' in cal_name.lower(): continue
@@ -170,11 +175,13 @@ def del_classes_when_events():
   holiday_start=datetime.strptime(holiday_range.split(' - ')[0], "%Y/%m/%d")
   holiday_end=datetime.strptime(holiday_range.split(' - ')[1], "%Y/%m/%d")
   for sheet in sections:
+    if sheet!=sh_name: continue
     print(sheet)
     def del_event_all_sections(sdate,edate=None):
       if not edate: edate=sdate
       edate=edate+timedelta(days=1)
       for section in sections[sheet]:
+        if section!=sc_name: continue
         cal_name=sheet+" - "+section
         cal_name=cal_name.strip()
         if 'spring' in cal_name.lower(): continue
@@ -250,6 +257,7 @@ def add_events():
     holiday_start=datetime.strptime(holiday_range.split(' - ')[0], "%Y/%m/%d")
     holiday_end=datetime.strptime(holiday_range.split(' - ')[1], "%Y/%m/%d")
     for sheet in sections:
+      if sheet!=sh_name: continue
       print(sheet)
       def add_event_all_sections(summary,evstart,evend):
         transparency="transparent"
@@ -268,6 +276,7 @@ def add_events():
         }
 
         for section in sections[sheet]:
+          if section!=sc_name: continue
           cal_name=sheet+" - "+section
           cal_name=cal_name.strip()
           if 'spring' in cal_name.lower(): continue
