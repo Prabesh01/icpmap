@@ -86,7 +86,7 @@ def empty(day=None,check_time=None,teach=None):
         end_time = datetime.strptime(classe["etime"], "%I:%M %p").time()
         if classe["teacher"]==teach: teach_return_dict.append([classe["room"],classe["class"],classe["stime"]])
         # >= <= check ifi within range
-        if (start_time <= check_time and check_time <= end_time):
+        if (start_time <= check_time and check_time < end_time):
             if classe["teacher"]==teach: teach_return= classe["room"],classe["etime"]
             if classe["room"] in empty_rooms_list: empty_rooms_list.remove(classe["room"])
             taken_rooms_list[classe["room"]]=end_time
