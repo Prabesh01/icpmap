@@ -65,11 +65,9 @@ del data
 
 
 def calculate_time_difference(reference_time, check_time):
-  time_delta = timedelta(hours=abs(check_time.hour - reference_time.hour),
-                         minutes=abs(check_time.minute - reference_time.minute),
-                         seconds=abs(check_time.second - reference_time.second))
-
-  return time_delta
+  reference_sec = reference_time.hour * 60 + reference_time.minute
+  check_sec = check_time.hour * 60 + check_time.minute
+  return abs(check_sec-reference_sec)
 
 def empty(day=None,check_time=None,teach=None):
     empty_rooms_list=rooms[:]
@@ -100,7 +98,7 @@ def empty(day=None,check_time=None,teach=None):
                 if classez["room"]==clase:
                     start_time = datetime.strptime(classez["stime"], "%I:%M %p").time()
                     if start_time==etime: etime=datetime.strptime(classez["etime"], "%I:%M %p").time()
-            taken_rooms[clase]=int(calculate_time_difference(etime,check_time).total_seconds()/60)
+            taken_rooms[clase]=calculate_time_difference(etime,check_time)
 
     for clase in empty_rooms_list:
         # empty for x minutes, find the next start time closest (gt) to given time
@@ -108,15 +106,13 @@ def empty(day=None,check_time=None,teach=None):
         for classez in daywise_classes[day]:
             if classez["room"]==clase:
                 start_time = datetime.strptime(classez["stime"], "%I:%M %p").time()
-                end_time = datetime.strptime(classez["etime"], "%I:%M %p").time()
-
-                diff=calculate_time_difference(start_time,check_time).total_seconds()
 
                 if start_time >= check_time:
+                    diff=calculate_time_difference(start_time,check_time)
                     if closest:
                         if diff>closest: continue
                     closest=diff
-                    empty_rooms[clase]=int(closest/60)
+                    empty_rooms[clase]=int(closest)
         if not clase in empty_rooms: empty_rooms[clase]=None
 
     return empty_rooms, taken_rooms
