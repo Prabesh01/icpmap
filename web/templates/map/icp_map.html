@@ -453,14 +453,39 @@ Used codes from these gentlemen:
     .taken>p {
       color: red !important;
     }
-
+#legend, #legendd{
+visibility: hidden;
+}
+.pc_legend {
+  display: block;
+}
+.mob_legend {
+  display: none;
+}
+@media (max-width: 768px) {
+  .pc_legend {
+    display: none;
+  }
+  .mob_legend {
+    display: block;
+  }
+}
   </style>
   {% endblock css %}
 
   {% block body %}
+<div class="pc_legend" id="legend" style="position:fixed; bottom:10px; right:10px; font-family:serif; font-size:14px; background:#fff; border:1px solid #ccc; padding:6px 10px; border-radius:6px;">
+  <b>Legend:</b><br>
+  <span style="color:red;">■</span> Occupied for x mins<br>
+  <span style="color:green;">■</span> Free for x mins
+</div>
   <center>
     <div id="icp_map">
       <i id="sel_day_time">ICP MAP</i><b id="teach_result"></b>
+<div class="mob_legend" id="legendd" style="text-align:center; margin-top:10px; font-family:serif;">
+  <span style="color:red; margin-left:10px;">■ Busy</span>
+  <span style="color:green; margin-left:10px;">■ Free</span>
+</div>
       <div id="the_maps">
         <div id="nepal_block">
           <div id="msg">Nepal Block!</div>
@@ -1104,10 +1129,14 @@ Used codes from these gentlemen:
         var dayz = document.querySelectorAll('input[name="samesame"]:checked')[0].value
         sel_day_time.innerText = dayz + ", " + slider_value_container.innerText + " : ";
         if (search_btn.innerText.toLowerCase().includes("room")) {
+          document.getElementById('legend').style.visibility="visible";
+          document.getElementById('legendd').style.visibility="visible";
           //var data=JSON.stringify({"day":dayz, "time": slider_value_container.innerText});
           var data = "day=" + dayz + "&time=" + slider_value_container.innerText;
           xhr_process(data, "room")
         } else {
+          document.getElementById('legend').style.visibility="hidden";
+          document.getElementById('legendd').style.visibility="hidden";
           if (dayz == "SAT") {
             // clear map.
             teach_result.innerText = dropdown_search.value + " is most prolly chilling at thier home since it is Saturday!"
