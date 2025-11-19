@@ -73,8 +73,8 @@ def getCaptchaToken():
         sleep(10)
         r=requests.post("https://freecaptchabypass.com/getTaskResult",json={"clientKey":json_data['.env']['fcb_key'],"taskId":taskid})
         if r.status_code!=200: return False
-        if r.json()['status']!='ready': continue
         if i>=10: return False
+        if r.json()['status']!='ready': continue
         return r.json()['solution']['gRecaptchaResponse']
 
 
