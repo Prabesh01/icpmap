@@ -1,0 +1,48 @@
+#login { min-width: 940px; }
+#login .wrapper { background: url("/web/20240926205906im_/https://di37jvg7iglxw.cloudfront.net/assets/img/login-bg.jpg") no-repeat center #0E2D58; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+#login .buttons { text-align: center; }
+#login div { text-align: left; }
+#login .loginContent { text-align: left; height: 360px; width: 940px; position: absolute; left: 50%; margin-left: -470px; top: 50%; margin-top: -180px; }
+#login .loginContent .logo { padding-top: 40px; padding-bottom: 20px; }
+#login .loginContent form { width: 100%; padding: 15px 0; }
+#login .loginContent form .logo { height: 100%; }
+#login .loginContent form input { width: 100%; margin-bottom: 1.8em; }
+#login .loginContent form h1 { margin: 0 0 10px; padding: 0; color: #FFF; font-size: 24px; }
+#login .loginContent form p { color: #FFF; margin: 0 0 26px; }
+#login .loginContent form #login-button { float: left; border: none; padding: 1.5em; display: inline-block; width: 100%; margin: 0; }
+#login .loginContent .appStore { border-left: 1px solid rgba(250, 250, 250, 0.3); margin-left: 30px; padding-left: 40px; height: 320px; margin-top: 30px; }
+#login .loginContent .appStore h2, #login .loginContent .appStore p { color: #FFFFFF; }
+#login .loginContent .appStore h2 { font-size: 1.5em; padding-top: 10px; line-height: 1.35em; }
+#login .loginContent .appStore p { font-size: 1em; }
+#login .loginContent .appStore #legacy-iOS-link { color: #FFF; }
+#login .loginContent .appStore #legacy-android-link { color: #FFF; }
+#login .loginContent .appStore .appStores a { display: block; float: left; margin-right: 5px; margin-top: 10px; height: 62px; width: 228px; background: url(/web/20240926205906im_/https://di37jvg7iglxw.cloudfront.net/assets/img/appStores.png); }
+#login .loginContent .appStore .appStores a#apple { background-position: left center; }
+#login .loginContent .appStore .appStores a#android { background-position: right center; }
+#login .forgot a { color: #FFFFFF; text-decoration: none; font-size: .85em; display: inline-block; margin: 1em 0 0 0; opacity: .5; }
+#login .forgot a:hover { opacity: 1; }
+#login .support { margin: 6em 0 0; }
+#login .support p { text-align: center; color: #FFFFFF; opacity: .75; margin: 0 0 1em; }
+#login .support p a { color: #FFFFFF; }
+#login #microsoft-login-button { margin: 2.5em 0; height: 41px; width: 215px; border-radius: 0; background: url("/web/20240926205906im_/https://di37jvg7iglxw.cloudfront.net/assets/img/ms-symbollockup_signin_light.svg"); }
+
+/*
+     FILE ARCHIVED ON 20:59:06 Sep 26, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:12:23 Dec 31, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 1.439
+  exclusion.robots: 0.048
+  exclusion.robots.policy: 0.019
+  esindex: 0.038
+  cdx.remote: 67.716
+  LoadShardBlock: 235.475 (3)
+  PetaboxLoader3.datanode: 252.089 (4)
+  load_resource: 175.529
+  PetaboxLoader3.resolve: 104.752
+*/
