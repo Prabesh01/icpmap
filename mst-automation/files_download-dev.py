@@ -8,6 +8,7 @@ from random import randint
 
 from dateutil import parser
 import pytz
+from datetime import datetime
 npt_tz = pytz.timezone('Asia/Kathmandu')
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -55,7 +56,7 @@ def mkdir(path):
 
 
 def downloadFile(path, itemid, classid):
-    #sleep(randint(10, 60))
+    sleep(randint(10, 60))
     r=requests.get("https://api.mysecondteacher.com.np/api/users/content/generate-link?resourceId="+str(itemid)+"&classId="+str(classid),headers=header)
     dwnurl=r.json()['result']['resourceContentUrl']
     if not os.path.exists(path):
@@ -121,7 +122,6 @@ def fetch_files_folders(year):
             # attempt to get assignments:
             assignments = requests.get("https://api.mysecondteacher.com.np/api/v2/student-assignment-status?classId="+str(classid),headers=header).json()['result']
             for ass in assignments['data']:
-                print(f"Assignent: {ass['title']} --> {classname}")
                 aid = ass ['assignmentId']
                 assignment_dir=download_dir/"Assignments"
                 if not os.path.exists(assignment_dir):
@@ -137,6 +137,9 @@ def fetch_files_folders(year):
                 dt_npt = dt.astimezone(npt_tz)
                 deadline = dt_npt.strftime('%d %b %-I%p')
 
+                now_npt = datetime.now(npt_tz)
+                if dt_npt > now_npt: print(f"------------\nAssignent: {ass['title']} --> {year}/{subname}\n------------")
+
                 for fol in os.listdir(assignment_dir):
                     full_path = os.path.join(assignment_dir, fol)
                     if os.path.isdir(full_path) and fol.endswith(aid):
@@ -150,7 +153,6 @@ def fetch_files_folders(year):
                     f.write(ass['description'])
 
                 submssion_detail=requests.get("https://api.mysecondteacher.com.np/api/v2/student-submission/"+aid,headers=header).json()['result']
-                suffix=f"?Key-Pair-Id={submssion_detail['signedCookie']['keyPairId']['value']}&Signature={submssion_detail['signedCookie']['signature']['value']}&Policy={submssion_detail['signedCookie']['policy']['value']}"
                 suffix = {
                     'Key-Pair-Id': submssion_detail['signedCookie']['keyPairId']['value'].strip(),
                     'Signature': submssion_detail['signedCookie']['signature']['value'].strip(),
@@ -158,8 +160,6 @@ def fetch_files_folders(year):
                 }
                 for ass_attch in submssion_detail['links']:
                     adwnlink = "https://app.mysecondteacher.com.np"+ass_attch['name'].strip()
-                    with open('/home/prabesh/t/mst/url.txt', 'w') as f: f.write(adwnlink)
-                    print(f"DEBUG - Length of URL: {len(adwnlink)}") 
                     adwnflnme = ass_attch['label']
 
                     if not ass_attch['type']=="FILE":
@@ -168,25 +168,20 @@ def fetch_files_folders(year):
                         continue 
 
                     adwnfilepath=os.path.join(ass_fol_path, adwnflnme)
-                    # print(adwnfilepath)
                     if os.path.exists(adwnfilepath):
                         if os.stat(adwnfilepath).st_size==ass_attch["size"]: 
-                            print("--------------")
                             continue
+                    sleep(randint(10, 20))
                     with open(adwnfilepath,'wb') as f:
-                        r=requests.get(adwnlink, params=suffix) # , headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'})
-                        print(r.url)
-                        f.write(r.content)
+                        r=requests.get(adwnlink, params=suffix) 
                         print(f"Status Code: {r.status_code}")
-                        print(f"Request Headers: {r.request.headers}")  # See what you sent
-                        print(f"Response Headers: {r.headers}")          # See what the server said
-                        sys.exit()
 
-            #teachers=requests.get("https://api.mysecondteacher.com.np/api/classes/"+str(classid)+"/teachers",headers=header).json()['result']                
-            #for teacher in teachers:
-            #    teacherid=teacher["teacherId"]
-            #    contents=requests.get("https://api.mysecondteacher.com.np/api/users/content?teacherId="+str(teacherid)+"&classId="+str(classid)+"&userId=0&folderParentId=0&pageNumber=1&pageSize=1000",headers=header).json()['result']
-            #    recursive_lookup(contents, download_dir, classid, teacherid)
+            teachers=requests.get("https://api.mysecondteacher.com.np/api/classes/"+str(classid)+"/teachers",headers=header).json()['result']                
+            for teacher in teachers:
+                teacherid=teacher["teacherId"]
+                contents=requests.get("https://api.mysecondteacher.com.np/api/users/content?teacherId="+str(teacherid)+"&classId="+str(classid)+"&userId=0&folderParentId=0&pageNumber=1&pageSize=1000",headers=header).json()['result']
+                recursive_lookup(contents, download_dir, classid, teacherid)
+
 # run
 for year in json_data:
     if year==".env": continue
