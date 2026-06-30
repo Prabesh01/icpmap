@@ -9,7 +9,7 @@ primary_region = 'iad'
 [build]
 
 [processes]
-  app = 'python web/main.py'
+  app = '/app/.venv/bin/python web/main.py'
   
 [http_service]
   internal_port = 5000
