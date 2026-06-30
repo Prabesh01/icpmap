@@ -122,7 +122,7 @@ def get_home():
     user=None
     if 'user' in flask.session:
         user = flask.session['user']
-    return flask.render_template('home.html',user=user)
+    return flask.render_template('home.html',user=user,domain='.'.join(urllib.parse.urlparse(os.getenv('web_url')).hostname.split('.')[-2:]))
 
 @app.get('/icp-map')
 def get_icp_map():
